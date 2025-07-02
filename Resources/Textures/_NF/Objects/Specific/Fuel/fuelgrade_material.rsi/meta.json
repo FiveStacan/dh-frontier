@@ -8,7 +8,15 @@
     },
     "states": [
         {
-            "name": "bananium"
+            "name": "bananium",
+            "delays": [
+                [
+                    0.2,
+                    0.1,
+                    0.1,
+                    0.1
+                ]
+            ]
         },
         {
             "name": "empty"
@@ -17,10 +25,18 @@
             "name": "plasma"
         },
         {
+            "name": "uranium"
+        },
+        {
             "name": "skrungle"
         },
         {
-            "name": "uranium"
+            "name": "inhand-left",
+            "directions": 4
+        },
+        {
+            "name": "inhand-right",
+            "directions": 4
         }
-    ]
+    ] 
 }
