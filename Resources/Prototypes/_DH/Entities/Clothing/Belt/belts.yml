@@ -36,6 +36,7 @@
   suffix: Unremoveable
   components:
   - type: Unremoveable
+<<<<<<< HEAD
 
 - type: entity
   id: ClothingBeltPrisonGuardian
@@ -59,3 +60,5 @@
     - id: Stunbaton
     - id: Handcuffs
     - id: Handcuffs
+=======
+>>>>>>> 26b89f81d4 (DH-Update)

@@ -54,9 +54,9 @@
   components:
   - type: Sprite
     drawdepth: WallTops
-    sprite: _NF/Structures/Windows/plastitanium_window.rsi # Frontier
+    sprite: Structures/Windows/plastitanium_window.rsi # Frontier
   - type: Icon
-    sprite: _NF/Structures/Windows/plastitanium_window.rsi # Frontier
+    sprite: Structures/Windows/plastitanium_window.rsi # Frontier
     state: full
   - type: IconSmooth
     key: walls # Frontier: windows<walls

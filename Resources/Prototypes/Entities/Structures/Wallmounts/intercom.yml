@@ -148,6 +148,7 @@
     - state: build
       offset: "0.0,-0.3"
     - state: panel
+      offset: "0.0,-0.3"
       visible: false
       map: [ "wires" ]
       offset: "0.0,-0.3"
@@ -206,6 +207,7 @@
   components:
   - type: Sprite
     layers:
+
     - state: base
       offset: "0.0,-0.3"
     - state: unshaded

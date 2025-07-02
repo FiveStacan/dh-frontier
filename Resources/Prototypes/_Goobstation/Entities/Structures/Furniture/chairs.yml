@@ -14,7 +14,8 @@
     noRot: true
   - type: Strap
     position: Stand
-    # buckleOffset: "0,-0.05" # Frontier
+    # buckleOffsets:
+    # - "0,-0.05" # Frontier #Sunrise
   - type: Vehicle
     requiredHands: 0
     engineRunning: true

@@ -8,6 +8,7 @@ ent-WeaponShotgunNova = Нова
 ent-WeaponShotgunNova50 = Нова
     .desc = Боевой дробовик премиум-класса, созданный на основе конструкции силовика, с увеличенной ёмкостью магазина. Использует патроны все стандартные патроны для дробовиков, но лучше всего .12 калибра.
     .suffix = .50
+<<<<<<< HEAD
 
 ui-options-hud-theme-operative = Оперативник
 
@@ -441,3 +442,6 @@ ent-GasVentScrubberFreezer = { ent-GasVentScrubber }
 ent-GasVentPumpFreezer = { ent-GasVentPump }
     .desc = { ent-GasVentPump.desc }
     .suffix = Холодильник
+=======
+steal-target-groups-tickets = Талоны
+>>>>>>> 26b89f81d4 (DH-Update)

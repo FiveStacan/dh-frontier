@@ -32,7 +32,8 @@
     description: ghost-role-information-taxibot-description
     rules: ghost-role-information-nonantagonist-rules # Frontier?
   - type: Strap
-    buckleOffset: "0, 0"
+    buckleOffsets: # Sunrise-Edit
+    - "0, 0"
     unbuckleDistanceSquared: 0.09 # Frontier: (30 cm)^2 - seems unnecessary, but for consistency with vehicles
   - type: Construction
     graph: TaxiBot
@@ -63,7 +64,8 @@
   - type: MovementAlwaysTouching
   - type: CanMoveInAir
   - type: Strap
-    buckleOffset: "0, 0"
+    buckleOffsets: # Sunrise-Edit
+    - "0, 0"
     unbuckleDistanceSquared: 0.09 # (30 cm)^2 - seems unnecessary, but for consistency with vehicles
   - type: MovementSpeedModifier # Matches a hoverbike
     acceleration: 2

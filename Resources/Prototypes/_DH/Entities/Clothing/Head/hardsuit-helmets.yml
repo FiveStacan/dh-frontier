@@ -29,6 +29,7 @@
   - type: NightVision
     flashDurationMultiplier: 2
     isEquipment: true
+<<<<<<< HEAD
 
 - type: entity
   parent: ClothingHeadHelmetHardsuitSecurity
@@ -50,3 +51,5 @@
     sprite: _DH/Clothing/Head/Hardsuits/ntrguard_head.rsi
   - type: Clothing
     sprite: _DH/Clothing/Head/Hardsuits/ntrguard_head.rsi
+=======
+>>>>>>> 26b89f81d4 (DH-Update)

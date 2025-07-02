@@ -13,7 +13,7 @@
         - id: ClothingUniformJumpsuitOperative
         - id: ClothingUniformJumpskirtOperative
         - id: ClothingHeadsetAltSyndicate
-#        - id: ClothingEyesHudSyndicate # Frontier
+        - id: ClothingEyesHudSyndicate # Frontier
 
 - type: entityTable
   id: FillLockerEmergencyStandard

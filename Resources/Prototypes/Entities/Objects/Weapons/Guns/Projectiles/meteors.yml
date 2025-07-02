@@ -15,7 +15,7 @@
       types:
         Blunt: 1
   - type: TimedDespawn
-    lifetime: 120
+    lifetime: 160
   - type: Clickable
   - type: Physics
     bodyType: Dynamic
