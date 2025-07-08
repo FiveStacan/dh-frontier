@@ -1,0 +1,17 @@
+# Tier 2
+
+- type: technology
+  id: tracking
+  name: Слежка
+  icon:
+    sprite: Objects/Tools/binoculars.rsi
+    state: icon
+  discipline: CivilianServices
+  tier: 2
+  cost: 7000
+  recipeUnlocks:
+  - Binoculars
+  - BinocularsMagmite
+  - PinpointerUniversal
+  - NFDartTracking
+
