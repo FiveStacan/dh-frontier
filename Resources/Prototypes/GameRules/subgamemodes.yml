@@ -51,7 +51,7 @@
         text: wizard-role-greeting
         color: Turquoise
         # TODO: Need Wizard Start sound
-        #sound: "/Audio/Ambience/Antag/wizard_start.ogg"
+        sound: "/Audio/Ambience/Antag/wizard_start.ogg"
       startingGear: WizardBlueGear
       # TODO: WizardComp as needed
       components:

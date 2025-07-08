@@ -314,9 +314,9 @@
   components:
   - type: StorageFill
     contents:
-#        - id: OxygenTankFilled
+        - id: OxygenTankFilled #DH
         - id: NFTankO2N2EqualFilled # Frontier
         # TODO: Gone until reworked to have no space protection
-        #- id: ClothingOuterHardsuitWizard
+        - id: ClothingOuterHardsuitWizard #DH
         - id: ClothingMaskBreath
         - id: JetpackBlackFilled # Frontier: JetpackVoidFilled<JetpackBlackFilled

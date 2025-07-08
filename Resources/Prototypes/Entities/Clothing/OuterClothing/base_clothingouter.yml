@@ -107,6 +107,9 @@
   id: ClothingOuterHardsuitBase
   name: base hardsuit
   components:
+  - type: Clothing #DH
+    equipDelay: 4
+    unequipDelay: 3
   - type: PressureProtection
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000

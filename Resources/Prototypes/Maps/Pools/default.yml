@@ -8,7 +8,7 @@
   #- Core
   - Elkridge
   - Fland
-  #- Gate
+  - Gate
   - Loop
   - Marathon
   - Meta
@@ -17,9 +17,15 @@
   - Packed
   - Plasma
   - Reach
-  #- Train
+  - Train
 
 - type: gameMapPool
   id: ShipVsShip
   maps:
   - ShipVsShip
+
+- type: gameMapPool
+  id: Dev
+  maps:
+  - Dev
+

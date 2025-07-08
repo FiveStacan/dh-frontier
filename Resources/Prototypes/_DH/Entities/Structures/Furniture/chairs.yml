@@ -1,0 +1,36 @@
+
+- type: entity
+  name: comfy brown chair
+  id: ComfyBrownChair
+  parent: ChairBase
+  description: It looks comfy.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Furniture/chairs.rsi
+    state: comfy-brown
+# TODO:
+#  - type: Construction
+#    graph: Seat
+#    node: chairComfyBrown
+
+- type: entity
+  name: grey office chair
+  id: ChairOfficeGrey
+  parent: ChairOfficeLight
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Furniture/chairs.rsi
+    state: office-grey
+# TODO:
+#  - type: Construction
+#    graph: Seat
+#    node: chairOfficeDark
+
+- type: entity
+  name: barber's chair
+  parent: StoolBase
+  id: ChairBarber
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Furniture/chairs.rsi
+    state: barber

@@ -1,0 +1,33 @@
+- type: latheRecipe
+  id: Binoculars
+  result: Binoculars
+  completetime: 4
+  materials:
+    Steel: 150
+    Glass: 200
+
+- type: latheRecipe
+  id: BinocularsMagmite
+  result: BinocularsMagmite
+  completetime: 8
+  materials:
+    Steel: 200
+    Magmite: 250
+
+- type: latheRecipe
+  id: PinpointerUniversal
+  result: PinpointerUniversal
+  completetime: 7
+  materials:
+    Steel: 100
+    Glass: 250
+    Plastic: 50
+
+- type: latheRecipe
+  id: NFDartTracking
+  result: NFDartTracking
+  completetime: 3
+  materials:
+    Steel: 40
+    Glass: 20
+    Plastic: 20

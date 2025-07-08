@@ -131,8 +131,9 @@
     Steel: 2000
     Silver: 750
     Plasma: 1250 #Higher Plasma due to it needing less bluespace
-    Uranium: 150
-    Bluespace: 300 #DeltaV: Bluespace Exists
+    Uranium: 250
+    Bluespace: 700 #DeltaV: Bluespace Exists
+    Diamond: 150
 
 - type: latheRecipe
   parent: ClothingBackpackHolding
@@ -177,11 +178,12 @@
 - type: latheRecipe
   id: DeviceQuantumSpinInverter
   result: DeviceQuantumSpinInverter
-  completetime: 5
+  completetime: 12
   materials:
     Steel: 700
-    Glass: 100
+    Bluespace: 160
     Uranium: 100
+    Magmite: 200
 
 - type: latheRecipe
   id: DeviceDesynchronizer

@@ -28,7 +28,7 @@
   - AnomalyLocatorWide
   - HoloprojectorField
   - SignallerAdvanced
-  # - DeviceQuantumSpinInverter # Frontier
+  - DeviceQuantumSpinInverter # Frontier
   - DeviceDesynchronizer
 
 - type: latheRecipePack

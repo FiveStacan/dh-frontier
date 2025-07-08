@@ -189,3 +189,23 @@
     radius: 1.5
     energy: 1.6
     color: "#ff8400"
+  - type: ShuttleConsoleLock
+    locked: false
+
+- type: entity
+  parent: ComputerGunneryConsole
+  id: ComputerGunneryConsolePlus
+  name: консоль управления вооружением плюс
+  description: Interfaces with the gunnery control server to operate ship weapons.
+  components:
+  - type: ApcPowerReceiver
+    powerLoad: 500
+  - type: RadarConsole
+    maxRange: 1290
+    maxIffRange: 1200 # Mono
+  - type: WorldLoader
+    radius: 450 # Mono
+  - type: PointLight
+    radius: 1.5
+    energy: 1.6
+    color: "#ff1100"

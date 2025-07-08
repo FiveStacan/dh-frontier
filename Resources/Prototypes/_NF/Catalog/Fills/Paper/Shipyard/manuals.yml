@@ -16,6 +16,9 @@
     - state: icon_wrench
     - state: icon_corner
       color: gold
+  - type: Tag
+    tags:
+    - Book
   - type: GuideHelp
     openOnActivation: true
 

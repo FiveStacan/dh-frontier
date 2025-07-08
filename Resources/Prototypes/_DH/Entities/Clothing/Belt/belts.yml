@@ -1,0 +1,38 @@
+- type: entity
+  parent: NFClothingBeltStorageBase
+  id: ClothingBeltOmni
+  name: assault belt
+  description: A tactical assault belt.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Belt/omni.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Belt/omni.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1.2
+    sprintModifier: 1.2
+  - type: UseDelay
+    delay: 4
+  - type: ItemMapper
+    mapLayers:
+      flashbang:
+        whitelist:
+          components:
+          - FlashOnTrigger
+      stunbaton:
+        whitelist:
+          components:
+          - Stunbaton
+      tear_gas_grenade:
+        whitelist:
+          components:
+          - SmokeOnTrigger
+    sprite: Clothing/Belt/belt_overlay.rsi
+  - type: Appearance
+
+- type: entity
+  parent: ClothingBeltOmni
+  id: ClothingBeltOmniUnremoveable
+  suffix: Unremoveable
+  components:
+  - type: Unremoveable

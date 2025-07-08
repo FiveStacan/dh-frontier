@@ -64,10 +64,10 @@
   id: MiningDrillDiamond
   result: MiningDrillDiamond
   materials:
-    Steel: 600
+    PlaSteel: 500
     Plastic: 200
-    Silver: 200
-    Diamond: 100
+    Silver: 300
+    Diamond: 150
 
 - type: latheRecipe
   id: PKAUpgradeDamage

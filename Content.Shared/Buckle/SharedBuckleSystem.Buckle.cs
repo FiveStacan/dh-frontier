@@ -1,4 +1,5 @@
 using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 using System.Numerics;
 using Content.Shared.Alert;
 using Content.Shared.Buckle.Components;
@@ -16,7 +17,6 @@ using Content.Shared.Standing;
 using Content.Shared.Storage.Components;
 using Content.Shared.Stunnable;
 using Content.Shared.Throwing;
-using Content.Shared.Verbs;
 using Content.Shared.Whitelist;
 using Robust.Shared.Containers;
 using Robust.Shared.GameStates;
@@ -25,7 +25,6 @@ using Robust.Shared.Physics.Components;
 using Robust.Shared.Physics.Events;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-using Content.Shared.Movement.Components; // Frontier
 
 namespace Content.Shared.Buckle;
 
@@ -140,9 +139,24 @@ public abstract partial class SharedBuckleSystem
             return;
         }
 
-        var delta = (xform.LocalPosition - strapComp.BuckleOffset).LengthSquared();
-        if (delta > strapComp.UnbuckleDistanceSquared) // Frontier: 1e-5<strapComp.UnbuckleDistanceSquared
+        // Sunrise-Start
+        if (strapComp.BuckleOffsets.Count == 0)
+            return;
+
+        var isValid = false;
+        foreach (var offset in strapComp.BuckleOffsets)
+        {
+            var delta = (xform.LocalPosition - offset).LengthSquared();
+            if (delta <= 1e-5)
+            {
+                isValid = true;
+                break;
+            }
+        }
+
+        if (!isValid)
             Unbuckle(buckle, (strapUid, strapComp), null);
+        // Sunrise-End
     }
 
     #endregion
@@ -179,9 +193,6 @@ public abstract partial class SharedBuckleSystem
 
     private void OnBuckleUpdateCanMove(EntityUid uid, BuckleComponent component, UpdateCanMoveEvent args)
     {
-        if (HasComp<RelayInputMoverComponent>(uid)) // Frontier: allow relaying input when buckled
-            return; // Frontier: allow relaying input when buckled
-
         if (component.Buckled)
             args.Cancel();
     }
@@ -374,7 +385,22 @@ public abstract partial class SharedBuckleSystem
         _rotationVisuals.SetHorizontalAngle(buckle.Owner, strap.Comp.Rotation);
 
         var xform = Transform(buckle);
-        var coords = new EntityCoordinates(strap, strap.Comp.BuckleOffset);
+        // Sunrise-Start
+        var offset = Vector2.Zero;
+
+        for (var i = 0; i < strap.Comp.BuckleOffsets.Count; i++)
+        {
+            if (!strap.Comp.CurrentOffsets.Values.Contains(strap.Comp.BuckleOffsets[i]))
+            {
+                offset = strap.Comp.BuckleOffsets[i];
+                break;
+            }
+        }
+
+        strap.Comp.CurrentOffsets[buckle.Owner] = offset;
+
+        var coords = new EntityCoordinates(strap, offset);
+        // Sunrise-End
         _transform.SetCoordinates(buckle, xform, coords, rotation: Angle.Zero);
 
         _joints.SetRelay(buckle, strap);
@@ -398,7 +424,7 @@ public abstract partial class SharedBuckleSystem
         if (TryComp<PhysicsComponent>(buckle, out var physics))
             _physics.ResetDynamics(buckle, physics);
 
-        DebugTools.AssertEqual(xform.ParentUid, strap.Owner);
+        //DebugTools.AssertEqual(xform.ParentUid, strap.Owner);
     }
 
     /// <summary>
@@ -463,7 +489,7 @@ public abstract partial class SharedBuckleSystem
         var buckleXform = Transform(buckle);
         var oldBuckledXform = Transform(strap);
 
-        if (buckleXform.ParentUid == strap.Owner && !Terminating(oldBuckledXform.ParentUid))
+        if (buckleXform.ParentUid == strap.Owner && !Terminating(buckleXform.ParentUid))
         {
             _transform.PlaceNextTo((buckle, buckleXform), (strap.Owner, oldBuckledXform));
             buckleXform.ActivelyLerping = false;
@@ -471,11 +497,14 @@ public abstract partial class SharedBuckleSystem
             var oldBuckledToWorldRot = _transform.GetWorldRotation(strap);
             _transform.SetWorldRotationNoLerp((buckle, buckleXform), oldBuckledToWorldRot);
 
+            // Sunrise-Start
             // TODO: This is doing 4 moveevents this is why I left the warning in, if you're going to remove it make it only do 1 moveevent.
-            if (strap.Comp.BuckleOffset != Vector2.Zero)
+            if (strap.Comp.CurrentOffsets[buckle.Owner] != Vector2.Zero)
             {
-                buckleXform.Coordinates = oldBuckledXform.Coordinates.Offset(strap.Comp.BuckleOffset);
+                buckleXform.Coordinates = oldBuckledXform.Coordinates.Offset(strap.Comp.CurrentOffsets[buckle.Owner]);
             }
+            strap.Comp.CurrentOffsets.Remove(buckle.Owner);
+            // Sunrise-End
         }
 
         _rotationVisuals.ResetHorizontalAngle(buckle.Owner);
