@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingHeadBase
+  id: ClothingHeadCapSupremeCommander
+  name: фуражка высшего главнокомандующего
+  description: Трудно осознать что она сейчас перед вами.
+  components:
+    - type: Sprite
+      sprite: _DH/Clothing/Head/Misc/purple_naval_cap.rsi
+    - type: Clothing
+      sprite: _DH/Clothing/Head/Misc/purple_naval_cap.rsi

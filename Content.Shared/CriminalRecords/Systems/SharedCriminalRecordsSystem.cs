@@ -43,6 +43,7 @@ public abstract class SharedCriminalRecordsSystem : EntitySystem
             SecurityStatus.Paroled => "SecurityIconParoled",
             SecurityStatus.Wanted => "SecurityIconWanted",
             SecurityStatus.Detained => "SecurityIconIncarcerated",
+            SecurityStatus.SpacePrison => "SecurityIconIncarcerated",
             SecurityStatus.Discharged => "SecurityIconDischarged",
             SecurityStatus.Suspected => "SecurityIconSuspected",
             _ => record.StatusIcon

@@ -745,6 +745,7 @@
     - FoodApple
   mutationPrototypes:
     - goldenApple
+    - redApple #DH
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6

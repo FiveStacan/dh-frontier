@@ -1,13 +1,12 @@
 - type: entity
   id: LockerWardenFilledHardsuit
-  suffix: Filled, Hardsuit
+  suffix: Filled, Hardsuit, NoFrontier #DH
   parent: LockerWarden
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
       - id: FlashlightSeclite
-      # - id: WeaponDisabler # Frontier
+      - id: NFWeaponEnergyPistolDisabler #DH
       - id: ClothingBeltSecurityFilled
       - id: Flash
       - id: ClothingEyesGlassesSecurity
@@ -27,9 +26,8 @@
 
 - type: entity
   id: LockerWardenFilled
-  suffix: Filled
+  suffix: Filled, NoFrontier #DH
   parent: LockerWarden
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -55,9 +53,8 @@
 
 - type: entity
   id: LockerSecurityFilled
-  suffix: Filled
+  suffix: Filled, NoFrontier #DH
   parent: LockerSecurity
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -85,9 +82,8 @@
 
 - type: entity
   id: LockerBrigmedicFilled
-  suffix: Brigmedic, Filled
+  suffix: Brigmedic, Filled, NoFrontier #DH
   parent: LockerBrigmedic
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -122,9 +118,8 @@
 
 - type: entity
   id: LockerDetectiveFilled
-  suffix: Filled
+  suffix: Filled, NoFrontier #DH
   parent: LockerDetective
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -150,8 +145,7 @@
 - type: entity
   id: ClosetBombFilled
   parent: ClosetBomb
-  suffix: Filled
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: Filled, NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -166,7 +160,7 @@
   parent: [GunSafeBaseSecure, BaseC1Contraband ] # Frontier: BaseSecurityContraband<BaseC1Contraband
   id: GunSafeDisabler
   name: disabler safe
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -177,7 +171,7 @@
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: GunSafePistolMk58
   name: mk58 safe
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -190,7 +184,7 @@
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: GunSafeRifleLecter
   name: Lecter safe # Frontier: caps
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -203,7 +197,7 @@
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: GunSafeSubMachineGunDrozd
   name: Drozd safe # Frontier: caps
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -216,7 +210,7 @@
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: GunSafeShotgunEnforcer
   name: Enforcer safe # Frontier: caps
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -229,7 +223,7 @@
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   id: GunSafeShotgunKammerer
   name: Kammerer safe # Frontier: caps
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -240,10 +234,9 @@
 
 - type: entity
   id: GunSafeSubMachineGunWt550
-  suffix: Wt550
+  suffix: Wt550, NoFrontier #DH
   parent: [GunSafeBaseSecure, BaseC2ContrabandUnredeemable ] # Frontier: BaseSecurityContraband<BaseC2ContrabandUnredeemable
   name: WT-550 safe # Frontier: caps
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: StorageFill
     contents:
@@ -256,7 +249,7 @@
   parent: [GunSafeBaseSecure] # Frontier: remove BaseSecurityContraband
   id: GunSafeLaserCarbine
   name: laser safe
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:

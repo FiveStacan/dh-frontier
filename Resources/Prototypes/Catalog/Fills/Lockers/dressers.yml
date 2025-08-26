@@ -25,6 +25,12 @@
       - id: ClothingHeadHatBeretEngineering
       - id: ClothingOuterWinterCE
       - id: ClothingNeckCloakCe
+      - id: ClothingUnderwearSocksChiefEngineer
+      - id: ClothingUnderwearBottomBoxersChiefEngineer
+      - id: ClothingNeckEliteCloakCECloak
+      - id: ClothingOuterCoatCEOvercoatWhite
+      - id: ClothingUnderwearBottomPantiesChiefEngineer
+      - id: ClothingUnderwearTopBraChiefEngineer
 
 - type: entity
   id: DresserChiefMedicalOfficerFilled

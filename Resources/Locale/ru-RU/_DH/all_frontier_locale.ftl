@@ -1,0 +1,32 @@
+ent-NFMobCobraSpace = { ent-MobCobraSpace }
+    .desc = { ent-MobCobraSpace.desc }
+ent-NFMobSpiderSpace = { ent-MobSpiderSpace }
+    .desc = { ent-MobSpiderSpace.desc }
+ent-NFMobKangarooSpace = { ent-MobKangarooSpace }
+    .desc = { ent-MobKangarooSpace.desc }
+ent-NFMobBearSpace = { ent-MobBearSpace }
+    .desc = { ent-MobBearSpace.desc }
+
+ent-NFMobXeno = { ent-MobXeno }
+    .desc = { ent-MobXeno.desc }
+ent-NFMobXenoPraetorian = { ent-MobXenoPraetorian }
+    .desc = { ent-MobXenoPraetorian.desc }
+ent-NFMobXenoDrone = { ent-MobXenoDrone }
+    .desc = { ent-MobXenoDrone.desc }
+ent-NFMobXenoQueen = { ent-MobXenoQueen }
+    .desc = { ent-MobXenoQueen.desc }
+ent-NFMobXenoRavager = { ent-MobXenoRavager }
+    .desc = { ent-MobXenoRavager.desc }
+ent-NFMobXenoRunner = { ent-MobXenoRunner }
+    .desc = { ent-MobXenoRunner.desc }
+ent-NFMobXenoRouny = { ent-MobXenoRouny }
+    .desc = { ent-MobXenoRouny.desc }
+ent-NFMobXenoSpitter = { ent-MobXenoSpitter }
+    .desc = { ent-MobXenoSpitter.desc }
+ent-NFMobPurpleSnake = { ent-MobPurpleSnake }
+    .desc = { ent-MobPurpleSnake.desc }
+ent-NFMobSmallPurpleSnake = { ent-MobSmallPurpleSnake }
+    .desc = { ent-MobSmallPurpleSnake.desc }
+
+ent-21111111 = { ent-111111 }
+    .desc = { ent-111111.desc }

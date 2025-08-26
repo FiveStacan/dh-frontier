@@ -1,0 +1,221 @@
+
+- type: entity
+  id: ExperimentalAmmoTechFab
+  parent: [ NFBlueprintReceiverBase, SecurityTechFab ]
+  name: экспериментальный ТехФаб патронов
+  description: Печатает тот минимум боеприпасов, который может понадобиться бюджетной армии или арсеналу. Так же может подключаться к РнД серверам для печати особых патронов.
+  components:
+  - type: MaterialStorage
+    whitelist: # Frontier
+      tags: # Frontier
+        - Sheet # Frontier
+        - RawMaterial # Frontier
+        - Ingot # Frontier
+        - DHMaterials
+  - type: Sprite
+    sprite: _DH/Structures/Machines/techfab.rsi
+    snapCardinals: true # Frontier
+    layers:
+      - state: icon
+        map: ["enum.LatheVisualLayers.IsRunning"]
+      - state: ammo
+      - state: unlit
+        shader: unshaded
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: inserting
+        map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      - state: panel
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ExperimentalAmmoTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticPacks:
+    - GoobWeaponAmmo
+    - N14AmmoPack
+    - RMCAmmoPack
+    - NfsdAmmoStatic
+    - RMCAmmoPack
+    dynamicPacks:
+    - DHIncendiaryUraniumAmmoBig
+    - DHIncendiaryUraniumAmmo
+    - DHReseachedAmmo
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - NFBlueprintNfsdTechfab
+      - NFBlueprintMercenaryTechfab
+  - type: OreSiloClient
+
+- type: entity
+  id: ProtolatheSyndicate
+  parent: Protolathe
+  name: кроваво-красный протолат
+  description: Экспериментальный протолат, использующий технологии Горлекса.
+  components:
+  - type: MaterialStorage
+    whitelist: # Frontier
+      tags: # Frontier
+        - Sheet # Frontier
+        - RawMaterial # Frontier
+        - Ingot # Frontier
+        - DHMaterials
+  - type: Sprite
+    sprite: _DH/Structures/Machines/protolathe_syndicate.rsi
+  - type: Machine
+    board: ProtolatheSyndicateCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - ChemistryStatic
+    - SurgeryStatic
+    dynamicPacks:
+    - DHSalvage
+    - AdvancedTools
+    - ScienceEquipment
+    - ScienceExplosives
+    - ScienceClothing
+    - PowerCells
+    - ScienceWeapons
+    - Mining
+    - AtmosTools
+    # - EngineeringWeapons # Frontier
+    - Chemistry
+    - Janitor
+    - Instruments
+    - Equipment
+    - FauxTiles
+    - NFMedical # Frontier
+    - NFEngineering # Frontier
+    - NFHardsuits # Frontier
+    - NFService # Frontier
+    - NFScience # Frontier
+    - NFPouches # Frontier
+    - DHSyndicate
+    # WD EDIT START
+    - VisionGoggles
+    # WD EDIT END
+    - SyringeGuns
+    - NfsdAmmoStatic # Frontier: SecurityAmmo<NfsdAmmoStatic
+    - SecurityExplosives
+    - SecurityEquipment
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - NFBlueprintProtolathe
+      - NFBlueprintNfsdTechfab
+      - NFBlueprintMercenaryTechfab
+ #     - BlueprintSyndicateProtolathe
+  - type: OreSiloClient
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: ExperimentalAmmoTechFabFlatpack
+  name: experimental ammo techfab flatpack
+  description: A flatpack used for constructing an experimental ammo techfab.
+  components:
+  - type: Flatpack
+    entity: ExperimentalAmmoTechFab
+  - type: Sprite
+    layers:
+    - state: mercenary
+
+- type: entity
+  id: ExosuitFabricatorHyperConvection
+  parent: [ExosuitFabricator, BaseHyperlathe]
+  name: гиперконвекционный фабрикатор экзокостюмов
+  description: Экспериментальный фабрикатор экзокостюмов, использующий технологию экстремального нагрева для замедленного, но гораздо более экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/hyper_exosuit_fabricator.rsi
+  - type: Machine
+    board: ExosuitFabricatorHyperConvectionMachineCircuitboard
+
+- type: entity
+  id: UniformPrinterHyperConvection
+  parent: UniformPrinter
+  name: гиперконвекционный принтер униформы
+  description: Экспериментальный принтер униформы, использующий технологию экстремального нагрева для замедленного, но гораздо более экономичного создания предметов.
+  components:
+  - type: Lathe
+    materialUseMultiplier: 0.5
+    timeMultiplier: 1.6
+  - type: Sprite
+    sprite: _DH/Structures/Machines/hyper_uniform_printer.rsi
+  - type: Machine
+    board: UniformPrinterHyperConvectionMachineCircuitboard
+
+- type: entity
+  abstract: true
+  id: BaseSpeedlathe
+  components:
+  - type: Lathe
+    materialUseMultiplier: 2.2
+    timeMultiplier: 0.58
+  - type: LatheHeatProducing
+  - type: ReagentSpeed
+    modifiers:
+      SpaceLube: 0.5
+      SpaceGlue: 5
+
+- type: entity
+  id: AutolatheHyperSpeed
+  parent: [Autolathe, BaseSpeedlathe]
+  name: гиперскоростной автолат
+  description: Экспериментальный автолат, использующий технологию экстремального сжатия материи для ускоренного, но гораздо менее экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/autolathe_speed.rsi
+  - type: Machine
+    board: AutolatheHyperSpeedMachineCircuitboard
+
+- type: entity
+  id: ProtolatheHyperSpeed
+  parent: [Protolathe, BaseSpeedlathe]
+  name: гиперскоростной протолат
+  description: Экспериментальный протолат, использующий технологию экстремального сжатия материи для ускоренного, но гораздо менее экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/protolathe_speed.rsi
+  - type: Machine
+    board: ProtolatheHyperSpeedMachineCircuitboard
+
+- type: entity
+  id: CircuitImprinterHyperSpeed
+  parent: [CircuitImprinter, BaseSpeedlathe]
+  name: гиперскоростной принтер схем
+  description: Экспериментальный принтер схем, использующий технологию экстремального сжатия материи для ускоренного, но гораздо менее экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/circuit_imprinter_speed.rsi
+  - type: Machine
+    board: CircuitImprinterHyperSpeedMachineCircuitboard
+
+- type: entity
+  id: ExosuitFabricatorHyperSpeed
+  parent: [ExosuitFabricator, BaseSpeedlathe]
+  name: гиперскоростной фабрикатор экзокостюмов
+  description: Экспериментальный фабрикатор экзокостюмов, использующий технологию экстремального сжатия материи для ускоренного, но гораздо менее экономичного создания предметов.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/speed_exosuit_fabricator.rsi
+  - type: Machine
+    board: ExosuitFabricatorHyperSpeedMachineCircuitboard
+
+- type: entity
+  id: UniformPrinterHyperSpeed
+  parent: UniformPrinter
+  name: гиперскоростной принтер униформы
+  description: Экспериментальный принтер униформы, использующий технологию экстремального сжатия материи для ускоренного, но гораздо менее экономичного создания предметов.
+  components:
+  - type: Lathe
+    materialUseMultiplier: 2.2
+    timeMultiplier: 0.58
+  - type: Sprite
+    sprite: _DH/Structures/Machines/speed_uniform_printer.rsi
+  - type: Machine
+    board: UniformPrinterHyperSpeedMachineCircuitboard

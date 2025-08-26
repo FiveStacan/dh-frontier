@@ -1,0 +1,92 @@
+- type: latheRecipe
+  id: Binoculars
+  result: Binoculars
+  completetime: 4
+  materials:
+    Steel: 150
+    Glass: 200
+
+- type: latheRecipe
+  id: BinocularsMagmite
+  result: BinocularsMagmite
+  completetime: 8
+  materials:
+    Steel: 200
+    Magmite: 250
+
+- type: latheRecipe
+  id: PinpointerUniversal
+  result: PinpointerUniversal
+  completetime: 7
+  materials:
+    Steel: 100
+    Glass: 250
+    Plastic: 50
+
+- type: latheRecipe
+  id: NFDartTracking
+  result: NFDartTracking
+  completetime: 3
+  materials:
+    Steel: 40
+    Glass: 20
+    Plastic: 20
+
+- type: latheRecipe
+  id: MedipenTechFabCircuitboard
+  parent: [BaseCircuitboardRecipe, BaseMedicalMachineRecipeCategory]
+  result: MedipenTechFabCircuitboard
+  materials:
+    Steel: 800
+    Glass: 500
+    Gold: 100
+
+- type: latheRecipe
+  id: MedicalTechFabCircuitboard
+  parent: [BaseCircuitboardRecipe, BaseMedicalMachineRecipeCategory]
+  result: MedicalTechFabCircuitboard
+  materials:
+    Steel: 750
+    Glass: 900
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFMagazineSubMachineGunTopMounted35Incendiary
+  result: NFMagazineSubMachineGunTopMounted35Incendiary
+  materials:
+    Steel: 25
+    Plastic: 270
+
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFAmmunitionBoxBigRifle25Incendiary
+  result: NFAmmunitionBoxBigRifle25Incendiary
+  materials:
+    Steel: 100
+    Plastic: 970
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFMagazineSubMachineGun35Incendiary
+  result: NFMagazineSubMachineGun35Incendiary
+  materials:
+    Steel: 30
+    Plastic: 370
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: NFWeaponPkaSawn
+  result: NFWeaponPkaSawn
+  materials:
+    Steel: 350
+    Glass: 200
+    Silver: 50
+
+- type: latheRecipe
+  parent: BaseAmmoRecipe
+  id: ThrowingKnife
+  result: ThrowingKnife
+  materials:
+    Steel: 120
+    Silver: 100

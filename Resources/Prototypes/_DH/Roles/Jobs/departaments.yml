@@ -1,0 +1,9 @@
+- type: department
+  id: Prison
+  name: department-prison
+  description: department-pison-description
+  color: "#cf6b19"
+  weight: 2
+  roles:
+  - HeadOfPrison
+  - SecurityGuard

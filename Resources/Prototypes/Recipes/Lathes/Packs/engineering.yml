@@ -43,7 +43,7 @@
   - SMESMachineCircuitboard
   - SubstationMachineCircuitboard
   - WallmountSubstationElectronics
-  # - CellRechargerCircuitboard # Frontier: use WeaponCapacitorRecharger* instead
+  - CellRechargerCircuitboard #DH
   - WeaponCapacitorRechargerCircuitboard
   - FreezerElectronics
 

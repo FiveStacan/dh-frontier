@@ -1,0 +1,252 @@
+# region Costumes
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: UniformSchoolgirlDusk
+  name: dusk schoolgirl uniform
+  description: Ready for school in modern style.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Costume/dusk.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Costume/dusk.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: UniformSchoolgirlBlazerTan
+  name: tan blazer schoolgirl uniform
+  description: Ready for school in modern style. This set comes with a tan blazer.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Costume/blazer-tan.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Costume/blazer-tan.rsi
+
+# region Jumpsuit
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitGalaxyPurple
+  name: фиолетовый галактический костюм
+  description: Фиолетовый костюм для тех, кто ведет бизнес в галактическом масштабе.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/galaxy_purple.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/galaxy_purple.rsi
+
+- type: entity
+  parent: ClothingUnderwearBottomBoxersLibrarian
+  id: ClothingUnderwearBottomPrisoner
+  name: тюремные боксеры
+  description: Cтандартное нижнее бельё тюрьмы.
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPrisonerGrey
+  name: prisoner's suit
+  description: Why isn't it orange?
+  components:
+  - type: StaticPrice
+    price: 45
+  - type: Tag
+    tags:
+    - SpacePrisonerGreyUniform
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.98
+        Slash: 0.99
+        Piercing: 0.98
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 0.98
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPrisonerGreyArmored
+  name: prisoner's suit
+  suffix: Armor
+  description: Why isn't it orange?
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/prisoner.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.92
+        Slash: 0.95
+        Piercing: 0.93
+  - type: ClothingSpeedModifier
+    walkModifier: 0.96
+    sprintModifier: 0.94
+  - type: Construction
+    graph: PrisonerGreyArmored
+    node: PrisonerArmored
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitPrisonGuardSunrise
+  sufix: Sunrise
+  name: prison guard's suit
+  description: Why isn't it red?
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/guard.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/guard.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBarber
+  name: barber's suit
+  description: He's so good.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/barber.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/barber.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitNtrep
+  name: nt representive suit
+  description: That suit that is better not to see.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrep.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrep.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitNTRG
+  name: NTRG's uniform
+  description: On style.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrg_suit.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrg_suit.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitNtrepFormal
+  name: nt representive formal suit
+  description: That suit that is better not to see.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrepformal.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/ntrepformal.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: MagistratUniformSuit
+  name: magistrat's uniform
+  description: Fire a couple of enlisted men!
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/magistratebel.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/magistratebel.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueShieldSunrise
+  name: blueshield's uniform
+  description: On style.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/blueshield.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/blueshield.rsi
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpsuitBlueshieldJS
+  name: blueshield's jumpsuit
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/blueshield-js.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/blueshield-js.rsi
+
+# region Jumpskirt
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtPrisonerGrey
+  name: prisoner's jumpskirt
+  description: Why isn't it orange?
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/prisoner.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/prisoner.rsi
+  - type: StaticPrice
+    price: 45
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtGuard
+  name: prison guard's jumpskirt
+  description: Why isn't it red?
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/guard.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/guard.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtNtrep
+  name: nt representive skirt
+  description: That skirt that is better not to see.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/ntrep.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/ntrep.rsi
+
+
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingUniformJumpskirtBarber
+  name: barber's jumpskirt
+  description: He's so good.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/barber.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/barber.rsi
+
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtElegantMaid
+  name: elegant maid uniform
+  description: Call me master and bring me some beer.
+  components:
+    - type: Sprite
+      sprite: _DH/Clothing/Uniforms/Jumpskirt/elegantmaid.rsi
+    - type: Clothing
+      sprite: _DH/Clothing/Uniforms/Jumpskirt/elegantmaid.rsi
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ClothingUniformJumpskirtBlueShield
+  name: blueshield's jumpskirt
+  description: Baby...
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/blueshield.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/blueshield.rsi

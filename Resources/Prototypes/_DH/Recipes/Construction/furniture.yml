@@ -1,0 +1,35 @@
+- type: construction
+  id: TableCounterRed
+  graph: Table
+  startNode: start
+  targetNode: CounterRed
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: TableReinforcedPlasmaGlass
+  graph: Table
+  startNode: start
+  targetNode: TableReinforcedPlasmaGlass
+  category: construction-category-furniture
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: DoorConnector
+  graph: ConnectorGraph
+  startNode: start
+  targetNode: DoorConnector
+  category: construction-category-structures
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false
+  conditions:
+    - !type:TileNotBlocked

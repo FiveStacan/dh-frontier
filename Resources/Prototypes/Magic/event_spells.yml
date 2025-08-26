@@ -94,8 +94,8 @@
       #   orGroup: Guns
       # - id: NFWeaponLauncherPirateCannon # Frontier: WeaponLauncherPirateCannon<NFWeaponLauncherPirateCannon
       #   orGroup: Guns
-      # - id: WeaponTetherGun # Frontier
-      #   orGroup: Guns # Frontier
+      - id: WeaponTetherGun
+        orGroup: Guns
       # - id: WeaponForceGun # Frontier
       #   orGroup: Guns # Frontier
       - id: WeaponGrapplingGun
@@ -108,8 +108,8 @@
         orGroup: Guns # Frontier
       - id: NFWeaponEnergyPistolLaserMakeshift # WeaponMakeshiftLaser<NFWeaponEnergyPistolLaserMakeshift
         orGroup: Guns
-      # - id: WeaponTeslaGun # Frontier
-      #   orGroup: Guns # Frontier
+      - id: WeaponTeslaGun # Frontier
+        orGroup: Guns # Frontier
       - id: NFWeaponEnergyRifleCarbinePractice # Frontier: WeaponLaserCarbinePractice<NFWeaponEnergyRifleCarbinePractice
         orGroup: Guns
       - id: NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine

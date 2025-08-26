@@ -27,6 +27,7 @@
   materials:
     Steel: 200
     Cloth: 500
+    Plastic: 100 #DH
 
 - type: latheRecipe
   id: FultonBeacon
@@ -37,7 +38,7 @@
   materials:
     Steel: 1000
     Glass: 500
-    # If they get spammed make it cost silver.
+    Silver: 200 #DH
 
 - type: latheRecipe
   id: SeismicCharge
@@ -79,6 +80,7 @@
     Steel: 1500
     Gold: 500
     Silver: 500
+    Diamond: 20 #DH
 
 - type: latheRecipe
   id: PKAUpgradeRange
@@ -90,6 +92,7 @@
     Steel: 1500
     Gold: 500
     Silver: 500
+    Diamond: 20 #DH
 
 - type: latheRecipe
   id: PKAUpgradeFireRate
@@ -101,4 +104,4 @@
     Steel: 1500
     Gold: 500
     Silver: 500
-
+    Diamond: 20 #DH

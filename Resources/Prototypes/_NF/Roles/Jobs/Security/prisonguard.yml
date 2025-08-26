@@ -2,7 +2,7 @@
   id: PrisonGuard
   name: job-name-guard
   description: job-description-guard
-  playTimeTracker: JobPrisonGuard
+  playTimeTracker: JobPrisonGuardDH
   setPreference: false # Frontier - Restore this ones we have a jail
   requirements:
     - !type:DepartmentTimeRequirement
@@ -11,7 +11,7 @@
     - !type:OverallPlaytimeRequirement
       time: 36000 # Frontier - 10 hrs
   startingGear: PrisonGuardGear
-  icon: "JobIconWarden"
+  icon: "JobIconPrisonGuardDH" #DH
   supervisors: job-supervisors-bailiff # Frontier
   canBeAntag: false
   access:

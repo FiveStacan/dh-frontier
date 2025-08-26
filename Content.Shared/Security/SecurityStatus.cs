@@ -17,5 +17,6 @@ public enum SecurityStatus : byte
     Wanted,
     Detained,
     Paroled,
+    SpacePrison,
     Discharged
 }

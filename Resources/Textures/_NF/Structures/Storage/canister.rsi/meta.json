@@ -104,12 +104,6 @@
       "name": "plasma-1"
     },
     {
-      "name": "respiron"
-    },
-    {
-      "name": "respiron-1"
-    },
-    {
       "name": "storage"
     },
     {
@@ -126,6 +120,12 @@
     },
     {
       "name": "water_vapor-1"
+    },
+    {
+      "name": "respiron"
+    },
+    {
+      "name": "respiron-1"
     }
   ]
 }

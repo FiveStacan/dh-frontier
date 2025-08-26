@@ -1,0 +1,32 @@
+
+
+- type: entity
+  name: сабля высшего главнокомандующего
+  parent: BaseItem
+  id: SupremeCommanderSabre
+  description: От нее чуствуется легкий ветерок, похоже, она поглащает материю.
+  components:
+  - type: Tag
+    tags:
+      - SupremeCommanderSabre
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Melee/SupremeCommander_sabre.rsi
+    state: icon
+  - type: MeleeWeapon
+    damage:
+      types:
+        Blunt: 100
+        Piercing: 120
+        Radiation: 80
+        Structural: 40
+  - type: Item
+    size: Small
+    sprite: _DH/Objects/Weapons/Melee/SupremeCommander_sabre.rsi
+  - type: Clothing
+    quickEquip: false
+    slots:
+    - back
+    - suitStorage
+  - type: Reflect
+    reflectProb: .1
+    spread: 90

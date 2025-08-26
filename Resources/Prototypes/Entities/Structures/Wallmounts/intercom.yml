@@ -46,20 +46,25 @@
     sprite: Structures/Wallmounts/intercom.rsi
     layers:
     - state: base
+      offset: "0.0,-0.3"
     - state: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: unshaded
+      offset: "0.0,-0.3"
     - state: broadcasting
       map: ["enum.RadioDeviceVisualLayers.Broadcasting"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: speaker
       map: ["enum.RadioDeviceVisualLayers.Speaker"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: false
+      offset: "0.0,-0.3"
   - type: Transform
     noRot: false
     anchored: true
@@ -141,9 +146,11 @@
     sprite: Structures/Wallmounts/intercom.rsi
     layers:
     - state: build
+      offset: "0.0,-0.3"
     - state: panel
       visible: false
       map: [ "wires" ]
+      offset: "0.0,-0.3"
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -170,20 +177,25 @@
   - type: Sprite
     layers:
     - state: base
+      offset: "0.0,-0.3"
     - state: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: unshaded
+      offset: "0.0,-0.3"
     - state: broadcasting
       map: ["enum.RadioDeviceVisualLayers.Broadcasting"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: speaker
       map: ["enum.RadioDeviceVisualLayers.Speaker"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: true
+      offset: "0.0,-0.3"
   - type: WiresPanel
     open: true
 
@@ -195,19 +207,24 @@
   - type: Sprite
     layers:
     - state: base
+      offset: "0.0,-0.3"
     - state: unshaded
       map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: unshaded
+      offset: "0.0,-0.3"
     - state: broadcasting
       map: ["enum.RadioDeviceVisualLayers.Broadcasting"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: speaker
       map: ["enum.RadioDeviceVisualLayers.Speaker"]
       shader: unshaded
       visible: false
+      offset: "0.0,-0.3"
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      offset: "0.0,-0.3"
   - type: WiresPanel
     open: false
   - type: Physics # Frontier

@@ -1,0 +1,48 @@
+# region Boots
+
+- type: entity
+  parent: [ClothingShoesBase, ClothingSlotBase]
+  id: ClothingShoesBootsPrisonerGrey
+  name: prisoner's boots
+  description: Why they not orange?
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Shoes/Boots/prisoner.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Shoes/Boots/prisoner.rsi
+  - type: ClothingSpeedModifier
+    sprintModifier: 1.02
+
+# region MagBoots
+
+- type: entity
+  parent: ClothingShoesBootsMagBase
+  id: ClothingShoesBootsMagAtmos
+  name: Atmos magboots
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Shoes/magboots-atmos.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
+  - type: Clothing
+    sprite: _DH/Clothing/Shoes/magboots-atmos.rsi
+  - type: ApcPowerReceiver
+    needsPower: false
+    powerLoad: 0
+  - type: Item
+    size: Huge
+  - type: Charger
+    slotId: charger_slot
+    portable: true
+    chargeRate: 14
+  - type: ItemSlots
+    slots:
+      charger_slot:
+        ejectOnInteract: false
+        whitelist:
+          components:
+          - PowerCell
+  - type: ClothingSpeedModifier
+    walkModifier: 0.86
+    sprintModifier: 0.84

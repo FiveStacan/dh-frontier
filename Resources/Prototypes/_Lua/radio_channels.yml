@@ -6,7 +6,7 @@
 - type: radioChannel
   id: Trade
   name: chat-radio-trade
-  keycode: 'я'
+  keycode: 'у'
   frequency: 1015
   color: "#1a5871"
 
@@ -14,7 +14,7 @@
 - type: radioChannel
   id: Mercenary
   name: chat-radio-mercenary
-  keycode: 'у'
+  keycode: 'н'
   frequency: 1016
   color: "#556B2F"
 
@@ -22,14 +22,14 @@
 - type: radioChannel
   id: Vip
   name: chat-radio-vip
-  keycode: 'э'
+  keycode: 'ё'
   frequency: 1017
   color: "#878426"
 
 - type: radioChannel
   id: DeathSquad
   name: chat-radio-deathsquad
-  keycode: 'а'
+  keycode: 'г'
   frequency: 2707
   color: "#CF1CFF"
   longRange: true

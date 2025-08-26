@@ -2231,7 +2231,7 @@
   name: parrot
   parent: [ SimpleMobBase, FlyingMobBase ]
   id: MobParrot
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   description: Infiltrates your domain, spies on you, and somehow still a cool pet.
   components:
   - type: MovementSpeedModifier

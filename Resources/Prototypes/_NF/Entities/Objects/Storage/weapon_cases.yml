@@ -42,6 +42,12 @@
       - ProjectileBatteryAmmoProvider
       tags:
       - Cartridge
+  - type: MeleeWeapon #DH
+    damage:
+      types:
+        Blunt: 10
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
 
 - type: entity
   name: weapon case
@@ -75,6 +81,12 @@
       - ProjectileBatteryAmmoProvider
       tags:
       - Cartridge
+  - type: MeleeWeapon #DH
+    damage:
+      types:
+        Blunt: 7
+    soundHit:
+      path: "/Audio/Weapons/smash.ogg"
 
 - type: entity
   name: ammo case
@@ -155,3 +167,9 @@
       - Armor
       tags:
       - Cartridge
+  - type: ClothingSpeedModifier #DH
+    sprintModifier: 0.80
+  - type: HeldSpeedModifier #DH
+    sprintModifier: 0.80
+  - type: ExplosionResistance #DH
+    damageCoefficient: 0.85

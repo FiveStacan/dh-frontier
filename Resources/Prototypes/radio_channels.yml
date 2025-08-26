@@ -37,7 +37,7 @@
 - type: radioChannel
   id: Science
   name: chat-radio-science
-  keycode: 'н'
+  keycode: 'в'
   frequency: 1351
   color: "#cd7ccd"
 
@@ -65,7 +65,7 @@
 - type: radioChannel
   id: Syndicate
   name: chat-radio-syndicate
-  keycode: 't'
+  keycode: 'я'
   frequency: 1213
   color: "#8f4a4b"
 #  longRange: true # Frontier - Move to Syndicate Base
@@ -101,7 +101,7 @@
   abstract: true # Frontier
   id: Xenoborg
   name: chat-radio-xenoborg
-  keycode: 'ч'
+  keycode: 'б'
   frequency: 2002
   color: "#2288ff"
   # long range since I don't wanna make a special xenoborg telecomm server
@@ -111,7 +111,7 @@
   abstract: true # Frontier
   id: Mothership
   name: chat-radio-mothership
-  keycode: 'я'
+  keycode: 'z'
   frequency: 2003
   color: "#ff2222"
   # long range since I don't wanna make a special xenoborg telecomm server

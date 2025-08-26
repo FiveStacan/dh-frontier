@@ -1,7 +1,7 @@
 - type: entity
   id: CrateFoodPizza
   parent: CratePlasticBiodegradable # Frontier: CratePlastic<CratePlasticBiodegradable
-  categories: [ HideSpawnMenu ] # Frontieraction, grinding))
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -112,7 +112,7 @@
 - type: entity
   id: CrateFoodSoftdrinks
   parent: CratePlasticBiodegradable # Frontier: CratePlastic<CratePlasticBiodegradable
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -136,7 +136,7 @@
   parent: CratePlasticBiodegradable # Frontier: CratePlastic<CratePlasticBiodegradable
   name: Getmore Bakemore crate
   description: Getmore branded snacks and baking supplies for the creative chef, all without the need of emptying your station's Getmore machines!
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -164,7 +164,7 @@
   parent: CrateFreezer
   name: ice cream delivery
   description: An assortment of ice cream delights for any occasion! Includes 16 frozen treats.
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -188,7 +188,7 @@
   parent: CrateFreezer
   name: snowcone delivery
   description: A freezer packed with refreshing snowcones for a hard working crew, or even a lazy one! Includes 16 snowcones.
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:
@@ -210,7 +210,7 @@
   parent: CratePlasticBiodegradable # Frontier: Plastic<PlasticBiodegradable
   name: Happy Honk meal delivery
   description: Two fully loaded Happy Honk Big Bite burger meals, complete with cheesy fries, a bottle of Space Cola, a slice of apple pie and a toy!
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: StorageFill
     contents:

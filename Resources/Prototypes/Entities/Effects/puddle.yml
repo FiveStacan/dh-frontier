@@ -171,7 +171,7 @@
   - type: BadDrink
   - type: IgnoresFingerprints
   - type: TimedDespawn #lua
-    lifetime: 400
+    lifetime: 900 #DH 15 minutes
   - type: Tag
     tags:
     - DNASolutionScannable

@@ -221,6 +221,20 @@ public sealed partial class WantedListUiFragment : BoxContainer
             }
         }
 
+        if (record.Status is not SecurityStatus.None)
+        {
+            var proto = "SecurityIcon" + record.Status switch
+            {
+                SecurityStatus.SpacePrison => "Incarcerated",
+                _ => record.Status.ToString(),
+            };
+
+            if (_prototypeManager.TryIndex<SecurityIconPrototype>(proto, out var prototype))
+            {
+                rect.Texture = _spriteSystem.Frame0(prototype.Icon);
+            }
+        }
+
         box.AddChild(rect);
         box.AddChild(label);
         button.AddChild(box);

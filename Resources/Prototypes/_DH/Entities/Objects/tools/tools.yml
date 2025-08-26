@@ -1,0 +1,25 @@
+- type: entity
+  name: магмитовый бинокль
+  parent: Binoculars
+  id: BinocularsMagmite
+  description: Used for long-distance surveillance.
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Tools/magmitbinoculars.rsi
+  - type: Clothing
+    sprite: _DH/Objects/Tools/magmitbinoculars.rsi
+    quickEquip: false
+    slots:
+    - Neck
+  - type: UseDelay
+    delay: 4.0
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 12
+    pvsIncrease: 1
+  - type: StaticPrice
+    price: 670
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 100
+      Magmite: 40

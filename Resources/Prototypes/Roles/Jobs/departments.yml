@@ -102,6 +102,7 @@
   - Sheriff # Frontier
   - PlantManager # Frontier
   - StationTrafficController # Frontier
+  - HeadOfPrison #DH
   primary: false
   weight: 100
   editorHidden: true # Frontier

@@ -1,0 +1,33 @@
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  id: ClothingOuterArmorSWAT
+  name: SWAT armor
+  description: NT's unsuccessful attempt to create universal and inexpensive protection. It provides excellent protection against many types of damage, but it also slows down extremely much.
+  components:
+  - type: Sprite
+    sprite: Clothing/OuterClothing/Armor/heavy.rsi
+  - type: Clothing
+    sprite: Clothing/OuterClothing/Armor/heavy.rsi
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.55
+        Slash: 0.55
+        Piercing: 0.55
+        Heat: 0.6
+        Radiation: 0.6
+        Caustic: 0.6
+  - type: ExplosionResistance
+    damageCoefficient: 0.65
+  - type: PressureProtection
+    highPressureMultiplier: 0.5
+    lowPressureMultiplier: 0.25
+  - type: TemperatureProtection
+    heatingCoefficient: 0.5
+    coolingCoefficient: 0.5
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: GroupExamine
+  - type: ProtectedFromStepTriggers
+    slots: WITHOUT_POCKET

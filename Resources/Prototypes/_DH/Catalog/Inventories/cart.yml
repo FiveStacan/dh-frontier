@@ -1,0 +1,193 @@
+- type: vendingMachineInventory
+  id: PTechPrisonInventory
+  startingInventory:
+    PrisonGuardIDCard: 12
+    PrisonGuardPDA: 10
+    ClothingHeadsetPrison: 12
+    ClothingHeadsetPrisoner: 30
+    NFPrisonerPDA: 30
+    NFPrisonerIDCard: 40
+    RubberStampApproved: 3
+    RubberStampDenied: 3
+    Pen: 50
+    BoxPaper: 5
+    BoxPaperOffice: 5
+    BoxEnvelope: 5
+    BoxFolderNfsdForms: 3
+    BoxFolderNfsdFormsBrown: 3
+    BoxFolderGreen: 3
+    BoxFolderRed: 3
+    HandLabeler: 5
+    EncryptionKeyNfsd: 15
+    EncryptionKeyPrison: 30
+    EncryptionKeyPrisoners: 30
+    EncryptionKeyPrisonCommand: 1
+    AccessConfigurator: 1
+    ClothingHeadPrisonGuard: 3
+  contrabandInventory:
+    BalloonNT: 2
+    LuxuryPen: 1
+    GrenadeFlashBang: 1
+
+- type: vendingMachineInventory
+  id: PrisonDrobeInventory
+  startingInventory:
+    ClothingBackpackPrisonGuard: 4
+    ClothingBackpackSatchelPrisonGuard: 4
+    ClothingBackpackDuffelPrisonGuard: 4
+    ClothingBeltPrisonGuardian: 3
+    ClothingHeadPrisonGuard: 3
+    ClothingHeadBandRed: 3
+    ClothingMaskNeckGaiterRed: 3
+    ClothingHandsGlovesCombat: 3
+    ClothingHandsGlovesColorBlack: 3
+    ClothingHandsGlovesFingerless: 3
+    ClothingUniformJumpsuitPrisonGuard: 2
+    ClothingUniformJumpsuitPrisonGuardSunrise: 4
+    ADTClothingUniformTurleneckOrange: 2
+    ADTClothingUniformTurleneckOrangeBlack: 2
+    ADTClothingUniformTurleneckOrangeWomen: 2
+    ClothingUniformJumpskirtGuard: 4
+    ClothingUniformJumpsuitBrigmedic: 3
+    ClothingUniformJumpskirtBrigmedic: 3
+    ClothingOuterWinterColorOrange: 2
+    ClothingUniformJumpsuitBH: 1
+    ClothingHeadsetPrison: 3
+    ClothingMaskGasSecurity: 3
+    ClothingHeadHelmetJustice: 2
+    ClothingHeadHelmetBasic: 4 # Frontier
+    ClothingOuterArmorBasic: 4
+    ClothingNeckScarfStripedRed: 3
+    ClothingOuterArmorBasicSlim: 2
+    ClothingOuterCoatAMG: 2
+    ClothingMaskBreathMedicalSecurity: 3
+    ClothingEyesGlassesSecurity: 1
+    ClothingEyesBlindfold: 1
+    ClothingShoesBootsJack: 4
+    ClothingShoesBootsJackSec: 2
+    ClothingShoesBootsNfsdBrown: 2
+    ClothingShoesBootsNfsdCream: 2
+    ClothingShoesBootsWinterSec: 2
+  contrabandInventory:
+    ClothingUniformJumpskirtOfLife: 1 # Frontier
+    ClothingMaskClownSecurity: 1
+    ToyFigurineSecurity: 1
+    ToyFigurineWarden: 1
+    ToyFigurineHeadOfSecurity: 1
+    Stunbaton: 1
+
+- type: vendingMachineInventory
+  id: PrisonTechInventory
+  startingInventory:
+    NFWeaponEnergyPistolDisabler: 4
+    NFWeaponPistolMk58: 2
+    RMCWeaponRevolverM44: 1
+    NFMagazinePistol35Rubber: 6
+    NFMagazinePistol35: 3
+    SecurityWhistle: 4
+    Handcuffs: 12
+    Bola: 4
+    Flash: 10
+    GrenadeFlashBang: 6
+    TearGasGrenade: 6
+    GrenadeStinger: 6
+    EmpGrenadeNfsd: 2
+    GrenadeIncendiaryNfsd: 2
+    GrenadeShrapnelNfsd: 2
+    ClusterBangFull: 2
+    Tourniquet: 4
+    FlashlightSeclite: 4
+    ClothingEyesGlassesSunglasses: 2
+    ClothingEyesGlassesSecurity: 4
+    ClothingEyesHudSecurity: 2
+    ClothingEyesEyepatchHudSecurity: 1
+    ClothingBeltPrisonGuardian: 5
+    CombatKnife: 4
+    Zipties: 12
+    HoloprojectorSecurity: 3
+    RiotShield: 2
+    RiotLaserShield: 2
+    RiotBulletShield: 2
+    WantedListCartridge: 2
+    LogProbeCartridge: 2
+    ForensicScanner: 1
+    BoxForensicPad: 1
+    CleanerGrenade: 2
+    ClothingShoesBootsMagSecurity: 3
+    JetpackSecurityFilled: 1
+    RadioHandheldSecurity: 4
+  contrabandInventory:
+    WeaponMeleeNeedle: 2
+    FoodDonutHomer: 3
+    FoodBoxDonut: 2
+    ClothingMaskMuzzle: 2
+    #box evidence
+
+- type: vendingMachineInventory
+  id: prisonersclothingInventory
+  startingInventory:
+    ClothingUniformJumpsuitPrisoner: 6
+    ClothingUniformJumpsuitPrisonerGrey: 6
+    ClothingUniformJumpskirtPrisoner: 6
+    ClothingUniformJumpskirtPrisonerGrey: 6
+    ClothingShoesBootsPrisonerGrey: 6
+    Envelope: 8
+  contrabandInventory:
+    FoodTinMRE: 1
+    Stunprod: 3
+    MaterialCloth1: 10
+    SlipocalypseClusterSoap: 1
+  emaggedInventory:
+    DrinkNukieCan: 1
+    HydroponicsToolHatchet: 1
+
+- type: vendingMachineInventory
+  id: DHSustenanceInventory
+  startingInventory:
+    DrinkMREFlask: 8
+    FoodSnackNutribrick: 10
+    FoodSnackMREBrownie: 14
+    FoodCondimentPacketKetchup: 8
+    FoodTinMRE: 2
+  contrabandInventory:
+    FoodTinBeans: 2
+    FoodTinPeaches: 2
+    BoxMRE: 1
+  emaggedInventory:
+    KitchenKnife: 2
+    ClothingMaskBreath: 2
+    EmergencyOxygenTankFilled: 1
+    EmergencyNitrogenTankFilled: 1
+    DrinkNukieCan: 1
+
+- type: vendingMachineInventory
+  id: TrollInventory
+  startingInventory:
+    WeaponLauncherRocketToy: 6
+    ClothingMaskJoy: 8
+    SingularityToy: 2
+    ToySword: 2
+    NFRevolverCapGun: 2
+    NFBoxCartridgeCap: 4
+    WeaponDisablerToySponsor: 2
+    Soap: 6
+    ClownRecorder: 2
+    SnapPopBox: 2
+    RubberStampCentcomFake: 1
+    GrenadeDummy: 4
+    GrenadeFoamDart: 4
+    FoamBlade: 2
+    NFWeaponRifleFoam: 3
+    NFBoxDonkSoftBox: 5
+    WeaponRifleBB: 2
+    BoxCartridgeRGBB: 3
+  contrabandInventory:
+    ToyFigurineGreytider: 2
+    RubberStampCentcomFake: 1
+    Bola: 1
+    SlipocalypseClusterSoap: 1
+    BalloonOperative: 1
+  emaggedInventory:
+    SyndieTrickyBomb: 2
+    DrinkNukieCan: 1
+    ClothingUnderwearBottomBoxersSyndicateAgent: 1

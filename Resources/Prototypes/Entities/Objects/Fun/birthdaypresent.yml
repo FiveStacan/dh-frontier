@@ -11,6 +11,8 @@
     layers:
       - state: icon
   - type: SpawnItemsOnUse
+    sound: #DH
+      path: /Audio/Effects/unwrap.ogg
     items:
       - id: FoodCakeBirthdaySlice
       - id: PaperFrontierBirthday
@@ -31,12 +33,13 @@
   parent: Paper
   components:
   - type: Paper
+    editingDisabled: true #DH
     stampState: paper_stamp-centcom
     stampedBy:
     - stampedColor: '#006600FF'
       stampedName: Central Admiralty of Frontier
     content: |2
-  
+
                           [head=1]Anniversary Notice[/head]
 
       [head=3]It has come to our attention that Nanotrasen's operations in the Frontier Sector have reached an anniversary recently.

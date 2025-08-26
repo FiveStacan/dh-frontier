@@ -242,7 +242,7 @@
   id: ActionSpawnRift
   name: Summon Carp Rift
   description: Summons a carp rift that will periodically spawns carps.
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Action
     icon:
@@ -258,7 +258,7 @@
   id: ActionDevour
   name: "[color=red]Devour[/color]"
   description: Attempt to break a structure with your jaws or swallow a creature.
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Action
     icon: { sprite : Interface/Actions/devour.rsi, state: icon }

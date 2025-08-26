@@ -25,7 +25,7 @@
 - type: techDiscipline
   id: NFArsenalMercenary
   name: nf-research-discipline-arsenal-mercenary
-  color: "#874343"
+  color: "#888451"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
     state: arsenal
@@ -37,7 +37,7 @@
 - type: techDiscipline
   id: NFArsenalNfsd
   name: nf-research-discipline-arsenal-nfsd
-  color: "#4b653e"
+  color: "#46402b"
   icon:
     sprite: _NF/Interface/Misc/research_disciplines.rsi
     state: nfsd

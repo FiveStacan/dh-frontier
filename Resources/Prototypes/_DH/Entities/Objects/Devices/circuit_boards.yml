@@ -1,0 +1,184 @@
+- type: entity
+  id: ExperimentalAmmoTechFabCircuitboard
+  parent: BaseMachineCircuitboard
+  name: экспериментальный ТехФаб патронов (машинная плата)
+  description: Печатная плата экспериментального ТехФаба патронов.
+  components:
+    - type: Sprite
+      state: security
+    - type: MachineBoard
+      prototype: ExperimentalAmmoTechFab
+      requirements:
+        Capacitor: 2
+        Manipulator: 1
+      stackRequirements:
+        Glass: 10
+        Steel: 10
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: ProtolatheHyperSpeedMachineCircuitboard
+  name: гиперскоростной протолат (машинная плата)
+  description: Печатная плата гиперскоростного протолата.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: ProtolatheHyperSpeed
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+    stackRequirements:
+      Glass: 2
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: AutolatheHyperSpeedMachineCircuitboard
+  name: гиперскоростной автолат (машинная плата)
+  description: Печатная плата гиперскоростного автолата.
+  components:
+  - type: MachineBoard
+    prototype: AutolatheHyperSpeed
+    requirements: # Frontier
+      MatterBin: 3 # Frontier stackRequirements<requirements
+    stackRequirements:
+      Glass: 2
+    tagRequirements:
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: CircuitImprinterHyperSpeedMachineCircuitboard
+  name: гиперскоростной принтер схем (машинная плата)
+  description: Печатная плата гиперскоростного принтера схем.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: CircuitImprinterHyperSpeed
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: ExosuitFabricatorHyperSpeedMachineCircuitboard
+  name: гиперскоростной фабрикатор экзокостюмов (машинная плата)
+  description: Печатная плата гиперскоростного фабрикатора экзокостюмов.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: ExosuitFabricatorHyperSpeed
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: UniformPrinterHyperSpeedMachineCircuitboard
+  name: гиперскоростной принтер униформы (машинная плата)
+  description: Печатная плата гиперскоростного принтера униформы.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: UniformPrinterHyperSpeed
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+    stackRequirements:
+      Glass: 2
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: ExosuitFabricatorHyperConvectionMachineCircuitboard
+  name: гиперконвекционный фабрикатор экзокостюмов (машинная плата)
+  description: Печатная плата гиперконвекционного фабрикатора экзокостюмов.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: ExosuitFabricatorHyperConvection
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+    stackRequirements:
+      Glass: 2
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: UniformPrinterHyperConvectionMachineCircuitboard
+  name: гиперконвекционный принтер униформы (машинная плата)
+  description: Печатная плата гиперконвекционного принтера униформы.
+  components:
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: UniformPrinterHyperConvection
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+    stackRequirements:
+      Glass: 2
+
+- type: entity
+  parent: BaseMachineCircuitboard
+  id: ProtolatheSyndicateCircuitboard
+  name: кроваво-красный протолат (машинная плата)
+  description: Печатная плата кроваво-красного протолата.
+  components:
+  - type: Sprite
+    state: cpu_syndicate
+  - type: MachineBoard
+    prototype: ProtolatheSyndicate
+    requirements: # Frontier
+      MatterBin: 2 # Frontier stackRequirements<requirements
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+      Igniter:
+        amount: 1
+        defaultPrototype: Igniter
+    stackRequirements:
+      Glass: 6

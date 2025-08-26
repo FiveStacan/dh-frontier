@@ -65,7 +65,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: MobFleshJared
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -91,7 +91,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: MobFleshGolem
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -121,7 +121,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: MobFleshClamp
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -146,7 +146,7 @@
 - type: entity
   parent: BaseMobFlesh
   id: MobFleshLover
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -269,7 +269,7 @@
 - type: entity
   parent: BaseMobFleshSalvage
   id: MobFleshJaredSalvage
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -295,7 +295,7 @@
 - type: entity
   parent: BaseMobFleshSalvage
   id: MobFleshGolemSalvage
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -325,7 +325,7 @@
 - type: entity
   parent: BaseMobFleshSalvage
   id: MobFleshClampSalvage
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:
@@ -350,7 +350,7 @@
 - type: entity
   parent: BaseMobFleshSalvage
   id: MobFleshLoverSalvage
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier #DH
   components:
   - type: Sprite
     layers:

@@ -200,20 +200,26 @@
 - type: soundCollection
   id: FootstepPuddle
   files:
-  - /Audio/Effects/Footsteps/puddle1.ogg
-  - /Audio/Effects/Footsteps/puddle2.ogg
-  - /Audio/Effects/Footsteps/puddle3.ogg
-  - /Audio/Effects/Footsteps/puddle4.ogg
-  - /Audio/Effects/Footsteps/puddle5.ogg
+  - /Audio/Effects/Footsteps/gib_step.ogg #DH
+  - /Audio/Effects/Footsteps/gib_step2.ogg #DH
+  - /Audio/Effects/Footsteps/gib_step3.ogg #DH
+#  - /Audio/Effects/Footsteps/puddle1.ogg
+#  - /Audio/Effects/Footsteps/puddle2.ogg
+#  - /Audio/Effects/Footsteps/puddle3.ogg
+#  - /Audio/Effects/Footsteps/puddle4.ogg
+#  - /Audio/Effects/Footsteps/puddle5.ogg
 
 - type: soundCollection
   id: FootstepBlood
   files:
-  - /Audio/Effects/Footsteps/blood1.ogg
-  - /Audio/Effects/Footsteps/blood2.ogg
-  - /Audio/Effects/Footsteps/blood3.ogg
-  - /Audio/Effects/Footsteps/blood4.ogg
-  - /Audio/Effects/Footsteps/blood5.ogg
+  - /Audio/Effects/Footsteps/gib_step.ogg #DH
+  - /Audio/Effects/Footsteps/gib_step2.ogg #DH
+  - /Audio/Effects/Footsteps/gib_step3.ogg #DH
+#  - /Audio/Effects/Footsteps/blood1.ogg
+#  - /Audio/Effects/Footsteps/blood2.ogg
+#  - /Audio/Effects/Footsteps/blood3.ogg
+#  - /Audio/Effects/Footsteps/blood4.ogg
+#  - /Audio/Effects/Footsteps/blood5.ogg
 
 - type: soundCollection
   id: FootstepSticky

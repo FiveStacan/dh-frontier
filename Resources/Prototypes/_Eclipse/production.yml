@@ -1,0 +1,46 @@
+- type: entity
+  id: ChemMasterBotanyMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: ChemMaster 5000 machine board
+  description: A machine printed circuit board for a reagent grinder.
+  components:
+    - type: Sprite
+      state: medical
+    - type: MachineBoard
+      prototype: ChemMasterBotany
+      requirements:
+        MatterBin: 2
+        Manipulator: 2
+      stackRequirements:
+        Glass: 1
+        Cable: 1
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
+
+- type: entity
+  id: HydroponicsTrayAdvancedMachineCircuitboard
+  parent: BaseMachineCircuitboard
+  name: advanced hydroponics tray machine board
+  description: A machine printed circuit board for an advanced hydroponics tray.
+  components:
+    - type: Sprite
+      state: service
+    - type: MachineBoard
+      prototype: HydroponicsTrayAdvancedEmpty
+      stackRequirements:
+        # replacing the console screen
+        Glass: 5
+        Cable: 2
+      requirements:
+        MatterBin: 2
+        Manipulator: 2
+      tagRequirements:
+        GlassBeaker:
+          amount: 2
+          defaultPrototype: Beaker
+      componentRequirements:
+        BotanySwab:
+          amount: 1
+          defaultPrototype: DiseaseSwab

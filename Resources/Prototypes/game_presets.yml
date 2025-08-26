@@ -139,8 +139,8 @@
   description: sandbox-description
   showInVote: false # Not suitable for use without admin intervention, since entity spamming can quickly crash a server
   maxPlayers: 5
-  rules: [] # Frontier: empty list, keep below commented out
-#     - Sandbox
+  rules:
+    - Sandbox
 
 - type: gamePreset
   id: Traitor
@@ -169,8 +169,8 @@
   maxPlayers: 15
   showInVote: false # Frontier: true < false
   supportedMaps: DeathMatchMapPool
-  rules: [] # Frontier: empty list, keep below commented out
-#     - DeathMatch31
+  rules:
+     - DeathMatch31
 
 - type: gamePreset
   id: Nukeops

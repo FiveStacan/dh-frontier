@@ -1,0 +1,52 @@
+- type: entity
+  parent: ClothingMaskGasAtmos
+  id: ClothingMaskGasCE
+  name: chef engineer's gas mask
+  description: Very durable and stylish white gas mask with a green stripe on the frontal area. Will allow you to correct the consequences of atmospheric technicians with bought diplomas.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Mask/cemask.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Mask/cemask.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+
+- type: entity
+  parent: ClothingMaskGasAtmos
+  id: ClothingBreathMaskCMO
+  name: medical respirator
+  description: Quality respirator.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Mask/cmomask.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Mask/cmomask.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+
+- type: entity
+  parent: ClothingMaskGasExplorer
+  id: ClothingBreathMaskQM
+  name: handler's gas mask
+  description: While others are working, you watch them and enjoy life. Made specifically for apartment dwellers, allowing for a more convenient way to pass the time without having to pay attention to how something is eating your employee.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Mask/qmmask.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Mask/qmmask.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+
+- type: entity
+  parent: ClothingMaskGasAtmos
+  id: ClothingMaskIAA
+  name: elite gas mask
+  description: Black gas mask with gold-plated element above the visor made of durable glass. You do not have to breathe the same air as the defendants. Protects against flares.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Mask/iaamask.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Mask/iaamask.rsi
+  - type: BreathMask
+  - type: IngestionBlocker
+  - type: FlashImmunity

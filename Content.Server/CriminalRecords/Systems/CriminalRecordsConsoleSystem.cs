@@ -120,6 +120,12 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             var history = Loc.GetString("criminal-records-console-auto-history", ("reason", oldReason));
             _criminalRecords.TryAddHistory(key.Value, history, officer);
         }
+        if (msg.Status == SecurityStatus.SpacePrison)
+        {
+            var oldReason = record.Reason ?? Loc.GetString("criminal-records-console-spaceprison-unspecified-reason");
+            var history = Loc.GetString("criminal-records-console-spaceprison-history", ("reason", oldReason));
+            _criminalRecords.TryAddHistory(key.Value, history, officer);
+        }
 
         // will probably never fail given the checks above
         name = _records.RecordName(key.Value);
@@ -148,6 +154,8 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
         {
             // person has been detained
             (_, SecurityStatus.Detained) => "detained",
+            // person has been detained in space prison
+            (_, SecurityStatus.SpacePrison) => "spaseprison",
             // person did something sus
             (_, SecurityStatus.Suspected) => "suspected",
             // released on parole
@@ -162,6 +170,8 @@ public sealed class CriminalRecordsConsoleSystem : SharedCriminalRecordsConsoleS
             (SecurityStatus.Wanted, SecurityStatus.None) => "not-wanted",
             // criminal status removed
             (SecurityStatus.Detained, SecurityStatus.None) => "released",
+            // criminal status removed
+            (SecurityStatus.SpacePrison, SecurityStatus.None) => "released",
             // criminal is no longer on parole
             (SecurityStatus.Paroled, SecurityStatus.None) => "not-parole",
             // this is impossible

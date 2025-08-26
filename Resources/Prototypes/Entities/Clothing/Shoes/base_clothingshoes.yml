@@ -4,6 +4,8 @@
   id: ClothingShoesBase
   components:
   - type: Clothing
+    equipDelay: 1 #DH
+    unequipDelay: 0.5
     slots:
     - FEET
   - type: Sprite

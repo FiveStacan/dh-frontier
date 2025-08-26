@@ -1,0 +1,11 @@
+- type: latheRecipePack
+  id: DHPrisonClothing
+  recipes:
+#  - ClothingShoesBootsPrisonerGrey
+  - ClothingWalletLeatherPrisoner
+  - ClothingHeadPrisonGuard
+  - ClothingUniformJumpsuitPrisonGuardSunrise
+  - ClothingUniformJumpskirtGuard
+  - ClothingUniformJumpsuitPrisonGuard
+  - ClothingUniformJumpskirtPrisonerGrey
+  - ClothingUniformJumpsuitPrisonerGrey

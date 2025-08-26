@@ -71,12 +71,11 @@
 
 - type: entity
   parent: BaseMobHuman
-  suffix: Dead
+  suffix: Dead, NoFrontier #DH
   save: false # mobs are currently not saveable.
   id: SalvageHumanCorpse
   name: unidentified corpse
   description: I think they're dead.
-  categories: [ HideSpawnMenu ] # Frontier
   components:
   - type: RandomHumanoidAppearance
     randomizeName: false

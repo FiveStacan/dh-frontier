@@ -1,9 +1,9 @@
  - type: entity
    id: WardrobePrisonFilled
-   suffix: Filled
+   suffix: Filled, NoFrontier
    parent: WardrobePrison
    description: "Contains a selection of nice orange clothes for people enjoying their stay in the brig."
-   categories: [ HideSpawnMenu ] # Frontier
+#   categories: [ HideSpawnMenu ] # Frontier
    components:
    - type: StorageFill
      contents:

@@ -113,3 +113,4 @@
   - type: Airtight
   - type: StaticPrice
     price: 100
+  - type: Occluder #DH

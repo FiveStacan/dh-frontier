@@ -224,4 +224,5 @@
   materials:
     Steel: 750
     Plasma: 150
-    Uranium: 150
+    Uranium: 250 #DH
+    Gold: 100 #DH

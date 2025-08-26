@@ -1,0 +1,10 @@
+- type: entity
+  parent: HighSecDoor
+  id: HighSecArmoryLockedFR
+  suffix: Frontier, Locked
+  components:
+  - type: ContainerFill
+    containers:
+      board: [ DoorElectronicsFrontierDH ]
+  - type: Sprite
+    sprite: _DH/Structures/Doors/Airlocks/highsec/frontier_highsec.rsi

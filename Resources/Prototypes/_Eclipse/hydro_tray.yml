@@ -1,0 +1,51 @@
+- type: entity
+  parent: [ BaseMachinePowered, hydroponicsTray ]
+  id: HydroponicsTrayAdvanced
+  name: advanced hydroponics tray
+  suffix: Advanced
+  description: An interstellar-grade space farmplot allowing for rapid growth and selective breeding of crops. Just... keep in mind the space weeds. It looks like this one has been modified to synthesize water and nutrients when powered! 
+  components:
+  - type: Sprite
+    layers:
+      - sprite: _Eclipse/Structures/Hydroponics/containers.rsi
+        state: hydrotray3_advanced
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lowhealth3
+        map: [ "health_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lowwater3
+        map: [ "water_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: lownutri3
+        map: [ "nutri_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: alert3
+        map: [ "undefined_alert" ]
+        visible: false
+      - sprite: Structures/Hydroponics/overlays.rsi
+        state: harvest3
+        map: [ "harvest_alert" ]
+        visible: false
+  - type: ApcPowerReceiver
+    powerLoad: 5000
+  - type: PlantHolder
+    permanentWaterLevel: true
+    permanentNutritionLevel: true
+    consumesElectricity: true
+  - type: Machine
+    board: HydroponicsTrayAdvancedMachineCircuitboard
+  - type: WiresPanel
+
+- type: entity
+  parent: HydroponicsTrayAdvanced
+  id: HydroponicsTrayAdvancedEmpty
+  suffix: Advanced, Empty
+  components:
+  - type: PlantHolder
+    waterLevel: 0
+    nutritionLevel: 0
+    # for the lights to update immediately
+    updateSpriteAfterUpdate: true

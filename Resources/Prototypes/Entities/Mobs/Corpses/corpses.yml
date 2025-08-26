@@ -1,8 +1,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomServiceCorpse
-  suffix: Dead, Service
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Service #DH
   components:
   - type: Loadout
     prototypes:
@@ -20,8 +19,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomEngineerCorpse
-  suffix: Dead, Engineer
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Engineer #DH
   components:
   - type: Loadout
     prototypes:
@@ -32,8 +30,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomCargoCorpse
-  suffix: Dead, Cargo
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Cargo #DH
   components:
   - type: Loadout
     prototypes:
@@ -43,8 +40,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomMedicCorpse
-  suffix: Dead, Medic
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Medic #DH
   components:
   - type: Loadout
     prototypes:
@@ -56,8 +52,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomScienceCorpse
-  suffix: Dead, Science
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Science #DH
   components:
   - type: Loadout
     prototypes:
@@ -67,8 +62,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomSecurityCorpse
-  suffix: Dead, Security
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Security #DH
   components:
   - type: Loadout
     prototypes:
@@ -80,8 +74,7 @@
 - type: entity
   parent: SalvageHumanCorpse
   id: MobRandomCommandCorpse
-  suffix: Dead, Command
-  categories: [ HideSpawnMenu ] # Frontier
+  suffix: NoFrontier, Dead, Command #DH
   components:
   - type: Loadout
     prototypes:

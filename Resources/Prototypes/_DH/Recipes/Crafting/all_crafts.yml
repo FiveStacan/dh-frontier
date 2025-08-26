@@ -1,0 +1,7 @@
+- type: construction
+  id: PrisonerGreyArmored
+  graph: PrisonerGreyArmored
+  startNode: start
+  targetNode: PrisonerArmored
+  category: construction-category-clothing
+  objectType: Item

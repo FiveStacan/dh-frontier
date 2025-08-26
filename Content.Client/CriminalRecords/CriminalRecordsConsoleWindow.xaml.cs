@@ -321,6 +321,7 @@ public sealed partial class CriminalRecordsConsoleWindow : FancyWindow
             SecurityStatus.Paroled => "hud_paroled",
             SecurityStatus.Wanted => "hud_wanted",
             SecurityStatus.Detained => "hud_incarcerated",
+            SecurityStatus.SpacePrison => "hud_spaceprison",
             SecurityStatus.Discharged => "hud_discharged",
             SecurityStatus.Suspected => "hud_suspected",
             _ => "SecurityIconNone"

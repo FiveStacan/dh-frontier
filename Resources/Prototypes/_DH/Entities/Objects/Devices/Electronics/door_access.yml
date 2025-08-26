@@ -1,0 +1,7 @@
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsFrontierDH
+  suffix: Frontier, Locked
+  components:
+  - type: AccessReader
+    access: [["Frontier"]]

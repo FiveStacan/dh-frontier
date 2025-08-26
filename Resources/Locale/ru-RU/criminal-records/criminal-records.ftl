@@ -10,6 +10,7 @@ criminal-records-console-status = Статус
 criminal-records-status-none = Нет
 criminal-records-status-wanted = Разыскивается
 criminal-records-status-detained = Под арестом
+criminal-records-status-spaceprison = Под арестом в тюрьме
 criminal-records-status-suspected = Подозревается
 criminal-records-status-discharged = Освобождён
 criminal-records-status-paroled = Освобождён по УДО
@@ -43,6 +44,8 @@ criminal-records-console-unknown-officer = <неизвестный офицер>
 
 criminal-records-filter-placeholder = Введите текст и нажмите "Enter"
 criminal-records-name-filter = Имя
+criminal-records-job-filter = Должность
+criminal-records-species-filter = species
 criminal-records-prints-filter = Отпечатки пальцев
 criminal-records-dna-filter = ДНК
 
@@ -50,3 +53,6 @@ criminal-records-dna-filter = ДНК
 
 criminal-records-console-auto-history = АРЕСТОВАН: { $reason }
 criminal-records-console-unspecified-reason = <причина не указана>
+
+criminal-records-console-spaceprison-history = (КТ)АРЕСТОВАН: { $reason }
+criminal-records-console-spaceprison-unspecified-reason = <нет доп. информации>

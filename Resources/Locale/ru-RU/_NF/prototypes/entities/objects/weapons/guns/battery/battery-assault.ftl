@@ -8,6 +8,7 @@ ent-NFWeaponEnergyRifleCarbine = лазерная винтовка
    .desc = Предпочитается службой безопасности Nanotrasen за дешевизну и простоту использования.
 ent-NFWeaponEnergyRifleSniperCannon = лазерная пушка
    .desc = Тяжёлое сверхмощное лазерное оружие.
+   .suffix = Винтовка
 ent-NFWeaponEnergyRifleSniperXrayCannon = рентгеновская пушка
    .desc = Экспериментальное оружие, использующее сконцентрированную энергию рентгеновского излучения.
 ent-NFWeaponEnergySubMachineGunDeltaV = энергетический ПП

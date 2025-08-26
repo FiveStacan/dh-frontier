@@ -275,6 +275,11 @@
   - type: Insulated
   - type: Fiber
     fiberMaterial: fibers-insulative
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Slash: 0.99
+        Piercing: 0.99
 
 # can't parent combat gloves since they are butcherable
 - type: entity

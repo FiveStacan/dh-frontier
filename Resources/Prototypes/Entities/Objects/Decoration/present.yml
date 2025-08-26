@@ -41,6 +41,10 @@
   parent: PresentRandomUnsafe
   suffix: Filled, any entity
   components:
+    - type: Sprite #DH
+      sprite: Objects/Decoration/present.rsi
+      layers:
+      - state: present_insane
     - type: RandomGift
       insaneMode: true
 
