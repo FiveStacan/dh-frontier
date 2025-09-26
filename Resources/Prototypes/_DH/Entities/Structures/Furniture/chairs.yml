@@ -15,20 +15,12 @@
 
 - type: entity
   name: grey office chair
-<<<<<<< HEAD
   id: ChairOfficeGray
-=======
-  id: ChairOfficeGrey
->>>>>>> 26b89f81d4 (DH-Update)
   parent: ChairOfficeLight
   components:
   - type: Sprite
     sprite: _DH/Structures/Furniture/chairs.rsi
-<<<<<<< HEAD
     state: office-gray
-=======
-    state: office-grey
->>>>>>> 26b89f81d4 (DH-Update)
 # TODO:
 #  - type: Construction
 #    graph: Seat
@@ -42,3 +34,16 @@
   - type: Sprite
     sprite: _DH/Structures/Furniture/chairs.rsi
     state: barber
+
+- type: entity
+  name: чёрное удобное кресло
+  id: ComfyDarkChair
+  parent: ComfyChair
+  description: Выглядит удобным.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Furniture/chairs.rsi
+    state: dark-comfy
+  - type: Construction
+    graph: Seat
+    node: chairDarkComfy

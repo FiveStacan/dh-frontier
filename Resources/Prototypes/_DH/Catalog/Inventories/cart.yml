@@ -5,8 +5,8 @@
     PrisonGuardPDA: 10
     ClothingHeadsetPrison: 12
     ClothingHeadsetPrisoner: 30
-    NFPrisonerPDA: 30
-    NFPrisonerIDCard: 40
+    PrisonerPDA: 30
+    PermaPrisonerIDCard: 40
     RubberStampApproved: 3
     RubberStampDenied: 3
     Pen: 50
@@ -163,6 +163,12 @@
 - type: vendingMachineInventory
   id: TrollInventory
   startingInventory:
+    ClothingJokermask: 2
+    ClothingDallasMask: 4
+    ClothingWolfMask: 4
+    ClothingChainsMask: 4
+    ClothingHoxtonMask: 4
+    ClothingAnonMask: 5
     WeaponLauncherRocketToy: 6
     ClothingMaskJoy: 8
     SingularityToy: 2
@@ -191,3 +197,12 @@
     SyndieTrickyBomb: 2
     DrinkNukieCan: 1
     ClothingUnderwearBottomBoxersSyndicateAgent: 1
+
+- type: vendingMachineInventory
+  id: VendingLootboxInventory
+  startingInventory:
+    PresentRandom: 100
+    PresentRandomUnsafe: 10
+    PresentRandomCash: 50
+  emaggedInventory:
+    PresentRandomInsane: 10

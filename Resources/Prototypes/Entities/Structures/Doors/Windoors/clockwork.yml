@@ -18,6 +18,9 @@
         !type:DamageTrigger
         damage: 200
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassClockwork:

@@ -3,10 +3,8 @@
 - type: technology
   id: tracking
   name: Слежка
-  icon:
-    sprite: Objects/Tools/binoculars.rsi
-    state: icon
-  discipline: CivilianServices
+  entityIcon: NFPouchEngineering
+  discipline: NFService
   tier: 2
   cost: 7000
   recipeUnlocks:
@@ -14,4 +12,17 @@
   - BinocularsMagmite
   - PinpointerUniversal
   - NFDartTracking
+  - QuantumLeaping
+  position: 12, 1
 
+- type: technology
+  id: painting
+  name: Покраска
+  entityIcon: NFPouchEngineering
+  discipline: NFService
+  tier: 1
+  cost: 5000
+  recipeUnlocks:
+  - SprayPainter
+  - SprayPainterAmmo
+  position: 12, 2

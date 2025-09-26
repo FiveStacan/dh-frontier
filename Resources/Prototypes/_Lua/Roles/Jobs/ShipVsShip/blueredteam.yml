@@ -123,6 +123,12 @@
             BlueTeamSpecialist: [ 37, 37 ]
 
 ################BlueTeam
+
+- type: npcFaction #DH
+  id: BlueTeam
+  hostile:
+  - RedTeam
+
 - type: entity
   name: Пилот Blue
   id: SpawnPointLatejoinBlueTeamPilot
@@ -164,6 +170,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - BlueTeam
       - type: Company
         companyName: None
 
@@ -209,6 +218,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - BlueTeam
       - type: Company
         companyName: None
 
@@ -254,6 +266,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - BlueTeam
       - type: Company
         companyName: None
 
@@ -358,6 +373,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - BlueTeam
       - type: Company
         companyName: None
 
@@ -589,6 +607,11 @@
         Heat: 0.9
 
 ################  Red Team ##########################################
+- type: npcFaction #DH
+  id: RedTeam
+  hostile:
+  - BlueTeam
+
 - type: entity
   name: Пилот Red
   id: SpawnPointLatejoinRedTeamPilot
@@ -630,6 +653,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - RedTeam
       - type: Company
         companyName: None
 
@@ -675,6 +701,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - RedTeam
       - type: Company
         companyName: None
 
@@ -720,6 +749,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - RedTeam
       - type: Company
         companyName: None
 
@@ -824,6 +856,9 @@
     implants: [ DeathAcidifierImplantLWTypan ]
   - !type:AddComponentSpecial
     components:
+      - type: NpcFactionMember #DH
+        factions:
+          - RedTeam
       - type: Company
         companyName: None
 

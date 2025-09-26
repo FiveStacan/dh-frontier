@@ -163,8 +163,8 @@
     enabled: false
 
 - type: entity
-  id: ShuttersElectro
-  parent: ShuttersDark
+  id: ShuttersElectroOpen
+  parent: ShuttersElectro
   suffix: Открытые
   components:
   - type: Door

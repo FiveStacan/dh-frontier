@@ -9,7 +9,7 @@
   productEntity: ClothingOuterHardsuitMercenary
   icon: { sprite: _NF/Clothing/OuterClothing/Hardsuits/mercenary.rsi, state: icon }
   cost:
-    Speso: 6000
+    Speso: 9800
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -28,7 +28,7 @@
   productEntity: ClothingHeadBandMercenary
   icon: { sprite: Clothing/Head/Bandanas/merc.rsi, state: icon }
   cost:
-    Speso: 300
+    Speso: 240
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -47,7 +47,7 @@
   productEntity: ClothingHeadHatBeretMercenary
   icon: { sprite: Clothing/Head/Hats/beret_merc.rsi, state: icon }
   cost:
-    Speso: 300
+    Speso: 240
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -66,7 +66,7 @@
   productEntity: ClothingBeltMercenaryWebbing
   icon: { sprite: Clothing/Belt/mercwebbing.rsi, state: icon }
   cost:
-    Speso: 800
+    Speso: 1000
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -85,7 +85,7 @@
   productEntity: ClothingHandsMercenaryGlovesCombat
   icon: { sprite: Clothing/Hands/Gloves/mercbattle.rsi, state: icon }
   cost:
-    Speso: 2300
+    Speso: 2700
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -104,7 +104,7 @@
   productEntity: ClothingShoesBootsMercenary
   icon: { sprite: Clothing/Shoes/Boots/mercboots.rsi, state: icon }
   cost:
-    Speso: 400
+    Speso: 480
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -123,7 +123,7 @@
   productEntity: ClothingOuterVestWebMercenary
   icon: { sprite: Clothing/OuterClothing/Vests/mercwebvest.rsi, state: icon }
   cost:
-    Speso: 1900
+    Speso: 2900
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -142,7 +142,7 @@
   productEntity: ClothingHeadHelmetMercenary
   icon: { sprite: Clothing/Head/Helmets/merc_helmet.rsi, state: icon }
   cost:
-    Speso: 600
+    Speso: 660
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -161,7 +161,7 @@
   productEntity: ClothingUniformJumpskirtMercenary
   icon: { sprite: _NF/Clothing/Uniforms/Jumpskirt/mercenary.rsi, state: icon }
   cost:
-    Speso: 120
+    Speso: 260
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -180,7 +180,7 @@
   productEntity: ClothingUniformJumpsuitMercenary
   icon: { sprite: Clothing/Uniforms/Jumpsuit/mercenary.rsi, state: icon }
   cost:
-    Speso: 120
+    Speso: 260
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -199,7 +199,7 @@
   productEntity: ClothingMaskGasMercenary
   icon: { sprite: Clothing/Mask/merc.rsi, state: icon }
   cost:
-    Speso: 600
+    Speso: 650
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -218,7 +218,7 @@
   productEntity: ClothingShoesBootsMagMercenary
   icon: { sprite: _NF/Clothing/Shoes/Boots/magboots-mercenary.rsi, state: icon }
   cost:
-    Speso: 600
+    Speso: 1280
   categories:
     - UplinkMercenaryClothing
   conditions:
@@ -256,7 +256,7 @@
   productEntity: NFWeaponPistolMk58
   icon: { sprite: Objects/Weapons/Guns/Pistols/mk58.rsi, state: icon }
   cost:
-    Speso: 1900
+    Speso: 2300
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -275,7 +275,7 @@
   productEntity: NFWeaponEnergySubMachineGunDeltaV
   icon: { sprite: _DV/Objects/Weapons/Guns/Battery/energygun.rsi, state: icon }
   cost:
-    Speso: 2300
+    Speso: 4150
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -294,7 +294,7 @@
   productEntity: NFWeaponRifleAssaultSm
   icon: { sprite: Objects/Weapons/Guns/Rifles/ak.rsi, state: icon }
   cost:
-    Speso: 16800
+    Speso: 24500
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -313,7 +313,7 @@
   productEntity: NFMagazineRifle30
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/LightRifle/light_rifle_mag.rsi, state: red }
   cost:
-    Speso: 1000
+    Speso: 1050
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -332,7 +332,7 @@
   productEntity: NFMagazinePistol35
   icon: { sprite: Objects/Weapons/Guns/Ammunition/Magazine/Pistol/pistol_mag.rsi, state: red-icon }
   cost:
-    Speso: 150
+    Speso: 190
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -346,12 +346,12 @@
 
 - type: listing
   id: UplinkMercenaryNocatMedkit
-  name:  uplink-merc-medkit-name
-  description: uplink-merc-medkit-desc
-  productEntity: MedkitCombatFilled
-  icon: { sprite: Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+  name: аптечка первой помощи
+  description: Это стандартная аптечка.
+  productEntity: MedkitFilled
+  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: firstaid }
   cost:
-    Speso: 3000
+    Speso: 3400
   categories:
     - UplinkMercenaryNocat
   conditions:
@@ -363,11 +363,30 @@
       whitelist:
         - MercenaryBase
 
+#- type: listing
+#  id: UplinkMercenaryNocatMedkit
+#  name:  uplink-merc-medkit-name
+#  description: uplink-merc-medkit-desc
+#  productEntity: MedkitCombatFilled
+#  icon: { sprite: _NF/Objects/Specific/Medical/firstaidkits.rsi, state: blackkit }
+#  cost:
+#    Speso: 3000
+#  categories:
+#    - UplinkMercenaryNocat
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
+
 - type: listing
   id: UplinkMercenaryNocatMercenaryPDA
-  name:  uplink-merc-mercpda-name
+  name: КПК наёмника (Пустой)
   description: uplink-merc-mercpda-desc
-  productEntity: MercenaryPDA
+  productEntity: MercenaryPDAEmpty
   icon: { sprite: _NF/Objects/Devices/pda.rsi, state: pda-mercenary }
   cost:
     Speso: 150
@@ -382,24 +401,24 @@
       whitelist:
         - MercenaryBase
 
-- type: listing
-  id: UplinkMercenaryNocatJawsOfLife
-  name:  uplink-merc-jawsoflife-name
-  description: uplink-merc-jawsoflife-desc
-  productEntity: JawsOfLife
-  icon: { sprite: Objects/Tools/jaws_of_life.rsi, state: jaws_pry }
-  cost:
-    Speso: 2600
-  categories:
-    - UplinkMercenaryNocat
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#- type: listing
+#  id: UplinkMercenaryNocatJawsOfLife
+#  name:  uplink-merc-jawsoflife-name
+#  description: uplink-merc-jawsoflife-desc
+#  productEntity: JawsOfLife
+#  icon: { sprite: Objects/Tools/jaws_of_life.rsi, state: jaws_pry }
+#  cost:
+#    Speso: 12000
+#  categories:
+#    - UplinkMercenaryNocat
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 
 - type: listing
   id: UplinkMercenaryNocatGrappling
@@ -408,7 +427,7 @@
   productEntity: WeaponGrapplingGun
   icon: { sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi, state: base }
   cost:
-    Speso: 800
+    Speso: 1100
   categories:
     - UplinkMercenaryNocat
   conditions:
@@ -422,7 +441,7 @@
 
 - type: listing
   id: UplinkMercenaryNocatJetpack
-  name:  uplink-merc-jetpack-name
+  name: мини джетпак
   description: uplink-merc-jetpack-desc
   productEntity: JetpackMiniFilled
   icon: { sprite: Objects/Tanks/Jetpacks/mini.rsi, state: icon }
@@ -446,7 +465,7 @@
   productEntity: ClothingHeadsetAltMercenary
   icon: { sprite: _NF/Clothing/Ears/Headsets/mercenary.rsi, state: icon_alt }
   cost:
-    Speso: 300
+    Speso: 350
   categories:
     - UplinkMercenaryNocat
   conditions:
@@ -465,7 +484,7 @@
   productEntity: EncryptionKeyMercenary
   icon: { sprite: _Lua/encryption_keys.rsi, state: crypt_gray_uplink }
   cost:
-    Speso: 300
+    Speso: 320
   categories:
     - UplinkMercenaryNocat
   conditions:
@@ -486,7 +505,7 @@
   description: Нелегальное оружие используемое агентами синдиката. Оружие, часто используемое печально известными ядерными оперативниками. Использует патроны калибра .35 авто.
   productEntity: NFWeaponSubMachineGunC20r
   cost:
-    Speso: 25000
+    Speso: 30000
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -504,7 +523,7 @@
   description: магазин ПП (.35 авто)
   productEntity: NFMagazineSubMachineGun35
   cost:
-    Speso: 1200
+    Speso: 1250
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -523,7 +542,7 @@
   description: Ранняя версия более распространенной винтовки M16. Считается прародителем винтовки XX века. Как одна из них оказалась здесь — отдельная загадка. Использует патрон 7,62×51 мм.
   productEntity: WeaponRifleAR10
   cost:
-    Speso: 15000
+    Speso: 18400
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -541,7 +560,7 @@
   description: AR10 магазин (7.62x51mm)
   productEntity: RMCMagazineRifleAR10
   cost:
-    Speso: 900
+    Speso: 950
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -560,7 +579,7 @@
   description: Начало конца возвещается песней галки. Использует безгильзовые патроны .25.
   productEntity: NFWeaponRifleAssaultJackdaw
   cost:
-    Speso: 13000
+    Speso: 16750
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -578,7 +597,7 @@
   description: магазин (.25 безгильзовые)
   productEntity: LuaMagazineCaselessRifle
   cost:
-    Speso: 1200
+    Speso: 1260
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -597,7 +616,7 @@
   description: Старая, проверенная конструкция, впервые принятая на вооружение в США в 1960-х. Такой экземпляр скорее принадлежит музею военной истории. Использует патрон 5,56×45 мм.
   productEntity: WeaponRifleM16
   cost:
-    Speso: 12000
+    Speso: 16900
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -615,7 +634,7 @@
   description: M16 магазин (5.56x45mm)
   productEntity: RMCMagazineRifleM16
   cost:
-    Speso: 1200
+    Speso: 1250
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -634,7 +653,7 @@
   description: Нелегальное оружие используемое агентами синдиката. Весьма традиционный лёгкий пулемёт с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра .30 винтовочный.
   productEntity: NFWeaponLightMachineGunL6
   cost:
-    Speso: 45000
+    Speso: 54990
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -645,24 +664,24 @@
     - !type:BuyerJobCondition
       whitelist:
         - MercenaryBase
-
-- type: listing
-  id: UplinkMercenaryMagazineLightRifleBox
-  name:  короб патронов L6 SAW (.30 винтовочные)
-  description: короб патронов L6 SAW (.30 винтовочные)
-  productEntity: NFMagazineBoxRifle20
-  cost:
-    Speso: 3000
-  categories:
-    - UplinkMercenaryAmmo
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#DH
+#- type: listing
+#  id: UplinkMercenaryMagazineLightRifleBox
+#  name:  короб патронов L6 SAW (.30 винтовочные)
+#  description: короб патронов L6 SAW (.30 винтовочные)
+#  productEntity: NFMagazineBoxRifle20
+#  cost:
+#    Speso: 3080
+#  categories:
+#    - UplinkMercenaryAmmo
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 
 #MP5
 - type: listing
@@ -671,7 +690,7 @@
   description: Немецкая разработка — один из самых массовых пистолетов-пулемётов в мире. До сих пор можно встретить этот образец у коллекционеров или фанатов огнестрельного оружия.
   productEntity: WeaponSMGMP5
   cost:
-    Speso: 9000
+    Speso: 12500
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -689,7 +708,7 @@
   description: MP5 магазин (9mm)
   productEntity: CMMagazineSMGMP5
   cost:
-    Speso: 700
+    Speso: 750
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -708,7 +727,7 @@
   description: Отличный пистолет-пулемёт, производства NanoTrasen's Small Arms Division. Использует патроны калибра .35 авто. Запрещено к использованию гражданскими.
   productEntity: NFWeaponSubMachineGunWt550
   cost:
-    Speso: 7000
+    Speso: 10600
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -726,7 +745,7 @@
   description: магазин WT550 (.35 авто, надствольный)
   productEntity: NFMagazineSubMachineGunTopMounted35
   cost:
-    Speso: 600
+    Speso: 640
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -745,7 +764,7 @@
   description: Нелегальное оружие используемое агентами синдиката. Магазинный дробовик, предназначенный для ведения ближнего боя. Использует патроны калибра .50 ружейный.
   productEntity: NFWeaponShotgunBulldog
   cost:
-    Speso: 30000
+    Speso: 31500
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -763,7 +782,7 @@
   description: барабан (.50 дробь)
   productEntity: NFMagazineShotgunDrum
   cost:
-    Speso: 2500
+    Speso: 2550
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -795,23 +814,23 @@
 #        - MercenaryBase
 
 #AntiMateriel
-- type: listing
-  id: UplinkMercenaryN14WeaponAntiMateriel
-  name: Анти-Материальная винтовка
-  description: С одного взгляда внушает страх. Она может уничтожить все, что попадется на ее пути.
-  productEntity: N14WeaponAntiMateriel
-  cost:
-    Speso: 30000
-  categories:
-    - UplinkMercenaryGun
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#- type: listing
+#  id: UplinkMercenaryN14WeaponAntiMateriel
+#  name: Анти-Материальная винтовка
+#  description: С одного взгляда внушает страх. Она может уничтожить все, что попадется на ее пути.
+#  productEntity: N14WeaponAntiMateriel
+#  cost:
+#    Speso: 38000
+#  categories:
+#    - UplinkMercenaryGun
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 
 - type: listing
   id: UplinkMercenaryN14Magazine50AMR
@@ -819,7 +838,7 @@
   description: магазин (.50 BMG)
   productEntity: N14Magazine50AMR
   cost:
-    Speso: 1200
+    Speso: 1750
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -838,7 +857,7 @@
   description: Пламя. Жар. Эти элементы куют великое оружие, они же куют великих утилизаторов.
   productEntity: ClothingOuterHardsuitMaxim
   cost:
-    Speso: 35000
+    Speso: 58000
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -856,7 +875,7 @@
   description: Древний бронированный скафандр элитного класса. Сконструирован неким бородатым умельцем и крепок, как чугунный утюг.
   productEntity: ClothingOuterHardsuitPirateElite
   cost:
-    Speso: 30000
+    Speso: 39000
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -874,7 +893,7 @@
   description: Отремонтированный шахтёрский скафандр, выполненный в цветах квартирмейстера. Графеновая подкладка обеспечивает меньшую защиту, но с ней гораздо легче передвигаться.
   productEntity: ClothingOuterHardsuitLuxury
   cost:
-    Speso: 20000
+    Speso: 26500
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -892,7 +911,7 @@
   description: Специальный костюм, защищающий от опасной среды с низким давлением. Имеет дополнительный слой брони.
   productEntity: ClothingOuterHardsuitSecurity
   cost:
-    Speso: 25000
+    Speso: 34000
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -910,7 +929,7 @@
   description: Легковесный скафандр, украшенный лоскутами толстой, хитиновой шкуры голиафа.
   productEntity: ClothingOuterHardsuitGoliath
   cost:
-    Speso: 28000
+    Speso: 38750
   categories:
     - UplinkMercenaryHardsuits
   conditions:
@@ -929,7 +948,7 @@
   description: Упакованный сервер управления огнём для наведения и управления огнём оружия установленного на шаттле.
   productEntity: GunneryServerFlatpack
   cost:
-    Speso: 10000
+    Speso: 19800
   categories:
     - UplinkMercenaryShipWeapons
   conditions:
@@ -941,23 +960,23 @@
       whitelist:
         - MercenaryBase
 
-- type: listing
-  id: UplinkMercenaryWeapon20mmBaseFlatpack
-  name: упакованный лёгкий пулемёт
-  description: Упакованный Лёгкий Пулемёт (.20мм)
-  productEntity: Weapon20mmBaseFlatpack
-  cost:
-    Speso: 12000
-  categories:
-    - UplinkMercenaryShipWeapons
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#- type: listing
+#  id: UplinkMercenaryWeapon20mmBaseFlatpack
+#  name: упакованный лёгкий пулемёт
+#  description: Упакованный Лёгкий Пулемёт (.20мм)
+#  productEntity: Weapon20mmBaseFlatpack
+#  cost:
+#    Speso: 30000
+#  categories:
+#    - UplinkMercenaryShipWeapons
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 
 - type: listing
   id: UplinkMercenaryMachineFTLDrive600Flatpack
@@ -965,7 +984,7 @@
   description: Упакованный FSS-600 блюспейс двигатель который увеличивает дальность сверхсветового перемещения корабля до 600 метров
   productEntity: MachineFTLDrive600Flatpack
   cost:
-    Speso: 8000
+    Speso: 28000
   categories:
     - UplinkMercenaryShipWeapons
   conditions:
@@ -983,7 +1002,7 @@
   description: Упакованная консоль управления огнём для наведения и управления огнём оружия, обеспечивающий точное прицеливание и стрельбу.
   productEntity: ComputerGunneryConsoleFlatpack
   cost:
-    Speso: 10000
+    Speso: 12000
   categories:
     - UplinkMercenaryShipWeapons
   conditions:
@@ -1002,7 +1021,7 @@
   description: Упаковка, содержащая ховербайк. Ключи в комплекте.
   productEntity: HoverbikeSyndicateFlatpack
   cost:
-    Speso: 12000
+    Speso: 26000
   categories:
     - UplinkMercenaryNocat
   conditions:

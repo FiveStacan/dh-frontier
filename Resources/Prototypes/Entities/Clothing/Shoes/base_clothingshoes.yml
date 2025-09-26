@@ -3,6 +3,23 @@
   parent: [Clothing, RecyclableItemClothSmall] # Frontier: added RecyclableItemClothSmall
   id: ClothingShoesBase
   components:
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/Shoes/pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/Shoes/drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/Shoes/drop.ogg
+      params:
+        volume: -2
+  #DH
   - type: Clothing
     equipDelay: 1 #DH
     unequipDelay: 0.5

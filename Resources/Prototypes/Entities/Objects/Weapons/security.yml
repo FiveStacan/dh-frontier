@@ -91,6 +91,17 @@
     guides:
     - Security
     # - Antagonists # Frontier: guidebook entry removed
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  #DH
 
 - type: entity
   name: cyborg stun baton
@@ -221,7 +232,7 @@
 
 - type: entity
   name: flash
-  parent: [BaseItem, BaseC1Contraband] # Frontier: BaseSecurityScienceCommandContraband<BaseC1Contraband
+  parent: [BaseItem, BaseC1Contraband, MachineComponentSounds] # Frontier: BaseSecurityScienceCommandContraband<BaseC1Contraband #DH MachineComponentSounds
   id: Flash
   description: An ultrabright flashbulb with a trigger, which causes the victim to be dazed and lose their eyesight for a moment. Useless when burnt out.
   components:

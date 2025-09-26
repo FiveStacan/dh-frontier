@@ -5,9 +5,9 @@
   description: A pair of glasses with uniquely colored lenses. The frame is inscribed with 'Best Salesman 1997'.
   components:
     - type: Sprite
-      sprite: Corvax/Clothing/Eyes/Glasses/salesman.rsi
+      sprite: _Sunrise/Clothing/Eyes/Glasses/salesman.rsi #DH
     - type: Clothing
-      sprite: Corvax/Clothing/Eyes/Glasses/salesman.rsi
+      sprite: _Sunrise/Clothing/Eyes/Glasses/salesman.rsi #DH
 
 - type: entity
   parent: ClothingEyesBase

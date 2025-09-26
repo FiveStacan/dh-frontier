@@ -5,9 +5,8 @@
   parent: [ ClothingBackpackLuaBW, ClothingBackpackLua, ClothingBackpack ]
   id: ClothingBackpackLuaD
   name: модифицированный рюкзак "LuaTech"
-  suffix: Луа
+  suffix: Sponsor, Луа
   description: Рюкзак разработанный "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterHardsuitLuaD
@@ -24,7 +23,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitLua, ClothingOuterHardsuitAtmos ]
   id: ClothingOuterHardsuitLuaD
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: скафандр "S" "LuaTech"
   description: Боевой скафандр специализированный под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
@@ -52,7 +51,7 @@
 - type: entity
   parent: [ ClothingHeadHelmetLua, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetLuaD
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: шлем скафандра "S" "LuaTech"
   description: Боевой скафандр шлем с ушами под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:

@@ -109,7 +109,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 900 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -138,7 +138,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 900 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -177,7 +177,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 850 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -222,7 +222,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 100<400
+        damage: 750 # Lua 100<400 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -248,7 +248,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 1000 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -279,7 +279,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 1000 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -309,7 +309,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 700 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -342,7 +342,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 1200 # Lua 300<1200 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -351,7 +351,7 @@
         acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 600 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -388,7 +388,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 800 # Lua 300<1200 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -421,7 +421,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 1200 # Lua 300<1200 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -430,7 +430,7 @@
         acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 800 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -465,7 +465,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 1100 # Lua 300<1200 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -474,7 +474,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 600 # Lua 300<1200
+        damage: 550 # Lua 300<1200 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -529,12 +529,12 @@
     - type: Sprite # Frontier
       color: "#ffffff" # Frontier
     - type: ExplosionResistance
-      damageCoefficient: 0.8 # Lua
+      damageCoefficient: 0.85 # Lua #DH 0.8<0.85
     - type: Destructible
       thresholds:
         - trigger:
             !type:DamageTrigger
-            damage: 6000 # Lua 1200<7500<6000
+            damage: 5600 # Lua 1200<7500<6000 #DH
           behaviors:
             - !type:SpawnEntitiesBehavior
               spawn:
@@ -562,19 +562,19 @@
     drawdepth: Walls
     sprite: Structures/Walls/plastitanium_diagonal.rsi
     state: state0
+    color: "#cdf3cd" # Frontier
   - type: Icon
     sprite: Structures/Walls/plastitanium_diagonal.rsi
     state: state0
+    color: "#cdf3cd" # Frontier
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
   - type: RadiationBlocker
     resistance: 5
-  - type: ExplosionResistance
-    damageCoefficient: 0.8 # Lua
 
 - type: entity
-  parent: WallPlastitaniumDiagonalIndestructible
+  parent: WallDiagonalBase
   id: WallPlastitaniumDiagonal
   name: plastitanium wall
   suffix: diagonal
@@ -584,17 +584,16 @@
     drawdepth: Walls
     sprite: Structures/Walls/plastitanium_diagonal.rsi
     state: state0
-    color: "#cdf3cd" # Frontier
   - type: Icon
     sprite: Structures/Walls/plastitanium_diagonal.rsi
     state: state0
   - type: ExplosionResistance
-    damageCoefficient: 0.8 # Lua
+    damageCoefficient: 0.85 # Lua #DH
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Lua 1200<2000<2500
+        damage: 2550 # Lua 1200<2000<2500 #DH
       behaviors:
         - !type:SpawnEntitiesBehavior
           spawn:
@@ -616,6 +615,8 @@
     damageModifierSet: StructuralMetallicStrongUltra
   - type: StaticPrice
     price: 250
+  - type: RadiationBlocker
+    resistance: 5
 
 - type: entity
   parent: BaseWall
@@ -634,12 +635,12 @@
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
   - type: ExplosionResistance
-    damageCoefficient: 0.8 # lua
+    damageCoefficient: 0.9 # lua #DH 0.8<0.9
   - type: Destructible
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3500 # Lua 600<3500
+        damage: 2500 # Lua 600<3500 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -648,7 +649,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Lua 400<2500
+        damage: 1600 # Lua 400<2500 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -717,7 +718,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Lua 500<2500
+        damage: 2000 # Lua 500<2500 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -726,7 +727,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1750 # Lua 350<1750
+        damage: 1250 # Lua 350<1750 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -735,6 +736,8 @@
         node: girder
       - !type:DoActsBehavior
         acts: ["Destruction"]
+  - type: ExplosionResistance
+    damageCoefficient: 0.95 #DH
 
 - type: entity
   parent: WallDiagonalBase
@@ -742,7 +745,7 @@
   name: reinforced wall
   components:
   - type: ExplosionResistance
-    damageCoefficient: 0.8 # lua
+    damageCoefficient: 0.9 # lua #DH 0.8<0.9
   - type: Sprite
     drawdepth: Walls
     sprite: _NF/Structures/Walls/reinforced_diagonal.rsi # Frontier: _NF folder
@@ -761,7 +764,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 650 #DH
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -770,7 +773,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 450 #DH
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -788,6 +791,8 @@
   id: WallRiveted
   name: riveted wall
   components:
+  - type: ExplosionResistance
+    damageCoefficient: 0.85 #DH
   - type: Sprite
     sprite: Structures/Walls/riveted.rsi
   - type: Icon
@@ -799,7 +804,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 5000 # Lua 1000<5000
+        damage: 3700 # Lua 1000<5000 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -835,7 +840,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Lua 300<1000
+        damage: 600 # Lua 300<1000 #DH
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -868,7 +873,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 700 # Lua 300<1200 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -877,7 +882,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 600 # Lua 150<600
+        damage: 350 # Lua 150<600 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -932,7 +937,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3600 # Lua 600<3600
+        damage: 1900 # Lua 600<3600 #DH
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -941,7 +946,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 1800 # Lua 300<1800
+        damage: 1200 # Lua 300<1800 #DH
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -961,6 +966,8 @@
     cost: 6 #Frontier
     delay: 8 #Frontier
     fx: EffectRCDDeconstruct8 #Frontier
+  - type: ExplosionResistance
+    damageCoefficient: 0.85 #DH
 
 - type: entity
   parent: BaseWall
@@ -974,7 +981,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3600 # Lua 600<3600
+        damage: 2500 # Lua 600<3600 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -983,7 +990,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 2400 # Lua 400<2400
+        damage: 1800 # Lua 400<2400 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1036,6 +1043,8 @@
     cost: 6 #Frontier
     delay: 8 #Frontier
     fx: EffectRCDDeconstruct8 #Frontier
+  - type: ExplosionResistance
+    damageCoefficient: 0.85 #DH
 
 - type: entity
   parent: BaseWall
@@ -1058,7 +1067,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1600 # Lua 400<1600
+        damage: 1100 # Lua 400<1600
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1067,7 +1076,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 800 # Lua 200<800
+        damage: 600 # Lua 200<800
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1079,6 +1088,8 @@
   - type: IconSmooth
     key: walls
     base: solid
+  - type: ExplosionResistance
+    damageCoefficient: 0.95 #DH
 
 - type: entity
   parent: WallDiagonalBase
@@ -1096,7 +1107,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 600 #DH
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -1105,7 +1116,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 350 #DH
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
@@ -1135,7 +1146,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1200 # Lua 300<1200
+        damage: 900 # Lua 300<1200 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1144,7 +1155,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 600 # Lua 150<600
+        damage: 450 # Lua 150<600 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1170,7 +1181,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3000 # Lua 300<3000
+        damage: 2100 # Lua 300<3000
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1179,7 +1190,7 @@
           collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 2000 # Lua 150<2000
+        damage: 1750 # Lua 150<2000
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1226,7 +1237,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 350 #DH 300<350
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -1235,7 +1246,7 @@
           collection: WoodDestroyHeavy
     - trigger:
         !type:DamageTrigger
-        damage: 150
+        damage: 200 #DH 150<200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1275,7 +1286,7 @@
     thresholds:
     - trigger: # Excess damage, don't spawn entities
         !type:DamageTrigger
-        damage: 100
+        damage: 110 #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -1284,7 +1295,7 @@
         acts: ["Destruction"]
     - trigger:
         !type:DamageTrigger
-        damage: 30
+        damage: 50 #DH 30<50
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1323,7 +1334,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 3500 # Lua 1000<3500
+        damage: 2600 # Lua 1000<3500 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1344,7 +1355,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2250 # Lua 700<1750<2250
+        damage: 1700 # Lua 700<1750<2250 #DH 1700
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1379,7 +1390,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 600
+        damage: 2000 #DH 600<2000
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -1388,7 +1399,7 @@
             collection: MetalSlam
     - trigger:
         !type:DamageTrigger
-        damage: 300
+        damage: 1000 #DH 300<1000
       behaviors:
       - !type:SpawnEntitiesBehavior
         spawn:
@@ -1422,7 +1433,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 2500 # Lua 500<2500
+        damage: 2000 # Lua 500<2500 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -1523,7 +1534,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1000 # Lua 100<1000
+        damage: 800 # Lua 100<1000 #DH
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

@@ -6,7 +6,7 @@
   id: PaperLawsLua
   name: распечатанный документ
   description: Лист бумаги с заголовком центкома. Страшно даже смотреть на него.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Paper
     stampState: paper_stamp-centcom

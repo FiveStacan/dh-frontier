@@ -1,7 +1,7 @@
 - type: entity
   id: OldSubstation
   parent: BaseSubstation
-  name: старя подстанция
+  name: старая подстанция
   description: Понижает напряжение подаваемого в него электричества.
   suffix: 2,2 МдЖ
   components:
@@ -21,7 +21,7 @@
 - type: entity
   id: OldSubstationWall
   parent: BaseSubstationWall
-  name: старя настенная подстанция
+  name: старая настенная подстанция
   description: Понижает напряжение подаваемого в него электричества.
   suffix: 1,5 МдЖ
   components:

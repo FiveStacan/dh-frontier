@@ -435,7 +435,7 @@
   parent: BaseLatheLube
   name: security techfab
   description: Prints equipment for use by security crew.
-  categories: [ HideSpawnMenu ] # Frontier
+#  categories: [ HideSpawnMenu ] # Frontier #DH
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
@@ -461,11 +461,11 @@
     - NfsdPracticeStatic # Frontier: SecurityPracticeStatic<NfsdPracticeStatic
     - NfsdAmmoStatic # Frontier: SecurityAmmoStatic<NfsdAmmoStatic
     - SecurityWeaponsStatic
-    # dynamicPacks:
-    # - SalvageSecurityBoards # Frontier
-    # - SalvageSecurityWeapons # Frontier
-    # - SecurityEquipment # Frontier
-    # - SecurityBoards # Frontier
+    dynamicPacks:
+    #- SalvageSecurityBoards # Frontier
+    #- SalvageSecurityWeapons # Frontier
+    #- SecurityEquipment # Frontier
+    #- SecurityBoards # Frontier
     #- SecurityExplosives
     #- SecurityAmmo # Frontier
     #- SecurityWeapons # Frontier
@@ -727,7 +727,7 @@
       idleState: icon
       runningState: building
       defaultProductionAmount: 10
-      productValueModifier: null # Frontier
+      productValueModifier: 0.3 # Frontier
       staticPacks:
       - OreSmelting
       # - RGlassSmelting # Frontier: raw mats only

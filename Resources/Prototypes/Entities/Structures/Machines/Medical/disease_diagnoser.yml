@@ -17,6 +17,12 @@
   - type: Appearance
   - type: Machine
     board: DiagnoserMachineCircuitboard
+  - type: DiseaseDiagnoser #DH
+  - type: DiseaseMachine #DH
+    machineOutput: DiagnosisReportPaper
+  - type: DiseaseMachineVisuals #DH
+    idleState: icon
+    runningState: running
 
 - type: entity
   name: disease diagnoser report

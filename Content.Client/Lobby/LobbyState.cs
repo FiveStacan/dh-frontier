@@ -58,7 +58,7 @@ namespace Content.Client.Lobby
             var chatController = _userInterfaceManager.GetUIController<ChatUIController>();
             _gameTicker = _entityManager.System<ClientGameTicker>();
             _contentAudioSystem = _entityManager.System<ContentAudioSystem>();
-            //_contentAudioSystem.LobbySoundtrackChanged += UpdateLobbySoundtrackInfo;
+            _contentAudioSystem.LobbySoundtrackChanged += UpdateLobbySoundtrackInfo; //DH
 
             chatController.SetMainChat(true);
 
@@ -97,7 +97,7 @@ namespace Content.Client.Lobby
             _gameTicker.InfoBlobUpdated -= UpdateLobbyUi;
             _gameTicker.LobbyStatusUpdated -= LobbyStatusUpdated;
             _gameTicker.LobbyLateJoinStatusUpdated -= LobbyLateJoinStatusUpdated;
-            //_contentAudioSystem.LobbySoundtrackChanged -= UpdateLobbySoundtrackInfo;
+            _contentAudioSystem.LobbySoundtrackChanged -= UpdateLobbySoundtrackInfo; //DH
 
             _voteManager.ClearPopupContainer();
 
@@ -232,34 +232,34 @@ namespace Content.Client.Lobby
             }
         }
 
-        //private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev)
-        //{
-        //    if (ev.SoundtrackFilename == null)
-        //    {
-        //        Lobby!.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
-        //    }
-        //    else if (
-        //        ev.SoundtrackFilename != null
-        //        && _resourceCache.TryGetResource<AudioResource>(ev.SoundtrackFilename, out var lobbySongResource)
-        //        )
-        //    {
-        //        var lobbyStream = lobbySongResource.AudioStream;
+        private void UpdateLobbySoundtrackInfo(LobbySoundtrackChangedEvent ev) //DH
+        {
+            if (ev.SoundtrackFilename == null)
+            {
+                Lobby!.LobbySong.SetMarkup(Loc.GetString("lobby-state-song-no-song-text"));
+            }
+            else if (
+                ev.SoundtrackFilename != null
+                && _resourceCache.TryGetResource<AudioResource>(ev.SoundtrackFilename, out var lobbySongResource)
+                )
+            {
+                var lobbyStream = lobbySongResource.AudioStream;
 
-        //        var title = string.IsNullOrEmpty(lobbyStream.Title)
-        //            ? Loc.GetString("lobby-state-song-unknown-title")
-        //            : lobbyStream.Title;
+                var title = string.IsNullOrEmpty(lobbyStream.Title)
+                    ? Loc.GetString("lobby-state-song-unknown-title")
+                    : lobbyStream.Title;
 
-        //        var artist = string.IsNullOrEmpty(lobbyStream.Artist)
-        //            ? Loc.GetString("lobby-state-song-unknown-artist")
-        //            : lobbyStream.Artist;
+                var artist = string.IsNullOrEmpty(lobbyStream.Artist)
+                    ? Loc.GetString("lobby-state-song-unknown-artist")
+                    : lobbyStream.Artist;
 
-        //        var markup = Loc.GetString("lobby-state-song-text",
-        //            ("songTitle", title),
-        //            ("songArtist", artist));
+                var markup = Loc.GetString("lobby-state-song-text",
+                    ("songTitle", title),
+                    ("songArtist", artist));
 
-        //        Lobby!.LobbySong.SetMarkup(markup);
-        //    }
-        //}
+                Lobby!.LobbySong.SetMarkup(markup);
+            }
+        }
 
         private void UpdateLobbyBackground()
         {

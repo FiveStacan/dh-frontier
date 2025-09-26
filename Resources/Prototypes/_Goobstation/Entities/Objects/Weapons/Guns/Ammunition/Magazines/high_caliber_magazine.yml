@@ -1,7 +1,7 @@
 - type: entity
   id: BaseMagazineHighCaliber
   name: "magazine (.50 caliber)"
-  parent: [ BaseItem, BaseC3PirateContraband ]
+  parent: [ BaseItem, BaseC3PirateContraband, AmmoBoxSounds ] #DH
   abstract: true
   components:
   - type: Tag

@@ -181,7 +181,7 @@
     showExamineText: false
     minAngle: 10
     maxAngle: 30
-    fireRate: 1
+    fireRate: 1.2 #DH
     angleIncrease: 3
     angleDecay: 6
     selectedMode: FullAuto
@@ -223,7 +223,8 @@
     availableModes:
     - SemiAuto
     soundGunshot: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
-  - type: Jittering
+  # Lua Remove excessive jittering that caused visual shaking
+  # - type: Jittering
   # Ghost role stuff
   - type: GhostRole
     allowMovement: true

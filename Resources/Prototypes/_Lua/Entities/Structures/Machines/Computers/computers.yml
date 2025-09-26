@@ -49,6 +49,66 @@
 
 - type: entity
   parent: BaseNFFlatpack
+  id: MachineFTLDriveFSS2Flatpack
+  name: упакованный FSS-2.0 блюспейс двигатель
+  description: Упакованный FSS-2.0 блюспейс двигатель.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDriveFSS2
+  - type: StaticPrice
+    price: 480
+  - type: Sprite
+    sprite: _Lua/Flatpack/flatpack.rsi
+    layers:
+    - state: ship_weapon
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: MachineFTLDriveFSS35Flatpack
+  name: упакованный FSS-3.5 блюспейс двигатель
+  description: Упакованный FSS-3.5 блюспейс двигатель.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDriveFSS35
+  - type: StaticPrice
+    price: 540
+  - type: Sprite
+    sprite: _Lua/Flatpack/flatpack.rsi
+    layers:
+    - state: ship_weapon
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: MachineFTLDriveMXSS44Flatpack
+  name: упакованный MXSS-4.4 блюспейс двигатель
+  description: Упакованный MXSS-4.4 блюспейс двигатель.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDriveMXSS44
+  - type: StaticPrice
+    price: 980
+  - type: Sprite
+    sprite: _Lua/Flatpack/flatpack.rsi
+    layers:
+    - state: ship_weapon
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: MachineFTLDriveDXA6Flatpack
+  name: упакованный DXA-6 блюспейс двигатель
+  description: Упакованный DXA-6 блюспейс двигатель.
+  components:
+  - type: Flatpack
+    entity: MachineFTLDriveDXA6
+  - type: StaticPrice
+    price: 2000
+  - type: Sprite
+    sprite: _Lua/Flatpack/flatpack.rsi
+    layers:
+    - state: ship_weapon
+
+- type: entity
+  parent: BaseNFFlatpack
   id: PlayerStationAiVesselFlatpack
   name: упакованный ИИ шаттла
   description: Упакованный ИИ шаттла, составит компанию вашим путешествиям
@@ -101,4 +161,4 @@
 #     containers:
 #       key_slots:
 #       - EncryptionKeyTraffic
-# Мне ща лень рисовать... 
+# Мне ща лень рисовать...

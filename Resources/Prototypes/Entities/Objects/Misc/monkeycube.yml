@@ -16,7 +16,7 @@
     vendPrice: 960 # Frontier - 120 per monkey (meat worth 540 at a depot)
 
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, DHBaseItemSounds] #DH
   abstract: true
   suffix: Wrapped
   id: BaseWrappedCube

@@ -58,6 +58,16 @@
   - type: StaticPrice # Frontier
     price: 4.5 # Frontier
   - type: NFCookware # Frontier
+  # Sunrise edit sounds start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/drinkglass_pickup.ogg
+      params:
+        volume: -3
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/drinkglass_drop.ogg
+  # Sunrise edit sounds end
 
 - type: entity
   name: broken plate
@@ -139,6 +149,17 @@
   id: FoodPlatePlastic
   description: A large blue plastic plate, excellent for a birthday cake.
   components:
+  # Sunrise added start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/Plastic/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/Plastic/drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/Plastic/drop.ogg
+  # Sunrise added end
   - type: Sprite
     sprite: Objects/Consumable/Food/plates.rsi
     state: plate-plastic
@@ -155,7 +176,7 @@
 
 - type: entity
   name: plastic plate
-  parent: BaseItem
+  parent: [BaseItem, PlasticSounds] #DH
   id: FoodPlateSmallPlastic
   description: A blue plastic plate, excellent for slices of birthday cake.
   components:

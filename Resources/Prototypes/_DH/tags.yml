@@ -6,3 +6,42 @@
 
 - type: Tag
   id: PrisonerIDCard
+
+- type: Tag
+  id: MagazineDeagle
+
+- type: Tag
+  id: MagazineGlock22
+
+- type: Tag
+  id: MagazineHIBrowning
+
+- type: Tag
+  id: MagazineACP14
+
+- type: Tag
+  id: MagazineScorpion
+
+- type: Tag
+  id: StationMercenaryUplink
+
+- type: Tag
+  id: SwordSquadRO
+
+- type: Tag
+  id: Wakizashi
+
+- type: Tag
+  id: Rapier
+
+- type: Tag
+  id: YamatoSabre
+
+- type: Tag
+  id: SyndicateRapier
+
+- type: Tag
+  id: SheetPaper
+
+- type: Tag
+  id: NAMEFuel

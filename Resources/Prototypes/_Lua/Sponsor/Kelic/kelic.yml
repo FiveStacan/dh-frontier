@@ -1,15 +1,16 @@
-#- type: sponsorLoadout
-#  id: Kelic
-#  entity: ClothingBackpackKelic
-#  sponsorOnly: true
+- type: sponsorLoadout
+  id: Kelic
+  entity: ClothingBackpackKelic
+  sponsorOnly: true
+  login: Kelic
 
 # Backpack
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, HardsuitIdentifySponsor]
   id: ClothingBackpackKelic
   name: сумка с функцией РИГ "MS-06"
-  description: Компактная, износостойкая сумка, специально созданная для скафандра MS-06. 
-  categories: [ HideSpawnMenu ]
+  description: Компактная, износостойкая сумка, специально созданная для скафандра MS-06.
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/backpack.rsi
@@ -21,8 +22,8 @@
     - 0,0,19,9
   - type: StorageFill
     contents:
-      - id: ClothingNeckKelic 
-      - id: ClothingBeltKelic 
+      - id: ClothingNeckKelic
+      - id: ClothingBeltKelic
       - id: ClothingShoesBootsMagKelic
       - id: ClothingHandsGlovesCombatKelic
       - id: ClothingUniformJumpsuitKelic
@@ -37,15 +38,15 @@
       - id: WeaponCrusherKelic
       - id: HypoKelic
   - type: Tag
-    tags: [] # ignore "WhitelistChameleon" tag    
-  - type: ContainerContainer
-    containers:
-      storagebase: !type:Container
-      toggleable-clothing: !type:ContainerSlot
+    tags: [] # ignore "WhitelistChameleon" tag
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterHardsuitKelic
     requiredSlot: BACK
     slot: outerClothing
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+      toggleable-clothing: !type:ContainerSlot
 
 # Belt
 - type: entity
@@ -53,7 +54,7 @@
   id: ClothingBeltKelic
   name: RX-79 «Core Belt»
   description: Лёгкий композитный пояс, надёжно удерживает инструменты и равномерно распределяет вес.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/belt.rsi
@@ -67,14 +68,14 @@
       - id: JawsOfLife
       - id: WelderExperimental
       - id: Multitool
-      
+
 # Neck
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckKelic
   name: старая потрепанная накидка
   description: Старая потрепанная накидка на скафандр, на выцветшем ярлыке написано, "комплектация к MS-06".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/cloak.rsi
@@ -83,11 +84,11 @@
 
 # Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitAtmos
+  parent: [ ClothingOuterHardsuitAtmos, HardsuitSpeedBuff ]
   id: ClothingOuterHardsuitKelic
   name: MS-06
   description: Старая разработка не вышедшая в массовое производство. Теперь личная вещь, скорее всего выданная пользователю за какие-то заслуги перед командованием.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/hardsuit.rsi
@@ -111,8 +112,13 @@
         Caustic: 0.5
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
-#  - type: HardsuitIdentification
-#    nonlethal: true
+  - type: ContainerContainer
+    containers:
+      storagebase: !type:Container
+        ents: []
+      toggleable-clothing: !type:ContainerSlot {}
+      cell_slot: !type:ContainerSlot {}
+      beakerSlot: !type:ContainerSlot # imperial hardsuit injection
   - type: HideLayerClothing
     slots:
     - Tail
@@ -121,7 +127,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetHardsuitKelic
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   name: шлем MS-06
   description: Старая разработка не вышедшая в массовое производство. Теперь личная вещь, скорее всего выданная пользователю за какие-то заслуги перед командованием.
   components:
@@ -145,7 +151,7 @@
   id: ClothingHandsGlovesCombatKelic
   name: укреплённые перчатки
   description: Укреплённые перчатки из высокопрочных материалов, обеспечивающие защиту в работе с опасными объектами.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/gloves.rsi
@@ -160,7 +166,7 @@
   id: ClothingShoesBootsMagKelic
   name: магнитные сапоги с оранжевыми вставками
   description: Сапоги с заметными оранжевыми вставками, предназначенными для быстрого распознавания. На подошве штамп "MS-06".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/magboots.rsi
@@ -186,7 +192,7 @@
   id: ClothingEyesGlassesKelic
   name: AX-X0 «Nightpiercer»
   description: Стекла слегка поцарапаны, оправа крепкая.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/hud.rsi
@@ -206,7 +212,7 @@
   id: ClothingUniformJumpsuitKelic
   name: рабочий комбинезон
   description: Рабочий комбинезон, хорошо сочетающийся со скафандром MS-06. Изрядно потертый, с нашивками, которые уже почти не читаются.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/jumpsuit.rsi
@@ -221,7 +227,7 @@
   id: ClothingMaskGasKelic
   name: старая маска для дыхания
   description: Старая, но все еще прекрасно рабочая маска, которая обеспечивает носителя дыхательной смесью.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/gasmask.rsi
@@ -236,7 +242,7 @@
   name: гипоспрей исследователя
   parent: BaseItem
   description: Гипоспрей для полевого пользования из не самых дорогих компонентов.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/hypo.rsi
@@ -262,7 +268,7 @@
   parent: WeaponCrusher
   name: RX-78-KP «Knuckle Phoenix»
   description: RX-серии. Микро-актуаторы Minovsky-класса концентрируют кинетический импульс прямо в кулаке, позволяя дробить сталь, превращая кулак в штурмовой таран, сохраняя при этом хирургическую точность пальцев.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/crusher.rsi
@@ -283,7 +289,7 @@
   id: PDAKelic
   name: КПК MS-06
   description: КПК в фирменных цветах спонсора, выделяется усиленным корпусом, рассчитанным на суровые условия станции.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Icon
     sprite: _Lua/Sponsor/Kelic/pda.rsi
@@ -307,7 +313,7 @@
   id: ClothingHandsRingDiamondKelic
   name: обручальное кольцо с алмазом
   description: Кольцо из чистой платины, в центре которого находится алмаз. На кольце виднеется гравировка "Эйрин".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/ring_eirin.rsi
@@ -323,7 +329,7 @@
   id: ClothingHandsRingRubinoKelic
   name: кольцо с рубином
   description: Кольцо из чистой платины, в центре которого находится рубин. На кольце виднеется гравировка "Келик".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Kelic
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Kelic/ring_kelik.rsi

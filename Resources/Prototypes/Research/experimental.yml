@@ -138,10 +138,6 @@
 
 # Tier 3
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 26b89f81d4 (DH-Update)
 - type: technology
   id: QuantumLeaping
   name: research-technology-quantum-leaping
@@ -150,16 +146,9 @@
     state: icon
   discipline: Experimental
   tier: 3
-<<<<<<< HEAD
-  cost: 10000
-  recipeUnlocks:
-  - DeviceQuantumSpinInverter
-=======
   cost: 20000
   recipeUnlocks:
   - DeviceQuantumSpinInverter
-
->>>>>>> 26b89f81d4 (DH-Update)
 
 - type: technology
   id: BluespaceTimeManipulation
@@ -169,7 +158,6 @@
     state: icon
   discipline: Experimental
   tier: 3
-  cost: 20000
   cost: 20000
   recipeUnlocks:
   - DeviceDesynchronizer

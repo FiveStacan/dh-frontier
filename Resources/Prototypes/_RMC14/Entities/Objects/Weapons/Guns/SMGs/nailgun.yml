@@ -56,6 +56,9 @@
           - RMCMagazineSMGNailgun
   # - type: GunDamageModifier
   #   multiplier: 1.2
+  - type: GunWieldBonus #DH
+    minAngle: -19
+    maxAngle: -23
 
 - type: entity
   parent: BaseMagazineRifle

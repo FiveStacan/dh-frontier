@@ -89,6 +89,8 @@
     steps: 1
     zeroVisible: true
   - type: Appearance
+  - type: CursorOffsetRequiresWield #DH
+  - type: EyeCursorOffset #DH
 
 - type: entity
   name: .50 NCR rifle
@@ -118,6 +120,8 @@
     fireRate: 1.2
     soundGunshot:
       collection: N14AntiMaterielGunshot
+  - type: CursorOffsetRequiresWield #DH
+  - type: EyeCursorOffset #DH
 
 - type: entity
   name: lever action carbine

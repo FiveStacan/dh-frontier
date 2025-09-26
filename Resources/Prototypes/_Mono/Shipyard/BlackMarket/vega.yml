@@ -3,6 +3,7 @@
   parent: BaseVesselAntag
   name: RG Vega
   description: A frame manufactured from the remains of mothballed TSFMC ships. Carries a single CYREXA as its main armament.
+  limit: 4
   price: 183000 #71450
   category: Medium
   group: BlackMarket
@@ -14,7 +15,7 @@
   - AME
   addComponents:
     - type: IFF
-      color: "#8A6642FF"
+      color: "#948471"
     - type: PirateFtl
     - type: PirateMercFtl
     - type: NanotrasenFtl

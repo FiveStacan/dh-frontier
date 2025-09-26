@@ -50,3 +50,91 @@
   - type: BreathMask
   - type: IngestionBlocker
   - type: FlashImmunity
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingDallasMask
+  name: Маска Далласа
+  description: Традиционная маска грабителя из банды PayDay
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Masks/dallasmaskbel.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Masks/dallasmaskbel.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingWolfMask
+  name: Маска Вулфа
+  description: Традиционная маска грабителя из банды PayDay
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Masks/wolfmaskbel.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Masks/wolfmaskbel.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingChainsMask
+  name: Маска Чейнса
+  description: Традиционная маска грабителя из банды PayDay
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Masks/chainsmaskbel.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Masks/chainsmaskbel.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingHoxtonMask
+  name: Маска Хокстона
+  description: Традиционная маска грабителя из банды PayDay
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Masks/hoxtonmaskbel
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Masks/hoxtonmaskbel
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: StaticPrice
+    price: 120
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingJokermask
+  name: Маска Джокера
+  description: Страшная маска джокера, больного психопата которая неизвестно как попала на станцию
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Masks/jokermaskbel.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Masks/jokermaskbel.rsi
+  - type: BreathMask
+  - type: IdentityBlocker
+  - type: StaticPrice
+    price: 145
+
+- type: entity
+  parent: ClothingMaskBase
+  id: ClothingAnonMask
+  name: Маска Анонимуса
+  description: Анон!
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Head/Hats/anon.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Head/Hats/anon.rsi
+  - type: StaticPrice
+    price: 200

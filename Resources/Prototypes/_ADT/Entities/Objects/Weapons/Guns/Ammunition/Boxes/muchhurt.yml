@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, AmmoBoxSounds] #DH
   id: BaseMagazineBox357
   components:
   - type: BallisticAmmoProvider
@@ -52,7 +52,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: practice
-    
+
 - type: entity
   id: MagazineBox357Incendiary
   parent: BaseMagazineBox357

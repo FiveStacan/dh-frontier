@@ -6,7 +6,7 @@
   id: IrisHandsRing
   name: Кольцо Айрис
   description: Обручальное кольцо Айрис, напоминает вам о теплых временах и о Хаксе.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Blue/Clothing/Hands/Misc/iris_ring.rsi
@@ -20,7 +20,7 @@
   id: ClothingUniformJumpsuitIris
   name: форма "LuaTech"
   description: Форма, изготавливаемая для сотрудников "LuaTech" и партнёров корпорации
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Blue/Clothing/Uniforms/Jumsuit/iris_jumpsuit.rsi

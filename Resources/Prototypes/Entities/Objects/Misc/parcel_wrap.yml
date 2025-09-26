@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, DHBaseItemSounds] #DH
   id: ParcelWrap
   name: parcel wrap
   description: Paper used contain items for transport.

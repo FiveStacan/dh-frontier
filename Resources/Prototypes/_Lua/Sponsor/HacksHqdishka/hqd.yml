@@ -1,13 +1,18 @@
 # LuaWorld - This file is licensed under AGPLv3
 # Copyright (c) 2025 LuaWorld Contributors
 # See AGPLv3.txt for details.
+- type: sponsorLoadout
+  id: hqdishka
+  entity: ClothingBackpackIris
+  sponsorOnly: true
+  login: hqdishka
+
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackIris
   name: модифицированная сумка "LuaTech"
-  suffix: Айрис
+  suffix: Sponsor, Айрис
   description: Сумка разработанная "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Blue/Clothing/Back/Satchels/irisp_bag.rsi
@@ -44,7 +49,11 @@
       - id: ClothingBeltIrisRed
   - type: ExplosionResistance
     damageCoefficient: 0.6
-  # - type: HardsuitAcidifier
+  - type: HardsuitIdentification
+    emaggable: false
+    securityMode: Acid
+    createAcidEffect: true
+  - type: HardsuitDNARadial
   - type: Speech
   - type: TTS
     voice: Templar
@@ -52,7 +61,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetIris
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: шлем скафандра "LuaTech"
   description: Шлем под расу "Плафеимов" сделанный на заказ LuaTech.
   components:
@@ -89,7 +98,7 @@
 - type: entity
   parent: ClothingOuterHardsuitAtmos
   id: ClothingOuterHardsuitIris
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: скафандр "LuaTech"
   description: Скафандр специализированный под расу "Плафеимов" сделанный на заказ LuaTech.
   components:
@@ -103,7 +112,7 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  # - type: HardsuitSpeedBuff
+  - type: HardsuitSpeedBuff
   - type: PowerCellDraw
     drawRate: 3.6
     enabled: false
@@ -114,6 +123,7 @@
     containers:
       cell_slot: !type:ContainerSlot
       toggleable-clothing: !type:ContainerSlot
+      beakerSlot: !type:ContainerSlot # _Lua imperial hardsuit injection
   - type: ItemSlots
     slots:
       cell_slot:

@@ -24,15 +24,19 @@
       "directions": 4
     },
     {
-<<<<<<< HEAD
       "name": "office-gray",
-=======
-      "name": "office-grey",
->>>>>>> 26b89f81d4 (DH-Update)
       "directions": 4
     },
     {
       "name": "barber",
+      "directions": 4
+    },
+    {
+      "name": "dark-comfy",
+      "directions": 4
+    },
+    {
+      "name": "dark-comfy-overlay",
       "directions": 4
     }
   ]

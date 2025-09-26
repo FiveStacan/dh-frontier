@@ -72,11 +72,7 @@
   parent: BaseItemRecharger
   id: PowerCellRecharger
   name: cell recharger
-<<<<<<< HEAD
-#  categories: [HideSpawnMenu] DH
-=======
-  # categories: [HideSpawnMenu] # Frontier: use the weapon recharger # DH: Shut up
->>>>>>> 26b89f81d4 (DH-Update)
+  # categories: [HideSpawnMenu] # Frontier: use the weapon recharger # DH
   components:
   - type: Sprite
     sprite: Structures/Power/cell_recharger.rsi

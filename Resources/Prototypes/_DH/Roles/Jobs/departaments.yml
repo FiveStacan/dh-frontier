@@ -1,9 +1,13 @@
 - type: department
-  id: Prison
+  id: SpacePrison
+  sort: 0
   name: department-prison
   description: department-pison-description
-  color: "#cf6b19"
-  weight: 2
+  color: "#9f4000"
+#  weight: -5
   roles:
   - HeadOfPrison
-  - SecurityGuard
+  - DHPrisonGuard
+  - PermaPrisoner
+  - PrisonDoctor
+  - PrisonDoctorTest

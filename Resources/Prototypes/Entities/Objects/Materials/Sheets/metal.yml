@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, MetalSounds] #DH
   id: SheetMetalBase
   description: A sheet of metal, used often on the station in various applications.
   components:

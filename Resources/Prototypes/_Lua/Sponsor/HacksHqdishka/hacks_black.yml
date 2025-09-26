@@ -5,9 +5,8 @@
   parent: [ ClothingBackpackLua, ClothingBackpack ]
   id: ClothingBackpackLuaB
   name: модифицированный рюкзак "LuaTech"
-  suffix: Луа
+  suffix: Sponsor, Луа
   description: Рюкзак разработанный "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/Back/Backpacks/lua_back.rsi
@@ -38,7 +37,7 @@
 - type: entity
   parent: [ ClothingHeadHelmetLua, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetLuaB
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: шлем скафандра "S" "LuaTech"
   description: Скафандр шлем с ушами под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
@@ -54,7 +53,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitLua, ClothingOuterHardsuitAtmos ]
   id: ClothingOuterHardsuitLuaB
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: скафандр "S" "LuaTech"
   description: Скафандр специализированный под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
@@ -69,9 +68,8 @@
   parent: [ ClothingBackpackLuaB, ClothingBackpackLua, ClothingBackpack ]
   id: ClothingBackpackLuaBW
   name: модифицированный рюкзак "LuaTech"
-  suffix: Луа, Упрощенный
+  suffix: Sponsor, Луа, Упрощенный
   description: Рюкзак разработанный "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: ToggleableClothing
     clothingPrototype: ClothingOuterHardsuitLuaB

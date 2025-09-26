@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: NFBasePDACartridge
   abstract: true
   components:

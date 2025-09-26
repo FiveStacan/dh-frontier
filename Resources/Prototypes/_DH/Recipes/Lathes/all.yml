@@ -31,7 +31,6 @@
     Steel: 40
     Glass: 20
     Plastic: 20
-<<<<<<< HEAD
 
 - type: latheRecipe
   id: MedipenTechFabCircuitboard
@@ -91,5 +90,126 @@
   materials:
     Steel: 120
     Silver: 100
-=======
->>>>>>> 26b89f81d4 (DH-Update)
+
+- type: latheRecipe
+  parent: BaseEmptyAmmoRecipe
+  id: MagazineScorpion
+  result: MagazineScorpion
+  completetime: 7
+  materials:
+    Steel: 835
+
+- type: latheRecipe
+  parent: BaseEmptyAmmoRecipe
+  id: MagazineScorpionEmpty
+  result: MagazineScorpionEmpty
+  completetime: 2
+  materials:
+    Steel: 45
+
+- type: latheRecipe
+  id: BluespaceBodyBag
+  result: BodyBagBluespaceFolded
+  completetime: 6
+  materials:
+    Plastic: 1200
+    Silver: 120
+    Bluespace: 220
+    Uranium: 30
+
+- type: latheRecipe
+  id: NTBodyBag
+  result: BodyBagNanoTrasenFolded
+  completetime: 3
+  materials:
+    Plastic: 300
+
+- type: latheRecipe
+  id: PrisonerBodyBag
+  result: BodyBagPrisonerFolded
+  completetime: 3
+  materials:
+    Plastic: 300
+
+- type: latheRecipe
+  id: RadiationBodyBag
+  result: BodyBagRadiationFolded
+  completetime: 3
+  materials:
+    Plastic: 300
+    Uranium: 30
+
+- type: latheRecipe
+  id: WeaponPlasmaCutter
+  result: WeaponPlasmaCutter
+  completetime: 8
+  materials:
+    Steel: 1500
+    Glass: 600
+    Plasma: 500
+    Gold: 300
+
+- type: latheRecipe
+  id: SpaceCash10
+  result: FakeSpaceCash10
+  completetime: 3
+  materials:
+    Paper: 10
+    Cloth: 20
+    Durathread: 5
+
+- type: latheRecipe
+  id: SpaceCash
+  result: FakeSpaceCash100
+  completetime: 3
+  materials:
+    Paper: 100
+    Cloth: 200
+    Durathread: 50
+
+- type: latheRecipe
+  id: SpaceCashemag
+  result: FakeSpaceCash1000
+  completetime: 5
+  materials:
+    Paper: 950
+    Cloth: 600
+    Durathread: 260
+
+- type: latheRecipe
+  id: SpaceCashCentComm
+  result: SpaceCash100
+  completetime: 4
+  materials:
+    Paper: 105
+    Cloth: 205
+    Durathread: 65
+
+- type: latheRecipe
+  id: SpaceCashHack100
+  result: SpaceCash100
+  completetime: 8
+  materials:
+    Paper: 105
+    Cloth: 205
+    Durathread: 65
+    Bluespace: 30
+
+- type: latheRecipe
+  id: SpaceCashHack1000
+  result: SpaceCash1000
+  completetime: 74
+  materials:
+    Paper: 1200
+    Cloth: 2100
+    Durathread: 750
+    Bluespace: 325
+
+- type: latheRecipe
+  parent: BaseMedicalMachineRecipeCategory
+  id: MiniChemDispenserMachineCircuitboard
+  result: MiniChemDispenserMachineCircuitboard
+  materials:
+    Steel: 100
+    Glass: 500
+    Gold: 50

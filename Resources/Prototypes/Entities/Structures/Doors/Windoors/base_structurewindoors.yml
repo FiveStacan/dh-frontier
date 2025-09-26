@@ -95,6 +95,9 @@
         !type:DamageTrigger
         damage: 200
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
@@ -216,8 +219,11 @@
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 420 #DH
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
@@ -287,6 +293,9 @@
         !type:DamageTrigger
         damage: 240
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassPlasma:
@@ -353,6 +362,9 @@
         !type:DamageTrigger
         damage: 530
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassPlasma:
@@ -416,14 +428,17 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 420
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 240
+        damage: 290 #DH
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassUranium:
@@ -488,8 +503,11 @@
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 400
+        damage: 640 #DH
       behaviors:
+      - !type:PlaySoundBehavior #DH
+        sound:
+          collection: WindowShatter
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlassUranium:

@@ -1,7 +1,7 @@
 - type: entity
   id: BasePowerCell
   abstract: true
-  parent: [BaseItem, RecyclableItemDeviceSmall] # Frontier: added RecyclableItemDeviceSmall
+  parent: [BaseItem, RecyclableItemDeviceSmall, MachineComponentSounds] # Frontier: added RecyclableItemDeviceSmall #DH
   components:
   - type: Item
     storedRotation: -90

@@ -33,6 +33,10 @@
   name: paper
   suffix: Full
   components:
+  - type: Tag
+    tags:
+    - SheetPaper
+    - Sheet
   - type: Stack
     stackType: Paper
     baseLayer: base
@@ -145,7 +149,7 @@
     count: 0
 
 - type: entity
-  parent: SheetOtherBase
+  parent: [SheetOtherBase, PlasticSounds] #DH
   id: SheetPlastic
   name: plastic
   suffix: Full

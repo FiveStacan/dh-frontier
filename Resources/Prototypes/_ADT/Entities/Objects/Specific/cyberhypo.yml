@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, DHBaseItemSounds] #DH
   id: ADTCyberHypospray
   name: гипоспрей Cybersun
   description: Великолепный медицинский девайс в удобном дизайне от Cybersun!

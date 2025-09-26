@@ -37,7 +37,7 @@ entities:
   - uid: 1
     components:
     - type: MetaData
-    - type: GridGodMode
+#    - type: GridGodMode #DH
     - type: Transform
       parent: invalid
     - type: NoShuttleFTL

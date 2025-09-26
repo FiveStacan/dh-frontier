@@ -30,8 +30,8 @@
     rotation: -90
     # Sunrise-Edit
     buckleOffsets:
-      - "0,-0.15"
-      - "0,0.25"
+      - "0,-0.14"
+      - "0,0.29"
     size: 200
   # Construction has to be before PlaceableSurface or you'll place things onto the entity instead of deconstructing it.
   - type: Construction
@@ -63,3 +63,15 @@
   - type: Anchorable
   - type: Pullable
   - type: CanSleepOnBuckle # Sunrise-Edit
+
+- type: entity
+  name: beach bed
+  id: beachBed
+  parent: BaseStructure
+  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Furniture/beachbed.rsi
+    state: bed
+    noRot: true
+    drawdepth: Puddles

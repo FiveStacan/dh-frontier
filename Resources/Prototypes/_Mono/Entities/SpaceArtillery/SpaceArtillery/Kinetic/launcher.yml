@@ -26,8 +26,8 @@
     layers:
     - state: space_artillery
   - type: Battery
-    maxCharge: 20000
-    startingCharge: 20000
+    maxCharge: 3000
+    startingCharge: 3000
   - type: ExaminableBattery
   - type: Appearance
   - type: AutoShootGun
@@ -56,7 +56,7 @@
   - type: Airtight
   - type: ProjectileBatteryAmmoProvider
     proto: 20mmBulletArmorPiercing
-    fireCost: 15
+    fireCost: 18
   - type: RadiationBlocker
     resistance: 8
   - type: RadarBlip
@@ -106,7 +106,7 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipDravonProjectile
-    fireCost: 250
+    fireCost: 350
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 1.5
@@ -132,14 +132,14 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 40000
-    startingCharge: 40000
+    maxCharge: 1100
+    startingCharge: 1100
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 2.5
-    projectileSpeed: 120
+    fireRate: 2.3
+    projectileSpeed: 110
     burstCooldown: 0.5
     burstFireRate: 10
     shotsPerBurst: 2
@@ -151,15 +151,17 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 125
+    autoRechargePause: true
+    autoRechargeRate: 14
+    autoRechargePauseTime: 1
   - type: SpaceArtillery
     powerChargeRate: 125
-    powerUsePassive: 600
+    powerUsePassive: 700
     powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: 90mmBulletArmorPiercing
-    fireCost: 50
+    fireCost: 100
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 1.5
@@ -186,8 +188,8 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 12000
-    startingCharge: 12000
+    maxCharge: 16000
+    startingCharge: 16000
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
@@ -216,7 +218,9 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 12000
+    autoRechargePause: true
+    autoRechargeRate: 970
+    autoRechargePauseTime: 4
   - type: SpaceArtillery
     powerChargeRate: 12000
     powerUsePassive: 1500
@@ -224,7 +228,7 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipCyrexaProjectile
-    fireCost: 6000
+    fireCost: 7800
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 2
@@ -262,11 +266,11 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 12000
-    startingCharge: 12000
+    maxCharge: 14000
+    startingCharge: 14000
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
-    range: 500
+    range: 600
   - type: Fixtures
     fixtures:
       fix1:
@@ -292,15 +296,17 @@
       path: /Audio/Weapons/Guns/Empty/lmg_empty.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 12000
+    autoRechargePause: true
+    autoRechargeRate: 900
+    autoRechargePauseTime: 3
   - type: SpaceArtillery
     powerChargeRate: 12000
-    powerUsePassive: 1500
+    powerUsePassive: 1700
     powerUseActive: 0
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipHadesProjectile
-    fireCost: 6000
+    fireCost: 6200
   - type: RadarBlip
     radarColor: "#FF0000"
     scale: 2.5
@@ -337,21 +343,25 @@
   - type: Appearance
   - type: AmmoCounter
   - type: Battery
-    maxCharge: 20000
-    startingCharge: 20000
+    maxCharge: 1000
+    startingCharge: 1000
   - type: ExaminableBattery
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.05
-    projectileSpeed: 150 #400
+    minAngle: 4
+    maxAngle: 12
+    fireRate: 0.8
+    projectileSpeed: 140 #400
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/leviathan_fire.ogg
     soundEmpty:
       path: /Audio/Weapons/Guns/EmptyAlarm/smg_empty_alarm.ogg
   - type: BatterySelfRecharger
     autoRecharge: true
-    autoRechargeRate: 150
+    autoRechargePause: true
+    autoRechargeRate: 45
+    autoRechargePauseTime: 4
   - type: SpaceArtillery
     powerChargeRate: 150
     powerUsePassive: 600
@@ -487,7 +497,7 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 155
-    fireRate: 0.15
+    fireRate: 0.14
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
     soundEmpty:

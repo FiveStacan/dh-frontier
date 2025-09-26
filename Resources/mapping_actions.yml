@@ -13,7 +13,6 @@
 - entity: Firelock
   assignments:
   - 0: 5
-<<<<<<< HEAD
 - entity: Grille
   assignments:
   - 0: 4
@@ -30,51 +29,6 @@
   assignments:
   - 0: 0
 - entity: GasPipeStraight
-=======
-  name: Firelock
-- action: !type:InstantActionComponent
-    icon:
-      entity: FirelockGlass
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: FirelockGlass
-  assignments:
-  - 0: 5
-  name: FirelockGlass
-- action: !type:InstantActionComponent
-    icon:
-      entity: FirelockEdge
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: FirelockEdge
-  assignments:
-  - 0: 5
-  name: FirelockEdge
-- action: !type:InstantActionComponent
-    icon:
-      entity: GasPipeStraight
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: GasPipeStraight
->>>>>>> 26b89f81d4 (DH-Update)
   assignments:
   - 1: 0
 - entity: GasPipeBend
@@ -116,68 +70,7 @@
 - entity: Poweredlight
   assignments:
   - 2: 6
-<<<<<<< HEAD
 - entity: EmergencyLight
-=======
-  name: Poweredlight
-- action: !type:InstantActionComponent
-    icon:
-      entity: PoweredSmallLight
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: PoweredSmallLight
-  assignments:
-  - 2: 6
-  name: PoweredSmallLight
-- action: !type:InstantActionComponent
-    icon:
-      entity: PoweredWarmSmallLight
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: PoweredWarmSmallLight
-  assignments:
-  - 2: 6
-  name: PoweredWarmSmallLight
-- action: !type:InstantActionComponent
-    icon:
-      entity: PoweredDimSmallLight
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: PoweredDimSmallLight
-  assignments:
-  - 2: 6
-  name: PoweredDimSmallLight
-- action: !type:InstantActionComponent
-    icon:
-      entity: EmergencyLight
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: PlaceFree
-      entityType: EmergencyLight
->>>>>>> 26b89f81d4 (DH-Update)
   assignments:
   - 2: 7
 - entity: SMESBasic
@@ -237,26 +130,10 @@
 - entity: DisposalTrunk
   assignments:
   - 4: 7
-<<<<<<< HEAD
 - entity: SignDisposalSpace
   assignments:
   - 4: 8
 - entity: Windoor
-=======
-  name: DisposalTrunk
-- action: !type:InstantActionComponent
-    icon:
-      entity: Windoor
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: Windoor
->>>>>>> 26b89f81d4 (DH-Update)
   assignments:
   - 5: 0
 - entity: WindowDirectional
@@ -288,7 +165,6 @@
 - entity: AirlockGlass
   assignments:
   - 6: 1
-<<<<<<< HEAD
 - entity: AirlockServiceLocked
   assignments:
   - 6: 2
@@ -310,22 +186,4 @@
 - entity: AirlockCargo
   assignments:
   - 6: 8
-=======
-  name: AirlockGlass
-- action: !type:InstantActionComponent
-    icon:
-      entity: Airlock
-    keywords: []
-    checkCanInteract: False
-    checkConsciousness: False
-    clientExclusive: True
-    autoPopulate: False
-    temporary: True
-    event: !type:StartPlacementActionEvent
-      placementOption: SnapgridCenter
-      entityType: Airlock
-  assignments:
-  - 6: 2
-  name: Airlock
->>>>>>> 26b89f81d4 (DH-Update)
 ...

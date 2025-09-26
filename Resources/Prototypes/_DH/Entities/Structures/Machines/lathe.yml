@@ -219,3 +219,112 @@
     sprite: _DH/Structures/Machines/speed_uniform_printer.rsi
   - type: Machine
     board: UniformPrinterHyperSpeedMachineCircuitboard
+
+- type: entity
+  id: ProtolatheCash
+  parent: BaseLathe
+  name: принтер фальшивых кредитов
+  description: Распечатывает "фальшивые", неофициальные кредиты, в обход систем и бюррократии, за счет бумаги и некоторых связных материалов. Открывает путь в мир фальшивомонетчиков!
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/protoprint.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ProtolatheCashMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Document
+        - RawMaterial
+        - SheetPaper
+  - type: Lathe
+    producingSound: /Audio/Machines/scanning.ogg
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - BackmenCash
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - BackmenCashEmag
+
+- type: entity
+  id: ProtolatheCashCentComm
+  parent: BaseLathe
+  name: Принтер кредитов ЦК
+  description: Распечатывает официальные, пригодные для использования кредиты, за счет бумаги и некоторых связных материалов
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/protoprint_centcomm.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ProtolatheCashMachineCircuitboardCentComm
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Document
+        - RawMaterial
+        - SheetPaper
+  - type: Lathe
+    producingSound: /Audio/Machines/scanning.ogg
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - BackmenCashCentComm
+
+- type: entity
+  id: ProtolatheCashHack
+  parent: BaseLathe
+  name: хакерский принтер кредитов
+  description: Не законно подключается к сетям НТ и печатает настоящие купюры за счет бумаги и некоторых связных материалов. Для печати настоящих кредитов требуется прошить устройство при помощи EMAG'а.
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/protoprint_hack.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: ProtolatheCashMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Document
+        - RawMaterial
+        - SheetPaper
+  - type: Lathe
+    producingSound: /Audio/Machines/scanning.ogg
+    idleState: icon
+    runningState: building
+    staticPacks:
+    - BackmenCash
+    - BackmenCashEmag
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - BackmenCashHack

@@ -303,3 +303,8 @@ ent-ClothingEyesBinoclardLenses = бинокулярные линзы
 
 ent-ClothingHeadsetIAA = гарнитура АВД
     .desc = Гарнитура агента внутренних дел, чтобы услышать последние слова капитана.
+
+ent-ClothingHeadHatBeretPrisonGuard = берет охраны кт
+    .desc = Почему не красный?
+ent-ClothingHeadCapPrisonGuard = кепка охраны кт
+    .desc = Почему не красный?

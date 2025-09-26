@@ -1,7 +1,7 @@
 - type: radioChannel
   id: Traffic
   name: chat-radio-traffic
-  keycode: 'а'
+  keycode: 'т' # Lua
   frequency: 1022
   color: "#CC6633"
 

@@ -1,0 +1,50 @@
+- type: entity
+  name: Scorpion VZ-61
+  parent: BaseWeaponSubMachineGun
+  id: WeaponSubMachineGunSkorpion
+  components:
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/SMGs/skorpion.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Gun
+    minAngle: 2
+    maxAngle: 54
+    fireRate: 7
+    soundGunshot:
+      path: /Audio/_DH/Weapons/Guns/SMGs/scorpion/scorpion_shot.ogg
+  - type: Clothing
+    slots:
+    - Pocket
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineScorpion
+        insertSound: /Audio/_DH/Weapons/Guns/SMGs/scorpion/scorpion_reload.ogg
+        ejectSound: /Audio/_DH/Weapons/Guns/SMGs/scorpion/scorpion_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazineScorpion
+         # - MagazinePistolSubMachineGun
+          - MagazinePistolHighCapacity
+      gun_chamber:
+        name: Chamber
+        startingItem: NFCartridgeRifle30
+        priority: 1
+        whitelist:
+          tags:
+          - NFCartridgeRifle30
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: Appearance

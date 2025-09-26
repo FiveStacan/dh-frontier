@@ -82,11 +82,20 @@
         ]
       ]
     },
-    {
-      "name": "plant-9"
+	{
+      "name": "plasma_plant",
+      "delays": [
+        [
+          0.1,
+          0.1,
+          0.1,
+          0.1,
+          0.1
+        ]
+      ]
     },
     {
-      "name": "plant-10"
+      "name": "hedge"
     }
   ]
 }

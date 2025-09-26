@@ -1,21 +1,23 @@
-#- type: sponsorLoadout
-#  id: Sil
-#  entity: ClothingBackpackSil
-#  sponsorOnly: true
+- type: sponsorLoadout
+  id: Sil
+  entity: ClothingBackpackSil
+  sponsorOnly: true
+  login: _Sil
 
-#- type: sponsorLoadout
-#  id: SilHypospray
-#  entity: HypospraySil
-#  sponsorOnly: true
-#  whitelistJobs: [ChiefMedicalOfficer, SeniorPhysician, Chemist, MedicalDoctor, Paramedic, Coroner, MedicalIntern]
+- type: sponsorLoadout
+  id: SilHypospray
+  entity: HypospraySil
+  sponsorOnly: true
+  login: _Sil
+  whitelistJobs: [ChiefMedicalOfficer, SeniorPhysician, Chemist, MedicalDoctor, Paramedic, MedicalIntern] # У нас нет коронеров rm Coroner
 
 # Hardsuit
 - type: entity
-  parent: ClothingOuterHardsuitAtmos
+  parent: [ClothingOuterHardsuitAtmos, HardsuitSpeedBuff]
   id: ClothingOuterHardsuitSil
   name: скафандр "СЕВА"
   description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/hardsuit.rsi
@@ -23,6 +25,17 @@
     sprite: _Lua/Sponsor/Sil/hardsuit.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSil
+  - type: ContainerContainer
+    containers:
+      toggleable-clothing: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      cell_slot: !type:ContainerSlot
+        showEnts: false
+        occludes: true
+        ent: null
+      beakerSlot: !type:ContainerSlot # imperial hardsuit injection
   - type: Item
     size: Huge
   - type: PressureProtection
@@ -48,7 +61,7 @@
 - type: entity
   parent: ClothingHeadHelmetHardsuitAtmos
   id: ClothingHeadHelmetHardsuitSil
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   name: шлем скафандра "СЕВА"
   description: Шлем изолирующий владельца от страшного вакуума снаружи.
   components:
@@ -98,7 +111,7 @@
   id: ClothingUniformJumpsuitSil
   name: комбинезон 'Зона'
   description: Усиленный комбинезон из композитной ткани. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/jumpsuit.rsi
@@ -112,7 +125,7 @@
   id: ClothingNeckSil
   name: плащ 'Ноосфера'
   description: Экспериментальная накидка с пси-защитным покрытием. Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/cloak.rsi
@@ -125,7 +138,7 @@
   id: ClothingHandsGlovesSil
   name: белые боевые перчатки
   description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации. Изолированы.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/gloves.rsi
@@ -140,7 +153,7 @@
   id: ClothingShoesBootsSil
   name: белые армейские ботинки
   description: Принадлежат члену экипажа, находящемуся под покровительством спонсорской организации. Могут вместить в себя нож.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/magboots.rsi
@@ -179,7 +192,7 @@
   id: ClothingBeltSilFilled
   name: белый разгрузочный пояс
   description: Пояс, который принадлежит члену экипажа под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/belt.rsi
@@ -232,7 +245,7 @@
   id: ClothingMaskGasSil
   name: противогаз ЗК-2М "Защитная Смерть"
   description: Противогаз который принадлежат члену экипажа, находящемуся под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/gasmask.rsi
@@ -244,11 +257,11 @@
 
 # Backpack
 - type: entity
-  parent: ClothingBackpack
+  parent: [ClothingBackpack, HardsuitIdentifySponsor]
   id: ClothingBackpackSil
   name: белый армейский вещмешок
   description: Вместительный вещмешок с множеством карманов. Имеет окрас городского камуфляжа. Принадлежит члену экипажа, находящемуся под покровительством спонсорской организации.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Sil
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/backpack.rsi
@@ -306,7 +319,7 @@
   id: PDASil
   name: КПК "Монолит"
   description: Изготовлено на заказ организацией LaFleur Wear.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Icon
     sprite: _Lua/Sponsor/Sil/pda.rsi
@@ -321,7 +334,7 @@
   id: ClothingEyesHudSil
   name: очки в золотой оправе
   description: Изготовлено на заказ организацией LaFleur Wear.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/eyes.rsi
@@ -339,7 +352,7 @@
   id: AirTankSil
   name: белый баллон воздуха
   description: Баллон с воздухом, раскрашенный в оттенки городского камуфляжа.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tank.rsi
@@ -368,7 +381,7 @@
   id: SyndicateJawsOfLifeSil
   name: бирюзовые челюсти жизни
   description: Корпус похож на сплав тёмного титана и синего кварца, а между массивными губками переливается мягкая бирюзовая плазма-нить, создавая ощущение, будто инструмент «дышит» электрическим светом.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_jawsoflife.rsi
@@ -405,7 +418,7 @@
   id: PowerDrillSil
   name: бирюзовая электродрель
   description: Цилиндрическое тело обтянуто рёбрами из графитового волокна, внутреннее сверло виднеется сквозь прозрачную секцию, где мерцают крошечные арк-искры, будто внутри спрятан крошечный шторм.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_powerdrill.rsi
@@ -444,7 +457,7 @@
   id: WelderExperimentalSil
   name: бирюзовый экспериментальный сварочный аппарат
   description: Компактная рукоять плавно переходит в хромированный сопло-клюв, вокруг него клубится тонкое голубо-белое марево, словно пламя пытается выбраться наружу, но держится «в клетке» силового поля.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_welder.rsi
@@ -457,7 +470,7 @@
   id: MultitoolSil
   name: бирюзовый мультитул
   description: Гладкий прямоугольник с рассыпанными по граням голографическими метками, при лёгком касании корпуса по его поверхности пробегает переливчатая сетка, напоминающая нервную систему живого организма.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_multitool.rsi
@@ -468,7 +481,7 @@
   id: trayScannerSil
   name: бирюзовый т-лучевой сканер
   description: Плоский, почти прозрачный планшет с дымчатыми краями, из глубины стеклопластика медленно всплывают тонкие световые дорожки, будто внутрь залили жидкий неон, который ищет себе путь наружу.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_trayscanner.rsi
@@ -482,7 +495,7 @@
   id: HolofanProjectorSil
   name: бирюзовый голопроектор
   description: Изготовлено на заказ организацией LaFleur Wear.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_holofanprojector.rsi
@@ -494,7 +507,7 @@
   parent: GasAnalyzer
   id: GasAnalyzerSil
   description: Изготовлено на заказ организацией LaFleur Wear.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/tools_gasanalyzer.rsi
@@ -508,7 +521,7 @@
   parent: HandHeldMassScanner
   id: HandHeldMassScannerSil
   description: Широкий датчик цвета иней с зеркальной линзой.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Item
     sprite: _Lua/Sponsor/Sil/tools_massscanner.rsi
@@ -528,7 +541,7 @@
   name: гипоспрей "HEALTH-13"
   parent: BaseItem
   description: Стрелка каплевидного резервуара окружена кольцом полупрозрачных мембран, при взмахе через стенки проскакивают мягкие волны перламутрового света.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Sil/hypo.rsi

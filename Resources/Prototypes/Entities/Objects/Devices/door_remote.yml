@@ -1,5 +1,5 @@
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: DoorRemoteDefault
   name: door remote
   description: A gadget which can open and bolt doors remotely.

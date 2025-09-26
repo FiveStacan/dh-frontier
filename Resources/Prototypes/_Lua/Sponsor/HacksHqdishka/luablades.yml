@@ -5,7 +5,7 @@
   parent: ClothingHandsBase
   id: ClothingHandsGlovesCombatLua
   name: боевые перчатки "LuaTech"
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   description: Эти тактические перчатки огнеупорны и ударопрочны.
   components:
   - type: Sprite
@@ -59,9 +59,9 @@
       angle: 100
       damage:
         types:
-          Slash: 15
-          Heat: 15
-          Structural: 20
+          Slash: 10
+          Heat: 8
+          Structural: 10
       mustBeEquippedToUse: true
       animation: WeaponArcClaw
       wideAnimation: WeaponArcClaw

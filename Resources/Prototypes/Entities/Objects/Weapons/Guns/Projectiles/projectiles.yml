@@ -222,8 +222,10 @@
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
     forceSound: true
   - type: StunOnCollide
-    stunAmount: 1 #2 #5 - Lua. Still too good
-    knockdownAmount: 1 #2 #5 - Lua. Still too good
+    stunAmount: 2 #2 #5 - Lua. Still too good
+    knockdownAmount: 2 #2 #5 - Lua. Still too good
+  - type: TimedDespawn
+    lifetime: 0.25 #DH
 
 - type: entity
   name: disabler bolt

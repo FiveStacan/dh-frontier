@@ -5,3 +5,19 @@
   components:
   - type: AccessReader
     access: [["Frontier"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNFSDCommand
+  suffix: NFSD, Command, Locked
+  components:
+  - type: AccessReader
+    access: [["HeadOfSecurity"]]
+
+- type: entity
+  parent: DoorElectronics
+  id: DoorElectronicsNFSDArmory
+  suffix: NFSD, Armory, Locked
+  components:
+  - type: AccessReader
+    access: [["Armory"]]

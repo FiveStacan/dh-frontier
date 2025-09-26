@@ -13,7 +13,7 @@
     price: 1
 
 - type: entity
-  parent: UtensilBase
+  parent: [UtensilBase, PlasticSounds] #DH
   id: UtensilBasePlastic
   abstract: true
   components:

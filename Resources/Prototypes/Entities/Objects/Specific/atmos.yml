@@ -1,6 +1,6 @@
 ﻿- type: entity
   name: gas analyzer
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: GasAnalyzer
   description: A hand-held environmental scanner which reports current gas levels.
   components:

@@ -5,9 +5,8 @@
   parent: [ ClothingBackpackIris, ClothingBackpack ]
   id: ClothingBackpackIrisRed
   name: модифицированная сумка "LuaTech"
-  suffix: Айрис
+  suffix: Sponsor, Айрис
   description: Сумка разработанная "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Blue/Clothing/Back/Satchels/irisp_bag.rsi

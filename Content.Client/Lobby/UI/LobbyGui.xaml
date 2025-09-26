@@ -202,6 +202,12 @@
                     <BoxContainer Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom">
                         <Button Name="MinimizeButton" Access="Public" ToggleMode="True" Text="{Loc 'ui-lobby-minimize-button'}" />
                     </BoxContainer>
+                    <!-- #DH //DH Right Bot Panel -->
+                    <BoxContainer Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                        <PanelContainer StyleClasses="AngleRect">
+                            <RichTextLabel Name="LobbySong" Access="Public" />
+                        </PanelContainer>
+                    </BoxContainer>
                 </Control>
                 <!-- Character setup state -->
                 <!-- This is injected on startup. Funky! -->

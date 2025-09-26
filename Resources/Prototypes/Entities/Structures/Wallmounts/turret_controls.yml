@@ -46,8 +46,8 @@
 
 - type: entity
   parent: WeaponEnergyTurretControlPanelFrame
-  id: WeaponEnergyTurretStationControlPanel
-  name: security turret control panel
+  id: WeaponEnergyTurretStationControlPanelBase #DH
+  name: turret control panel
   description: A wall-mounted interface for remotely configuring the operational parameters of linked security turrets.
   components:
   - type: Appearance
@@ -79,8 +79,8 @@
           0: { state: stun }
           1: { state: lethal }
   - type: StationAiWhitelist
-  - type: AccessReader
-    access: [["Security"]]
+#  - type: AccessReader
+#    access: [["Security"]]
   - type: TurretTargetSettings
     exemptAccessLevels:
     - Security
@@ -172,7 +172,28 @@
   #  node: finish
 
 - type: entity
-  parent: WeaponEnergyTurretStationControlPanel
+  parent: WeaponEnergyTurretStationControlPanelBase #DH
+  id: WeaponEnergyTurretStationControlPanel
+  name: sentry turret control panel
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity #DH
+  parent: WeaponEnergyTurretStationControlPanelBase
+  id: WeaponEnergyTurretStationFrontierControlPanel
+  name: Frontier sentry turret control panel
+  description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.
+  components:
+  - type: AccessReader
+    access: [["HeadOfSecurity"], ["HeadOfPersonnel"]]
+  - type: DeviceNetwork
+    receiveFrequencyId: TurretFrontier
+    transmitFrequencyId: TurretControlFrontier
+
+- type: entity
+  parent: WeaponEnergyTurretStationControlPanelBase #DH
   id: WeaponEnergyTurretAIControlPanel
   name: AI sentry turret control panel
   description: A wall-mounted interface that allows a local artifical intelligence to adjust the operational parameters of linked sentry turrets.

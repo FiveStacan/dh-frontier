@@ -5,7 +5,7 @@
 - type: entity
   name: Имплант телепортации "LuaTech"
   id: BlinkImplanterLua
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   parent: BaseImplantOnlyImplanterSyndi
   components:
     - type: Implanter
@@ -14,7 +14,7 @@
 - type: entity
   parent: BaseSubdermalImplant
   id: ActionBlinkImplant
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: Имплант телепортации "LuaTech"
   description: Способен переместить вас практически куда угодно
   components:

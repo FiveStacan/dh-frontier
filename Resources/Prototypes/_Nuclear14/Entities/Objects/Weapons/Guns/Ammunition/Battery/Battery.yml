@@ -3,7 +3,7 @@
   description: A microfusion cell, typically used as ammunition for large energy weapons.
   id: N14BasePowerCell
   abstract: true
-  parent: BaseItem
+  parent: [BaseItem, MachineComponentSounds] #DH
   components:
   - type: Battery
     pricePerJoule: 0.15

@@ -5,9 +5,8 @@
   parent: [ ClothingBackpackIris, ClothingBackpack ]
   id: ClothingBackpackIrisP
   name: модифицированная сумка "LuaTech"
-  suffix: Айрис
+  suffix: Sponsor, Айрис
   description: Сумка разработанная "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Blue/Clothing/Back/Satchels/irisp_bag.rsi
@@ -36,7 +35,7 @@
 - type: entity
   parent: [ ClothingHeadHelmetIris, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetIrisP
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: шлем скафандра "LuaTech"
   description: Шлем под расу "Плафеимов" сделанный на заказ LuaTech.
   components:
@@ -52,7 +51,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitIris, ClothingOuterHardsuitAtmos ]
   id: ClothingOuterHardsuitIrisP
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: скафандр "LuaTech"
   description: Скафандр специализированный под расу "Плафеимов" сделанный на заказ LuaTech.
   components:

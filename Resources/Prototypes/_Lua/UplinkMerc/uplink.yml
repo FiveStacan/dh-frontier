@@ -4,7 +4,7 @@
 
 # Uplinks
 - type: entity
-  parent: [StorePresetMercenaryUplink, BaseItem ]
+  parent: [StorePresetMercenaryUplink, BaseItem, MultitoolSounds] #DH
   id: BaseMercenaryUplinkRadio
   name: mercenary uplink
   description: Retro looking old radio...

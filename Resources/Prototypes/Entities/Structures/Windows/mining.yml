@@ -18,13 +18,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 4000 #lua
+        damage: 2000 #lua
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 2000 #lua
+        damage: 1250 #lua
       behaviors:
       - !type:PlaySoundBehavior
         sound:

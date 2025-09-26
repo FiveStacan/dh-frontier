@@ -248,24 +248,85 @@
     color: "#5c52f1"
 
 - type: entity
-  parent: ClothingHandsGlovesCombat
+  parent: ClothingHandsGlovesCombatLua
   id: ClothingHandsGlovesCombatFS
-  name: перчатки "FS"
-  description: Укреплённые перчатки из высокопрочных материалов, обеспечивающие защиту в работе с опасными объектами.
+  name: боевые перчатки "FS"
+  description: Боевые перчатки из высокопрочных материалов, обеспечивающие защиту в работе с опасными объектами.
   suffix: sponsor, FS #DH
   components:
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.98
-        Slash: 0.95
+        Slash: 0.96
         Piercing: 0.99
   - type: Sprite
     sprite: _DH/special/FS/Clothing/gloves.rsi
+    layers:
+    - state: icon
+      map: [ "enum.ToggleableVisuals.Layer" ]
   - type: Clothing
     sprite: _DH/special/FS/Clothing/gloves.rsi
   - type: Tag
     tags: [] # ignore "WhitelistChameleon" tag
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True:
+            sprite: _DH/special/FS/Clothing/gloves.rsi
+            state: icon_active
+          False:
+            sprite: _DH/special/FS/Clothing/gloves.rsi
+            state: icon
+  - type: PointLight
+    color: "#3af5f5"
+    radius: 2.5
+    energy: 1
+  - type: StaminaDamageOnHit
+    damage: 28
+    sound: /Audio/Weapons/egloves.ogg
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    attackRate: 1.7
+    autoAttack: true
+    angle: 100
+    damage:
+        types:
+          Slash: 8
+          Heat: 6
+          Structural: 10
+    mustBeEquippedToUse: true
+    animation: WeaponArcClaw
+    wideAnimation: WeaponArcClaw
+    soundSwing:
+      path: /Audio/Weapons/eblademiss.ogg
+      params:
+        volume: 3
+        variation: 0.025
+    soundHit:
+      path: /Audio/Weapons/eblade1.ogg
+      params:
+        volume: 3
+        variation: 0.025
+  - type: ToggleClothing
+    action: ActionToggleBladeFS
+    disableOnUnequip: true
+  # - type: HardsuitAcidifier
+
+- type: entity
+  id: ActionToggleBladeFS
+  name: Активировать скрытые клинки
+  description: Активировать скрытые клинки в перчатках.
+  components:
+  - type: Action
+    useDelay: 1.0
+    icon:
+      sprite: _DH/special/FS/Clothing/gloves.rsi
+      state: icon_active
+    itemIconStyle: NoItem
+  - type: InstantAction
+    event: !type:ToggleActionEvent
 
 - type: entity
   parent: [ClothingShoesBootsMagBase, BaseJetpack]
@@ -276,6 +337,7 @@
   components:
   - type: Sprite
     sprite: _DH/special/FS/Clothing/magboots.rsi
+    state: icon
   - type: Clothing
     sprite: _DH/special/FS/Clothing/magboots.rsi
   - type: Tag

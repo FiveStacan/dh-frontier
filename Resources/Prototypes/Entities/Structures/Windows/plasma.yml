@@ -15,7 +15,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1500 #Lua
+        damage: 800 #Lua #DH
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -24,7 +24,7 @@
           collection: WindowShatter
     - trigger:
         !type:DamageTrigger
-        damage: 750 #Lua
+        damage: 380 #Lua #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -83,7 +83,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 750 #Lua
+        damage: 650 #Lua
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -92,7 +92,7 @@
           collection: WindowShatter
     - trigger:
         !type:DamageTrigger
-        damage: 375 #Lua
+        damage: 245 #Lua #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:

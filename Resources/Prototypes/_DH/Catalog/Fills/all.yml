@@ -1,0 +1,29 @@
+- type: entity
+  parent: BookshelfSmoothRight
+  id: BookshelfSmoothRightFilled
+  suffix: right, random filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BookshelfEntityTable
+
+- type: entity
+  parent: BookshelfSmoothCenter
+  id: BookshelfSmoothCenterFilled
+  suffix: center, random filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BookshelfEntityTable
+
+- type: entity
+  parent: BookshelfSmoothLeft
+  id: BookshelfSmoothLeftFilled
+  suffix: left, random filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:NestedSelector
+        tableId: BookshelfEntityTable

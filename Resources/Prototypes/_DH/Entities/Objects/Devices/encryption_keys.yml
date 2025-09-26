@@ -46,12 +46,7 @@
     channels:
     - SpacePrison
     - Nfsd
-    - Traffic
-    - Medical
-    - Science
-    - Engineering
-    - Service
-    - Law
+    - Security
     defaultChannel: SpacePrison
   - type: Item
     sprite: _DH/Objects/Devices/encryption_keys.rsi

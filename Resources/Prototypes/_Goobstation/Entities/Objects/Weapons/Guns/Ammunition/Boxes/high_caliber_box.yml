@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseC3PirateContraband ]
+  parent: [ BaseItem, BaseC3PirateContraband, AmmoBoxSounds ] #DH
   id: BaseMagazineBoxHighCaliber
   name: ammunition box (.50 anti-materiel)
   components:

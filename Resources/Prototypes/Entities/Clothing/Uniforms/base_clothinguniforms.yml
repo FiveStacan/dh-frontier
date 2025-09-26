@@ -66,6 +66,17 @@
   # - type: WirelessNetworkConnection # Frontier - Remove range for long space sensors
   #   range: 1200 # Frontier - Remove range for long space sensors
   # - type: StationLimitedNetwork # Frontier - Remove range for long space sensors
+  # Sunrise start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/cloth_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/cloth_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/cloth_drop.ogg
+  # Sunrise end
 
 - type: entity
   abstract: true

@@ -25,7 +25,7 @@ namespace Content.Shared.Lua.CLVar
         /// Включение/отключение Автоудаления Шаттлов..
         /// </summary>
         public static readonly CVarDef<bool> AutoDelteEnabled =
-            CVarDef.Create("zone.autodelete_enabled", true, CVar.SERVERONLY | CVar.ARCHIVE,
+            CVarDef.Create("shuttle.autodelete_enabled", true, CVar.SERVERONLY | CVar.ARCHIVE,
                 "Отключить или включить автоудаление шаттлов.");
 
         /// <summary>
@@ -80,7 +80,7 @@ namespace Content.Shared.Lua.CLVar
             CVarDef.Create("lua.worldgen.typan_cargo_depots", 1, CVar.SERVERONLY);
 
         public static readonly CVarDef<bool> AsteroidSectorEnabled =
-            CVarDef.Create("game.asteroid_sector_enabled", false, CVar.SERVERONLY);
+            CVarDef.Create("game.asteroid_sector_enabled", true, CVar.SERVERONLY); //DH - true
 
         /// <summary>
         /// Интервал автоматической выдачи зарплаты в секундах 3600 = 1 час.

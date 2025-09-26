@@ -1,6 +1,6 @@
 - type: entity
   name: hypospray
-  parent: BaseItem # Frontier: remove BaseGrandTheftContraband
+  parent: [BaseItem, DHBaseItemSounds] #DH # Frontier: remove BaseGrandTheftContraband
   description: A sterile injector for rapid administration of drugs to patients.
   id: Hypospray
   components:

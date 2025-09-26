@@ -88,3 +88,18 @@
     collection: FootstepTile
   itemDrop: FloorTileItemWoodDiagonalMini
   heatCapacity: 8000
+
+- type: tile
+  id: Floorinvisible
+  name: невидимый пол
+  sprite: /Textures/_DH/Tiles/invisible.png
+  variants: 1
+  placementVariants:
+  - 1.0
+  baseTurf: Plating
+  isSubfloor: true
+  deconstructTools: [ Prying ]
+  footstepSounds:
+    collection: FootstepTile
+  itemDrop: SheetGlass1
+  heatCapacity: 7000

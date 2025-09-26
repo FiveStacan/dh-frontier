@@ -6,7 +6,7 @@
   id: ClothingBeltIrisRed
   name: РПС "LuaTech"
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Clothing/Belt/iris_belt.rsi
@@ -33,7 +33,7 @@
   id: MultitoolIrisRed
   name: Мультитул "LuaTech"
   description: Мультитул, изготовленый на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_multitool.rsi
@@ -52,7 +52,7 @@
   id: trayScannerIrisRed
   name: Т-лучевой сканер "LuaTech"
   description: Т-лучевой сканер, изготовленый на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_trayscanner.rsi
@@ -67,7 +67,7 @@
   id: JawsOfLifeIrisRed
   name: челюсти жизни "LuaTech"
   description: Изготовлено на заказ организацией "LuaTech".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_jawsoflife.rsi
@@ -110,7 +110,7 @@
   id: WelderIrisRed
   name: сварочный аппарат "LuaTech"
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_welder.rsi
@@ -129,7 +129,7 @@
   id: PowerDrillIrisRed
   name: электродрель "LuaTech"
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_powerdrill.rsi
@@ -167,7 +167,7 @@
   parent: HandHeldMassScanner
   id: HandHeldMassScannerIrisRed
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Item
   - type: Sprite
@@ -185,7 +185,7 @@
   id: HolofanProjectorIrisRed
   name: атмос голопроектор "LuaTech"
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_holofanprojector.rsi
@@ -196,7 +196,7 @@
   parent: GasAnalyzer
   id: GasAnalyzerIrisRed
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Iris/Iris_Red/Tools/iris_tools_gasanalyzer.rsi

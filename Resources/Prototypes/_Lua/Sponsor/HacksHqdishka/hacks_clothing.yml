@@ -5,7 +5,7 @@
   parent: ClothingHeadBase
   id: HacksHat
   name: Заколка Луа
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/Head/Misc/lua_head.rsi
@@ -17,7 +17,7 @@
   id: HacksHandsRing
   name: Кольцо Хакса
   description: Обручальное кольцо Хакса, напоминает вам о теплых временах и о Айрис.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/Hands/Misc/lua_ring.rsi
@@ -27,11 +27,11 @@
     size: Tiny
 
 - type: entity
-  parent: ClothingShoesBootsMag
+  parent: [ ClothingShoesBootsMag, GasTankBase ]
   id: ClothingShoesBootsLua
   name: улучшенные магнитные подковы "LuaTech"
   description: Магнитные подковы разработанные в LuaTech совместимые со многими скафандрами.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
     - type: Sprite
       sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/Shoes/Boots/lua_magboots.rsi
@@ -69,7 +69,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCapeLuaDalt
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: плащ Луа
   description: Плащ сшитый на заказ в память о Дальтштанте.
   components:
@@ -79,7 +79,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCapeLuaBlackDalt
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: плащ Луа
   description: Плащ сшитый на заказ в память о Дальтштанте.
   components:
@@ -89,7 +89,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitMedicLua
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: комбинезон медика "LuaTech"
   description: Удобный комбинезон для оказания различного рода медицинских услуг
   components:

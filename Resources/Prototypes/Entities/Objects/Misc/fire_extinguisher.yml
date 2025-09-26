@@ -4,6 +4,28 @@
   id: FireExtinguisher
   description: It extinguishes fires.
   components:
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  #DH
   - type: Sprite
     sprite: _NF/Objects/Misc/fire_extinguisher.rsi # Frontier
     layers:
@@ -111,7 +133,7 @@
 
 - type: entity
   name: pocket fire extinguisher
-  parent: FireExtinguisher
+  parent: [FireExtinguisher, DHBaseItemSounds] #DH
   id: FireExtinguisherMini
   description: A light and compact fibreglass-framed model fire extinguisher. It holds less water than its bigger brother.
   components:

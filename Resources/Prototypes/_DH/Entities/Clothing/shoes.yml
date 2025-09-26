@@ -30,8 +30,8 @@
   - type: ApcPowerReceiver
     needsPower: false
     powerLoad: 0
-  - type: Item
-    size: Huge
+#  - type: Item
+#    size: Huge
   - type: Charger
     slotId: charger_slot
     portable: true
@@ -46,3 +46,67 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.86
     sprintModifier: 0.84
+
+- type: entity
+  parent: [ClothingShoesBootsMagSyndie, BaseToggleClothing]
+  id: ClothingShoesBootsMagSpecialForce
+  name: магнитные сапоги спецназа
+  description: Магнитные сапоги спец войск НаноТрейзен, дорогой и более продвинутый вариант продвинутых магниток, имеет встроенный джетпак.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Shoes/Boots/magboots-specialforce.rsi
+    state: icon
+  - type: Clothing
+    sprite: _DH/Clothing/Shoes/Boots/magboots-specialforce.rsi
+  - type: ClothingSpeedModifier
+    walkModifier: 1
+    sprintModifier: 1.1
+  - type: Magboots
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2
+
+- type: entity
+  parent: [ClothingShoesBootsMagBase, BaseToggleClothing, BaseSecurityContraband]
+  id: ClothingShoesBootsMagSecurityAlt
+  name: security magboots
+  description: Magnetic boots are standard equipment for security services for work in zero gravity and outer space.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Shoes/Boots/magboots-security.rsi
+    state: icon
+  - type: Clothing
+    sprite: _DH/Clothing/Shoes/Boots/magboots-security.rsi
+  - type: Magboots
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+
+- type: entity
+  parent: [ClothingShoesBootsMagSyndie, BaseToggleClothing]
+  id: ClothingShoesBootsMagArmy
+  name: армейские магнитные сапоги
+  description: Армейский образец магнитных сапог, дешевый и более массовый вариант продвинутых магниток, имеет встроенный джетпак.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Shoes/Boots/magboots-army.rsi
+    state: icon
+  - type: Clothing
+    sprite: _DH/Clothing/Shoes/Boots/magboots-army.rsi
+  - type: Magboots
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          True: {state: icon-on}
+          False: {state: icon}
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepSoldier
+      params:
+        volume: -2

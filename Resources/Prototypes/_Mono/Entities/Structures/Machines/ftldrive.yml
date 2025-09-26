@@ -71,3 +71,92 @@
       range: 600
     - type: ApcPowerReceiver
       powerLoad: 3500
+
+#DH
+- type: entity
+  id: MachineFTLDriveFSS2
+  parent: [BaseStructureDisableToolUse, FTLDriveBase, BaseMachinePowered]
+  name: FSS-2.0 блюспейс двигатель
+  description: FTL-двигатель, который увеличивает дальность сверхсветового перемещения корабля до ~2 километров. Дешёвый FTL двигатель.
+  suffix: FTL 2.0
+  components:
+    - type: Sprite
+      sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+      snapCardinals: true
+      layers:
+      - state: control600
+      - state: control_on
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+        color: "#ff7b00fc"
+        visible: false
+        shader: unshaded
+    - type: FTLDrive
+      range: 2080
+    - type: ApcPowerReceiver
+      powerLoad: 7200
+
+- type: entity
+  id: MachineFTLDriveFSS35
+  parent: [BaseStructureDisableToolUse, FTLDriveBase, BaseMachinePowered]
+  name: FSS-3.5 блюспейс двигатель
+  description: FTL-двигатель, который увеличивает дальность сверхсветового перемещения корабля до ~3.5 километров. Этот FTL двигатель хорошо экономит энергию.
+  suffix: FTL 3.5
+  components:
+    - type: Sprite
+      sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+      snapCardinals: true
+      layers:
+      - state: control600
+      - state: control_on
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+        color: "#2ad368"
+        visible: false
+        shader: unshaded
+    - type: FTLDrive
+      range: 3450
+    - type: ApcPowerReceiver
+      powerLoad: 7600
+
+- type: entity
+  id: MachineFTLDriveMXSS44
+  parent: [BaseStructureDisableToolUse, FTLDriveBase, BaseMachinePowered]
+  name: MXSS-4.4 блюспейс двигатель
+  description: FTL-двигатель, который увеличивает дальность сверхсветового перемещения корабля до ~4.4 километров. Прожорливый и дорогой FTL двигатель.
+  suffix: FTL 4.4
+  components:
+    - type: Sprite
+      sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+      snapCardinals: true
+      layers:
+      - state: control600
+      - state: control_on
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+        color: "#3e2e99"
+        visible: false
+        shader: unshaded
+    - type: FTLDrive
+      range: 4450
+    - type: ApcPowerReceiver
+      powerLoad: 11000
+
+- type: entity
+  id: MachineFTLDriveDXA6
+  parent: [BaseStructureDisableToolUse, FTLDriveBase, BaseMachinePowered]
+  name: DXA-6 блюспейс двигатель
+  description: FTL-двигатель, который увеличивает дальность сверхсветового перемещения корабля до ~6 километров. Крайне прожорливый и дорогой FTL двигатель.
+  suffix: FTL 6
+  components:
+    - type: Sprite
+      sprite: _Mono/Structures/ShuttleComponents/drive.rsi
+      snapCardinals: true
+      layers:
+      - state: control
+      - state: control_on
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+        color: "#8a1844"
+        visible: false
+        shader: unshaded
+    - type: FTLDrive
+      range: 6100
+    - type: ApcPowerReceiver
+      powerLoad: 14800

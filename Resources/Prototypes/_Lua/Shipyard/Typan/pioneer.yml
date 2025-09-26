@@ -10,10 +10,11 @@
   price: 31000 #18500
   category: Small
   group: Typan
+  access: SyndicateAgent
   shuttlePath: /Maps/_Lua/Shuttles/Typan/pioneer.yml
   addComponents:
     - type: IFF
-      color: "#990816"
+      color: "#d93204"
     - type: NanotrasenFtl
     - type: TypanFtl
 

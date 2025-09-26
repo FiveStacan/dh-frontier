@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  parent: [BaseItem, RecyclableItemCardboard, AmmoBoxSounds] #DH # Frontier: added RecyclableItemCardboard
   id: BaseMagazineBoxRifle
   components:
   - type: BallisticAmmoProvider

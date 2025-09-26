@@ -206,7 +206,7 @@
 
 - type: entity
   name: steel tile
-  parent: FloorTileItemBase
+  parent: [FloorTileItemBase, MetalSounds] #DH
   id: FloorTileItemSteel
   components:
   - type: Sprite

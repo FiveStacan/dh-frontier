@@ -145,3 +145,86 @@
   sprite:
     sprite: _DH/Decals/markings.rsi
     state: siding_corner_sw
+
+#region SteelDiagonal
+
+- type: decal
+  id: steel_tile_diagonal
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal
+
+- type: decal
+  id: steel_tile_diagonal_flipped
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_flipped
+
+- type: decal
+  id: steel_tile_diagonal_corner
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner
+
+- type: decal
+  id: steel_tile_diagonal_corner_90
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_90
+
+- type: decal
+  id: steel_tile_diagonal_corner_180
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_180
+
+- type: decal
+  id: steel_tile_diagonal_corner_270
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: tilediagonal_corner_270
+
+
+- type: decal
+  id: steel_minitile_diagonal
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal
+
+- type: decal
+  id: steel_minitile_diagonal90
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_90
+
+- type: decal
+  id: steel_minitile_diagonal180
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_180
+
+- type: decal
+  id: steel_minitile_diagonal270
+  tags: ["station","overlay"]
+  defaultCustomColor: false
+  sprite:
+    sprite: _DH/Decals/Overlays/greyscalediagonal.rsi
+    state: minitile_diagonal_270

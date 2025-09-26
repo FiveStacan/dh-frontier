@@ -19,3 +19,14 @@
     storageCloseSound: /Audio/Machines/screwdriverclose.ogg
     storageInsertSound: /Audio/Items/crowbar.ogg
     storageRemoveSound: /Audio/Items/crowbar.ogg
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/Stunbatons/pickup.ogg
+  #DH

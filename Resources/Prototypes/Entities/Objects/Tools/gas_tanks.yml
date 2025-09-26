@@ -3,6 +3,28 @@
   parent: BaseItem
   id: GasTankBase
   components:
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_DH/Items/Handling/GasTanks/drop.ogg
+      params:
+        volume: -2
+  #DH
   - type: Sprite
     sprite: Objects/Tanks/generic.rsi
     state: icon

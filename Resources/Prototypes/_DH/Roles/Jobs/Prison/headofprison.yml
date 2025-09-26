@@ -51,18 +51,25 @@
 - type: startingGear
   id: HeadOfPrisonGear
   equipment:
-    jumpsuit: ClothingUniformJumpsuitPrisonGuardSunrise
-    back: ClothingBackpackPrisonGuard
-    shoes: ClothingShoesBootsCombatFilled
-    eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadPrisonGuard
+#    jumpsuit: ClothingUniformJumpsuitPrisonGuardSunrise
+#    back: ClothingBackpackPrisonGuard
+#    shoes: ClothingShoesBootsCombatFilled
+#    eyes: ClothingEyesGlassesSecurity
+#    head: ClothingHeadPrisonGuard
     outerClothing: ClothingOuterArmorBasic # Frontier
-    id: PrisonGuardPDA
-    ears: ClothingHeadsetSecurity
+    id: HeadOfPrisonPDA
+    ears: ClothingHeadsetPrisonCommand
     belt: ClothingBeltPrisonGuardianFilled
-    pocket1: NFWeaponPistolMk58 #WeaponPistolMk58Nonlethal
-    gloves: ClothingHandsGlovesCombat # Frontier
-    innerClothingSkirt: ClothingUniformJumpskirtGuard
-    satchel: ClothingBackpackSatchelPrisonGuard
-    duffelbag: ClothingBackpackDuffelPrisonGuard
-    messenger: ClothingBackpackSecurityFilled
+#    pocket1: NFWeaponPistolMk58 #WeaponPistolMk58Nonlethal
+#    gloves: ClothingHandsGlovesCombat # Frontier
+#    innerClothingSkirt: ClothingUniformJumpskirtGuard
+#    satchel: ClothingBackpackSatchelPrisonGuard
+#    duffelbag: ClothingBackpackDuffelPrisonGuard
+#    messenger: ClothingBackpackSecurityFilled
+    pocket1: WeaponPistolDeagle
+    pocket2: MagazineDeagle
+
+- type: chameleonOutfit
+  id: HeadOfPrisonChameleonOutfit
+  job: HeadOfPrison
+  hasMindShield: true

@@ -11,15 +11,15 @@
   - type: MeleeWeapon
     damage:
       types:
-        Blunt: 15
-        Slash: 10
-        Structural: 10
+        Blunt: 12 #DH
+        Slash: 7 #DH
+        Structural: 8 #DH
     soundHit:
       collection: GenericHit
     wideAnimationRotation: 90
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Slash: 15
-        Blunt: 15
-        Structural: 40
+        Slash: 8 #DH
+        Blunt: 8 #DH
+        Structural: 30 #DH

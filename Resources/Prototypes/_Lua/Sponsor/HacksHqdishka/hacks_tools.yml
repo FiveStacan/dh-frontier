@@ -6,7 +6,7 @@
   id: ClothingBeltLua
   name: блюспейс хранилище "LuaTech"
   description: Неизвестная технология организации LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_Black/Clothing/Belt/lua_belt.rsi
@@ -29,7 +29,7 @@
 
 - type: entity
   parent: [ HoloprojectorField, Holoprojector ]
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   id: LuaTechProjectorField
   name: голопроектор "LuaTech"
   description: Обычный голопроектор
@@ -43,7 +43,7 @@
 
 - type: entity
   id: LuaTechForcefield
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   parent: [HolosignForcefield, HolosignWetFloor,]
   name: силовое поле
   description: Сдерживающее силовое поле
@@ -59,7 +59,7 @@
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, ShowMedicalIcons]
   id: ClothingEyesHudLuaTech
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   name: визор "LuaTech"
   description: Визор разработанный "LuaTech".
   components:
@@ -88,19 +88,29 @@
   id: HacksPDA
   description: Виднеется логотип "LuaTech corp."
   name: КПК "LuaTech"
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: HandheldGPS
   - type: Icon
     sprite: _Lua/Sponsor/Lua/Lua_White/Objects/Devices/lua_pda.rsi
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Objects/Devices/lua_pda.rsi
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+    - CrewManifestCartridge
+    - NotekeeperCartridge
+    - YupiTransferCartridge
+    - NanoTaskCartridge
+    - NewsReaderCartridge
+    - MedTekCartridge
+    - AstroNavCartridge
 
 - type: entity
   name: гипоспрей "LuaTech"
-  parent: BaseItem
+  parent: [BaseItem, DHBaseItemSounds] #DH
   description: Старая версия гипоспрея произведенная LuaTech
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   id: HyposprayLua
   components:
   - type: Sprite
@@ -147,7 +157,7 @@
   id: JawsOfLifeLua
   name: челюсти жизни "LuaTech"
   description: Изготовлено организацией "LuaTech".
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_Black/Tools/lua_jaws.rsi
@@ -210,7 +220,7 @@
   parent: HandHeldMassScanner
   id: HandHeldMassScannerLua
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Item
   - type: Sprite
@@ -228,7 +238,7 @@
   id: MultitoolLua
   name: мультитул "LuaTech"
   description: Мультитул, изготовленый на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: TrayScanner
   - type: Sprite
@@ -248,7 +258,7 @@
   parent: RCD
   name: RCD "LuaTech"
   description: Причудливое устройство напоминающее RCD.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_Black/Tools/lua_rcd.rsi
@@ -266,7 +276,7 @@
   id: WelderLua
   name: сварочный аппарат "LuaTech"
   description: Изготовлено на заказ организацией LuaTech.
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_Black/Tools/lua_welder.rsi

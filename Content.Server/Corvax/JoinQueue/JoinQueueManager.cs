@@ -1,4 +1,5 @@
 using System.Linq;
+using Content.Server.Administration.Managers;
 using Content.Server.Connection;
 using Content.Server.Corvax.DiscordAuth;
 using Content.Shared.CCVar;
@@ -41,11 +42,13 @@ public sealed class JoinQueueManager
     [Dependency] private readonly IConfigurationManager _cfg = default!;
     [Dependency] private readonly IServerNetManager _netManager = default!;
     [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+    [Dependency] private readonly IAdminManager _adminManager = default!;
 
     /// <summary>
     ///     Queue of active player sessions
     /// </summary>
     private readonly List<ICommonSession> _queue = new(); // Real Queue class can't delete disconnected users
+    private readonly Dictionary<NetUserId, DateTime> _reservedSlots = new();
 
     private bool _isEnabled = false;
 
@@ -59,6 +62,7 @@ public sealed class JoinQueueManager
         _cfg.OnValueChanged(CCCVars.QueueEnabled, OnQueueCVarChanged, true);
         _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
         _discordAuthManager.PlayerVerified += OnPlayerVerified;
+        _netManager.Connected += OnChannelConnected;
     }
 
     private void OnQueueCVarChanged(bool value)
@@ -83,8 +87,9 @@ public sealed class JoinQueueManager
         }
 
         var isPrivileged = await _connectionManager.HavePrivilegedJoin(session.UserId);
-        var currentOnline = _playerManager.PlayerCount - 1; // Do not count current session in general online, because we are still deciding her fate
-        var haveFreeSlot = currentOnline < _cfg.GetCVar(CCVars.SoftMaxPlayers);
+        var players = GetPlayersCount() - 1;
+        if (players < 0) players = 0;
+        var haveFreeSlot = players < _cfg.GetCVar(CCVars.SoftMaxPlayers);
         if (isPrivileged || haveFreeSlot)
         {
             SendToGame(session);
@@ -108,11 +113,36 @@ public sealed class JoinQueueManager
             if (!wasInQueue && e.OldStatus != SessionStatus.InGame) // Process queue only if player disconnected from InGame or from queue
                 return;
 
+            var seconds = _cfg.GetCVar(CCCVars.QueueReconnectReserveSeconds);
+            if (seconds > 0 && e.OldStatus == SessionStatus.InGame)
+            { _reservedSlots[e.Session.UserId] = DateTime.UtcNow.AddSeconds(seconds); }
             ProcessQueue(true, e.Session.ConnectedTime);
 
             if (wasInQueue)
                 QueueTimings.WithLabels("Unwaited").Observe((DateTime.UtcNow - e.Session.ConnectedTime).TotalSeconds);
         }
+    }
+    private void OnChannelConnected(object? sender, NetChannelArgs args)
+    {
+        var userId = args.Channel.UserId;
+        if (_reservedSlots.TryGetValue(userId, out var until))
+        { if (DateTime.UtcNow <= until) _reservedSlots.Remove(userId); }
+    }
+
+    private int GetPlayersCount()
+    {
+        var count = _playerManager.PlayerCount - _queue.Count;
+        var now = DateTime.UtcNow;
+        foreach (var kv in _reservedSlots.ToArray())
+        {
+            if (kv.Value <= now)
+            { _reservedSlots.Remove(kv.Key); continue; }
+            count++;
+        }
+        if (!_cfg.GetCVar(CCVars.AdminsCountForMaxPlayers))
+        { count -= _adminManager.ActiveAdmins.Count(); }
+        if (count < 0) count = 0;
+        return count;
     }
 
     /// <summary>
@@ -122,7 +152,7 @@ public sealed class JoinQueueManager
     /// <param name="connectedTime">Session connected time for histogram metrics</param>
     private void ProcessQueue(bool isDisconnect, DateTime connectedTime)
     {
-        var players = ActualPlayersCount;
+        var players = GetPlayersCount();
         if (isDisconnect)
             players--; // Decrease currently disconnected session but that has not yet been deleted
 

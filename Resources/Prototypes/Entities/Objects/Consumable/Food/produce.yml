@@ -1953,7 +1953,7 @@
 
 - type: entity
   name: glasstle
-  parent: FoodProduceBase
+  parent: [FoodProduceBase, GlassSounds] #DH
   id: FoodGlasstle
   description: A fragile crystal plant with lot of spiky thorns.
   components:

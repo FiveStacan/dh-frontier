@@ -1,13 +1,18 @@
 # LuaWorld - This file is licensed under AGPLv3
 # Copyright (c) 2025 LuaWorld Contributors
 # See AGPLv3.txt for details.
+- type: sponsorLoadout
+  id: hackslua
+  entity: ClothingBackpackLuaD
+  sponsorOnly: true
+  login: HacksLua
+
 - type: entity
   parent: ClothingBackpack
   id: ClothingBackpackLua
   name: модифицированный рюкзак "LuaTech"
-  suffix: Луа
+  suffix: Sponsor, Луа
   description: Рюкзак разработанный "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/Back/Backpacks/lua_back.rsi
@@ -47,7 +52,11 @@
       - id: BlinkImplanterLua
   - type: ExplosionResistance
     damageCoefficient: 0.6
-  # - type: HardsuitAcidifier
+  - type: HardsuitIdentification
+    emaggable: false
+    securityMode: Acid
+    createAcidEffect: true
+  - type: HardsuitDNARadial
   - type: Speech
   - type: TTS
     voice: Templar
@@ -56,9 +65,8 @@
   parent: [ClothingBackpackLua, ClothingBackpack]
   id: ClothingBackpackLuaW
   name: модифицированный рюкзак "LuaTech"
-  suffix: Луа, Упрощенный
+  suffix: Sponsor, Луа, Упрощенный
   description: Рюкзак разработанный "LuaTech" с функцией РИГ.
-  categories: [ HideSpawnMenu ]
   components:
   - type: StorageFill
     contents:
@@ -79,7 +87,7 @@
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
   id: ClothingHeadHelmetLua
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Луа
   name: шлем скафандра "LuaTech"
   description: Скафандр шлем с ушами под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
@@ -116,7 +124,7 @@
 - type: entity
   parent: [ ClothingOuterHardsuitAtmos, BaseToggleClothing ]
   id: ClothingOuterHardsuitLua
-  categories: [ HideSpawnMenu ]
+  suffix: Sponsor, Луа
   name: скафандр "LuaTech"
   description: Скафандр специализированный под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
@@ -130,7 +138,8 @@
     lowPressureMultiplier: 1000
   - type: ExplosionResistance
     damageCoefficient: 0.5
-  # - type: HardsuitSpeedBuff
+  - type: HardsuitSpeedBuff
+    powerConsumption: 0.5
   - type: PowerCellDraw
     drawRate: 3.6
     enabled: false
@@ -141,6 +150,7 @@
     containers:
       cell_slot: !type:ContainerSlot
       toggleable-clothing: !type:ContainerSlot
+      beakerSlot: !type:ContainerSlot # imperial hardsuit injection
   - type: ItemSlots
     slots:
       cell_slot:
@@ -175,3 +185,7 @@
     clothingPrototype: ClothingHeadHelmetLua
   - type: Item
     size: Huge
+  - type: HardsuitReanimation
+  - type: Speech
+  - type: TTS
+    voice: Templar

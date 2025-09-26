@@ -35,6 +35,8 @@
       components:
       - Ghost
       - Santa
+  - type: StackPrice #DH
+    price: 100000
 
 - type: entity
   id: PresentRandomInsane
@@ -47,6 +49,8 @@
       - state: present_insane
     - type: RandomGift
       insaneMode: true
+    - type: StackPrice #DH
+      price: 10000
 
 - type: entity
   id: PresentRandom
@@ -382,8 +386,14 @@
         orGroup: GiftPool
       - id: RGBStaff
         orGroup: GiftPool
+      - id: LegendaryGoldenWeh
+        orGroup: GiftPool
+      - id: Plunger
+        orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
+  - type: StackPrice #DH
+    price: 200
 
 - type: entity
   id: PresentRandomCoal
@@ -443,6 +453,8 @@
         orGroup: GiftPool
     sound:
       path: /Audio/Effects/unwrap.ogg
+  - type: StackPrice #DH
+    price: 400
 
 - type: entity
   id: PresentTrash

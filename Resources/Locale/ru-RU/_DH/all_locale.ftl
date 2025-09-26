@@ -8,7 +8,6 @@ ent-WeaponShotgunNova = Нова
 ent-WeaponShotgunNova50 = Нова
     .desc = Боевой дробовик премиум-класса, созданный на основе конструкции силовика, с увеличенной ёмкостью магазина. Использует патроны все стандартные патроны для дробовиков, но лучше всего .12 калибра.
     .suffix = .50
-<<<<<<< HEAD
 
 ui-options-hud-theme-operative = Оперативник
 
@@ -79,8 +78,8 @@ ent-LockerPrisonerNT = тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = NT
 
-ent-PrisonIDReclaimer = настенный переработчик тюремных ID карт
-    .desc = Безопасно утилизирует ID карты. Внимание! Перед переработкой убедитесь, что шкафчик этой ID карты открыт!
+ent-WallmountIDReclaimer = настенный переработчик тюремных ID карт
+    .desc = Безопасно утилизирует временные ID карты. Внимание! Перед переработкой убедитесь, что шкафчик этой ID карты открыт!
 
 ent-SignGenpop = знак "генпоп"
     .desc = Знак, указывающий на генпоп-тюрьму.
@@ -90,7 +89,15 @@ id-card-access-level-wizard = Маг
 id-card-access-level-sheriff = Шериф
 id-card-access-level-headofprison = Глава КТ
 
-job-name-prisoner-perma = заключенный пермы
+JobPrisonDoctor = врач КТ
+job-name-perma-prisoner = Заключенный КТ
+job-description-perma-prisoner = Бывалый зек
+job-name-prison-doctor = тюремный доктор
+job-description-prison-doctor = Лечите зеков и охранников предерживаясь нейтральной сторны в их перепалках.
+job-name-prison-guard = Тюремный Охранник
+job-description-prison-guard = Овладейте мастерством дубинки тренеруясь на заключенных.
+job-name-headofprison = Начальник Тюрьмы
+job-description-headofprison = Командуйте охраной и заставляйте заключенных зарабатывать вам миллионы в шахтах.
 
 ent-TableCounterRed = красная стойка
     .desc = Беречь от огня. По слухам, она легковоспламеняемая.
@@ -207,7 +214,7 @@ ent-ClothingOuterHardsuitOmni = экспериментальный скафан�
 ent-ClothingBeltOmni = пояс скафандра "Omni"
     .desc = Не только удобное хранилище, но и крайне полезное устройство облегчающее скафандр.
 ent-ClothingHeadHelmetHardsuitOmni = шлем скафандра "Omni"
-    .desc =  Оборудован по последнему слову техники в мире передовых шлемов. Встроенное ночное зрение, визор ID карт и подушка для шеи.
+    .desc = Оборудован по последнему слову техники в мире передовых шлемов. Встроенное ночное зрение, визор ID карт и подушка для шеи.
 
 
 ent-DeathRattleImplantCentcomm = имплант Предсмертный хрип ЦК
@@ -231,7 +238,7 @@ ent-GavelBlock = судейская наковальня
     .desc = По ней бьют специальным молотком специальные люди в париках.
 ent-TrialTimer = судейский таймер
     .desc = A fancy timer with a screen, designed to keep trials within their time limit.
-ent-NFPrisonerIDCard = ID карта заключенного пермы
+ent-PermaPrisonerIDCard = ID карта заключенного пермы
     .desc = Карта, для тяжелых случаев... Необходимая для доступа в различные области вашей тюрьмы, и то если охрана сегодня в настроении.
 ent-PrisonerIDCard = ID карта заключенного
     .desc = Карта, необходимая для доступа в различные области тюрьмы. Похоже, ваш срок не больше нескольких дней. Везение?
@@ -249,6 +256,16 @@ ent-BookshelfSmoothCenter = книжный шкаф
 ent-BookshelfSmoothLeft = книжный шкаф
     .desc = Преимущественно, наполнен книгами.
     .suffix = Лево
+
+ent-BookshelfSmoothRightFilled = книжный шкаф
+    .desc = Преимущественно, наполнен книгами.
+    .suffix = Право, Заполненный, СЛучайный
+ent-BookshelfSmoothCenterFilled = книжный шкаф
+    .desc = Преимущественно, наполнен книгами.
+    .suffix = Центр Заполненный, СЛучайный
+ent-BookshelfSmoothLeftFilled = книжный шкаф
+    .desc = Преимущественно, наполнен книгами.
+    .suffix = Лево Заполненный, СЛучайный
 
 ent-KvassTank = бочка кваса
     .suffix = Пустой
@@ -421,9 +438,6 @@ gun-examine-particle-stream = поток частиц высокой энерг�
 
 paper_stamp-nf-plant-manager = Менеджер Электростанции
 
-ent-NFWeaponParticleDecelerator = портативный замедлитель частиц
-    .desc = Портативный замедлитель частиц, способный разложить Теслу или сингулярность.
-
 ent-BLES = БМЭС
     .desc = Блюспейс Магнитная Энергонакопительная Станция (БМЭС).
 
@@ -442,6 +456,691 @@ ent-GasVentScrubberFreezer = { ent-GasVentScrubber }
 ent-GasVentPumpFreezer = { ent-GasVentPump }
     .desc = { ent-GasVentPump.desc }
     .suffix = Холодильник
-=======
-steal-target-groups-tickets = Талоны
->>>>>>> 26b89f81d4 (DH-Update)
+
+ent-ADTClothingShoesBootsMagAdvSynd = улучшенные магнитные ботинки синдиката
+    .desc = State-of-the-art magnetic boots that do not slow down their wearer. Made by gorlax for gorlax
+ent-ClothingShoesBootsMagFSF = { ent-ClothingShoesBootsMag }
+    .desc = { ent-ClothingShoesBootsMag.desc }
+ent-ADTClothingShoesBootsMagERT = { ent-ClothingShoesBootsMag }
+    .desc = { ent-ClothingShoesBootsMag.desc }
+
+ent-WeaponEnergyTurretStationControlPanelBase = панель управления энерготурелями
+    .desc = Ту ре ль
+    .suffix = Без доступов
+ent-WeaponEnergyTurretStationControlPanel = панель управления энерготурелями службы безопасности
+    .desc = { ent-WeaponEnergyTurretStationControlPanelBase.desc }
+    .suffix = Служба Безопасности, Закрыт
+ent-WeaponEnergyTurretAIControlPanel = панель управления энерготурелями ИИ
+    .suffix = ИИ, Закрыт
+    .desc = { ent-WeaponEnergyTurretStationControlPanelBase.desc }
+ent-WeaponEnergyTurretFrontierControlPanel = панель управления энерготурелями фронтира
+    .suffix = Фронтир командный, Закрыт
+    .desc = { ent-WeaponEnergyTurretStationControlPanelBase.desc }
+
+ent-WeaponEnergyTurretBase = энерготурель
+    .desc = Ту ре ль
+    .suffix = Без доступов
+ent-WeaponEnergyTurretStation = энерготурель безопасности
+    .desc = { ent-WeaponEnergyTurretBase.desc }
+    .suffix = Служба Безопасности, Закрыт
+ent-WeaponEnergyTurretAI = энерготурель ИИ
+    .desc = { ent-WeaponEnergyTurretBase.desc }
+    .suffix = ИИ
+ent-WeaponEnergyTurretFrontier = энерготурель Фронтира
+    .suffix = Фронтир командный, Закрыт
+    .desc = { ent-WeaponEnergyTurretBase.desc }
+
+examine-company = {GENDER($entity) ->
+    [male] Он состоит в компании {$company}.
+    [female] Она состоит в компании {$company}.
+    [epicene] Они состоит в компании {$company}.
+   *[neuter] Оно/Они состоит в компании {$company}.
+}
+
+ent-BasePortableSurveillanceCameraMonitor = портативный монитор камер
+    .desc = Позволяет вам в любом месте смотреть за экипажем.
+ent-PortableSurveillanceCameraMonitor = { ent-BasePortableSurveillanceCameraMonitor }
+    .desc = { ent-BasePortableSurveillanceCameraMonitor.desc }
+    .suffix = Переносной, Требует энергию
+ent-PortableSurveillanceCameraMonitorEmpty = { ent-PortableSurveillanceCameraMonitor }
+    .desc = { ent-PortableSurveillanceCameraMonitor.desc }
+    .suffix = Переносной, Пустой
+ent-PortableSurveillanceCameraMonitorUnpowered = { ent-BasePortableSurveillanceCameraMonitor }
+    .desc = { ent-BasePortableSurveillanceCameraMonitor.desc }
+    .suffix = Переносной, Не требует энергии
+ent-BaseHandheldCriminalRecordsMonitor = портативный монитор криминальных записей
+    .desc = Портативный монитор криминального учёта, отображающий информацию о текущих преступниках на станции.
+ent-HandheldCriminalRecordsMonitor = { ent-BaseHandheldCriminalRecordsMonitor }
+    .desc = { ent-BaseHandheldCriminalRecordsMonitor.desc }
+    .suffix = Переносной, Требует энергию
+ent-HandheldCriminalRecordsMonitorEmpty = { ent-HandheldCriminalRecordsMonitor }
+    .desc = { ent-HandheldCriminalRecordsMonitor.desc }
+    .suffix = Переносной, Пустой
+ent-HandheldCriminalRecordsMonitorUnpowered = { ent-BaseHandheldCriminalRecordsMonitor }
+    .desc = { ent-BaseHandheldCriminalRecordsMonitor.desc }
+    .suffix = Переносной, Не требует энергии
+ent-BaseHandheldRoboAnalyzer = анализатор киборгов
+    .desc = Портативный анализатор киборгов.
+ent-HandheldRoboAnalyzer = { ent-BaseHandheldRoboAnalyzer }
+    .desc = { ent-BaseHandheldRoboAnalyzer.desc }
+    .suffix = Переносной, Требует энергию
+ent-HandheldRoboAnalyzerEmpty = { ent-HandheldRoboAnalyzer }
+    .desc = { ent-HandheldRoboAnalyzer.desc }
+    .suffix = Переносной, Пустой
+ent-HandheldRoboAnalyzerUnpowered = { ent-BaseHandheldRoboAnalyzer }
+    .desc = { ent-BaseHandheldRoboAnalyzer.desc }
+    .suffix = Переносной, Не требует энергии
+ent-BaseHandheldMechAnalyzer = анализатор механоидов
+    .desc = Портативный анализатор механоидов.
+ent-HandheldMechAnalyzer = { ent-BaseHandheldMechAnalyzer }
+    .desc = { ent-BaseHandheldMechAnalyzer.desc }
+    .suffix = Переносной, Требует энергию
+ent-HandheldMechAnalyzerEmpty = { ent-HandheldMechAnalyzer }
+    .desc = { ent-HandheldMechAnalyzer.desc }
+    .suffix = Переносной, Пустой
+ent-HandheldMechAnalyzerUnpowered = { ent-BaseHandheldMechAnalyzer }
+    .desc = { ent-BaseHandheldMechAnalyzer.desc }
+    .suffix = Переносной, Не требует энергии
+ent-BaseHandheldCamera = бодикамера
+    .desc = Оно наблюдает за вами... И пикает..
+ent-HandheldCamera = { ent-BaseHandheldCamera }
+    .desc = { ent-BaseHandheldCamera.desc }
+    .suffix = Камера
+ent-BaseAtmosAlertsMonitor = портативная консоль атмосферных угроз
+    .desc = Позволяет вам в любом месте смотреть за атмосферными угрозами.
+ent-AtmosAlertsMonitor = { ent-BaseAtmosAlertsMonitor }
+    .desc = { ent-BaseAtmosAlertsMonitor.desc }
+    .suffix = Переносной, Требует энергию
+ent-AtmosAlertsMonitorEmpty = { ent-BaseAtmosAlertsMonitor }
+    .desc = { ent-BaseAtmosAlertsMonitor.desc }
+    .suffix = Переносной, Пустой
+ent-AtmosAlertsMonitorUnpowered = { ent-BaseAtmosAlertsMonitor }
+    .desc = { ent-BaseAtmosAlertsMonitor.desc }
+    .suffix = Переносной, Не требует энергии
+ent-BaseEngiAlertsMonitor = портативная консоль контроля питания
+    .desc = Позволяет вам в любом месте смотреть за электросетями станции.
+ent-EngiAlertsMonitor = { ent-BaseEngiAlertsMonitor }
+    .suffix = HandHeld, Powered
+    .desc = { ent-BaseEngiAlertsMonitor.desc }
+ent-EngiAlertsMonitorEmpty = { ent-EngiAlertsMonitor }
+    .suffix = HandHeld, Empty
+    .desc = { ent-EngiAlertsMonitor.desc }
+ent-EngiAlertsMonitorUnpowered = { ent-BaseEngiAlertsMonitor }
+    .suffix = Handheld, Unpowered
+    .desc = { ent-BaseEngiAlertsMonitor.desc }
+loadout-group-prisoner-jumpsuit = Заключённый, комбинезон
+loadout-group-prison-guard-backpack = Охранник, рюкзак
+loadout-group-prison-guard-head = Охранник, головной убор
+loadout-group-prison-guard-jumpsuit = Охранник, комбинезон
+
+ent-WeaponPistolG22 = Glock-22
+    .desc = Популярное полицейское огнестрельное оружие в наши дни. Использует патрон калибра  .35 авто.
+    .suffix = Летальный
+ent-WeaponPistolHIB88M4 = HIBrowning-88 М4
+    .desc = Необычный пистолет, используемый для самообороны, но он часто используется террористическими организациями. Использует патрон калибра  .35 авто.
+ent-WeaponPistolACP14 = ACP-14
+    .desc = ACP-14 производства Earth Armories. Надёжное огнестрельное оружие, заряжается патронами калибра .35 авто.
+ent-WeaponPistolDeagle = пустотнный орёл
+    .desc = "Использует патрон "магнум" 45-го калибра, который наносит серьёзный удар. Выгравировано: Мир благодаря превосходящей огневой мощи".
+
+ent-MagazineGlock22 = магазин Glock22
+    .desc = { ent-BaseItem.desc }
+ent-MagazineDeagle = магазин пустынного орла
+    .desc = Использует патроны калибра .45 магнум.
+ent-MagazineDeagleExtended = { ent-MagazineDeagle }
+    .desc = { ent-MagazineDeagle.desc }
+ent-MagazineHIBrowning = магазин HIBrowning-88 М4
+    .desc = Использует патроны калибра .35 мм
+ent-MagazineACP14 = магазин пистолета ACP-14
+    .desc = Использует патроны калибра .35 Авто.
+
+ent-SurveillanceCameraRouterHandheld = { ent-SurveillanceCameraRouterBase }
+    .suffix = Бодикамеры
+    .desc = { ent-SurveillanceCameraRouterBase.desc }
+loadout-group-bodycam = Бодикамера
+device-frequency-prototype-name-body-camera = Бодикамеры
+
+research-console-unlocks-text = Открывает:
+research-console-required-text = Необходимо:
+research-console-no-tech-requirements = [color=green]Эта технология не требует других изучений![/color]
+research-console-menu-recenter-button = В начало
+research-console-menu-server-researched-button = Изучено
+research-console-tech-cost-label = { $cost } Очков
+research-console-tier-percentage = : { $perc }%
+
+research-server-examine-id = ID этого сервера - [color=lightblue]{$id}[/color].
+
+ent-WeaponSubMachineGunSkorpion = Скорпион VZ-61
+    .desc = Надёжное огнестрельное оружие, представляющее собой комбинацию пистолета и пистолет-пулемёта. Использует патрон калибра .35 авто.
+ent-MagazineScorpion = магазин ПП Скорпион
+    .desc = Использует патроны калибра .35 Авто.
+    .suffix = Полный
+ent-MagazineScorpionEmpty = магазин ПП Скорпион
+    .desc = Использует патроны калибра .35 Авто.
+    .suffix = пустой
+
+ent-NFMagazineGrenadeEmpty = картридж гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+    .suffix = пустой
+ent-NFMagazineGrenadeFrag = картридж осколочных гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+ent-NFMagazineGrenadeEMP = картридж ЭМИ гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+ent-NFMagazineGrenadeFlash = картридж светошумовых гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+ent-NFMagazineGrenadeBlast = картридж фугасных гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+ent-NFMagazineGrenadeBaton = картридж шоковых гранат
+    .desc = { ent-BaseMagazineGrenade.desc }
+
+ent-NFCartridgeRocket = выстрел ПГ-7ВЛ
+    .desc = Выстрел для гранатомёта РПГ-7. Имеет форму трубы.
+ent-NFCartridgeRocketSlow = выстрел ПГ-7ВЛ "Улитка"
+    .desc = Выстрел для гранатомёта РПГ-7. Необычайно медленная.
+ent-NFCartridgeRocketEmp = ПГ-7ВЛ ЭМИ
+    .desc = Боевая ракета с ЭМИ-классом 1.5, предназначенная для использования с гранатомётом РПГ-7. Имеет трубчатую форму.
+ent-NFGrenadeEmp = эми граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFGrenadeBaton = шоковая граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFGrenadeBlast = фугасная граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFGrenadeFlash = светошумовая граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFGrenadeFrag = осколочная граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFGrenadeEMP = ЭМИ граната
+    .desc = { ent-BaseGrenade.desc }
+ent-NFCannonBall = пушечное ядро
+    .suffix = Пират
+    .desc = { ent-BaseCannonBall.desc }
+ent-NFCannonBallEmp = шоковое ядро
+    .suffix = Пират, ЭМИ
+    .desc = { ent-BaseCannonBall.desc }
+ent-NFCannonBallGrapeshot = картечь
+    .suffix = Пираты
+    .desc = { ent-BaseCannonBall.desc }
+ent-NFCannonBallGlassshot = стеклянная картечь
+    .suffix = Пираты
+    .desc = { ent-BaseCannonBall.desc }
+
+ent-CratePirateChestNFCannonBallEmp = Сундук шоковых ядер
+    .suffix = Заполненный
+    .desc = { ent-CratePirateChestGrapeShot.desc }
+
+ent-NFWeaponLauncherPirateCannon = пиратская пушка
+    .desc = Кабум!
+ent-NFWeaponLauncherRocket = РПГ-7
+    .desc = Древний ручной реактивный гранатомёт.
+ent-NFWeaponLauncherRocketEmp = РПГ-7
+    .desc = Древний ручной реактивный гранатомёт.
+    .suffix = ЭМИ
+ent-NFWeaponLauncherMail = почтовый СБДП
+    .desc = Система Быстрой Доставки Посылок.
+ent-NFWeaponLauncherMultipleRocket = система залпового пуска
+    .desc = Модифицированный древний ручной реактивный гранатомёт.
+ent-NFWeaponLauncherChinaLake = China Lake
+    .desc = БЛУП
+ent-NFWeaponEnergyPistolLaserX01Multiphase = мультифазовый лазер x-01
+    .desc = Это дорогая современная реконструкция старинного лазерного пистолета. Пистолет имеет несколько уникальных режимов стрельбы, но лишен возможности автоматически перезаряжаться.
+    .suffix = Фронтир
+
+ent-NFBoxSurvival = аварийный запас
+    .desc = Коробка с базовым набором для выживания.
+    .suffix = Стандартный
+ent-NFBoxSurvivalNitrogen = { ent-BoxSurvival }
+    .suffix = Стандартный, Азот N2
+    .desc = { ent-BoxSurvival.desc }
+ent-NFBoxSurvivalSheleg = { ent-BoxSurvival }
+    .suffix = Стандартный, Таблетка
+    .desc = { ent-BoxSurvival.desc }
+ent-NFBoxSurvivalExtended = расширенный аварийный запас
+    .desc = Коробка с базовым набором для выживания. Согласно этикетке, содержит более ёмкий баллон.
+    .suffix = расширенный
+ent-NFBoxSurvivalExtendedNitrogen = { ent-NFBoxSurvivalExtended }
+    .suffix = Расширенный, Азот N2
+    .desc = { ent-NFBoxSurvivalExtended.desc }
+ent-NFBoxSurvivalExtendedSheleg = { ent-NFBoxSurvivalExtended }
+    .suffix = Расширенный, Таблетка
+    .desc = { ent-NFBoxSurvivalExtended.desc }
+
+ent-FoodMealHappyHonkBigBite = большой обед Хэппи Хонк
+    .desc = Большой набор Хэппи Хонк с игрушкой.
+    .suffix = Игрушка Безопасный, Заполненный
+
+
+
+ent-BodyBagBluespace = блюспейс мешок для тела
+    .desc = Прочный блюспейс мешок, предназначенный для хранения и транспортировки трупов, и предотвращения их гниения.
+ent-BodyBagBluespaceFolded = { ent-BodyBagBluespace }
+    .desc = { ent-BodyBagBluespace.desc }
+    .suffix = Сложенный
+ent-BodyBagNanoTrasen = синий мешок для тела
+    .desc = Пластиковый мешок с эмблемой НТ, предназначенный для хранения и транспортировки трупов, и предотвращения их гниения.
+    .suffix = НТ
+ent-BodyBagNanoTrasenFolded = { ent-BodyBagNanoTrasen }
+    .desc = { ent-BodyBagNanoTrasen.desc }
+    .suffix = Сложенный, НТ
+ent-BodyBagPrisoner = тюремный мешок для тела
+    .desc = Пластиковый мешок, предназначенный для хранения и транспортировки трупов, и предотвращения их гниения в тюремных структурах.
+ent-BodyBagPrisonerFolded = { ent-BodyBagPrisoner }
+    .desc = { ent-BodyBagPrisoner.desc }
+    .suffix = Сложенный
+ent-BodyBagRadiation = противорадиационный мешок для тела
+    .desc = Пластиковый мешок, предназначенный для хранения и транспортировки радиоактивных трупов, и предотвращения их гниения.
+ent-BodyBagRadiationFolded = { ent-BodyBagRadiation }
+    .desc = { ent-BodyBagRadiation.desc }
+    .suffix = Сложенный
+ent-BodyBagSyndicate = красный мешок для тела
+    .desc = Пластиковый мешок с символикой Синдиката, предназначенный для хранения и транспортировки трупов, и предотвращения их гниения.
+    .suffix = Синдикат
+ent-BodyBagSyndicateFolded = { ent-BodyBagSyndicate }
+    .desc = { ent-BodyBagSyndicate.desc }
+    .suffix = Сложенный, Синдикат
+
+ent-BoxBodyBagBluespace = коробка блюспейс мешков для тел
+    .desc = { ent-BoxBodyBag.desc }
+ent-BoxBodyBagNanoTrasen = коробка синих мешков для тел
+    .desc = { ent-BoxBodyBag.desc }
+ent-BoxBodyBagPrisoner = коробка тюремных мешков для тел
+    .desc = { ent-BoxBodyBag.desc }
+ent-BoxBodyBagRadiation = коробка противорадиационных мешков для тел
+    .desc = { ent-BoxBodyBag.desc }
+ent-BoxBodyBagSyndicate = коробка красных мешков для тел
+    .desc = { ent-BoxBodyBag.desc }
+
+ent-ClothingBeltWhiteSheath = белые сабельные ножны
+   .desc = Стиль, блеск, всё для лучших сабель во вселенной.
+ent-ClothingBeltSheriffSheath = сабельные ножны шерифа
+   .desc = Практичность, прочность, сабля точно не окажется в вашей ноге.
+ent-ClothingHandsGlovesCaptainWhite = белые перчатки капитана
+   .desc = Королевские белые перчатки с золотой отделкой. Шикарны.
+ent-ClothingHandsGlovesSheriff = перчатки шерифа
+   .desc = Перчатки с эргономичной формой, предназначенные для удержания револьвера.
+
+ent-ClothingHeadHatBeretCaptainWhite = белый берет капитана
+   .desc = Белый берет капитана, икона стиля.
+ent-ClothingHeadHatBeretSheriff = берет шерифа
+   .desc = Берет - фаворит, местных шерифов.
+ent-ClothingHeadHatCapcapWhite = белая фуражка капитана
+   .desc = Стильная белая фуражка капитана.
+ent-ClothingHeadHatCapcapSheriff = фуражка шерифа
+   .desc = Стильная фуражка шерифа.
+ent-ClothingUniformJumpsuitCommandCaptain = командный костюм капитана
+   .desc = Чёрный костюм, на нём видны золотые погоны на плечах.
+ent-ClothingUniformJumpsuitWhiteCaptain = белый комбинезон капитана
+   .desc = Белый комбинезон капитана символизирующий, что ваша зарплата явно превышает нормы.
+ent-ClothingUniformJumpsuitSheriff = комбинезон шерифа
+   .desc = Комбинезон показывающий вашу статусность, как ужасн... великого правителя.
+ent-ClothingUniformJumpskirtWhiteCaptain = белая юбка-комбинезон капитана
+   .desc = Белая юбка-комбинезон капитана символизирующая, что ваша зарплата явно превышает нормы.
+
+ent-Crystallite = кристаллит
+    .desc = Похоже, он переливается манящей энергией.
+    .suffix = 100 К
+ent-Crystallite1 = { ent-Crystallite }
+    .suffix = 1 К
+    .desc = { ent-Crystallite.desc }
+ent-Crystallite25 = { ent-Crystallite }
+    .suffix = 25 К
+    .desc = { ent-Crystallite.desc }
+ent-Crystallite50 = { ent-Crystallite }
+    .suffix = 50 К
+    .desc = { ent-Crystallite.desc }
+ent-BaseUplinkNTERT = Блюспейс Визионер ОБР
+    .desc = Сверхинновационный портативный блюспейс-телепортатор.
+    .suffix = Пустой, ERT
+ent-BaseUplinkNTERT75BC = { ent-BaseUplinkNTERT }
+    .suffix = 75 БК, 75К, ERT, Amber
+    .desc = { ent-BaseUplinkNTERT.desc }
+ent-BaseUplinkNTERT100BC = { ent-BaseUplinkNTERT }
+    .suffix = 100 БК, 100К, ERT, Red
+    .desc = { ent-BaseUplinkNTERT.desc }
+ent-BaseUplinkNTERT200BC = { ent-BaseUplinkNTERT }
+    .suffix = 200 БК, 200К, ERT, Gamma
+    .desc = { ent-BaseUplinkNTERT.desc }
+ent-BaseUplinkNTERTDebug = { ent-BaseUplinkNTERT }
+    .suffix = 999, ДЕБАГ
+    .desc = { ent-BaseUplinkNTERT.desc }
+ent-Bluecrystal = блюспейс кристалл
+    .desc = Похоже, он переливается манящей энергией.
+    .suffix = 20 БК
+ent-Bluecrystal1 = { ent-Telecrystal }
+    .suffix = 1 БК
+    .desc = { ent-Telecrystal.desc }
+ent-Bluecrystal25 = { ent-Bluecrystal }
+    .suffix = 25 БК
+    .desc = { ent-Bluecrystal.desc }
+ent-Bluecrystal50 = { ent-Bluecrystal }
+    .suffix = 50 БК
+    .desc = { ent-Bluecrystal.desc }
+
+ent-WeaponSMGMP5 = MP5
+    .desc = Пистолет-пулемёт RivArms SMG-5 - обновление классического дизайна. Лёгкое огнестрельное оружие, способное эффективно использоваться одной рукой, которое идеально подходит для боя на ближней и средней дистанции. Использует патрон калибра 9mm.
+ent-CMMagazineSMGMP5 = магазин MP5
+    .desc = Использует патроны калибра 9 mm.
+ent-CMMagazineSMGMP5Empty = магазин MP5
+    .desc = Использует патроны калибра 9 mm.
+
+store-category-ntautogun = Автоматы
+store-category-ntlasers = Лазерное оружие
+store-category-ntmedicine = Медицина
+store-category-ntpistols = Пистолеты
+store-category-ntadditional = Дополнительное
+store-category-ntsanitary = Санитария
+store-category-ntengineering = Инженерия
+store-category-ntmechs = Мехи
+store-category-ntexplosive = Взрывчатка
+store-category-ntammo = Боеприпасы
+store-category-ntequipment = Экипировка
+
+ent-AirlockMiningGlassPirateLocked = { ent-AirlockMiningGlass }
+    .desc = { ent-AirlockMiningGlass.desc }
+    .suffix = Пираты, Стеклянный, Закрыт
+ent-AirlockHatchPirateLocked = { ent-AirlockHatch }
+    .desc = { ent-AirlockHatch.desc }
+    .suffix = Пираты, Закрыт
+ent-AirlockExternalGlassPirateLocked = { ent-AirlockExternalGlass }
+    .desc = { ent-AirlockExternalGlass.desc }
+    .suffix = Пираты, Стеклянный, Закрыт
+ent-AirlockPirateGlassLocked = { ent-AirlockGlass }
+    .desc = { ent-AirlockPirateGlass.desc }
+    .suffix = Пираты, Стеклянный, Закрыт
+
+ent-AirlockShuttleSyndicatePirateLocked = { ent-AirlockShuttleSyndicate }
+    .desc = { ent-AirlockShuttleSyndicate.desc }
+    .suffix = Пираты, Закрыт
+ent-AirlockGlassShuttleSyndicatePirateLocked = { ent-AirlockGlassShuttleSyndicate }
+    .desc = { ent-AirlockGlassShuttleSyndicate.desc }
+    .suffix = Пираты, Стеклянный, Закрыт
+
+ent-DoorElectronicsPirate = { ent-DoorElectronics }
+    .desc = { ent-DoorElectronics.desc }
+    .suffix = Пираты, Закрыт
+
+ent-NFPirateIDCard = ID карта Пирата
+    .desc = Гаррр, она из дерева?
+ent-NFPirateFirstMateIDCard = ID карта Пиратского Боцмана
+    .desc = Гаррр, она из дерева?
+ent-NFPirateCaptainIDCard = ID карта Капитана Пиратов
+    .desc = Гаррр, она из дерева?
+
+ent-NFPiratePDA = КПК пирата
+    .desc = Йаррр!
+ent-NFPirateCaptainPDA = КПК пиратского капитана
+    .desc = Йаррр!
+ent-NFPirateFirstMatePDA = КПК пиратского боцмана
+    .desc = Йаррр!
+
+ent-LockableButtonPirate = { ent-LockableButton }
+    .desc = { ent-LockableButton.desc }
+    .suffix = Пираты, Закрыт
+ent-WindoorSecurePirateLocked = { ent-WindoorSecure }
+    .desc = { ent-WindoorSecure.desc }
+    .suffix = Пираты, Закрыт
+ent-PirateRepairKit = пиратский ремонтный набор
+    .desc = Набор инструментов, необходимых для починки пиратских консолей.
+
+ent-ClothingBeltOrden = Ножны красного ордена
+    .desc = Специальные ножны созданные исключительно для сабель красного ордена.
+ent-ClothingBeltKatanaSheath = ножны для катаны
+    .desc = Богато украшенный пояс, предназначенный для ношения пары самурайских клинков (дайсё).
+ent-OrdenSabre = сабля предводителя красного ордена
+    .desc = Необычный вариант сабли. Вместо лезвия в этом оружии используются зубья космодракона, которые как режут там и цепляют плоть жертвы, раздирая раны. Кошмарное оружие.
+ent-ClothingNeckCaptainWide = широкая шинель капитана
+   .desc = Широкая капитанская шинель. Кажется, она не по размеру вам, но как накидка на плечи сойдёт.
+ent-ClothingNeckCloakRoyalCaptain = королевский плащ капитана
+   .desc = Царь во дворца, царь во дворца.
+ent-ClothingNeckCloakSyndicateAdmiral = плащ адмирала синдиката
+   .desc = Красный плащ, прошитый золотой тканью.
+ent-ClothingNeckWhiteMantleCaptain = белая мантия капитана
+   .desc = Мантия капитана, с белым пухом.
+ent-ClothingShoesBootsMagSecurityAlt = магнитные ботинки СБ
+    .desc = Магнитные сапоги являющиеся штатным снаряжением службы безопасности для работы в условиях отсутствия гравитации и открытого космоса.
+ent-SyndicateRapier = Рапира Синдиката
+    .desc = Тонкое лезвие из пластитана с алмазным наконечником.
+ent-ClothingBeltSheathSyndicate = ножны для рапиры
+    .desc = Зловещие тонкие ножны, подходящие для рапиры.
+ent-ClothingBeltSheathSyndicateFilled = ножны для рапиры
+    .desc = Зловещие тонкие ножны, подходящие для рапиры.
+
+ent-BluespaceBox = блюспейс коробка
+    .desc = коробка, использующая блюспейс технологии для умещения любого предмета и увеличения вместимости.
+
+ent-MachineComponentSounds = { "" }
+    .desc = { "" }
+ent-MultitoolSounds = { "" }
+    .desc = { "" }
+ent-DiskSounds = { "" }
+    .desc = { "" }
+ent-AmmoBoxSounds = { "" }
+    .desc = { "" }
+ent-BaseClothingOuterSounds = { "" }
+    .desc = { "" }
+ent-BaseClothingBeltSounds = { "" }
+    .desc = { "" }
+
+ent-Telebaton = телескопическая дубинка
+    .desc = Компактное защитное вооружение персонала НТ.
+
+comp-telescopicbaton-examined-on = В боевом положении
+comp-telescopicbaton-examined-off = В сложеном положении
+
+ent-FakeSpaceCash = кредиты
+    .desc = Нужно иметь деньги.
+ent-FakeSpaceCash10 = кредиты
+    .suffix = 10, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash100 = кредиты
+    .suffix = 100, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash500 = кредиты
+    .suffix = 500, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash1000 = кредиты
+    .suffix = 1000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash2500 = { ent-SpaceCash }
+    .suffix = 2500, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash5000 = { ent-SpaceCash }
+    .suffix = 5000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash10000 = { ent-SpaceCash }
+    .suffix = 10000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash20000 = { ent-SpaceCash }
+    .suffix = 20000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash30000 = { ent-SpaceCash }
+    .suffix = 30000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-FakeSpaceCash1000000 = кредиты
+    .suffix = 1000000, Фальш
+    .desc = { ent-SpaceCash.desc }
+ent-SpaceCash100000 = кредиты
+    .suffix = 100000
+    .desc = { ent-SpaceCash.desc }
+
+ent-MiniChemDispenser = мини раздатчик химикатов
+    .desc = { ent-ChemDispenser.desc }
+    .suffix = Заполненный
+ent-MiniChemDispenserEmpty = { ent-MiniChemDispenser }
+    .suffix = Пустой
+    .desc = { ent-ChemDispenser.desc }
+
+ent-CentralCommandTeleporter = телепорт на центком
+    .desc = Устали от смены? Повод телепортироваться отсюда и забыть о всех проблемах.
+    .suffix = капсула криогенного сна
+
+ent-StatueBaseDecoration = статуя
+    .desc = Кусок исскуства.
+
+ent-StatueAIDecoration = статуя ИИ
+    .desc = Статуя, посвященная самому умному искусственному интеллекту.
+ent-StatueAICoreDecoration = статуя ядра ИИ
+    .desc = Статуя, посвященная самому умному ядру искусственного интеллекта.
+ent-StatueAssistaintDecoration = статуя ассистента
+    .desc = Статуя, посвященная самому робастному ассистенту.
+ent-StatueBlockDecoration = статуя блоку
+    .desc = Блок.
+ent-StatueCaptainDecoration = статуя капитана
+    .desc = Статуя, посвященная самому умному капитану.
+ent-StatueChiefEngineerDecoration = статуя старшему инженеру
+    .desc = Статуя, посвященная самому умному старшему инженеру.
+ent-StatueClownDecoration = статуя клоуну
+    .desc = Статуя, посвященная самому смешному клоуну.
+ent-StatueChiefMedicalOfficerDecoration = статуя главному врачу
+    .desc = Статуя, посвященная самому умному главному врачу.
+ent-StatueCorgiDecoration = статуя корги
+    .desc = Статуя, посвященная самому живучему корги.
+ent-StatueEngineerDecoration = статуя инженеру
+    .desc = Статуя, посвященная самому умному инженеру.
+ent-StatueHeadOfPersonalDecoration = статуя главы персонала
+    .desc = Статуя, посвященная самому умному главе персонала.
+ent-StatueHeadOfSecurityDecoration = статуя главы службы безопасности
+    .desc = Статуя, посвященная самому умному главе службы безопасности.
+ent-StatueHumanFemaleDecoration = статуя женщины
+    .desc = Статуя, посвященная самой сисястой женщине.
+ent-StatueHumanMaleDecoration = статуя мужчины
+    .desc = Статуя, посвященная самому мужланскому мужчине.
+ent-StatueJanitorDecoration = статуя уборщика
+    .desc = Статуя, посвященная самому чистому уборщику.
+ent-StatueMedicDecoration = статуя медика
+    .desc = Статуя, посвященная самому умному медику.
+ent-StatueMedborgDecoration = статуя медицинского борга
+    .desc = Статуя, посвященная самому умному медицинскому боргу.
+ent-StatueMonkeyDecoration = статуя обезьяны
+    .desc = Статуя, посвященная самой умной обезьяне.
+ent-StatueNukeDecoration = статуя ядерной боеголовки
+    .desc = Статуя, посвященная самой разрывной боеголовки.
+ent-StatueResearchDirectorDecoration = статуя научного руководителя
+    .desc = Статуя, посвященная самому умному научному руководителю.
+ent-StatueScientistDecoration = статуя учёного
+    .desc = Статуя, посвященная самому умному учёного.
+ent-StatueSecurityDecoration = статуя офицера СБ
+    .desc = Статуя, посвященная самому умному офицеру СБ.
+ent-StatueSecurityBorgDecoration = статуя охранного борга
+    .desc = Статуя, посвященная самому умному охранному боргу.
+ent-StatueSnowLegionDecoration = статуя снежного легиона
+    .desc = Статуя, посвященная самому страшному снежному легиону.
+ent-StatueSnowLegionAliveDecoration = статуя живого снежного легиона
+    .desc = Живая статуя, посвященная самому страшному снежному легиону.
+ent-StatueSnowmanDecoration = статуя снеговика
+    .desc = Статуя, посвященная самому снежному снеговику.
+ent-StatueXenomorphDecoration = статуя ксеноморфа
+    .desc = Статуя, посвященная самому страшному ксеноморфу.
+
+ent-StatueBustDecoration = бюст
+    .desc = Просто чей-то бюст.
+ent-StatueHippocraticBustDecoration = бюст Гиппократа
+    .desc = Бюст посвящённый Гиппократу.
+ent-StatueMarxBustDecoration = бюст Маркса
+    .desc = Бюст посвящённый Марксу.
+
+ent-FloorHardCatwalkIron = Укреплённый железный мостик
+    .desc = Мостик, который идеяльно вписываеться в пространство, также помогает в прокладывании проводки.
+ent-FloorHardCatwalkWhiteIron = Укреплённый светлый мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+ent-FloorHardCatwalkMaint = Укреплённый технический мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+ent-FloorHardCatwalkTitanium = Укреплённый титановый мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+ent-FloorHardCatwalkFlatwhite = Укреплённый монотонно белый мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+ent-FloorHardCatwalkSmothIron = Укреплённый гладкий мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+ent-FloorHardCatwalkDarkIron = Укреплённый тёмный мостик
+    .desc = { ent-FloorHardCatwalkIron.desc }
+tiles-red-circuit-floor = красный микросхемный пол
+ent-MannequinMan = манекен мужчины
+    .desc = { ent-Mannequin.desc }
+ent-MannequinWoman = манекен женщины
+    .desc = { ent-Mannequin.desc }
+
+
+ent-BoxSecglasses = коробка очков охраны
+    .desc = Коробка очков охраны
+ent-BoxMimeMoth = аварийный запас
+    .desc = { ent-BoxSurvival.desc }
+    .suffix = Мим
+ent-BoxSunglasses = коробка солнечных очков
+    .desc = Коробка солнечных очков
+ent-BoxWarmLightbulb = коробка тёплых лампочек
+    .desc = { ent-BoxLightbulb.desc }
+ent-BoxUtensil = коробка столовых инструментов
+    .desc = Коробка столовых инструментов
+
+name-controller-component-fuel-slot-fail-locked = Выключите питание Ядерного ДАМ перед манипуляциями с его топливом.
+chat-emote-name-BCatMeow = фурри вирус эмот
+chat-emote-msg-BCatMeow = рррр...
+
+ent-FlippoLighterSunriseBase = { ent-FlippoLighter }
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseCe = { ent-FlippoLighterSunriseBase } СИ
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseCmo = { ent-FlippoLighterSunriseBase } ГВ
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseCap = { ent-FlippoLighterSunriseBase } капитана
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseHos = { ent-FlippoLighterSunriseBase } ГСБ
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseQm = { ent-FlippoLighterSunriseBase } КМ
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseRd = { ent-FlippoLighterSunriseBase } НР
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseHop = { ent-FlippoLighterSunriseBase } ГП
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseNt = { ent-FlippoLighterSunriseBase } НТ
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseGonzo = { ent-FlippoLighterSunriseBase } "Гонзо"
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseContractor = { ent-FlippoLighterSunriseBase } контрактника
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseBlack = чёрная { ent-FlippoLighterSunriseBase }
+    .desc = { ent-FlippoLighter.desc }
+ent-FlippoLighterSunriseBlue = синяя { ent-FlippoLighterSunriseBase }
+    .desc = { ent-FlippoLighter.desc }
+
+ent-BookStationsAndAgents = Станции и Агенты. Книга правил 14-ой редакции
+    .desc = Книга с подробным описанием правил для настольной ролевой игры «Станции и агенты». Неизвестно, что случилось с предыдущими 13 редакциями, но искать их, наверное, не стоит.
+ent-NFHyperlinkBookSpaceLaw = космический закон
+    .desc = Большая книга космических законов.
+
+ent-PottedPlantPlasmaPlant = плазменный цветок
+    .desc = Красивое растение, кажется безопасным? Хотя учитывая, из чего он сделан...
+ent-Hedge = изгородь
+    .desc = Большая густая живая изгородь.
+
+ent-ShelfStoreBar = барная полка
+    .desc = Изготовлена из лучшего синтетического дерева для хранения алкоголя.
+    .suffix = Finance, Servise
+ent-ShelfStoreKitchen = кухонная полка
+    .desc = Хранит ножи, специи и всё самое вкусное!
+    .suffix = Finance, Servise
+
+ent-BigThruster = большой ракетный двигатель
+    .desc = { ent-Thruster }
+ent-BigRedThruster = большой красный ракетный двигатель
+    .desc = { ent-Thruster }
+ent-HugeThruster = огромный ракетный двигатель
+    .desc = { ent-Thruster }
+ent-HugeRedThruster = огромный красный ракетный двигатель
+    .desc = { ent-Thruster }
+
+ent-Reflector = рефлектор
+    .desc = { "" }
+ent-ReflectorMachineCircuitboard = плата отражателя
+    .desc = { ent-BaseMachineCircuitboard.desc }
+
+ent-WallDrywall = гипсокартон
+    .desc = Он выглядит достаточно прочным.
+ent-WallPaper = бумажная стена
+    .desc = Помогает сдерживать повторяющиеся крики мастеров боевых искусств.
+
+ent-HighSecArmoryLockedFR = { ent-HighSecDoor }
+    .suffix = Фронтир, Закрыт
+    .desc = { ent-HighSecDoor.desc }
+ent-HighSecEngineeringLocked = { ent-HighSecDoor }
+    .suffix = Инженерный, Закрыт
+    .desc = { ent-HighSecDoor.desc }

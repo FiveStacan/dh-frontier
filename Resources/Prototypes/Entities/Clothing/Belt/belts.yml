@@ -1,7 +1,22 @@
 # Belts that need/have visualizers
 
+# Sunrise edit start
 - type: entity
-  parent: ClothingBeltChiefEngineer # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
+  id: BaseClothingBeltSounds
+  components:
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
+# Sunrise edit end
+
+- type: entity
+  parent: [ClothingBeltChiefEngineer, BaseClothingBeltSounds] #DH # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
   id: ClothingBeltUtility
   name: utility belt
   description: Can hold various things.
@@ -336,24 +351,24 @@
     sprite: Clothing/Belt/plant.rsi
   - type: Clothing
     sprite: Clothing/Belt/plant.rsi
-  # - type: Storage # Frontier: commented out whitelist
-  #   whitelist:
-  #     tags:
-  #       # - PlantAnalyzer
-  #       - PlantSampleTaker
-  #       - BotanyShovel
-  #       - BotanyHoe
-  #       - BotanyHatchet
-  #       - PlantSampleTaker
-  #       - PlantBGone
-  #       - Bottle
-  #       - Syringe
-  #       - CigPack
-  #       - Dropper
-  #     components:
-  #       - Seed
-  #       - Smokable
-  #       - HandLabeler
+  - type: Storage # Frontier: commented out whitelist
+    whitelist:
+       tags: #DH
+         - PlantAnalyzer
+         - PlantSampleTaker
+         - BotanyShovel
+         - BotanyHoe
+         - BotanyHatchet
+         - PlantSampleTaker
+         - PlantBGone
+         - Bottle
+         - Syringe
+         - CigPack
+         - Dropper
+       components:
+         - Seed
+         - Smokable
+         - HandLabeler
   - type: ItemMapper
     mapLayers:
       hatchet:
@@ -393,28 +408,28 @@
     sprite: Clothing/Belt/chef.rsi
   - type: Clothing
     sprite: Clothing/Belt/chef.rsi
-  # - type: Storage # Frontier: commented out whitelist
-    # whitelist:
-      # tags:
-        # - KitchenKnife
-        # - Cleaver
-        # - RollingPin
-        # - Coldsauce
-        # - Enzyme
-        # - Hotsauce
-        # - Ketchup
-        # - BBQsauce
-        # - SaltShaker
-        # - PepperShaker
-        # - CigPack
-        # - Packet
-        # - Skewer
-        # - MonkeyCube
-        # - Mayo
-      # components:
-        # - Mousetrap
-        # - Smokable
-        # - Utensil
+  - type: Storage # Frontier: commented out whitelist
+    whitelist: #DH
+      tags:
+         - KitchenKnife
+         - Cleaver
+         - RollingPin
+         - Coldsauce
+         - Enzyme
+         - Hotsauce
+         - Ketchup
+         - BBQsauce
+         - SaltShaker
+         - PepperShaker
+         - CigPack
+         - Packet
+         - Skewer
+         - MonkeyCube
+         - Mayo
+      components:
+         - Mousetrap
+         - Smokable
+         - Utensil
   - type: ItemMapper
     mapLayers:
       kitchenknife:
@@ -473,31 +488,30 @@
   - type: ExplosionResistance
     damageCoefficient: 0.9
   # Frontier: commented out whitelist
-  # - type: Storage
-  #   whitelist:
-  #     tags:
-  #       - CigPack
-  #       - Taser
-  #       - SecBeltEquip
-  #       - Radio
-  #       - Sidearm
-  #       - MagazinePistol
-  #       - MagazineMagnum
-  #       - CombatKnife
-  #       - Truncheon
-  #       - HandGrenade
-  #     components:
-  #       - Stunbaton
-  #       - FlashOnTrigger
-  #       - SmokeOnTrigger
-  #       - Flash
-  #       - Handcuff
-  #       - BallisticAmmoProvider
-  #       - CartridgeAmmo
-  #       - DoorRemote
-  #       - Whistle
-  #       - BalloonPopper
-  # End Frontier: commented out whitelist
+  - type: Storage
+    whitelist: #DH
+      tags:
+         - CigPack
+         - Taser
+         - SecBeltEquip
+         - Radio
+         - Sidearm
+         - MagazinePistol
+         - MagazineMagnum
+         - CombatKnife
+         - Truncheon
+         - HandGrenade
+      components:
+         - Stunbaton
+         - FlashOnTrigger
+         - SmokeOnTrigger
+         - Flash
+         - Handcuff
+         - BallisticAmmoProvider
+         - CartridgeAmmo
+         - DoorRemote
+         - Whistle
+         - BalloonPopper
   - type: ItemMapper
     mapLayers:
       flashbang:

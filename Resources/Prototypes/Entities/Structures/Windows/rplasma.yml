@@ -17,7 +17,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 1500 #300 - Lua
+        damage: 1700 #300 - Lua
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
@@ -26,7 +26,7 @@
           collection: WindowShatter
     - trigger:
         !type:DamageTrigger
-        damage: 750 #150 - Lua
+        damage: 1150 #150 - Lua #DH
       behaviors:
       - !type:PlaySoundBehavior
         sound:
@@ -101,13 +101,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 700 #150 - Lua
+        damage: 900 #150 - Lua
       behaviors: #excess damage, don't spawn entities.
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
     - trigger:
         !type:DamageTrigger
-        damage: 350 #75 - Lua
+        damage: 480 #75 - Lua
       behaviors:
       - !type:PlaySoundBehavior
         sound:

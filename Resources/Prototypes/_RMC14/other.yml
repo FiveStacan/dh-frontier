@@ -200,6 +200,17 @@
   - type: Tag
     tags:
     - Sheet
+  # Sunrise added start
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/Wood/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/Wood/drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/Wood/drop.ogg
+  # Sunrise added end
 
 - type: entity
   parent: RMCPlankWood

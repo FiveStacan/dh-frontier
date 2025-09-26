@@ -1,0 +1,206 @@
+- type: entity
+  name: Desert Eagle
+  parent: BaseWeaponPistol
+  id: WeaponPistolDeagle
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Pistols/deagle/big.rsi
+  - type: Item
+    sprite: _DH/Objects/Weapons/Guns/Pistols/deagle/tiny.rsi
+  - type: Gun
+    minAngle: 1
+    maxAngle: 18
+    angleIncrease: 8
+    angleDecay: 9
+    fireRate: 4
+    availableModes:
+    - SemiAuto
+    soundGunshot:
+      collection: deagle
+      params:
+        volume: 100
+    soundEmpty:
+      path: /Audio/_DH/Weapons/Guns/Pistols/deagle/deagle_empty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineDeagle
+        insertSound: /Audio/_DH/Weapons/Guns/Pistols/deagle/deagle_reload.ogg
+        ejectSound: /Audio/_DH/Weapons/Guns/Pistols/deagle/deagle_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazinePistol45
+          - MagazineMagnum
+          - MagazineDeagle
+      gun_chamber:
+        name: Chamber
+        startingItem: NFCartridgePistol45
+        priority: 1
+        whitelist:
+          tags:
+          - NFCartridgePistol45
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: ACP-14
+  parent: BaseWeaponPistol
+  id: WeaponPistolACP14
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Pistols/acp14/big.rsi
+  - type: Item
+    sprite: _DH/Objects/Weapons/Guns/Pistols/acp14/tiny.rsi
+  - type: Gun
+    minAngle: 2
+    maxAngle: 5
+    fireRate: 5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      collection: glock22
+  - type: ChamberMagazineAmmoProvider
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineACP14
+        insertSound: /Audio/_DH/Weapons/Guns/Pistols/glock22/glock22_reload.ogg
+        ejectSound: /Audio/_DH/Weapons/Guns/Pistols/glock22/glock22_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazinePistol35
+          - MagazinePistol
+          - MagazinePistolHighCapacity
+          - MagazineACP14
+      gun_chamber:
+        name: Chamber
+        startingItem: NFCartridgePistol35
+        priority: 1
+        whitelist:
+          tags:
+          - NFCartridgePistol35
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: Glock-22
+  parent: BaseWeaponPistol
+  id: WeaponPistolG22
+  suffix: Lethal
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Pistols/glock22/big.rsi
+  - type: Item
+    sprite: _DH/Objects/Weapons/Guns/Pistols/glock22/tiny.rsi
+  - type: Gun
+    fireRate: 4.8
+    burstFireRate: 6.7
+    shotsPerBurst: 4
+    burstCooldown: 0.5
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - Burst
+#    - FullAuto
+    soundGunshot:
+      collection: glock22
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineGlock22
+        insertSound: /Audio/_DH/Weapons/Guns/Pistols/glock22/glock22_reload.ogg
+        ejectSound: /Audio/_DH/Weapons/Guns/Pistols/glock22/glock22_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazinePistol35
+          - MagazinePistol
+          - MagazinePistolHighCapacity
+          - MagazineGlock22
+      gun_chamber:
+        name: Chamber
+        startingItem: NFCartridgePistol35
+        priority: 1
+        whitelist:
+          tags:
+          - NFCartridgePistol35
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
+  - type: ChamberMagazineAmmoProvider
+    soundRack:
+      path: /Audio/_DH/Weapons/Guns/Pistols/glock22/glock22_cocked.ogg
+
+- type: entity
+  name: HI Browning-88 M4
+  parent: BaseWeaponPistol
+  id: WeaponPistolHIB88M4
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Pistols/hi_browning/big.rsi
+  - type: Item
+    sprite: _DH/Objects/Weapons/Guns/Pistols/hi_browning/tiny.rsi
+  - type: Gun
+    fireRate: 5
+    projectileSpeed: 18
+    selectedMode: SemiAuto
+    availableModes:
+    - SemiAuto
+    - FullAuto
+    soundGunshot:
+      path: /Audio/_DH/Weapons/Guns/Pistols/vp70_shot.ogg
+    soundEmpty:
+      path: /Audio/_DH/Weapons/Guns/Pistols/vp70_empty.ogg
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: Magazine
+        startingItem: MagazineHIBrowning
+        insertSound: /Audio/_DH/Weapons/Guns/Pistols/vp70_reload.ogg
+        ejectSound: /Audio/_DH/Weapons/Guns/Pistols/vp70_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - NFMagazinePistol35
+          - MagazinePistol
+          - MagazinePistolHighCapacity
+          - MagazineHIBrowning
+      gun_chamber:
+        name: Chamber
+        startingItem: NFCartridgePistol35
+        priority: 1
+        whitelist:
+          tags:
+          - NFCartridgePistol35
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
+  - type: ContainerContainer
+    containers:
+      gun_magazine: !type:ContainerSlot
+      gun_chamber: !type:ContainerSlot
