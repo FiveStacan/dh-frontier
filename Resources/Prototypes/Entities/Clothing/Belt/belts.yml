@@ -1,6 +1,6 @@
 # Belts that need/have visualizers
 
-# Sunrise edit start
+#DH
 - type: entity
   id: BaseClothingBeltSounds
   components:
@@ -13,7 +13,7 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
-# Sunrise edit end
+#DH
 
 - type: entity
   parent: [ClothingBeltChiefEngineer, BaseClothingBeltSounds] #DH # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
@@ -97,7 +97,7 @@
   - type: Appearance
 
 - type: entity
-  parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
+  parent: [NFClothingBeltStorageBase, BaseClothingBeltSounds] #DH # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
   id: ClothingBeltChiefEngineer
   name: chief engineer's toolbelt
   description: Holds tools, looks snazzy.
@@ -179,7 +179,7 @@
   - type: Appearance
 
 - type: entity
-  parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
+  parent: [NFClothingBeltStorageBase, BaseClothingBeltSounds] #DH # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
   id: ClothingBeltAssault
   name: assault belt
   description: A tactical assault belt.
@@ -217,6 +217,31 @@
           - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+#DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
+
+- type: entity
+  parent: ClothingBeltAssault
+  id: ClothingBeltAssaultFilled
+  name: assault belt
+  description: A tactical assault belt.
+  components:
+  - type: StorageFill
+    contents:
+    - id: GrenadeFlashBang
+    - id: TearGasGrenade
+    - id: Stunbaton
+    - id: Handcuffs
+    - id: Handcuffs
+#DH -
 
 - type: entity
   parent: NFClothingBeltStorageBase

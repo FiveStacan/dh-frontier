@@ -1,6 +1,6 @@
 - type: entity
   name: handheld mass scanner
-  parent: BaseHandheldComputer
+  parent: [BaseHandheldComputer, MultitoolSounds] #DH
   id: HandHeldMassScanner
   description: A hand-held mass scanner.
   components:

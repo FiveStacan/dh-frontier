@@ -19,19 +19,20 @@
      - /Audio/_Lua/Lobby/Andromeda.ogg
      - /Audio/_Lua/Lobby/skyfall_beats-silent_anthem_execution.ogg
      - /Audio/_Lua/Lobby/Elevn-Unknow13Golem.ogg
-     - /Audio/_Lua/Lobby/GeekMusic-TheExpanse-MainTheme.ogg
+#     - /Audio/_Lua/Lobby/GeekMusic-TheExpanse-MainTheme.ogg
      #DH 🤩
      - /Audio/Lobby/thunderdome.ogg
      - /Audio/Lobby/absconditus.ogg
 
      - /Audio/Lobby/space_asshole.ogg
-     - /Audio/_DH/Lobby/space_asshole.ogg
-     - /Audio/_DH/Lobby/space_asshole.ogg
+     - /Audio/Lobby/space_asshole.ogg
+     - /Audio/Lobby/space_asshole.ogg
      - /Audio/_DH/Lobby/space_asshole.ogg
      - /Audio/_DH/Lobby/space_asshole.ogg
      - /Audio/_DH/Lobby/space_asshole.ogg
      - /Audio/_DH/Lobby/space_asshole.ogg
 
+     - /Audio/Lobby/the_wizard.ogg
      - /Audio/Lobby/the_wizard.ogg
      - /Audio/Lobby/the_wizard.ogg
      - /Audio/Lobby/the_wizard.ogg
@@ -50,3 +51,12 @@
      - /Audio/_Corvax/Lobby/title2.ogg # Corvax-LobbyMusic
      - /Audio/Lobby/atomicamnesiammx.ogg
      - /Audio/_Corvax/Lobby/service.ogg # Corvax-LobbyMusic
+    #DH
+     - /Audio/_DH/Lobby/AUD-20240921-WA0008.ogg
+     - /Audio/_DH/Lobby/beat-machine.ogg
+     - /Audio/_DH/Lobby/End_of_shift.ogg
+     - /Audio/_DH/Lobby/Good-mood.ogg
+     - /Audio/_DH/Lobby/Hello_and_goodbye.ogg
+     - /Audio/_DH/Lobby/Memories.ogg
+     - /Audio/_DH/Lobby/Space_Citadel.ogg
+     - /Audio/_DH/Lobby/Sunrise.ogg

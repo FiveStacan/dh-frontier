@@ -1,6 +1,6 @@
 - type: entity
   id: MineralScannerUnpowered
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   name: mineral scanner
   description: A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
   suffix: Always Powered

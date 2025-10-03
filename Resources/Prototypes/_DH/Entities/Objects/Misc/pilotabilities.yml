@@ -138,17 +138,17 @@
   - type: RCD
     availablePrototypes:
     - WallSolid
-    - FloorSteel
-    - Plating
+#    - FloorSteel
+#    - Plating
     - Catwalk
     - Grille
     - Window
     - WindowDirectional
     - WindowReinforcedDirectional
     - ReinforcedWindow
-    - Airlock
-    - AirlockGlass
-    - Firelock
+#    - Airlock
+#    - AirlockGlass
+#    - Firelock
     - TubeLight
     - BulbLight
     - LVCable
@@ -171,7 +171,7 @@
     - Belt
   - type: ActivatableUIRequiresAccess
   - type: AccessReader
-    access: [["SecurityTechnician"]]
+    access: [["Security"]]
 
 - type: rcd
   id: BaseTurretSpawn
@@ -180,7 +180,7 @@
   mode: ConstructObject
   prototype: WeaponTurretSecBase
   cost: 10
-  delay: 4
+  delay: 6
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct4
@@ -192,7 +192,7 @@
   mode: ConstructObject
   prototype: WeaponTurretSecRifle
   cost: 10
-  delay: 4
+  delay: 6
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct4
@@ -204,7 +204,7 @@
   mode: ConstructObject
   prototype: WeaponTurretSecDisabler
   cost: 10
-  delay: 4
+  delay: 6
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct4
@@ -216,7 +216,7 @@
   mode: ConstructObject
   prototype: WeaponTurretSecLaser
   cost: 10
-  delay: 4
+  delay: 6
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct4
@@ -228,7 +228,7 @@
   mode: ConstructObject
   prototype: LandMineWeakExplosive
   cost: 5
-  delay: 4
+  delay: 6
   collisionMask: FullTileMask
   rotation: Fixed
   fx: EffectRCDConstruct4

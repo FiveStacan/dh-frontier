@@ -25,7 +25,7 @@
 
 - type: entity
   abstract: true
-  parent: [BaseItem, RecyclableItemCardboard] # Frontier: added RecyclableItemCardboard
+  parent: [BaseItem, RecyclableItemCardboard, AmmoBoxSounds] #DH # Frontier: added RecyclableItemCardboard
   id: BaseAmmoBox8x55mm
   components:
   - type: BallisticAmmoProvider

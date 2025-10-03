@@ -37,6 +37,21 @@
         ents: []
   - type: StaticPrice
     price: 500
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      collection: SnipersPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: SnipersDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: SnipersDrop
+  - type: CursorOffsetRequiresWield
+  - type: EyeCursorOffset
+    maxOffset: 3
+    pvsIncrease: 0.3
+  #DH
 
 - type: entity
   categories: [ HideSpawnMenu ] # Frontier

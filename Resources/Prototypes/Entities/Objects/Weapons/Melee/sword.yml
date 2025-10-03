@@ -112,6 +112,11 @@
     slots:
     - back
     - suitStorage
+  #DH
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/sabre_drop.ogg
+  #DH
 
 - type: entity
   name: katana

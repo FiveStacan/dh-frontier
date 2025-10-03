@@ -1,5 +1,5 @@
 ﻿- type: entity
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: ContrabandAppraisalTool
   name: contraband appraisal tool
   description: An officer's best friend, with a quantum connection to the NT database and the ability to appraise even the toughest items.
@@ -23,7 +23,7 @@
     - Sidearm
 
 - type: entity
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: ContrabandAppraisalToolPirate
   name: Skizzit's Price-It-All Guide
   description: A book claiming to appraise all items at their black market rate. The book is in tatters, and is missing several pages.

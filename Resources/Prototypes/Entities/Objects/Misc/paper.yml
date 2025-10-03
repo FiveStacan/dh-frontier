@@ -56,6 +56,23 @@
   - type: Item
     size: Tiny
   - type: PhysicalComposition
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/paper_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/paper_drop.ogg
+  - type: EmitSoundOnUse
+    sound:
+      path: /Audio/_DH/Items/Handling/paper_use.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_DH/Items/Handling/paper_drop.ogg
+  - type: EmitSoundOnThrow
+    sound:
+      path: /Audio/_DH/Items/Handling/paper_throw.ogg
+  #DH
 
 - type: entity
   name: paper

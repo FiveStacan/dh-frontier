@@ -7,6 +7,18 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/welder_drop.ogg
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/weldingtool_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/welder_drop.ogg
+      params:
+        volume: -2
+  #DH
   - type: Sprite
     sprite: Objects/Tools/welder.rsi
     layers:

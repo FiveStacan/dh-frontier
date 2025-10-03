@@ -31,6 +31,17 @@
     # - Antagonists # Frontier: guidebook entry removed
   - type: UseDelay
     delay: 3
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handcuffs/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handcuffs/drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handcuffs/drop.ogg
+  #DH
 
 - type: entity
   name: makeshift handcuffs

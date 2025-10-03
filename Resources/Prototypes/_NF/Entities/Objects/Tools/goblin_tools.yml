@@ -488,6 +488,18 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/Items/wrench_drop.ogg
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/screwdriver_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/screwdriver_drop.ogg
+      params:
+        volume: -2
+  #DH
   - type: Sprite
     sprite: _NF/Objects/Tools/goblin_tools/hoe.rsi
     layers:

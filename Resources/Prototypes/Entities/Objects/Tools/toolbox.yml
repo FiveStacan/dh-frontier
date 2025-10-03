@@ -38,6 +38,14 @@
           True: { state: icon-open }
           False: { state: icon }
   - type: Appearance
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/toolbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/toolbox_drop.ogg
+  #DH
 
 - type: entity
   name: emergency toolbox

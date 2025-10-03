@@ -18,6 +18,20 @@
     tags:
     - BoxCardboard
     - Trash # Frontier
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/cardboardbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/cardboardbox_drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Handling/cardboardbox_drop.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_DH/Items/Handling/cardboardbox_drop.ogg
+  #DH
 
 - type: entity
   name: mousetrap box

@@ -154,7 +154,7 @@
 
 - type: entity
   id: BaseHandheldRoboAnalyzer
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   name: cyborg analyzer
   description: A hand-held cyborg scaner.
   abstract: true
@@ -231,7 +231,7 @@
 
 - type: entity
   id: BaseHandheldMechAnalyzer
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   name: mech analyzer
   description: A hand-held mech scaner.
   abstract: true

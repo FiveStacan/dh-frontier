@@ -184,6 +184,18 @@
     qualities:
       - Sawing
 # No melee for regular saw because have you ever seen someone use a band saw as a weapon? It's dumb.
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/crowbar_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: -2
+  #DH
 
 - type: entity
   name: choppa
@@ -223,6 +235,18 @@
       path: /Audio/Items/drill_hit.ogg
   - type: Tool
     speedModifier: 1.5
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/crowbar_pickup.ogg
+      params:
+        volume: -2
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/Items/crowbar_drop.ogg
+      params:
+        volume: -2
+  #DH
 
 - type: entity
   name: advanced circular saw

@@ -116,3 +116,14 @@
     - Trash
   - type: SpaceGarbage
     cleanupExempt: false # Mono
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/matchbox_pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/matchbox_drop.ogg
+  - type: EmitSoundOnCollide
+    sound:
+      path: /Audio/_DH/Items/Handling/matchbox_drop.ogg
+  #DH

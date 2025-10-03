@@ -1,10 +1,12 @@
 - type: entity
   name: plant analyzer
-  parent: BaseItem
+  parent: [BaseItem, MultitoolSounds] #DH
   id: BasePlantAnalyzer
   description: A handheld device that allows you to scan seeds and plants to get detailed information about their genes.
   abstract: true
   components:
+  - type: StaticPrice
+    price: 80
   - type: Sprite
     sprite: _NF/Objects/Devices/plant_analyzer.rsi
     layers:

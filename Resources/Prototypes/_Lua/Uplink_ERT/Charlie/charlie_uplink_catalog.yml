@@ -453,7 +453,7 @@
   icon: { sprite: Objects/Devices/desynchronizer.rsi, state: icon }
   productEntity: DeviceDesynchronizer
   cost:
-    FrontierUplinkCoin: 1
+    FrontierUplinkCoin: 4 #DH 1<4
   categories:
     - CharlieUplinkMisc
 

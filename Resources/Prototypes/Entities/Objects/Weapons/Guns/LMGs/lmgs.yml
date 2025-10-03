@@ -64,6 +64,17 @@
     price: 500
   - type: UseDelay
     delay: 1
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      collection: RiflesPickUp
+  - type: EmitSoundOnDrop
+    sound:
+      collection: RiflesDrop
+  - type: EmitSoundOnLand
+    sound:
+      collection: RiflesDrop
+  #DH
 
 - type: entity
   abstract: true # Frontier: use NF variant

@@ -44,6 +44,17 @@
     - DrinkCup
   - type: StaticPrice # Frontier
     price: 4.5 # Frontier
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Cup/pickup.ogg
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Cup/drop.ogg
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/_DH/Items/Cup/drop.ogg
+  #DH
 
 - type: entity
   parent: DrinkBaseCup
