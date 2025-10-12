@@ -7,7 +7,7 @@
   id: Ayhiva
   name: Айхива
   description: Боевой корабль созданный для длительных боев корпорацией LuaTech.
-  price: 149543
+  price: 165200 #149543 #DH Shuttle price balance
   category: Large
   marker: LuaTech
   group: Mercenary

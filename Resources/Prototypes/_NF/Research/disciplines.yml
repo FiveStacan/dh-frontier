@@ -27,8 +27,8 @@
   name: nf-research-discipline-arsenal-mercenary
   color: "#888451"
   icon:
-    sprite: Interface/Misc/research_disciplines.rsi
-    state: arsenal
+    sprite: _NF/Interface/Misc/research_disciplines.rsi
+    state: mercenary
   tierPrerequisites:
     1: 0
     2: 0.75

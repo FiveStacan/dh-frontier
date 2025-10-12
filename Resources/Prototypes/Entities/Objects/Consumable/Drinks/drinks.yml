@@ -82,6 +82,16 @@
   - type: Tag
     tags:
       - DrinkGlass
+  #DH
+  - type: EmitSoundOnPickup
+    sound:
+      path: /Audio/_DH/Items/Handling/drinkglass_pickup.ogg
+      params:
+        volume: -3
+  - type: EmitSoundOnDrop
+    sound:
+      path: /Audio/_DH/Items/Handling/drinkglass_drop.ogg
+  #DH
 
 # Transformable container - normal glass
 - type: entity

@@ -646,24 +646,25 @@
       whitelist:
         - MercenaryBase
 
+#DH 
 #L6 SAW
-- type: listing
-  id: UplinkMercenaryWeaponLightMachineGunL6
-  name: L6 SAW
-  description: Нелегальное оружие используемое агентами синдиката. Весьма традиционный лёгкий пулемёт с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра .30 винтовочный.
-  productEntity: NFWeaponLightMachineGunL6
-  cost:
-    Speso: 54990
-  categories:
-    - UplinkMercenaryGun
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#- type: listing
+#  id: UplinkMercenaryWeaponLightMachineGunL6
+#  name: L6 SAW
+#  description: Нелегальное оружие используемое агентами синдиката. Весьма традиционный лёгкий пулемёт с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра .30 винтовочный.
+#  productEntity: NFWeaponLightMachineGunL6
+#  cost:
+#    Speso: 54990
+#  categories:
+#    - UplinkMercenaryGun
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 #DH
 #- type: listing
 #  id: UplinkMercenaryMagazineLightRifleBox
@@ -851,23 +852,24 @@
         - MercenaryBase
 
 #Скуфандры
-- type: listing
-  id: UplinkMercenaryClothingOuterHardsuitMaxim
-  name:  максимальный скафандр утилизатора
-  description: Пламя. Жар. Эти элементы куют великое оружие, они же куют великих утилизаторов.
-  productEntity: ClothingOuterHardsuitMaxim
-  cost:
-    Speso: 58000
-  categories:
-    - UplinkMercenaryHardsuits
-  conditions:
-    - !type:StoreWhitelistCondition
-      whitelist:
-        tags:
-          - MercenaryUplink
-    - !type:BuyerJobCondition
-      whitelist:
-        - MercenaryBase
+#DH
+#- type: listing
+#  id: UplinkMercenaryClothingOuterHardsuitMaxim
+#  name:  максимальный скафандр утилизатора
+#  description: Пламя. Жар. Эти элементы куют великое оружие, они же куют великих утилизаторов.
+#  productEntity: ClothingOuterHardsuitMaxim
+#  cost:
+#    Speso: 58000
+#  categories:
+#    - UplinkMercenaryHardsuits
+#  conditions:
+#    - !type:StoreWhitelistCondition
+#      whitelist:
+#        tags:
+#          - MercenaryUplink
+#    - !type:BuyerJobCondition
+#      whitelist:
+#        - MercenaryBase
 
 - type: listing
   id: UplinkMercenaryClothingOuterHardsuitPirateElite
