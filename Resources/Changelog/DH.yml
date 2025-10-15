@@ -1,0 +1,15 @@
+Entries:
+- author: FiveStacan
+  changes:
+    - type: Add
+      message: DH content
+    - type: Add
+      message: Перевод сумок и мелочей.
+    - type: Tweak
+      message: Возвращены все старые шатты Фронтира и Луа.
+    - type: Tweak
+      message: ребаланс цен на все шаттлы (повышены).
+    - type: Tweak
+      message: Респрайт сумок шахтера, ботаника, химика, библиотекаря.
+  id: 1
+  time: '2025-10-15T12:00:00.0000000+00:00'

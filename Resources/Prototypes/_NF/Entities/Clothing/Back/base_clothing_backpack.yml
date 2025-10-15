@@ -32,6 +32,13 @@
   parent: NFClothingBackpack
   id: NFClothingMessenger
   components:
+  - type: Clothing #DH
+    equipDelay: 1.4
+    unequipDelay: 0.9
+    quickEquip: false
+    slots:
+    - back
+    # - suitstorage #DH need sprites
   ## One 4x4 pocket, four 2x2 pockets
   - type: Storage
     grid:

@@ -7,7 +7,7 @@
    parent: BaseVessel
    name: Concord-Wyvern
    description: Один из немногих гражданских флагманов от корпораций LaFleur Industries. На ней есть всё... Буквально.
-   price: 700000 #601050 x 1.15 "nakrytka" (nakrytka reasons: Major Ship, Advanced radars, RnD canisters(Nitrous oxide, Carbon oxide, plasma, amonia) ChemicalVendingMachine, hydroponic)
+   price: 845000 #700000 #DH Shuttle price balance #601050 x 1.15 "nakrytka" (nakrytka reasons: Major Ship, Advanced radars, RnD canisters(Nitrous oxide, Carbon oxide, plasma, amonia) ChemicalVendingMachine, hydroponic)
    category: Large
    group: Expedition
    shuttlePath: /Maps/_Lua/Shuttles/Expedition/Concord-Wyvern.yml

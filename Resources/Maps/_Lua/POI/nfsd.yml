@@ -61637,16 +61637,6 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: NukeDisk
-  entities:
-  - uid: 8956
-    components:
-    - type: Transform
-      pos: -16.5,17.5
-      parent: 1
-    - type: SpecialRespawn
-      stationMap:
-      - 1
 - proto: NutimovCircuitBoard
   entities:
   - uid: 480

@@ -3,6 +3,7 @@
   id: NFMailBag # Frontier: add NF prefix
   parent: NFBaseClothingBeltStorageBag # Frontier: BaseStorageItem<NFBaseClothingBeltStorageBag
   description: Here's the mail, it never fails...
+  suffix: Frontier
   components:
   # Frontier: layered sprite
   - type: Sprite

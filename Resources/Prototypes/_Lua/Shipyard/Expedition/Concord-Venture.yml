@@ -7,7 +7,7 @@
    parent: BaseVessel
    name: Concord-Venture
    description: Лёгкий научно-исследовательский фрегат, оборудованный с небольшим медицинским отделом. Производитель - LaFleur Industries.
-   price: 48000 #41580 x 1.15
+   price: 57000 #48000 #DH Shuttle price balance #41580 x 1.15
    category: Small
    group: Expedition
    shuttlePath: /Maps/_Lua/Shuttles/Expedition/Concord-Venture.yml

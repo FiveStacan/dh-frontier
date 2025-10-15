@@ -165,9 +165,10 @@
   materials:
     Steel: 2000
     Plastic: 1000
-    Silver: 1000
+    Silver: 950 #DH
     Gold: 400
     Bluespace: 200 #DeltaV
+    Diamond: 30 #DH
 
 - type: latheRecipe
   id: ModularReceiver

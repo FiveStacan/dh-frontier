@@ -15,4 +15,4 @@
     sprite: _Lua/Objects/Specific/Botanist/plant_bag_bluespace.rsi
   - type: Storage
     grid:
-    - 0,0,19,9
+    - 0,0,18,9 #DH 0,0,18,9<0,0,19,9
