@@ -15,10 +15,10 @@
     anchored: true
   - type: MagicMirror #instant and silent
     changeHairSound: null
-    addSlotTime: 0
-    removeSlotTime: 0
-    selectSlotTime: 0
-    changeSlotTime: 0
+    addSlotTime: 10
+    removeSlotTime: 10
+    selectSlotTime: 10
+    changeSlotTime: 10
   - type: ActivatableUI
     key: enum.MagicMirrorUiKey.Key
     singleUser: true
@@ -26,6 +26,7 @@
     interfaces:
       enum.MagicMirrorUiKey.Key:
         type: MagicMirrorBoundUserInterface
+  - type: Damageable
 
 - type: entity
   parent: Mirror

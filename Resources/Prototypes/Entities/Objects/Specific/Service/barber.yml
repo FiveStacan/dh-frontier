@@ -7,7 +7,11 @@
   - type: Sprite
     sprite: Objects/Tools/scissors.rsi
     state: icon
-  - type: MagicMirror
+  - type: MagicMirror #DH
+    addSlotTime: 12 
+    removeSlotTime: 10
+    selectSlotTime: 9
+    changeSlotTime: 9
   - type: ActivatableUI
     key: enum.MagicMirrorUiKey.Key
     inHandsOnly: true

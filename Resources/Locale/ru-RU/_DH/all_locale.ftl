@@ -474,7 +474,7 @@ ent-WeaponEnergyTurretAIControlPanel = панель управления эне�
     .suffix = ИИ, Закрыт
     .desc = { ent-WeaponEnergyTurretStationControlPanelBase.desc }
 ent-WeaponEnergyTurretFrontierControlPanel = панель управления энерготурелями фронтира
-    .suffix = Фронтир командный, Закрыт
+    .suffix = Фронтир Командование, Закрыт
     .desc = { ent-WeaponEnergyTurretStationControlPanelBase.desc }
 
 ent-WeaponEnergyTurretBase = энерготурель
@@ -487,7 +487,7 @@ ent-WeaponEnergyTurretAI = энерготурель ИИ
     .desc = { ent-WeaponEnergyTurretBase.desc }
     .suffix = ИИ
 ent-WeaponEnergyTurretFrontier = энерготурель Фронтира
-    .suffix = Фронтир командный, Закрыт
+    .suffix = Фронтир Командование, Закрыт
     .desc = { ent-WeaponEnergyTurretBase.desc }
 
 examine-company = {GENDER($entity) ->
@@ -1150,10 +1150,83 @@ ent-RespironCanister = канистра респирона
 ent-DeviceDesynchronizer = Десинхронизатор
     .desc = Экспериментальное устройство, способное временно десинхронизировать пользователя с пространством-временем, фактически заставляя его исчезнуть, пока устройство активно. Прекрасно подходит для избегания попаданий корабельных орудий в пользователя.
 
-changelog-tab-title = DH 
+changelog-tab-title-DH = DarkHaven
 ent-NFMailBag = почтовый мешок
     .desc = Почта никогда не ошибается...
 ent-MaterialBag = сумка для материалов
     .desc = Хранит разные строительные ресурсы.
 ent-GemsBag = сумка для самоцветов
     .desc = Сумка из полиэстера, покрытая слоем пепла, для хранения кристаллов и самоцветов.
+
+ent-AirlockSalvage = { ent-AirlockCargo }
+    .suffix = Утилизаторский
+    .desc = { ent-AirlockCargo.desc }
+ent-AirlockSalvageGlass = { ent-AirlockCargoGlass }
+    .suffix = Утилизаторский
+    .desc = { ent-AirlockCargoGlass.desc }
+ent-AirlockMedicalMorgueMaintLocked = { ent-AirlockMaintMedLocked }
+    .suffix = Морг, Закрыт
+    .desc = { ent-AirlockMaintMedLocked.desc }
+ent-AirlockBarKitchenLocked = { ent-AirlockServiceLocked }
+    .suffix = Бар/Кухня, Закрыт
+    .desc = { ent-AirlockServiceLocked.desc }
+ent-AirlockMaintBarKitchenLocked = { ent-AirlockMaintServiceLocked }
+    .suffix = Бар/Кухня, Закрыт
+    .desc = { ent-AirlockMaintServiceLocked.desc }
+ent-AirlockAtmosphericsEngineeringLocked = { ent-AirlockCargo }
+    .suffix = Инженерный, Закрыт
+    .desc = { ent-AirlockCargo.desc }
+ent-AirlockExternalCommandLocked = { ent-AirlockExternal }
+    .suffix = Внешний, Командование, Закрыт
+    .desc = { ent-AirlockExternal.desc }
+ent-AirlockExternalGlassCommandLocked = { ent-AirlockExternalGlass }
+    .suffix = Внешний, Стеклянный, Командование, Закрыт
+    .desc = { ent-AirlockExternalGlass.desc }    
+ent-AirlockMaintKitchenHydroLocked = { ent-AirlockMaintServiceLocked }
+    .suffix = Кухня/Гидропоника, Закрыт
+    .desc = { ent-AirlockMaintServiceLocked.desc }
+ent-AirlockServiceTheatreLocked = { ent-AirlockServiceLocked }
+    .suffix = Театр/Сервисный, Закрыт
+    .desc = { ent-AirlockServiceLocked.desc }
+ent-AirlockMaintServiceTheatreLocked = { ent-AirlockMaintServiceLocked }
+    .suffix = Театр/Сервисный, Закрыт
+    .desc = { ent-AirlockMaintServiceLocked.desc }
+
+ent-LockerEvacRepair = эвакуационный ремонтный шкаф
+    .desc = { ent-LockerBaseSecure.desc }
+ent-LockerEvacRepairFilled = { ent-LockerEvacRepair }
+    .desc = { ent-LockerBaseSecure.desc }
+ent-LockerWallEvacRepair = настенный эвакуационный ремонтный шкаф
+    .desc = { ent-BaseWallCloset.desc }
+ent-LockerWallEvacRepairFilled = { ent-LockerWallEvacRepair }
+    .desc = { ent-BaseWallCloset.desc }
+
+ent-ChairCarp = кресло из карпа
+    .desc = Роскошное кресло, множество фиолетовых чешуек отражают свет самым приятным образом.
+ent-ADTDeckChair = шезлонг
+    .desc = Шезлонг для приобретения ровного загара под светом ближайшей звезды.
+ent-beachBed = светлый шезлонг
+    .desc = { ent-ADTDeckChair.desc }
+
+ent-AirGrenade = воздушная граната
+    .desc = Специальная твёрдотельная химическая граната, используемая для быстрого выпуска воздуха в определённое пространство. Заполняет площадь до 30 метров вокруг!
+
+ent-ClearPDA = прозрачный КПК
+    .desc = На 99,44% из прозрачного пластика.
+ent-VisitorPDA = { ent-ClearPDA }
+    .desc = { ent-ClearPDA.desc }
+
+ent-MobCatCurie = Кюри
+    .desc = Слайм? Кот? Кто ты?
+ent-SpawnMobCatCurie = спавнер Кюри
+
+ent-HighSecNFSDArmLocked = { ent-HighSecDoor }
+    .suffix = НФСД, Оружейная, Закрыт
+    .desc = { ent-HighSecDoor.desc }
+ent-HighSecNFSDLocked = { ent-HighSecDoor }
+    .suffix = НФСД, Командование, Закрыт
+    .desc = { ent-HighSecDoor.desc }
+
+ent-ClothingBeltPrisonGuardianFilled = { ent-ClothingBeltSecurity }
+    .suffix = Заполнен
+    .desc = { ent-ClothingBeltSecurity.desc }

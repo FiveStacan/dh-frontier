@@ -41,14 +41,15 @@ public sealed class ServerListBox : BoxContainer
 
     private void AddServers(BoxContainer container)
     {
-        AddServerInfo(container, "Фобос", "Сервер с упором на массовость", "ss14://f1.deadspace14.net:1212", null);
-        AddServerInfo(container, "Титан", "Сервер с упором на высокий уровень РП", "ss14://f2.deadspace14.net:1213", null);
-        AddServerInfo(container, "Деймос", "Сервер с сбалансированным геймплеем", "ss14://f3.deadspace14.net:1216", null);
-        AddServerInfo(container, "Союз-1", "Сервер в сеттинге станции СССП", "ss14://s1.deadspace14.net:1215", null);
-        AddServerInfo(container, "(старый) Фронтир", "Сервер про космические путешествия и торговлю", "ss14://ff.deadspace14.net:1214", null);
-        AddServerInfo(container, "Сектор Фронтир", "Сервер про космические путешествия и торговлю", "ss14://sf.deadspace14.net:1220", null);
-        AddServerInfo(container, "Конфедерация", "Сервер с альтернативной сборкой", "ss14s://backmen.ru/ss14/main", null);
+        AddServerInfo(container, "DarkHaven", "", "", null);
     }
+    //    AddServerInfo(container, "Титан", "Сервер с упором на высокий уровень РП", "ss14://f2.deadspace14.net:1213", null);
+    //    AddServerInfo(container, "Деймос", "Сервер с сбалансированным геймплеем", "ss14://f3.deadspace14.net:1216", null);
+    //    AddServerInfo(container, "Союз-1", "Сервер в сеттинге станции СССП", "ss14://s1.deadspace14.net:1215", null);
+    //    AddServerInfo(container, "(старый) Фронтир", "Сервер про космические путешествия и торговлю", "ss14://ff.deadspace14.net:1214", null);
+    //    AddServerInfo(container, "Сектор Фронтир", "Сервер про космические путешествия и торговлю", "ss14://sf.deadspace14.net:1220", null);
+    //    AddServerInfo(container, "Конфедерация", "Сервер с альтернативной сборкой", "ss14s://backmen.ru/ss14/main", null);
+    //DH
 
     private void AddServerInfo(BoxContainer container, string serverName, string description, string serverUrl, string? discord)
     {
