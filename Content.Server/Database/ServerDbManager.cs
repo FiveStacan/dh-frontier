@@ -324,6 +324,15 @@ namespace Content.Server.Database
 
         #endregion
 
+        // ADT-BookPrinter-Start
+        #region BookPrinter
+
+        Task<List<BookPrinterEntry>> GetBookPrinterEntriesAsync();
+        Task UploadBookPrinterEntryAsync(BookPrinterEntry bookEntry);
+
+        #endregion
+        // ADT-BookPrinter-End
+
         #region Job Whitelists
 
         Task AddJobWhitelist(Guid player, ProtoId<JobPrototype> job);
@@ -1038,6 +1047,20 @@ namespace Content.Server.Database
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.RemoveJobWhitelist(player, job));
         }
+
+        // ADT-BookPrinter-Start
+        public Task<List<BookPrinterEntry>> GetBookPrinterEntriesAsync()
+		{
+			DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.GetBookPrinterEntries());
+		}
+
+        public Task UploadBookPrinterEntryAsync(BookPrinterEntry bookEntry)
+		{
+			DbReadOpsMetric.Inc();
+            return RunDbCommand(() => _db.UploadBookPrinterEntry(bookEntry));
+		}
+        // ADT-BookPrinter-Start
 
         // Frontier: ghost role DB ops
         public Task AddGhostRoleWhitelist(Guid player, ProtoId<GhostRolePrototype> ghostRole)

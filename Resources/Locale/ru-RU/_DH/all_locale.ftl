@@ -1211,8 +1211,6 @@ ent-beachBed = светлый шезлонг
 ent-AirGrenade = воздушная граната
     .desc = Специальная твёрдотельная химическая граната, используемая для быстрого выпуска воздуха в определённое пространство. Заполняет площадь до 30 метров вокруг!
 
-ent-ClearPDA = прозрачный КПК
-    .desc = На 99,44% из прозрачного пластика.
 ent-VisitorPDA = { ent-ClearPDA }
     .desc = { ent-ClearPDA.desc }
 
@@ -1230,3 +1228,248 @@ ent-HighSecNFSDLocked = { ent-HighSecDoor }
 ent-ClothingBeltPrisonGuardianFilled = { ent-ClothingBeltSecurity }
     .suffix = Заполнен
     .desc = { ent-ClothingBeltSecurity.desc }
+
+ent-ADTBookPrinter = книжный книг
+    .desc = Рассадник пропаганды, унижчтожитель демократии. Позволяет копировать книги, а также заносить их в базу данных.
+ent-ADTBookPrinterFilled = { ent-ADTBookPrinter }
+    .desc = { ent-ADTBookPrinter.desc }
+    .suffix = Заполненный
+ent-ADTBookPrinterInkCartridge = книжно-принтерный картридж
+    .desc = Черный короб, содержащий в себе странное черное вещество. Кажется, оно зовётся чернилами...
+tiles-lattice-left-upper = угловая решётка, лево-верх
+tiles-lattice-left-lower = угловая решётка, лево-низ
+tiles-lattice-right-upper = угловая решётка, право-верх
+tiles-lattice-right-lower = угловая решётка, право-низ
+adt-tiles-digital-floor = цифровой пол 
+adt-tiles-digital-off-floor = выключенный цифровой пол 
+adt-tiles-digital-red-floor = красный цифровой пол 
+adt-tiles-digital-blue-floor = синий цифровой пол 
+
+ent-FloorTileItemWoodParquet = деревянный паркет
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodBlack = деревянный чёрный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodDark = деревянный тёмный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodLight = деревянный светлый пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodRed = деревянный красный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodLargeBlack = большой деревянный чёрный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodLargeDark = большой деревянный тёмный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodLargeLight = большой деревянный светлый пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodLargeRed = большой деревянный красный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodParquetBlack = чёрный деревянный паркет
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodParquetDark = тёмный деревянный паркет
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodParquetLight = светлый деревянный паркет
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodParquetRed = красный деревянный паркет
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodChess = деревянный шахматный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodChessBlack = чёрный деревянный шахматный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodChessDark = тёмный деревянный шахматный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodChessLight = светлый деревянный шахматный пол
+    .desc = { ent-FloorTileItemBase.desc }
+ent-FloorTileItemWoodChessRed = красный деревянный шахматный пол
+    .desc = { ent-FloorTileItemBase.desc }
+
+ent-FloorAzureWaterEntity = лазурная вода
+    .desc = Настоящий утолитель жажды. Кораллы в комплекте не идут!
+
+tiles-wood-parquet = деревянный паркет
+tiles-wood-chess = деревянный шахматный пол
+tiles-wood-black = деревянный чёрный пол
+tiles-wood-large-black = большой деревянный чёрный пол
+tiles-wood-parquet-black = чёрный деревянный паркет
+tiles-wood-chess-black = чёрный деревянный шахматный пол
+tiles-wood-dark = деревянный тёмный пол
+tiles-wood-large-dark = большой деревянный тёмный пол
+tiles-wood-parquet-dark = тёмный деревянный паркет
+tiles-wood-chess-dark = тёмный деревянный шахматный пол
+tiles-wood-light = деревянный светлый пол
+tiles-wood-large-light = большой деревянный светлый пол
+tiles-wood-parquet-light = светлый деревянный паркет
+tiles-wood-chess-light = светлый деревянный шахматный пол
+tiles-wood-red = деревянный красный пол
+tiles-wood-large-red = большой деревянный красный пол
+tiles-wood-parquet-red = красный деревянный паркет
+tiles-wood-chess-red = красный деревянный шахматный пол
+tiles-concrete-outside = наружный бетонный пол
+tiles-concrete-outside-slab = наружная бетонная плита
+tiles-concrete-outside-smooth = наружный гладкий бетонный пол
+tiles-gray-concrete-outside = наружный серый бетонный пол
+tiles-gray-concrete-outside-slab = наружная серая бетонная плита
+tiles-gray-concrete-outside-smooth = наружный гладкий серый бетонный пол
+tiles-old-concrete-outside = наружный старый бетонный пол
+tiles-old-concrete-outside-slab = наружная старая бетонная плита
+tiles-old-concrete-outside-smooth = наружный старый гладкий бетонный пол
+
+ent-ADTBriefcaseCentcomm = чемодан ЦентКома
+    .desc = Роскошный и сверхпрочный чемодан с символикой NanoTrasen. Предназначен для очень важных людей с очень важными бумагами.
+    .suffix = ЦентКом
+
+ent-TapeRecorderTranscript = транскрипция записи
+
+ent-ADTBoxFolderDV = чёрно-оранжевая папка
+    .desc = Папка выполненый под стиль Dar-Vaxed.
+    .suffix = ДВ
+
+ent-ADTBoxFolderClipboardDV = планшет Dar-Vaxed
+    .desc = Стильный планшет, обитый чёрной кожей. Сотрудники Dar-Vaxed часто носят, но редко используют.
+    .suffix = ДВ
+
+ent-ADTPaperPack = упаковка бумаги
+    .desc = Упаковка бумаги, содержащая десять листов формата А4. Радость бюрократа.
+
+book-printer-window-book-label = Носитель:
+book-printer-window-clear-button = Очистить
+book-printer-window-eject-button = Извлечь
+book-printer-window-upload-button = Загрузить
+book-printer-window-copy-button = Копировать
+book-printer-window-paste-button = Вставить
+book-printer-window-no-book-loaded-text = Носитель не загружен.
+book-printer-component-cannot-put-entity-message = Вы не можете поместить это в принтер!
+book-printer-component-access-denied = Доступ запрещён!
+book-printer-cartridge-component-empty = Картридж пуст.
+book-printer-cartridge-component-examine = Ресурс картриджа: { $charge }%
+book-printer-window-no-cartridge-loaded-text = Картридж не загружен.
+book-printer-window-cartridge-empty = Картридж пуст.
+book-printer-window-cartridge-charge = Ресурс картриджа: { $charge }%
+book-printer-window-working = Выполнение...
+book-printer-title = Книжный принтер
+book-printer-book-name-blank = книга
+book-printer-book-description-blank = Простой бумажный носитель. Так и ждёт, чтобы его страницы наполнились смыслом.
+book-printer-unknown-name-blank = текстовый носитель
+book-printer-unknown-description-blank = Когда-то здесь был осмысленный текст. Теперь же, здесь лишь напоминание о нём.
+
+ent-ADTPaperCrane = бумажный журавлик
+    .desc = Аккуратная поделка в виде журавлика, сделанная из бумаги.
+ent-ADTPaperShip = бумажный кораблик
+    .desc = Незамысловатый бумажный кораблик. Не мочить!
+
+ent-ADTClothingHandsRabbitGloves = кроличьи перчатки
+    .desc = Ох. Фурри.
+ent-ADTClothingUniformBlackWeddingSuit = чёрный мужской свадебный костюм
+    .desc = Чёрный костюм для знаменательного события.
+ent-ADTClothingUniformBlueWeddingSuit = синий мужской свадебный костюм
+    .desc = Синий костюм для знаменательного события.
+ent-ADTClothingUniformBrownWeddingSuit = коричневый мужской свадебный костюм
+    .desc = Коричневый костюм для знаменательного события.
+
+ent-ADTClothingOuterCoatJohanCoat = пальто Йохана
+    .desc = Белое пальто, да? С голубыми полосками, да? ДА.
+ent-ADTClothingHeadHatsJohanCap = фуражка Йохана
+    .desc = Выглядит всрато, но круто.
+ent-ADTClothingUniformAJohanPants = штаны Йохана
+    .desc = Да, тут только штаны. Наслаждайтесь свободой в плечах.
+
+ent-SignDetective = знак "Детектив"
+    .desc = Знак, указывающий на офис детектива.
+ent-SignCans = знак "канистры"
+    .desc = Знак, указывающий на удачное присутствие канистр газов.
+    .suffix = Научный
+ent-NFSignBus = знак "Автобусная остановка"
+    .desc = Знак, указывающий на то, что автобусный шаттл стыкуется неподалеку.
+ent-NFSignDock = знак "Стыковка"
+    .desc = Знак, указывающий на близлежащую стыковку шаттла.
+ent-SignNfsdInterrogation = знак "допросная"
+    .desc = Знак, указывающий на допросную.
+ent-NFSignShield = знак "Щит"
+    .desc = Знак со щитом.
+ent-SignBath = знак "Ванная"
+    .desc = Знак, указывающий на ванную комнату.
+ent-DisposalSignaller = сигнальный участок утилизационной трубы
+    .desc = Труба, которая издает сигнал, когда через нее проходит предмет.
+ent-DisposalXJunction = X-образная развязка утилизационной трубы
+    .desc = Четырёхсторонний перекрёсток. Стрелка указывает место выхода.
+
+atmos-pipe-layers-component-layer-primary = начальную
+atmos-pipe-layers-component-layer-secondary = вторичную
+atmos-pipe-layers-component-layer-tertiary = третичную
+
+atmos-pipe-layers-component-change-layer = Установлено в {$layerName} конфигурацию.
+atmos-pipe-layers-component-current-layer = Оно имеет {$layerName} конфигурацию.
+atmos-pipe-layers-component-select-layer = {CAPITALIZE($layerName)} конфигурацию
+atmos-pipe-layers-component-tool-missing = Необходимо {INDEFINITE($toolName)} {$toolName}
+atmos-pipe-layers-component-pipes-are-covered = Трубы покрыты
+atmos-pipe-layers-component-cannot-adjust-pipes = Перед регулировкой вам необходимо снять защиту с труб.
+
+ent-NFLockerScienceFilled = { ent-LockerScientist }
+    .suffix = Заполненный
+    .desc = { ent-LockerScientist.desc }
+ent-NFLockerScientist = { ent-LockerScientist }
+    .desc = { ent-LockerScientist.desc }
+ent-NFClosetChefFilled = { ent-LockerFreezerBase }
+    .suffix = Заполненный, Шеф
+    .desc = { ent-LockerFreezerBase.desc }
+
+ent-NFBusinessCardBlank = визитная карточка
+    .desc = Визитная карточка. Для настоящего профессионала.
+
+ent-AirlockExternalGlassShuttleTransit = { ent-AirlockGlassShuttle }
+    .suffix = Внешний, Транспортный (R1), Стеклянный, Стыковочный
+    .desc = { ent-AirlockGlassShuttle.desc }
+ent-AirlockExternalGlassShuttleTransitTradeExpress = { ent-AirlockGlassShuttle }
+    .suffix = Внешний, Транспортный (R2), NFSD, Стеклянный, Стыковочный
+    .desc = { ent-AirlockGlassShuttle.desc }
+ent-AirlockExternalGlassShuttleTransitMinorPOI = { ent-AirlockGlassShuttle }
+    .suffix = Внешний, Маршрут, Стеклянный, Стыковочный
+    .desc = { ent-AirlockGlassShuttle.desc }
+ent-AirlockExternalGlassShuttleNfsdTransitMinorPOI = { ent-AirlockGlassShuttle }
+    .suffix = Внешний, Маршрут, NFSD, Стеклянный, Стыковочный
+    .desc = { ent-AirlockGlassShuttle.desc }
+ent-BenchComfyTransit = { ent-BenchComfy }
+    .suffix = Автобусная
+    .desc = { ent-BenchComfy.desc }
+
+bus-schedule-no-bus = На этой станции автобусное сообщение не осуществляется.
+bus-schedule-no-buses-on-route = Автобусное сообщение по этому маршруту не осуществляется.
+bus-schedule-no-stops-on-route = По этому маршруту не проезжают ни одной станции.
+bus-schedule-next-departure = Следующий автобус bus ({$bus}) отправится через [color=lightblue]{$time}[/color].
+bus-schedule-next-departure-now = Следующий автобус ({$bus}) отправится [color=lightblue]прямо сейчас[/color]!
+bus-schedule-arrival-header = Автобус прибудет на следующие станции:
+bus-schedule-arrival-now = [color=yellow]{$station}[/color] [color=lightblue]прямо сейчас![/color]
+bus-schedule-arrival = [color=yellow]{$station}[/color] в [color=lightblue]{$time}[/color]
+
+ent-AtmosFixBlockerMarker = метка исправления атмоса
+    .desc = Вакуум, T20C
+    .suffix = Вакуум, T20C
+ent-AtmosFixOxygenMarker = метка исправления атмоса
+    .desc = Кислород @ давление газового генератора, T20C
+    .suffix = Кислород, T20C
+ent-AtmosFixShuttleOxygenMarker = метка исправления атмоса
+    .desc = Кислород @ давление газового генератора, T20C
+    .suffix = Кислород, T20C, Шаттл
+ent-AtmosFixNitrogenMarker = метка исправления атмоса
+    .desc = Азот @ давление газового генератора, T20C
+    .suffix = Азот, T20C
+ent-AtmosFixShuttleNitrogenMarker = метка исправления атмоса
+    .desc = Азот @ давление газового генератора, T20C
+    .suffix = Азот, T20C, Шаттл
+ent-AtmosFixPlasmaMarker = метка исправления атмоса
+    .desc = Плазма @ давление газового генератора, T20C
+    .suffix = Плазма, T20C
+ent-AtmosFixInstantPlasmaFireMarker = метка исправления атмоса
+    .desc = Мгновенный огонь плазмы
+    .suffix = Огонь Плазмы
+ent-AtmosFixShuttlePlasmaMarker = метка исправления атмоса
+    .desc = Плазма @ давление газового генератора, T20C
+    .suffix = Плазма, T20C, Шаттл
+ent-AtmosFixFreezerMarker = метка исправления атмоса
+    .desc = Изменяет температуру воздуха на 235K, предоставляя возможность морозильнику настроиться с небольшой погрешностью.
+    .suffix = Морозильная камера
+ent-AtmosFixVoxMarker = { ent-AtmosFixNitrogenMarker }
+    .desc = Азот @ 101 kPa, 20C
+    .suffix = Атмосфера Воксов
+ent-AtmosFixDoorMarker = метка исправления атмоса дверей
+ent-AtmosFixSaunaMarker = метка исправления атмоса сауны
+    .desc = создает безопасный пар

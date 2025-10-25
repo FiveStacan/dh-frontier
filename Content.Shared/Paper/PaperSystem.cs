@@ -310,11 +310,11 @@ public sealed class PaperSystem : EntitySystem
     /// </summary>
     public bool TryStamp(Entity<PaperComponent> entity, StampDisplayInfo stampInfo, string spriteStampState)
     {
-        if (CanStamp(stampInfo, entity.Comp)) // Frontier: !entity.Comp.StampedBy.Contains(stampInfo) < CanStamp(stampInfo, entity.Comp)
+        if (!entity.Comp.StampedBy.Contains(stampInfo))
         {
             entity.Comp.StampedBy.Add(stampInfo);
             Dirty(entity);
-            if (entity.Comp.StampState == null && TryComp<AppearanceComponent>(entity, out var appearance))
+            if ((entity.Comp.StampState == null || entity.Comp.StampState == "paper_stamp-void") && TryComp<AppearanceComponent>(entity, out var appearance)) // ADT-BookPrinter
             {
                 entity.Comp.StampState = spriteStampState;
                 // Would be nice to be able to display multiple sprites on the paper
@@ -324,6 +324,21 @@ public sealed class PaperSystem : EntitySystem
         }
         return true;
     }
+
+    // ADT-BookPrinter-Start
+    public void UpdateStampState(Entity<PaperComponent> entity)
+    {
+        if (TryComp<AppearanceComponent>(entity, out var appearance))
+        {
+            var stampState = entity.Comp.StampState ?? "paper_stamp-void";
+            _appearance.SetData(entity, PaperVisuals.Stamp, stampState, appearance);
+        }
+        else
+        {
+            return;
+        }
+    }
+    // ADT-BookPrinter-End
 
     /// <summary>
     ///     Copy any stamp information from one piece of paper to another.
@@ -461,9 +476,13 @@ public sealed class PaperSystem : EntitySystem
         SetContent((entity, paper), content);
     }
 
-    public void SetContent(Entity<PaperComponent> entity, string content)
+    public void SetContent(Entity<PaperComponent> entity, string content, bool? doNewline = true) // ADT-BookPrinter
     {
         entity.Comp.Content = content;
+        // ADT-BookPrinter-Start
+        if (doNewline is not null && doNewline.Value)
+            entity.Comp.Content += '\n';
+        // ADT-BookPrinter-End
         Dirty(entity);
         UpdateUserInterface(entity);
 
