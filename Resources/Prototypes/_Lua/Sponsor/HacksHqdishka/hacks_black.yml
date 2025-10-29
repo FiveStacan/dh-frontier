@@ -33,6 +33,7 @@
       - id: ClothingBeltLua
       - id: WeaponCaseShortLua
       - id: BlinkImplanterLua
+      - id: ShipVoucherLuaTechSimple
 
 - type: entity
   parent: [ ClothingHeadHelmetLua, ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -90,3 +91,4 @@
       - id: ClothingEyesHudLuaTech
       - id: PlushieHacksLua
       - id: ClothingBeltLua
+      - id: ShipVoucherLuaTechSimple

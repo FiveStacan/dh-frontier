@@ -221,11 +221,11 @@ entities:
       parent: 1
 - proto: APCBasic
   entities:
-  - uid: 65
+  - uid: 69
     components:
     - type: Transform
       rot: 3.141592653589793 rad
-      pos: 4.5,-5.5
+      pos: 1.5,-5.5
       parent: 1
 - proto: AtmosDeviceFanTiny
   entities:
@@ -245,10 +245,10 @@ entities:
     - type: InsideEntityStorage
 - proto: CableApcExtension
   entities:
-  - uid: 70
+  - uid: 61
     components:
     - type: Transform
-      pos: 4.5,-5.5
+      pos: 1.5,-5.5
       parent: 1
   - uid: 71
     components:
@@ -342,6 +342,11 @@ entities:
       parent: 1
 - proto: CableHV
   entities:
+  - uid: 45
+    components:
+    - type: Transform
+      pos: 4.5,-4.5
+      parent: 1
   - uid: 66
     components:
     - type: Transform
@@ -354,15 +359,15 @@ entities:
       parent: 1
 - proto: CableMV
   entities:
+  - uid: 62
+    components:
+    - type: Transform
+      pos: 3.5,-4.5
+      parent: 1
   - uid: 68
     components:
     - type: Transform
       pos: 4.5,-4.5
-      parent: 1
-  - uid: 69
-    components:
-    - type: Transform
-      pos: 4.5,-5.5
       parent: 1
   - uid: 123
     components:
@@ -379,7 +384,22 @@ entities:
     - type: Transform
       pos: 6.5,-4.5
       parent: 1
-- proto: Catwalk
+  - uid: 141
+    components:
+    - type: Transform
+      pos: 2.5,-4.5
+      parent: 1
+  - uid: 142
+    components:
+    - type: Transform
+      pos: 1.5,-4.5
+      parent: 1
+  - uid: 143
+    components:
+    - type: Transform
+      pos: 1.5,-5.5
+      parent: 1
+- proto: CatwalkMono
   entities:
   - uid: 36
     components:
@@ -438,7 +458,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-1.5
       parent: 1
-- proto: ComputerTabletopShuttle
+- proto: ComputerTabletopShuttleWithMercenaryDisk
   entities:
   - uid: 47
     components:
@@ -659,6 +679,21 @@ entities:
         - 0
         - 0
         - 0
+- proto: LockerWallMaterialsFuelPlasmaFilled
+  entities:
+  - uid: 23
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 4.5,-5.5
+      parent: 1
+- proto: MachineWarpDrive
+  entities:
+  - uid: 63
+    components:
+    - type: Transform
+      pos: 5.5,-4.5
+      parent: 1
 - proto: NFHolopadShip
   entities:
   - uid: 139
@@ -676,10 +711,10 @@ entities:
       canCollide: False
 - proto: PortableGeneratorPacmanShuttle
   entities:
-  - uid: 23
+  - uid: 65
     components:
     - type: Transform
-      pos: 5.5,-4.5
+      pos: 4.5,-4.5
       parent: 1
 - proto: Poweredlight
   entities:
@@ -722,10 +757,10 @@ entities:
       parent: 1
 - proto: Rack
   entities:
-  - uid: 61
+  - uid: 70
     components:
     - type: Transform
-      pos: 4.5,-4.5
+      pos: 1.5,-4.5
       parent: 1
 - proto: RandomSpawner
   entities:
@@ -1205,9 +1240,9 @@ entities:
       canCollide: False
 - proto: Wrench
   entities:
-  - uid: 63
+  - uid: 140
     components:
     - type: Transform
-      pos: 4.576193,-4.4047093
+      pos: 1.414846,-4.455455
       parent: 1
 ...

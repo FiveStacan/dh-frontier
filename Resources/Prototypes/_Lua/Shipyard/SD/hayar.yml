@@ -10,12 +10,13 @@
 #   price: 244213
 #   category: Large
 #   marker: LuaTech
-#   group: Security
+#   group: LuaTech
 #   access: Sergeant
 #   shuttlePath: /Maps/_Lua/Shuttles/SD/hayar.yml
 #   guidebookPage: Null
 #   noVoucher: true
-#   class:
+  # class:
+  # - Nfsd
 #   - Capital
 #   - Fighter
 #   engine:

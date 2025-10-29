@@ -10,13 +10,14 @@
   category: Small
   group: Typan
   access: SyndicateAgent
+  class:
+  - Syndicate
+  engine:
+  - Singularity
   shuttlePath: /Maps/_Lua/Shuttles/Typan/expedition.yml
   addComponents:
     - type: IFF
       color: "#d93204"
-    - type: NanotrasenFtl
-    - type: TypanFtl
-
 - type: gameMap
   id: Expedition
   mapName: 'TY Expedition'

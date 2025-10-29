@@ -50,6 +50,7 @@
       - id: ClothingBeltLua
       - id: WeaponCaseShortLua
       - id: BlinkImplanterLua
+      - id: ShipVoucherLuaTechSimple
   - type: ExplosionResistance
     damageCoefficient: 0.6
   - type: HardsuitIdentification
@@ -83,6 +84,7 @@
       - id: ClothingEyesHudLuaTech
       - id: PlushieHacksLua
       - id: ClothingBeltLua
+      - id: ShipVoucherLuaTechSimple
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -128,6 +130,8 @@
   name: скафандр "LuaTech"
   description: Скафандр специализированный под расу "Вульпканинов" сделанный на заказ LuaTech.
   components:
+  - type: ThermalCloak
+    enabled: false
   - type: BreathMask
   - type: Sprite
     sprite: _Lua/Sponsor/Lua/Lua_White/Clothing/OuterClothing/Hardsuits/lua_hardsuit.rsi

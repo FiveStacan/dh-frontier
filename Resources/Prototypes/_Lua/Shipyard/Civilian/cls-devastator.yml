@@ -11,15 +11,15 @@
   category: medium
   group: Shipyard
   shuttlePath: /Maps/_Lua/Shuttles/Civilian/cls-devastator.yml
-  class: 
-  - Atmospherics #DH
+  guidebookPage: Null
+  class:
+  - Civilian
+  - Atmospherics
   engine:
-  - Bananium #DH
+  - Bananium
   addComponents:
     - type: IFF
       color: "#ffffff"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: devastator
   mapName: 'CLS-Devastator'

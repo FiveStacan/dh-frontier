@@ -1106,7 +1106,6 @@ entities:
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
-    - type: NanotrasenFtl
     - type: AllowFtlToCentCom
     - type: ImplicitRoof
 - proto: ActionToggleInternals
@@ -2831,7 +2830,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -3.5,-12.5
       parent: 1
-- proto: Catwalk
+- proto: CatwalkMono
   entities:
   - uid: 346
     components:

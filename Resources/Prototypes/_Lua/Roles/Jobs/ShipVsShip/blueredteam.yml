@@ -1120,7 +1120,6 @@
   addComponents:
     - type: IFF
       color: "#30b3ff"
-    - type: NanotrasenFtl
 - type: gameMap
   id: CourierBlue
   mapName: 'Blue Courier'
@@ -1147,7 +1146,6 @@
   addComponents:
     - type: IFF
       color: "#ff4860"
-    - type: NanotrasenFtl
 - type: gameMap
   id: CourierRed
   mapName: 'Red Courier'

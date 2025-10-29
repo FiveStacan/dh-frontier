@@ -11,12 +11,14 @@
   price: 145136
   category: Large
   group: Security
+  class:
+  - Nfsd
+  engine:
+  - Singularity
   shuttlePath: /Maps/_Lua/Shuttles/SD/purga.yml
   addComponents:
     - type: IFF
       color: "#96B089"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: GFPurga
   mapName: 'SD-GF Пурга'

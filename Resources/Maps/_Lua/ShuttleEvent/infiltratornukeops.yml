@@ -28,8 +28,6 @@ entities:
       pos: 0.64252126,4.1776605
       parent: invalid
     - type: NukeOpsShuttle
-    - type: TypanFtl
-    - type: NanotrasenFtl
     - type: Tag
       tags:
       - Syndicate
@@ -2650,7 +2648,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 4.5,-4.5
       parent: 1
-- proto: Catwalk
+- proto: CatwalkMono
   entities:
   - uid: 257
     components:

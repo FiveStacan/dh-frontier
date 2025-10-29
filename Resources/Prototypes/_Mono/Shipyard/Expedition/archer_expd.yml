@@ -9,7 +9,7 @@
   parent: BaseVessel
   name: TSF-SKR Archer-EX
   description: An Archer outfitted with a nav computer for expeditions, and a FTL drive. Other than that, functionally almost the same. This ship has a military IFF designation.
-  price: 106500 # 25% markup
+  price: 102519 # 2000 below max
   category: Large
   group: Expedition
   access: Mercenary
@@ -24,8 +24,6 @@
   addComponents:
     - type: IFF
       color: "#ffffff"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: ArcherEXPD
   mapName: 'TSF-SKR Archer-EX'
