@@ -9,21 +9,23 @@
   parent: BaseVessel
   name: TSF-SKR Praetorian
   description: A more compact and advanced Archer, outfitted with a shield gen, 4 AK570s, 2 L85s, and 2 MARAUDERS. This ship has a military IFF designation.
-  price: 101520
+  price: 120750 #101520 #DH Shuttle price balance
   category: Medium
-  group: Shipyard
+  group: Mercenary #DH Civilian<Mercenary
   access: Mercenary
   shuttlePath: /Maps/_Mono/Shuttles/praetorian.yml
   guidebookPage: Null
   class:
-  - Civilian
+  #- Civilian
   - Pursuit
   engine:
   - Uranium
   addComponents:
     - type: IFF
-      color: "#ffffff"
+      color: "#182faf"
     - type: NanotrasenFtl
+    - type: PirateFtl
+    - type: MercenaryFtl
 
 - type: gameMap
   id: Praetorian

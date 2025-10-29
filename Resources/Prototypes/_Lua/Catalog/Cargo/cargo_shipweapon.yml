@@ -58,7 +58,7 @@
     sprite: _Lua/Structures/Storage/Crates/sweapon.rsi
     state: icon
   product: CrateWeaponMissileLauncherStarColosusFlatpack
-  cost: 1000000
+  cost: 14000000 #DH 1.000.000<14.000.000
   category: Корабельное вооружение
   group: market
 
@@ -68,7 +68,7 @@
     sprite: _Lua/Structures/Storage/Crates/sweapon.rsi
     state: icon
   product: CrateWeaponMissileStarColosus
-  cost: 20000000
+  cost: 18000000 #DH 20.000.000<18.000.000
   category: Корабельное вооружение
   group: market
 

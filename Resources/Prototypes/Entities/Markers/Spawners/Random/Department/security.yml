@@ -107,8 +107,10 @@
     - type: RandomSpawner
       rarePrototypes:
         - NFWeaponShotgunEnforcer # Frontier: WeaponShotgunEnforcer<NFWeaponShotgunEnforcer
+        - WeaponRifleAk #DH
+        - WeaponPistolDeagle #DH
 #        - NFWeaponRifleAssaultSm # Frontier: WeaponRifleAk<NFWeaponRifleAssaultSm
-      rareChance: 0.05
+      rareChance: 0.045
       prototypes:
 #        - NFWeaponSubMachineGunWt550 # Frontier: WeaponSubMachineGunWt550<NFWeaponSubMachineGunWt550
         - NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler< NFWeaponEnergyPistolDisabler
@@ -117,7 +119,9 @@
         - NFWeaponSubMachineGunDrozd # Frontier WeaponSubMachineGunDrozd<NFWeaponSubMachineGunDrozd
         - NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
         - NFWeaponShotgunKammerer # Frontier: WeaponShotgunKammerer<NFWeaponShotgunKammerer
-      chance: 0.95
+        - WeaponPistolG22 #DH
+        - WeaponPistolHIB88M4 #DH
+      chance: 0.955
       offset: 0.0
 
 - type: entity

@@ -1374,9 +1374,6 @@ ent-ADTClothingUniformAJohanPants = штаны Йохана
 
 ent-SignDetective = знак "Детектив"
     .desc = Знак, указывающий на офис детектива.
-ent-SignCans = знак "канистры"
-    .desc = Знак, указывающий на удачное присутствие канистр газов.
-    .suffix = Научный
 ent-NFSignBus = знак "Автобусная остановка"
     .desc = Знак, указывающий на то, что автобусный шаттл стыкуется неподалеку.
 ent-NFSignDock = знак "Стыковка"
@@ -1473,3 +1470,7 @@ ent-AtmosFixVoxMarker = { ent-AtmosFixNitrogenMarker }
 ent-AtmosFixDoorMarker = метка исправления атмоса дверей
 ent-AtmosFixSaunaMarker = метка исправления атмоса сауны
     .desc = создает безопасный пар
+
+ent-GasPipeManifold = коллектор газовой трубы
+    .desc = Позволяет соединять между собой газовые трубы различной конфигурации.
+strip-all-verb-get-data-text = Снять все

@@ -52,6 +52,8 @@
         orGroup: Guns
       - id: NFWeaponRifleAssaultSm # Frontier WeaponRifleAk<NFWeaponRifleAssaultSm
         orGroup: Guns
+      - id: WeaponRifleAk #DH
+        orGroup: Guns
       # - id: NFWeaponRifleAssaultM90GrenadeLauncher # Frontier: WeaponRifleM90GrenadeLauncher<NFWeaponRifleAssaultM90GrenadeLauncher
       #   orGroup: Guns
       - id: NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter

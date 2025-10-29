@@ -111,10 +111,11 @@
   - type: Item
     sprite: _DH/Objects/Weapons/Guns/Pistols/glock22/tiny.rsi
   - type: Gun
+    projectileSpeed: 34
     fireRate: 4.8
-    burstFireRate: 6.7
-    shotsPerBurst: 4
-    burstCooldown: 0.5
+    burstFireRate: 6.9
+    shotsPerBurst: 3
+    burstCooldown: 0.6
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

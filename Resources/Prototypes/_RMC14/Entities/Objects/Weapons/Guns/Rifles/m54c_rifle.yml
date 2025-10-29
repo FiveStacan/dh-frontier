@@ -178,7 +178,7 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 18
+        Piercing: 15 #DH
 
 - type: entity
   parent: BulletRifle10x24mm
