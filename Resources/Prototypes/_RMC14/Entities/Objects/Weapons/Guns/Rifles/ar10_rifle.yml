@@ -18,18 +18,20 @@
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ar10.rsi
   - type: Gun
+    burstCooldown: 0.6
     shotsPerBurst: 4
     minAngle: 1
     maxAngle: 10
     angleIncrease: 1
     angleDecay: 1
-    fireRate: 8
+    fireRate: 6
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
     - Burst
     soundGunshot:
       collection: CMAR10Shoot
+    projectileSpeed: 30
   # - type: RMCSelectiveFire
   #   baseFireModes:
   #   - SemiAuto

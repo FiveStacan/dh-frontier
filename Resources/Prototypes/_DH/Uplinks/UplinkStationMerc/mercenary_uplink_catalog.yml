@@ -843,6 +843,43 @@
 
 #AR10
 - type: listing
+  id: UplinkStationMercenaryWeaponRifleAk
+  name: АКМС
+  description: Нелегальное оружие используемое агентами синдиката. Культовое оружие всех войн. Использует патроны калибра .30 винтовочный.
+  productEntity: WeaponRifleAk
+  cost:
+    Speso: 49500
+  categories:
+    - UplinkStationMercenaryGun
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - StationMercenaryUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - MercenaryBase
+
+- type: listing
+  id: UplinkStationMercenaryNFMagazineRifle30
+  name:  магазин (.30 винтовочные)
+  description: магазин (.30 винтовочные)
+  productEntity: NFMagazineRifle30
+  cost:
+    Speso: 1300
+  categories:
+    - UplinkStationMercenaryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - StationMercenaryUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - MercenaryBase
+
+#AR10
+- type: listing
   id: UplinkStationMercenaryWeaponRifleAR10
   name: AR10
   description: Ранняя версия более распространенной винтовки M16. Считается прародителем винтовки XX века. Как одна из них оказалась здесь — отдельная загадка. Использует патрон 7,62×51 мм.

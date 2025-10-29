@@ -10,17 +10,17 @@
   parent: BaseVessel
   name: DC McDelivery
   description: "Fast food fast ship, bring the McCargo meals to the people"
-  price: 9000 #7861 0.05 8254.05
+  price: 9800 #DH 9000<9800 #DH Shuttle price balance #7861 0.05 8254.05 
   category: Micro
   group: Custom
   shuttlePath: /Maps/_NF/Shuttles/mcdelivery.yml
   guidebookPage: ShipyardMcDelivery
   class:
   - Civilian
+  - Kitchen #DH
   engine:
   - Welding
   addComponents:
-
     - type: IFF
       color: "#ffffff"
     - type: NanotrasenFtl

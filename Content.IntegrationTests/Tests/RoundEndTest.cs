@@ -144,7 +144,7 @@ namespace Content.IntegrationTests.Tests
                 config.SetCVar(CCVars.EmergencyShuttleDockTime, CCVars.EmergencyShuttleDockTime.DefaultValue);
                 config.SetCVar(CCVars.RoundRestartTime, CCVars.RoundRestartTime.DefaultValue);
 
-                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromSeconds(30);
+                roundEndSystem.DefaultCooldownDuration = TimeSpan.FromSeconds(50); //DH
                 roundEndSystem.DefaultCountdownDuration = TimeSpan.FromMinutes(4);
                 ticker.RestartRound();
             });

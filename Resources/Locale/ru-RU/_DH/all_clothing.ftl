@@ -263,9 +263,6 @@ ent-ClothingOuterSuitCargo = грузовой костюм
 ent-ClothingOuterHardsuitSecuritySunrise = { ent-ClothingOuterHardsuitSecurity }
     .suffix = Санрайз
     .desc = { ent-ClothingOuterHardsuitSecurity.desc }
-ent-ClothingBeltPrisonGuardianFilled = пояс охранника кт
-    .suffix = Заполнен
-    .desc = { ent-ClothingBeltSecurity.desc }
 
 ent-ClothingOuterHardsuitCBURNLeader = экзокостюм командира отряда РХБЗЗ
     .desc = Легковесный но прочный экзокостюм, который используют специальные подразделения зачистки.

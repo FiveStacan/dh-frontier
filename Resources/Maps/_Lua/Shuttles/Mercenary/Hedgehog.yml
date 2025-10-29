@@ -4,8 +4,8 @@ meta:
   engineVersion: 261.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/19/2025 14:40:29
-  entityCount: 139
+  time: 10/27/2025 15:28:06
+  entityCount: 149
 maps: []
 grids:
 - 1
@@ -181,6 +181,13 @@ entities:
     - type: GasTileOverlay
     - type: RadiationGridResistance
     - type: ImplicitRoof
+- proto: ADTPaperPack
+  entities:
+  - uid: 148
+    components:
+    - type: Transform
+      pos: 1.3222896,-0.28960896
+      parent: 1
 - proto: AirAlarm
   entities:
   - uid: 120
@@ -205,6 +212,13 @@ entities:
     - type: Transform
       pos: 2.5,-6.5
       parent: 1
+- proto: AmmoTechFab
+  entities:
+  - uid: 146
+    components:
+    - type: Transform
+      pos: 1.5,-4.5
+      parent: 1
 - proto: APCBasic
   entities:
   - uid: 65
@@ -220,6 +234,15 @@ entities:
     - type: Transform
       pos: 2.5,-6.5
       parent: 1
+- proto: Bola
+  entities:
+  - uid: 91
+    components:
+    - type: Transform
+      parent: 104
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: CableApcExtension
   entities:
   - uid: 70
@@ -400,6 +423,13 @@ entities:
     - type: Transform
       pos: 7.5,-3.5
       parent: 1
+- proto: Chair
+  entities:
+  - uid: 141
+    components:
+    - type: Transform
+      pos: 4.5,-1.5
+      parent: 1
 - proto: ChairPilotSeat
   entities:
   - uid: 34
@@ -435,7 +465,7 @@ entities:
   - uid: 116
     components:
     - type: Transform
-      pos: 1.6753408,-0.20942831
+      pos: 1.4489475,-0.43349218
       parent: 1
 - proto: ExtinguisherCabinetFilled
   entities:
@@ -457,8 +487,7 @@ entities:
   - uid: 117
     components:
     - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 1.3909658,-0.36255312
+      pos: 1.5114475,-0.8241172
       parent: 1
 - proto: GasPassiveVent
   entities:
@@ -601,6 +630,17 @@ entities:
     - type: Transform
       pos: -0.5,-2.5
       parent: 1
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 91
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: EntityStorage
       air:
         volume: 200
@@ -626,6 +666,14 @@ entities:
     - type: Transform
       pos: 2.5,-3.5
       parent: 1
+- proto: NFWeaponEnergyPistolDisabler
+  entities:
+  - uid: 145
+    components:
+    - type: Transform
+      parent: 142
+    - type: Physics
+      canCollide: False
 - proto: PortableGeneratorPacmanShuttle
   entities:
   - uid: 23
@@ -641,12 +689,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: 1.5,-4.5
       parent: 1
+    - type: Timer
   - uid: 107
     components:
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 3.5,-4.5
       parent: 1
+    - type: Timer
   - uid: 108
     components:
     - type: Transform
@@ -664,6 +714,7 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+    - type: Timer
   - uid: 111
     components:
     - type: Transform
@@ -687,6 +738,13 @@ entities:
     components:
     - type: Transform
       pos: 1.5,-4.5
+      parent: 1
+- proto: Screwdriver
+  entities:
+  - uid: 149
+    components:
+    - type: Transform
+      pos: 4.4629145,-4.305234
       parent: 1
 - proto: SheetPlasma
   entities:
@@ -765,7 +823,7 @@ entities:
           - Toggle
 - proto: SignArmory
   entities:
-  - uid: 91
+  - uid: 140
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
@@ -793,6 +851,36 @@ entities:
     - type: Transform
       pos: 0.5,-1.5
       parent: 1
+- proto: StructurePistolRackWallmountedMercenary
+  entities:
+  - uid: 142
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: -1.5,-4.5
+      parent: 1
+    - type: ContainerContainer
+      containers:
+        weapon1: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 143
+        weapon2: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 144
+        weapon3: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: 145
+        weapon4: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
+        weapon5: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
 - proto: SubstationWallBasic
   entities:
   - uid: 30
@@ -1094,6 +1182,27 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -0.5,-4.5
       parent: 1
+- proto: WeaponGrapplingGun
+  entities:
+  - uid: 147
+    components:
+    - type: Transform
+      pos: 1.6234488,-0.28449726
+      parent: 1
+- proto: WeaponPistolG22
+  entities:
+  - uid: 143
+    components:
+    - type: Transform
+      parent: 142
+    - type: Physics
+      canCollide: False
+  - uid: 144
+    components:
+    - type: Transform
+      parent: 142
+    - type: Physics
+      canCollide: False
 - proto: Wrench
   entities:
   - uid: 63

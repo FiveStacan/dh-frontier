@@ -205,9 +205,9 @@
         layer:
         - MachineLayer
   - type: Gun
-    projectileSpeed: 155
+    projectileSpeed: 150 #DH 155<150
     fireRate: 0.2
-    burstCooldown: 10
+    burstCooldown: 12 #DH 10<12
     burstFireRate: 2
     shotsPerBurst: 2
     selectedMode: Burst

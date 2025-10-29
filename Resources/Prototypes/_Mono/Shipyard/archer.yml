@@ -9,21 +9,24 @@
   parent: BaseVessel
   name: TSF-SKR Archer
   description: A combat ship outfitted with 4 plasma turrets and 6 light autocannons. This ship has a military IFF designation.
-  price: 99658 #85200 # the plasma and plastitanium tax is real...
+  price: 109600 #99658 #DH Shuttle price balance #85200 # the plasma and plastitanium tax is real...
   category: Large
-  group: Shipyard
+  group: Mercenary #DH Civilian<Mercenary
   access: Mercenary
   shuttlePath: /Maps/_Mono/Shuttles/archer.yml
   guidebookPage: Null
   class:
-  - Civilian
-  - Pursuit
+  #DH Civilian<Mercenary
+  #- Civilian
+  #- Pursuit
   engine:
   - Uranium
   addComponents:
     - type: IFF
-      color: "#ffffff"
+      color: "#182faf"
     - type: NanotrasenFtl
+    - type: PirateFtl
+    - type: MercenaryFtl
 
 - type: gameMap
   id: Archer
