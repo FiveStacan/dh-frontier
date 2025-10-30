@@ -9,7 +9,7 @@
   parent: BaseVesselAntag
   name: TSF-SKR Spear
   description: A small ship meant as an escort and stealth killer. Horrible interior space, and not much in the way of comfort.
-  price: 67345 #38200
+  price: 40000
   category: Small
   group: Security
   access: Security
@@ -17,14 +17,13 @@
   guidebookPage: Null
   class:
   - Patrol
+  - Nfsd
   engine:
   - Uranium
   cloakHunter: true
   addComponents:
     - type: IFF
       color: "#96B089"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: Spear
   mapName: 'Spear'

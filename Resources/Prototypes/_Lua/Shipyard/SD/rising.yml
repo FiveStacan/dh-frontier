@@ -11,12 +11,14 @@
   price: 346452
   category: Large
   group: Security
+  class:
+  - Nfsd
+  engine:
+  - Singularity
   shuttlePath: /Maps/_Lua/Shuttles/SD/rising.yml
   addComponents:
     - type: IFF
       color: "#96B089"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: GFRising
   mapName: 'SD-GF Восход'

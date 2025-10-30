@@ -314,7 +314,13 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         BalanceLabel.Text = BankSystemExtensions.ToSpesoString(state.Balance);
         var shipPrice = 0;
         if (!state.FreeListings)
-            shipPrice = state.ShipSellValue;
+        //DH
+        {
+            // множитель для шата
+            float shuttlePriceMultiplier = 1.2f;
+
+            shipPrice = (int)(state.ShipSellValue * shuttlePriceMultiplier);
+        }
 
         ShipAppraisalLabel.Text = $"{BankSystemExtensions.ToSpesoString(shipPrice)} ({state.SellRate * 100.0f:F1}%)";
         SellShipButton.Disabled = state.ShipDeedTitle == null;

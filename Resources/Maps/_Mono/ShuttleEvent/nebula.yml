@@ -71,7 +71,6 @@ entities:
     - type: OccluderTree
     - type: Shuttle
       dampingModifier: 0.45
-    - type: NanotrasenFtl
     - type: IFF
       color: '#FF0000FF'
     - type: GridPathfinding
@@ -1101,7 +1100,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -1.5,-11.5
       parent: 1
-- proto: Catwalk
+- proto: CatwalkMono
   entities:
   - uid: 165
     components:

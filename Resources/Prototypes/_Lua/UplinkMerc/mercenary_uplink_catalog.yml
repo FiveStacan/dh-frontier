@@ -505,7 +505,7 @@
   description: Нелегальное оружие используемое агентами синдиката. Оружие, часто используемое печально известными ядерными оперативниками. Использует патроны калибра .35 авто.
   productEntity: NFWeaponSubMachineGunC20r
   cost:
-    Speso: 30000
+    Speso: 100000 #Lua 25k<100k
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -648,41 +648,41 @@
 
 #DH 
 #L6 SAW
-#- type: listing
-#  id: UplinkMercenaryWeaponLightMachineGunL6
-#  name: L6 SAW
-#  description: Нелегальное оружие используемое агентами синдиката. Весьма традиционный лёгкий пулемёт с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра .30 винтовочный.
-#  productEntity: NFWeaponLightMachineGunL6
-#  cost:
-#    Speso: 54990
-#  categories:
-#    - UplinkMercenaryGun
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - MercenaryUplink
-#    - !type:BuyerJobCondition
-#      whitelist:
-#        - MercenaryBase
-#DH
-#- type: listing
-#  id: UplinkMercenaryMagazineLightRifleBox
-#  name:  короб патронов L6 SAW (.30 винтовочные)
-#  description: короб патронов L6 SAW (.30 винтовочные)
-#  productEntity: NFMagazineBoxRifle20
-#  cost:
-#    Speso: 3080
-#  categories:
-#    - UplinkMercenaryAmmo
-#  conditions:
-#    - !type:StoreWhitelistCondition
-#      whitelist:
-#        tags:
-#          - MercenaryUplink
-#    - !type:BuyerJobCondition
-#      whitelist:
-#        - MercenaryBase
+- type: listing
+  id: UplinkMercenaryWeaponLightMachineGunL6
+  name: L6 SAW
+  description: Нелегальное оружие используемое агентами синдиката. Весьма традиционный лёгкий пулемёт с удобной лакированной деревянной пистолетной рукоятью. Использует патроны калибра .30 винтовочный.
+  productEntity: NFWeaponLightMachineGunL6
+  cost:
+    Speso: 175000 #Lua 45k<175k
+  categories:
+    - UplinkMercenaryGun
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - MercenaryUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - MercenaryBase
+
+- type: listing
+  id: UplinkMercenaryMagazineLightRifleBox
+  name:  короб патронов L6 SAW (.30 винтовочные)
+  description: короб патронов L6 SAW (.30 винтовочные)
+  productEntity: NFMagazineBoxRifle20
+  cost:
+    Speso: 20000 #Lua 3k<20k
+  categories:
+    - UplinkMercenaryAmmo
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - MercenaryUplink
+    - !type:BuyerJobCondition
+      whitelist:
+        - MercenaryBase
 
 #MP5
 - type: listing
@@ -728,7 +728,7 @@
   description: Отличный пистолет-пулемёт, производства NanoTrasen's Small Arms Division. Использует патроны калибра .35 авто. Запрещено к использованию гражданскими.
   productEntity: NFWeaponSubMachineGunWt550
   cost:
-    Speso: 10600
+    Speso: 150000 #Lua 7k<150k
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -746,7 +746,7 @@
   description: магазин WT550 (.35 авто, надствольный)
   productEntity: NFMagazineSubMachineGunTopMounted35
   cost:
-    Speso: 640
+    Speso: 3400 #Lua 0.6k<5k #DH 3.4k
   categories:
     - UplinkMercenaryAmmo
   conditions:
@@ -765,7 +765,7 @@
   description: Нелегальное оружие используемое агентами синдиката. Магазинный дробовик, предназначенный для ведения ближнего боя. Использует патроны калибра .50 ружейный.
   productEntity: NFWeaponShotgunBulldog
   cost:
-    Speso: 31500
+    Speso: 96000 #Lua 30k<100k #DH 96k
   categories:
     - UplinkMercenaryGun
   conditions:
@@ -1034,3 +1034,19 @@
     - !type:BuyerJobCondition
       whitelist:
         - MercenaryBase
+
+- type: listing
+  id: UplinkMercenaryCoordinatesDiskMercenary
+  name: uplink-mercenary-coordinates-disk-mercenary-name
+  description: uplink-mercenary-coordinates-disk-mercenary-desc
+  productEntity: CoordinatesDiskMercenary
+  icon: { sprite: Objects/Misc/cd.rsi, state: icon }
+  cost:
+    Speso: 1000
+  categories:
+    - UplinkMercenaryNocat
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - MercenaryUplink

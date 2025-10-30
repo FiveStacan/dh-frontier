@@ -6,6 +6,12 @@
   id: PurspaceManupulator
 
 - type: Tag
+  id: OmniBurnAlwaysOn
+
+- type: Tag
+  id: BluespaceFuel
+
+- type: Tag
   id: PurspaceCapacitor
 
 - type: Tag

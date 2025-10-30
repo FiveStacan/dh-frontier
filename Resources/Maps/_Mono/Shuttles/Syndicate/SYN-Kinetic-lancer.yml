@@ -4,8 +4,8 @@ meta:
   engineVersion: 261.2.0
   forkId: ""
   forkVersion: ""
-  time: 09/21/2025 07:42:07
-  entityCount: 896
+  time: 10/23/2025 15:08:50
+  entityCount: 897
 maps: []
 grids:
 - 1
@@ -712,11 +712,9 @@ entities:
       parent: 1
     - type: RadarBlip
       enabled: False
-      visibleFromOtherGrids: True
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 3
     components:
     - type: MetaData
@@ -725,11 +723,9 @@ entities:
       parent: 1
     - type: RadarBlip
       enabled: False
-      visibleFromOtherGrids: True
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 4
     components:
     - type: MetaData
@@ -738,11 +734,9 @@ entities:
       parent: 1
     - type: RadarBlip
       enabled: False
-      visibleFromOtherGrids: True
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 5
     components:
     - type: MetaData
@@ -751,11 +745,9 @@ entities:
       parent: 1
     - type: RadarBlip
       enabled: False
-      visibleFromOtherGrids: True
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
   - uid: 6
     components:
     - type: MetaData
@@ -764,11 +756,9 @@ entities:
       parent: 1
     - type: RadarBlip
       enabled: False
-      visibleFromOtherGrids: True
       shape: Ring
       scale: 0
       radarColor: '#00DEFEFF'
-    - type: CircularShieldRadar
 - proto: ADTWeaponRifleXC67
   entities:
   - uid: 8
@@ -825,7 +815,7 @@ entities:
       pos: 1.5,-31.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -1973.9286
+      secondsUntilStateChange: -2014.0422
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -878,7 +868,7 @@ entities:
       - - NuclearOperative
       - - SyndicateAgent
     - type: Door
-      secondsUntilStateChange: -30784.191
+      secondsUntilStateChange: -30824.305
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -922,7 +912,7 @@ entities:
       - - NuclearOperative
       - - SyndicateAgent
     - type: Door
-      secondsUntilStateChange: -26224.334
+      secondsUntilStateChange: -26264.447
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -1989,7 +1979,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,-20.5
       parent: 1
-- proto: Catwalk
+- proto: CatwalkMono
   entities:
   - uid: 25
     components:
@@ -2399,7 +2389,7 @@ entities:
   - uid: 318
     components:
     - type: Transform
-      pos: -1.5444565,-3.2490654
+      pos: -1.6185127,-4.4968696
       parent: 1
 - proto: ChemistryHotplate
   entities:
@@ -2439,7 +2429,7 @@ entities:
     - type: Transform
       pos: -5.5,-15.5
       parent: 1
-- proto: ComputerTabletopShuttle
+- proto: ComputerTabletopShuttleWithNordfallDisk
   entities:
   - uid: 325
     components:
@@ -3306,7 +3296,7 @@ entities:
       pos: -6.5,-21.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -25744.234
+      secondsUntilStateChange: -25784.348
       state: Opening
   - uid: 461
     components:
@@ -3428,12 +3418,19 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5,-24.5
       parent: 1
-- proto: MachineFTLDrive
+- proto: MachineFTLDrive600
   entities:
   - uid: 468
     components:
     - type: Transform
       pos: 3.5,-17.5
+      parent: 1
+- proto: MachineWarpDrive
+  entities:
+  - uid: 897
+    components:
+    - type: Transform
+      pos: -2.5,-17.5
       parent: 1
 - proto: Medkit
   entities:

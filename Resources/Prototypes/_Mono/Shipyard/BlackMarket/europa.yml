@@ -3,7 +3,7 @@
   parent: BaseVesselAntag
   name: RSIC Europa
   description: Большой боевой корабль с тяжелым вооружением и крепкими стенами
-  price: 210000
+  price: 216000
   limit: 1
   category: Large
   group: BlackMarket
@@ -17,10 +17,6 @@
   addComponents:
     - type: IFF
       color: "#8A6642FF"
-    - type: PirateFtl
-    - type: PirateMercFtl
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: Europa
   mapName: 'RSIC Europa'

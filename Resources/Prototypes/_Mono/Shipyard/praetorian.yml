@@ -22,11 +22,7 @@
   - Uranium
   addComponents:
     - type: IFF
-      color: "#182faf"
-    - type: NanotrasenFtl
-    - type: PirateFtl
-    - type: MercenaryFtl
-
+      color: "#ffffff"
 - type: gameMap
   id: Praetorian
   mapName: 'TSF-SKR Praetorian'

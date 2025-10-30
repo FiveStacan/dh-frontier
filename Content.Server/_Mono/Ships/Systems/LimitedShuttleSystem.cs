@@ -7,6 +7,9 @@ using Content.Server.Shuttles.Components;
 using Content.Shared._Mono.Ships.Components;
 using Content.Shared._Mono.Shipyard;
 using Content.Shared._NF.Shipyard;
+using Content.Shared._NF.Shipyard.Prototypes;
+using Content.Shared.Lua.CLVar;
+using Robust.Shared.Configuration;
 using Robust.Shared.Timing;
 
 namespace Content.Server._Mono.Ships.Systems;
@@ -19,11 +22,14 @@ public sealed class LimitedShuttleSystem : EntitySystem
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly IGameTiming _gameTiming = default!;
     [Dependency] private readonly ShuttleDeedSystem _shuttleDeed = default!;
+    [Dependency] private readonly IConfigurationManager _cfg = default!;
 
     private TimeSpan _lastUpdate = TimeSpan.Zero;
     private readonly TimeSpan _interval = TimeSpan.FromMinutes(1);
 
     private const double PoweredInactivityThreshold = 0.5;
+
+    private bool _useExistenceCheck = false;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -32,6 +38,13 @@ public sealed class LimitedShuttleSystem : EntitySystem
 
         SubscribeLocalEvent<AttemptShipyardShuttlePurchaseEvent>(OnAttemptShuttlePurchase);
         SubscribeLocalEvent<VesselComponent, ShipyardShuttlePurchaseEvent>(OnShuttlePurchase);
+
+        _cfg.OnValueChanged(CLVars.ShipLimitCheckExistence, OnExistenceCheckChanged, true);
+    }
+
+    private void OnExistenceCheckChanged(bool useExistenceCheck)
+    {
+        _useExistenceCheck = useExistenceCheck;
     }
 
     private void OnShuttlePurchase(Entity<VesselComponent> ent, ref ShipyardShuttlePurchaseEvent args)
@@ -51,6 +64,10 @@ public sealed class LimitedShuttleSystem : EntitySystem
         while (query.MoveNext(out var uid, out _))
         {
             var inactivity = EnsureComp<ShipActivityComponent>(uid);
+
+            // В режиме проверки существования не обновляем состояние активности
+            if (_useExistenceCheck)
+                continue;
 
             if (inactivity.LastChecked + inactivity.CheckInterval > _gameTiming.CurTime)
                 continue;
@@ -74,27 +91,35 @@ public sealed class LimitedShuttleSystem : EntitySystem
         }
     }
 
-    private void OnAttemptShuttlePurchase(ref AttemptShipyardShuttlePurchaseEvent ev)
+    public bool CanPurchaseVessel(VesselPrototype vessel)
     {
+        if (vessel.LimitActive <= 0)
+            return true;
+
         var query = EntityQueryEnumerator<VesselComponent>();
         var shuttleCount = 0;
 
-        if (ev.Vessel.LimitActive <= 0)
-            return;
-
         while (query.MoveNext(out var uid, out var targetVessel))
         {
-            if (targetVessel.VesselId != ev.Vessel.ID)
+            if (targetVessel.VesselId != vessel.ID)
                 continue;
-
-            // InactiveShipComponent isn't like a tag, it's more like ApcPowerReceiver. You need to check if it's inactive.
-            if (!TryComp<ShipActivityComponent>(uid, out var inactivity) || inactivity.InactivePastThreshold)
-                continue;
-
-            shuttleCount++;
+            if (_useExistenceCheck)
+            { shuttleCount++; }
+            else
+            {
+                if (!TryComp<ShipActivityComponent>(uid, out var inactivity) || !inactivity.InactivePastThreshold)
+                {
+                    shuttleCount++;
+                }
+            }
         }
 
-        if (shuttleCount >= ev.Vessel.LimitActive)
+        return shuttleCount < vessel.LimitActive;
+    }
+
+    private void OnAttemptShuttlePurchase(ref AttemptShipyardShuttlePurchaseEvent ev)
+    {
+        if (!CanPurchaseVessel(ev.Vessel))
         {
             ev.CancelReason = "shipyard-console-limited";
             ev.Cancel();

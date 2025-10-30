@@ -11,11 +11,15 @@
   category: medium
   group: Shipyard
   shuttlePath: /Maps/_Lua/Shuttles/Civilian/cls-mammoth.yml
+  guidebookPage: Null
+  class:
+  - Civilian
+  - Salvage
+  engine:
+  - Uranium
   addComponents:
     - type: IFF
       color: "#ffffff"
-    - type: NanotrasenFtl
-
 - type: gameMap
   id: mammoth
   mapName: 'CLS-Mammoth'

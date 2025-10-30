@@ -2,10 +2,15 @@
 // Copyright (c) 2025 LuaWorld
 // See AGPLv3.txt for details.
 
+using Content.Server.Administration.Components;
 using Content.Server.Atmos.Monitor.Components;
+using Content.Server.Power.Components;
 using Content.Shared._Mono.ShipGuns;
 using Content.Shared._NF.Shipyard.Prototypes;
+using Content.Shared.Cargo.Components;
+using Content.Shared.Damage.Components;
 using Content.Shared.Warps;
+using Content.Shared.Power.Components;
 using Robust.Server.GameObjects;
 using Robust.Shared.EntitySerialization.Systems;
 using Robust.Shared.GameObjects;
@@ -14,7 +19,6 @@ using Robust.Shared.Prototypes;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Content.Shared.Damage.Components;
 
 namespace Content.IntegrationTests.Tests._Lua;
 
@@ -107,6 +111,17 @@ public sealed class ShipyardLuaRulesTests
         "DebugSMES",
     };
 
+    private static readonly string[] ForbiddenGeneratorsAllSizes =
+    {
+        "GeneratorWallmountAPU",
+        "GeneratorWallmountBasic",
+        "GeneratorRTG",
+        "GeneratorRTGDamaged",
+        "GeneratorBasic15kW",
+        "DebugGenerator",
+        "GeneratorBasic",
+    };
+
     private static readonly string[] ConditionallyAllowedPowerLargeOnly =
     {
         "SMESAdvanced",
@@ -138,6 +153,16 @@ public sealed class ShipyardLuaRulesTests
     {
         "MachineFTLDrive600",
         "MachineFTLDrive",
+        "MachineFTLDrive50",
+        "MachineFTLDrive25S",
+        "MachineWarpDrive",
+    };
+
+    private static readonly string[] FtlBannedAll =
+    {
+        "MachineFTLDrive",
+        "MachineFTLDrive50",
+        "MachineFTLDrive25S",
     };
 
     private static readonly string[] IffBannedAll =
@@ -165,11 +190,46 @@ public sealed class ShipyardLuaRulesTests
         "DebugListing", "DebugListing2", "DebugListing3", "DebugListing4", "DebugListing5", "DebugDollar",
     };
 
+    private static readonly string[] WhitelistedVessels =
+    {
+        "CourierRed",
+        "CourierBlue",
+    };
+
     private static readonly string[] LuaTechThrusters =
     {
         "ThrusterLuaBuild",
         "ThrusterLua",
     };
+
+    private static readonly string[] UniversalShuttleConsoles =
+    {
+        "ComputerShuttle",
+        "ComputerTabletopShuttle",
+    };
+
+    private static readonly Dictionary<VesselClass, string[]> FactionShuttleConsoles = new()
+    {
+        { VesselClass.Civilian, new[] { "ComputerShuttleWithFrontierDisk", "ComputerTabletopShuttleWithFrontierDisk" } },
+        { VesselClass.Expedition, new[] { "ComputerShuttleWithFrontierDisk", "ComputerTabletopShuttleWithFrontierDisk" } },
+        { VesselClass.Nfsd, new[] { "ComputerShuttleWithFrontierDisk", "ComputerTabletopShuttleWithFrontierDisk" } },
+        { VesselClass.Mercenary, new[] { "ComputerShuttleWithMercenaryDisk", "ComputerTabletopShuttleWithMercenaryDisk" } },
+        { VesselClass.Syndicate, new[] { "ComputerShuttleWithNordfallDisk", "ComputerTabletopShuttleWithNordfallDisk" } },
+        { VesselClass.Pirate, new[] { "ComputerShuttleWithPirateDisk", "ComputerTabletopShuttleWithPirateDisk" } },
+    };
+
+    private static readonly Dictionary<VesselClass, string[]> FactionDisks = new()
+    {
+        { VesselClass.Civilian, new[] { "CoordinatesDiskFrontier" } },
+        { VesselClass.Expedition, new[] { "CoordinatesDiskFrontier" } },
+        { VesselClass.Nfsd, new[] { "CoordinatesDiskFrontier" } },
+        { VesselClass.Mercenary, new[] { "CoordinatesDiskMercenary" } },
+        { VesselClass.Syndicate, new[] { "CoordinatesDiskNordfall" } },
+        { VesselClass.Pirate, new[] { "CoordinatesDiskPirate" } },
+    };
+
+    private static readonly string[] ForbiddenDisksAll =
+    { "CoordinatesDiskDEBUG", };
 
     [Test]
     public async Task CheckLuaShipWeaponAndInfrastructureLimits()
@@ -186,6 +246,9 @@ public sealed class ShipyardLuaRulesTests
             {
                 foreach (var vessel in protoManager.EnumeratePrototypes<VesselPrototype>())
                 {
+                    if (WhitelistedVessels.Contains(vessel.ID))
+                        continue;
+
                     map.CreateMap(out var mapId);
                     bool mapLoaded = false;
                     Entity<MapGridComponent>? shuttle = null;
@@ -220,6 +283,8 @@ public sealed class ShipyardLuaRulesTests
                         points += ClassPoints[gunClass.Class];
                     }
                     var size = vessel.Category;
+                    if (vessel.Classes == null || !vessel.Classes.Any()) { sb.AppendLine($"[Класс] {vessel.ID}: поле 'class' обязательно и должно содержать хотя бы одно значение."); }
+                    if (vessel.Engines == null || !vessel.Engines.Any()) { sb.AppendLine($"[Двигатель] {vessel.ID}: поле 'engine' обязательно и должно содержать хотя бы одно значение."); }
                     if (!PointsCap.TryGetValue(size, out var cap)) cap = 0;
                     if (points > cap)
                     {
@@ -261,25 +326,93 @@ public sealed class ShipyardLuaRulesTests
                         if (pid == "SMESAdvanced" || pid == "SMESAdvancedEmpty") smesAdvancedTotal++;
                         if (pid.Contains("GasMiner", StringComparison.Ordinal)) sb.AppendLine($"[Атмос] {vessel.ID}: GasMiner '{pid}' запрещён.");
                         if (ForbiddenPowerAllSizes.Contains(pid)) sb.AppendLine($"[Энергия] {vessel.ID}: запрещённый прототип питания '{pid}'.");
+                        if (ForbiddenGeneratorsAllSizes.Contains(pid)) sb.AppendLine($"[Генераторы] {vessel.ID}: запрещённый генератор '{pid}'.");
                         if (ConditionallyAllowedPowerLargeOnly.Contains(pid) && size != VesselSize.Large) sb.AppendLine($"[Энергия] {vessel.ID}: '{pid}' разрешён только на Large, текущий размер: {size}.");
                         if (SubstationsBannedAlways.Contains(pid))  sb.AppendLine($"[Энергия] {vessel.ID}: запрещённая подстанция '{pid}'.");
                         if (size != VesselSize.Large && SubstationsBannedExceptLarge.Contains(pid)) sb.AppendLine($"[Энергия] {vessel.ID}: подстанция '{pid}' запрещена для размера {size}.");
                         if (IndestructibleBannedAll.Contains(pid)) sb.AppendLine($"[Структуры] {vessel.ID}: запрещён неразрушимый объект '{pid}'.");
                         if (pid == "MachineAnomalyGenerator" && size != VesselSize.Large) sb.AppendLine($"[Аномалии] {vessel.ID}: 'MachineAnomalyGenerator' разрешён только на Large, текущий размер: {size}.");
                         if (pid == "CircularShieldBase" && size == VesselSize.Large) sb.AppendLine($"[Shield] {vessel.ID}: '{pid}' запрещён на Large.");
+                        if (pid == "ShieldGeneratorPOI") { sb.AppendLine($"[Shield] {vessel.ID}: 'ShieldGeneratorPOI' запрещён на всех шаттлах."); }
+                        if (pid == "ShieldGeneratorTSFCapital")
+                        {
+                            var allowed = size == VesselSize.Large && vessel.Classes != null && vessel.Classes.Contains(VesselClass.Nfsd);
+                            if (!allowed) sb.AppendLine($"[Shield] {vessel.ID}: 'ShieldGeneratorTSFCapital' разрешён только для класса Nfsd и размера Large.");
+                        }
+                        if (pid == "ShieldGenerator")
+                        {
+                            var isLarge = size == VesselSize.Large;
+                            var hasAllowedClass = vessel.Classes != null && (vessel.Classes.Contains(VesselClass.Nfsd) || vessel.Classes.Contains(VesselClass.Pirate) || vessel.Classes.Contains(VesselClass.Syndicate));
+                            var isCivilianLarge = isLarge && vessel.Classes != null && vessel.Classes.Contains(VesselClass.Civilian);
+                            if (isCivilianLarge) sb.AppendLine($"[Shield] {vessel.ID}: щиты запрещены на гражданских Large.");
+                            else if (!hasAllowedClass) sb.AppendLine($"[Shield] {vessel.ID}: 'ShieldGenerator' на Large разрешён только для классов Nfsd/Pirate/Syndicate.");
+                        }
+                        if (pid == "ShieldGeneratorMedium")
+                        {
+                            var isCivilianLarge = size == VesselSize.Large && vessel.Classes != null && vessel.Classes.Contains(VesselClass.Civilian);
+                            if (isCivilianLarge) sb.AppendLine($"[Shield] {vessel.ID}: щиты запрещены на гражданских Large.");
+                            if (size == VesselSize.Small || size == VesselSize.Micro) sb.AppendLine($"[Shield] {vessel.ID}: 'ShieldGeneratorMedium' запрещён для размеров Small/Micro.");
+                        }
+                        if (pid == "ShieldGeneratorSmall")
+                        {
+                            var isCivilianLarge = size == VesselSize.Large && vessel.Classes != null && vessel.Classes.Contains(VesselClass.Civilian);
+                            if (isCivilianLarge) sb.AppendLine($"[Shield] {vessel.ID}: щиты запрещены на гражданских Large.");
+                        }
                         if ((pid == "CircularShieldLuaBuild" || pid == "CircularShieldLua") && !isLuaTech) sb.AppendLine($"[Щиты] {vessel.ID}: '{pid}' разрешён только для LuaTech шаттлов.");
                         if (LuaTechThrusters.Contains(pid) && !isLuaTech) sb.AppendLine($"[Двигатели] {vessel.ID}: '{pid}' разрешён только для LuaTech шаттлов.");
                         if (IffBannedAll.Contains(pid)) sb.AppendLine($"[IFF] {vessel.ID}: '{pid}' запрещён на всех шаттлах.");
-                        if ((vessel.Classes.Contains(VesselClass.Civilian) || vessel.Classes.Contains(VesselClass.Expedition)) && IffBannedCivilianExpedition.Contains(pid)) sb.AppendLine($"[IFF] {vessel.ID}: '{pid}' запрещён для Civilian/Expedition.");
+                        if ((vessel.Classes != null && (vessel.Classes.Contains(VesselClass.Civilian) || vessel.Classes.Contains(VesselClass.Expedition))) && IffBannedCivilianExpedition.Contains(pid)) sb.AppendLine($"[IFF] {vessel.ID}: '{pid}' запрещён для Civilian/Expedition.");
                         if (pid.Contains("Debug", StringComparison.Ordinal) || DebugPrototypeIds.Contains(pid)) debugFound.Add(pid);
-                        if ((vessel.Classes.Contains(VesselClass.Civilian) || vessel.Classes.Contains(VesselClass.Expedition)) && FtlBannedCivilianExpedition.Contains(pid))
+                        if (FtlBannedAll.Contains(pid)) { sb.AppendLine($"[FTL] {vessel.ID}: '{pid}' запрещён на всех шаттлах."); }
+                        if ((vessel.Classes != null && (vessel.Classes.Contains(VesselClass.Civilian) || vessel.Classes.Contains(VesselClass.Expedition))) && FtlBannedCivilianExpedition.Contains(pid))
                         { sb.AppendLine($"[FTL] {vessel.ID}: '{pid}' запрещён для Civilian/Expedition."); }
+                        var allFactionConsoles = FactionShuttleConsoles.SelectMany(kvp => kvp.Value).ToArray();
+                        if (allFactionConsoles.Contains(pid) && !UniversalShuttleConsoles.Contains(pid))
+                        {
+                            bool consoleAllowed = false;
+                            if (vessel.Classes != null)
+                            {
+                                foreach (var vesselClass in vessel.Classes)
+                                { if (FactionShuttleConsoles.TryGetValue(vesselClass, out var allowedConsoles) && allowedConsoles.Contains(pid)) { consoleAllowed = true; break; } }
+                            }
+                            if (!consoleAllowed)
+                            {
+                                var factionName = FactionShuttleConsoles.FirstOrDefault(kvp => kvp.Value.Contains(pid)).Key.ToString();
+                                var vesselClassesStr = vessel.Classes != null ? string.Join(", ", vessel.Classes) : "нет";
+                                sb.AppendLine($"[Консоли] {vessel.ID}: консоль '{pid}' (фракция {factionName}) запрещена для классов шаттла [{vesselClassesStr}].");
+                            }
+                        }
+                        var allFactionDisks = FactionDisks.SelectMany(kvp => kvp.Value).ToArray();
+                        if (allFactionDisks.Contains(pid))
+                        {
+                            bool diskAllowed = false;
+                            if (vessel.Classes != null)
+                            {
+                                foreach (var vesselClass in vessel.Classes)
+                                { if (FactionDisks.TryGetValue(vesselClass, out var allowedDisks) && allowedDisks.Contains(pid)) { diskAllowed = true; break; } }
+                            }
+                            if (!diskAllowed)
+                            {
+                                var factionName = FactionDisks.FirstOrDefault(kvp => kvp.Value.Contains(pid)).Key.ToString();
+                                var vesselClassesStr = vessel.Classes != null ? string.Join(", ", vessel.Classes) : "нет";
+                                sb.AppendLine($"[Диски] {vessel.ID}: диск '{pid}' (фракция {factionName}) запрещён для классов шаттла [{vesselClassesStr}].");
+                            }
+                        }
+                        if (ForbiddenDisksAll.Contains(pid))
+                        { sb.AppendLine($"[Диски] {vessel.ID}: диск '{pid}' запрещён на всех шаттлах."); }
                     }
                     int godmodeCount = 0;
                     var godQuery = entManager.EntityQueryEnumerator<GodmodeComponent, TransformComponent>();
-                    while (godQuery.MoveNext(out _, out var gXform))
-                    { if (gXform.GridUid == gridUid) godmodeCount++; }
-                    if (godmodeCount > 0) sb.AppendLine($"[Годмод] {vessel.ID}: обнаружен компонент 'GodmodeComponent' на {godmodeCount} сущностях.");
+                    while (godQuery.MoveNext(out _, out var gXform)) { if (gXform.GridUid == gridUid) godmodeCount++; }
+                    if (godmodeCount > 0) sb.AppendLine($"[Админ] {vessel.ID}: обнаружен компонент 'GodmodeComponent' на {godmodeCount} сущностях.");
+                    int minigunCount = 0;
+                    var minigunQuery = entManager.EntityQueryEnumerator<AdminMinigunComponent, TransformComponent>();
+                    while (minigunQuery.MoveNext(out _, out var mXform)) { if (mXform.GridUid == gridUid) minigunCount++; }
+                    if (minigunCount > 0) sb.AppendLine($"[Админ] {vessel.ID}: обнаружен 'AdminMinigunComponent' на {minigunCount} сущностях.");
+                    int cashCount = 0;
+                    var cashQuery = entManager.EntityQueryEnumerator<CashComponent, TransformComponent>();
+                    while (cashQuery.MoveNext(out _, out var cXform)) { if (cXform.GridUid == gridUid) cashCount++; }
+                    if (cashCount > 0) sb.AppendLine($"[Экономика] {vessel.ID}: обнаружены кредиты (CashComponent) на {cashCount} сущностях — запрещено на шаттлах.");
                     var sizeRuName = VesselSizeRu.TryGetValue(size, out var sr) ? sr : size.ToString();
                     switch (size)
                     {

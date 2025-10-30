@@ -188,6 +188,16 @@
   - type: StaticPrice # Frontier
     price: 20 # Frontier
     vendPrice: 1500 # Frontier
+  - type: Inject # lua - imperial hardsuit injection
+    openCloseDelay: 1.5
+    autoClose: true
+    autoCloseDelay: 6
+  - type: ItemSlots # lua - imperial hardsuit injection
+    slots: # lua - imperial hardsuit injection
+      beakerSlot: # lua - imperial hardsuit injection
+        whitelist: # lua - imperial hardsuit injection
+          tags: # lua - imperial hardsuit injection
+          - FitsHardsuit # Lua - imperial hardsuit injection
 
 - type: entity
   abstract: true
