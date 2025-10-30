@@ -64,7 +64,6 @@
   #DH
 
 - type: entity
-  categories: [ HideSpawnMenu ] # Frontier
   name: AKMS
   parent: [BaseWeaponRifle, BaseC3SyndicateContraband] # Frontier: BaseSecurityContraband<BaseC3SyndicateContraband
   id: WeaponRifleAk

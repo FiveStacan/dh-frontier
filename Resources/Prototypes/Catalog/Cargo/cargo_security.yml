@@ -44,23 +44,23 @@
 
 - type: cargoProduct
   id: SecurityRestraints
-  abstract: true # Frontier
+  #abstract: true # Frontier
   icon:
     sprite: Objects/Misc/handcuffs.rsi
     state: handcuff
   product: CrateRestraints
-  cost: 1000
+  cost: 6000
   category: cargoproduct-category-name-security
   group: market
 
 - type: cargoProduct
   id: SecurityBiosuit
-  abstract: true # Frontier
+  #abstract: true # Frontier
   icon:
     sprite: Clothing/Head/Hoods/Bio/security.rsi
     state: icon
   product: CrateSecurityBiosuit
-  cost: 800
+  cost: 3900
   category: cargoproduct-category-name-security
   group: market
 

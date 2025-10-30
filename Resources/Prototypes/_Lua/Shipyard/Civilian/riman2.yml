@@ -17,7 +17,7 @@
   addComponents:
     - type: IFF
       color: "#ffffff"
-    - type: NanotrasenFtl
+    #- type: NanotrasenFtl
 
 - type: gameMap
   id: GFSYRiman

@@ -1136,7 +1136,7 @@
   parent: BaseComputerAiAccess
   name: cargo bounty computer
   description: Used to manage currently active bounties.
-  categories: [HideSpawnMenu] # Frontier
+  #categories: [HideSpawnMenu] # Frontier
   components:
   - type: Sprite
     layers:

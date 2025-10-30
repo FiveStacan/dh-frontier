@@ -138,8 +138,8 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 13
-        Structural: 30
+        Blunt: 14
+        Structural: 16
 
 - type: entity
   id: NFBulletKineticHighPower

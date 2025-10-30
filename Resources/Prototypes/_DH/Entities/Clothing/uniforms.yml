@@ -267,6 +267,19 @@
   - type: Clothing
     sprite: _DH/Clothing/Uniforms/jumpsuit/psycrimson.rsi
 
+- type: entity
+  parent: ClothingUniformBase
+  id: ADTClothingUniformJumpsuitHawaiiShirt
+  name: hawaiian shirt
+  description: An ideal variant for those, who wants to look serious, but still lively as a cricket. Made by company "Modeling Agency Dar-Vaxed".
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpsuit/hawaiian_shirt.rsi #спрайты от prazat911
+  - type: StaticPrice
+    price: 60
+
 # region Jumpskirt
 
 - type: entity
@@ -510,3 +523,16 @@
       state: icon-open
       map: ["foldedLayer"]
       visible: true
+
+- type: entity
+  parent: ClothingUniformSkirtBase
+  id: ADTClothingUniformJumpskirtTeto
+  name: teto's jumpskirt
+  description: The jumpskirt of the 31-year-old popular UTAUloid.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/teto.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/Uniforms/Jumpskirt/teto.rsi
+  - type: StaticPrice
+    price: 260

@@ -45,3 +45,22 @@
 
 - type: Tag
   id: NAMEFuel
+
+#ADT
+- type: Tag
+  id: ADTCartridgeBibis # Обычне
+
+- type: Tag
+  id: ADTCartridgeBibisSoft # Мягкие
+
+- type: Tag
+  id: ADTCartridgeBibisReinforced # Твёрдые
+
+- type: Tag
+  id: ADTMagazineRifleBibis # Магазин обычный
+
+- type: Tag
+  id: ADTMagazineRifleBibisSoft # Магазин мягкий
+
+- type: Tag
+  id: ADTMagazineRifleBibisSoftBig # Магазин пулемёта

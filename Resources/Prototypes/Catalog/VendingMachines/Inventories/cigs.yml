@@ -27,3 +27,9 @@
   emaggedInventory:
     CigarPlatinumCase: 1 # Frontier
     CigPackSyndicate: 1
+    # ADT Tweak Start
+    ADTZippo: 2
+    ADTZippoExec: 1
+    ADTZippoDV: 1
+    ADTHoloCigar: 1
+    # ADT Tweak End

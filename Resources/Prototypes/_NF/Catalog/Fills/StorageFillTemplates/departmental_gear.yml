@@ -24,6 +24,9 @@
     - id: HandheldHealthAnalyzer
     - id: ClothingHandsGlovesLatex
     - id: ClothingMaskSterile
+      # ADT tweak Start
+    - id: ADTPatchPackFilled
+      # ADT tweak End
 
 - type: entityTable
   id: NFStorageFillGearChemistry
@@ -42,3 +45,4 @@
     - id: MedkitFilled
     - id: ClothingEyesHudMedical
 # endregion
+

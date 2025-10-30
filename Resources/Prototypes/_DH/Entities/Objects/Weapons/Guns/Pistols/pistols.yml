@@ -205,3 +205,45 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+
+- type: entity
+  name: bananahilator
+  parent: BaseItem
+  id: ADTBananahilator
+  description: Alternative evolution branch of gatfruits. This thing looks funny and usefull at same time.
+  components:
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Pistols/bananigilator.rsi
+    state: icon
+  - type: Item
+    size: Small
+    shape:
+    - 0,0,1,0
+    - 0,1,0,1
+  - type: Tag
+    tags:
+    - Sidearm
+  - type: Clothing
+    sprite: _DH/Objects/Weapons/Guns/Pistols/bananigilator.rsi
+    quickEquip: false
+    slots:
+    - suitStorage
+    - Belt
+  - type: Gun
+    fireRate: 6
+    selectedMode: SemiAuto
+    availableModes:
+      - SemiAuto
+      - FullAuto
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
+  - type: AmmoCounter
+  - type: RechargeBasicEntityAmmo
+    rechargeCooldown: 3.4
+    rechargeSound:
+      path: /Audio/Weapons/Guns/Cock/pistol_cock.ogg
+  - type: BasicEntityAmmoProvider
+    proto: ADTBulletHoly
+    capacity: 4
+    count: 1
+  #- type: HolyDamage

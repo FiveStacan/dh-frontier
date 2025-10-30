@@ -457,8 +457,6 @@ ent-GasVentPumpFreezer = { ent-GasVentPump }
     .desc = { ent-GasVentPump.desc }
     .suffix = Холодильник
 
-ent-ADTClothingShoesBootsMagAdvSynd = улучшенные магнитные ботинки синдиката
-    .desc = State-of-the-art magnetic boots that do not slow down their wearer. Made by gorlax for gorlax
 ent-ClothingShoesBootsMagFSF = { ent-ClothingShoesBootsMag }
     .desc = { ent-ClothingShoesBootsMag.desc }
 ent-ADTClothingShoesBootsMagERT = { ent-ClothingShoesBootsMag }
@@ -1474,3 +1472,335 @@ ent-AtmosFixSaunaMarker = метка исправления атмоса сау�
 ent-GasPipeManifold = коллектор газовой трубы
     .desc = Позволяет соединять между собой газовые трубы различной конфигурации.
 strip-all-verb-get-data-text = Снять все
+
+gunnery-window-title = консоль управления вооружением
+gunnery-guns = вооружение
+gunnery-select-all = выбрать все
+gunnery-unselect-all = убрать все
+gunnery-window-connected = Сервер подключен
+gunnery-window-disconnected = Сервер отключен
+
+anomaly-generator-refund-message = Обнаружены ингибиторы аномалий. Сгенерируйте в другой области.
+ent-VendingMachinePickNPackPOI = Пик-Н-Пак
+    .desc = Вкладываем оружие в ваши руки с 2549 года.
+ent-CardBoxNanotrasen = коробка с картами NanoTrasen
+    .desc = Картонная коробка для хранения вещей.
+
+ent-PoweredDimSmallLight = { ent-PoweredSmallLightEmpty }
+    .suffix = тёмный
+    .desc = { ent-PoweredSmallLightEmpty.desc }
+
+ent-ADTUniversalPipeDispenserCircuitboard = универсальный раздатчик труб (машинная плата)
+    .desc = Машинная плата, используемая для создания универсального раздатчика труб. Существует в единственном экземпляре.
+ent-ADTUniversalPipeDispenser = универсальный раздатчик труб
+    .desc = Печатает трубы для всевозможных ситуаций. Тем не менее, в комплект не входят продвинутые атмосферные технологии.
+
+ent-ADTZippo = зажигалка Zippo
+    .desc = Необычная стальная зажигалка Zippo. Зажигайте со вкусом.
+ent-ADTZippoExec = зажигалка We-Ya Gold
+    .desc = Замечательная зажигалка Zippo, выполненная в фирменных черно-золотых тонах.
+ent-ADTZippoDV = зажигалка DV Titanium
+    .desc = Надёжная металлическая зажигалка зиппо с титановым покрытием, рассчитан на долгий срок службы. Является продуктом коллаборации Dar-Vaxed и We-Ya Gold.
+
+ent-ADTHoloCigar = голографическая сигара
+    .desc = Новейшая разработка Nanotrasen, предназначенная для имитации особенностей настоящей сигары. Повязка на глаз и бандана в комплект не входят.
+
+holo-cigar-verb-text = Переключить
+holo-cigar-verb-desc = Продайте мир или же смиритесь с ним.
+
+ent-ADTRPD = РУТ
+    .desc = Ручной укладчик труб используется для быстрого строительства конструкциий, используемых при эксплуатации атмосферных и утилизационных системах.
+ent-ADTRPDEmpty = { ent-ADTRPD }
+    .desc = { ent-ADTRPD.desc }
+    .suffix = Пустой
+ent-ADTRPDRecharging = экспериментальный РУТ
+    .desc = Блюспейс-улучшенный РУТ, пассивно регенерирующий заряды.
+    .suffix = Автозарядка
+
+### Интерфейс
+
+rpd-component-examine-mode-details = Выбран режим: '{ $mode }'.
+rpd-component-examine-build-details = Выбран режим строительства: { $name }.
+### Interaction Messages
+
+# Смена мода
+rpd-component-change-mode = РУТ переключён в режим '{ $mode }'.
+rpd-component-change-build-mode = РУТ переключён в режим строительства. Строится { $name }.
+# Кол-во материи
+rpd-component-no-ammo-message = В РУТ закончились заряды!
+rpd-component-insufficient-ammo-message = В РУТ не хватает зарядов!
+# Разборка
+rpd-component-deconstruct-target-not-on-whitelist-message = Вы не можете демонтировать это!
+rpd-component-nothing-to-deconstruct-message = Здесь нечего демонтировать!
+# Строительство
+rpd-component-cannot-build-on-empty-tile-message = Это не может быть построено без фундамента.
+rpd-component-must-build-on-subfloor-message = Это может быть построено только на покрытии!
+rpd-component-cannot-build-on-occupied-tile-message = Здесь нельзя строить, место уже занято!
+
+### Имя категориий
+
+rpd-component-DisposalPipe = Утилизационные трубы
+rpd-component-Gaspipes = Газовые трубы
+rpd-component-Devices = Девайсы
+
+### Дополнительная информация
+
+rpd-component-deconstruct = Демонтаж
+rpd-ammo-component-on-examine =
+    Содержит { $charges } { $charges ->
+        [one] заряд
+        [few] заряда
+       *[other] зарядов
+    }.
+rpd-ammo-component-after-interact-full = РУТ полон!
+rpd-ammo-component-after-interact-refilled = Вы пополняете РУТ.
+
+rpd-component-FireAlarm = { ent-FireAlarm }
+rpd-component-GasPipeBend = { ent-GasPipeBend }
+rpd-component-GasPipeStraight = { ent-GasPipeStraight }
+rpd-component-GasPipeHalf = { ent-GasPipeHalf }
+rpd-component-GasPipeFourway = { ent-GasPipeFourway }
+rpd-component-GasPipeTJunction = { ent-GasPipeTJunction }
+rpd-component-GasPressurePump = { ent-GasPressurePump }
+rpd-component-GasMixer = { ent-GasMixer }
+rpd-component-GasMixerFlipped = { ent-GasMixerFlipped }
+rpd-component-GasFilter = { ent-GasFilter }
+rpd-component-GasFilterFlipped = { ent-GasFilterFlipped }
+rpd-component-GasVolumePump = { ent-GasVolumePump }
+rpd-component-GasPassiveVent = { ent-GasPassiveVent }
+rpd-component-GasOutletInjector = { ent-GasOutletInjector }
+rpd-component-GasVentPump = { ent-GasVentPump }
+rpd-component-GasValve = { ent-GasValve }
+rpd-component-GasVentScrubber = { ent-GasVentScrubber }
+rpd-component-AtmosDeviceFanTiny = { ent-AtmosDeviceFanTiny }
+rpd-component-GasPassiveGate = { ent-GasPassiveGate }
+rpd-component-GasDualPortVentPump = { ent-GasDualPortVentPump }
+rpd-component-PressureControlledValve = { ent-PressureControlledValve }
+rpd-component-DisposalUnit = { ent-DisposalUnit }
+rpd-component-MailingUnit = { ent-MailingUnit }
+rpd-component-GasPort = { ent-GasPort }
+rpd-component-DisposalJunctionFlipped = { ent-DisposalJunctionFlipped }
+rpd-component-DisposalJunction = { ent-DisposalJunction }
+rpd-component-DisposalRouterFlipped = { ent-DisposalRouterFlipped }
+rpd-component-DisposalRouter = { ent-DisposalRouter }
+rpd-component-DisposalTagger = { ent-DisposalTagger }
+rpd-component-DisposalBend = { ent-DisposalBend }
+rpd-component-DisposalYJunction = { ent-DisposalYJunction }
+rpd-component-DisposalSignalRouter = { ent-DisposalSignalRouter }
+rpd-component-DisposalSignalRouterFlipped = { ent-DisposalSignalRouterFlipped }
+rpd-component-DisposalTrunk = { ent-DisposalTrunk }
+rpd-component-DisposalPipes = { ent-DisposalPipe }
+rpd-component-AirSensor = { ent-AirSensor }
+rpd-component-FloorDrain = { ent-FloorDrain }
+rpd-component-AirAlarm = { ent-AirAlarm }
+rpd-component-SignalControlledValve = { ent-SignalControlledValve }
+rpd-component-Radiator = { ent-HeatExchanger }
+
+ent-ADTAtmosDeviceFanRPD = маленький вентилятор
+    .desc = Маленький вентилятор, создающий лёгкий поток воздуха.
+    .suffix = РУТ, Не блокирует взрывы
+ent-ADTGasPipeHalf = { ent-GasPipeBase }
+    .suffix = Половинная, ADT
+    .desc = { ent-GasPipeBase.desc }
+ent-ADTGasPipeStraight = { ent-GasPipeBase }
+    .suffix = Прямая, ADT
+    .desc = { ent-GasPipeBase.desc }
+ent-ADTGasPipeBend = { ent-GasPipeBase }
+    .suffix = Угловая, ADT
+    .desc = { ent-GasPipeBase.desc }
+ent-ADTGasPipeTJunction = { ent-GasPipeBase }
+    .suffix = Т-образная, ADT
+    .desc = { ent-GasPipeBase.desc }
+ent-ADTGasPipeFourway = { ent-GasPipeBase }
+    .suffix = Четверная, ADT
+    .desc = { ent-GasPipeBase.desc }
+ent-ADTDisposalPipe = участок утилизационной трубы
+    .desc = Большой сегмент трубы, используемый при создании системы утилизации.
+ent-ADTDisposalTagger = маркировщик утилизационной трубы
+    .desc = Труба, маркирующая объекты для отправки определённому адресату.
+ent-ADTDisposalTrunk = ствол утилизационной трубы
+    .desc = Труба, используемая в качестве точки входа в систему утилизации.
+ent-ADTDisposalRouter = маршрутизатор утилизационной трубы
+    .desc = Трёхсторонний маршрутизатор. Объекты с совпадающими маркерами уходят в сторону с помощью настраиваемых фильтров.
+ent-ADTDisposalRouterFlipped = { ent-ADTDisposalRouter }
+    .suffix = Перевёрнутый
+    .desc = { ent-ADTDisposalRouter.desc }
+ent-ADTDisposalJunction = развязка утилизационной трубы
+    .desc = Трёхсторонняя развязка. Стрелка указывает на место выхода объектов.
+ent-ADTDisposalJunctionFlipped = { ent-ADTDisposalJunction }
+    .desc = { ent-ADTDisposalJunction.desc }
+    .suffix = Перевёрнутый
+ent-ADTDisposalYJunction = Y-развязка утилизационной трубы
+    .desc = Трёхсторонняя развязка с альтернативным местом выхода.
+ent-ADTDisposalBend = изгиб утилизационной трубы
+    .desc = Труба, согнутая под прямым углом.
+ent-ADTDisposalSignalRouter = сигнальный утилизационный маршрутизатор
+    .desc = Трёхсторонний маршрутизатор, управляемый сигналами.
+ent-ADTDisposalSignalRouterFlipped = { ent-ADTDisposalSignalRouter }
+    .suffix = Перевёрнутый
+    .desc = { ent-ADTDisposalSignalRouter.desc }
+
+ent-ADTHydroponicsTrayAdvancedMachineCircuitboard = продвинутый гидропонный лоток (машинная плата)
+    .desc = { ent-BaseMachineCircuitboard.desc }
+ent-ADTAdvancedReagentGrinderMachineCircuitboard = продвинутый измельчитель реагентов (машинная плата)
+    .desc = { ent-BaseMachineCircuitboard.desc }
+
+ent-ADTPatchPackFilled = { ent-ADTPatchPack }
+    .desc = { ent-ADTPatchPack.desc }
+    .suffix = { "Заполненный" }
+ent-ADTPatchPack = коробка пластырей
+    .desc = Коробка для хранения медицинских пластырей.
+    .suffix = { "" }
+ent-ADTPatchHealing = пластырь
+    .desc = Помогает при грубых травмах.
+    .suffix = { "" }
+ent-ADTPatchHealingMini = мини-пластырь от ушибов
+    .desc = Помогает при грубых травмах.
+    .suffix = { "" }
+ent-ADTPatchBurn = пластырь от ожогов
+    .desc = Помогает при ожоговых травмах.
+    .suffix = { "" }
+ent-ADTPatchBurnMini = мини-пластырь от ожогов
+    .desc = Помогает при ожоговых травмах.
+    .suffix = { "" }
+ent-ADTPatchHonk = хонк пластырь
+    .desc = Чудо клоунской медицины, повышает уровень веселья в крови.
+    .suffix = { "" }
+
+ent-CrateEngineeringSingularityContainmentBulk = ящик с генераторами сдерживающего поля
+    .desc = Генераторы сдерживающего поля, удерживает сингулярность под контролем.
+ent-CrateEngineeringSingularityCollectorBulk = ящик с коллекторами радиации
+    .desc = Коллекторы для радиации, использующиеся в сингулярном двигателе. Плазма входит в комплект.
+ent-CrateEngineeringTeslaCoilBulk = ящик с катушками Теслы
+    .desc = Катушки Теслы. Притягивают молнии и вырабатывают из них энергию.
+ent-CrateEngineeringTeslaGroundingRodBulk = упаковка заземляющих стержней
+    .desc = Универсально-сборные упаковки, используемые для сборки заземляющих стержней Теслы.
+ent-CrateFoodGetMore = ящик Getmore Bakemore
+    .desc = Фирменные закуски и принадлежности для выпечки Getmore для креативного шеф-повара — и все это без необходимости опустошать аппараты Getmore на вашей станции!
+ent-CrateFoodIceCream = доставка мороженого
+    .desc = Ассортимент мороженого на любой случай! Включает 16 замороженных лакомств.
+ent-CrateFoodSnowcone = доставка мороженого в рожках
+    .desc = Ассортимент мороженого в рожках на любой случай! Включает 16 замороженных сахорных рожков.
+ent-ADTBulletHoly = святая косточка
+    .desc = { ent-BaseBullet.desc }
+ent-ADTBananahilator = бананагилятор
+    .desc = Альтернативная ветвь эволюции гатфрукта. Выглядит и смешно, и полезно одновременно.
+
+ent-ADTWeaponProtoKineticPistol = протокинетический пистолет
+    .desc = Имеет большую вместимость модификаций вместо высокого базового урона, что делает его по-настоящему модулируемым ПКА.
+
+ent-ADTWeaponProtoKineticRepeater = протокинетический повторитель
+    .desc = Обменивает часть слотов для модификации и немного урона на возможность стрелять исключительно серией из 3-х быстрых выстрелов. Суммарно 3 выстрела нанесут больше урона, чем один выстрел ПКА.
+
+ent-ADTWeaponProtoKineticRailgun = протокинетический рельсотрон
+    .desc = За место почти всех слотов для модификаций и скорости стрельбы имеет невероятно большой урон и пробивную силу, что может резать горы как плазменный резак.
+
+ent-ADTWeaponProtoKineticShotgun = протокинетический дробовик
+    .desc = Стреляет на короткую дальность залпом из 4-х снарядов, что суммарно наносят больший урон, чем базовый ПКА. Имеет меньшую вместимость под модули.
+
+ent-ADTWeaponExperimentalProtoKineticAcellerator = Экспериментальный протокинетический ускоритель
+    .desc = Улучшенная версия обычного протокинетического ускорителя, имеет больше места под улучшения.
+
+ent-PKAUpgradeDamage = улучшение ПКА (урон)
+    .desc = Улучшение для протокинетического ускорителя.
+ent-PKAUpgradeRange = улучшение ПКА (дальность)
+    .desc = { ent-PKAUpgradeDamage.desc }
+ent-PKAUpgradeFireRate = улучшение ПКА (скорость стрельбы)
+    .desc = { ent-PKAUpgradeDamage.desc }
+
+ent-ADTMagazineRifleBibis = магазин от страйкбольного автомата
+    .desc = Не пробуйте сувать туда настоящие пули!
+    .suffix = { "Страйкбол" }
+ent-ADTMagazineRifleBibisSoft = магазин от страйкбольного ПП.
+    .desc = { ent-ADTMagazineRifleBibis.desc }
+    .suffix = { ent-ADTMagazineRifleBibis.suffix }
+ent-MagazineLightRifleBoxBibis = магазин для страйбольного L6
+    .desc = Ха-Ха-Ха-Ха-Ха! Бегите, Я конченный!
+    .suffix = { ent-ADTMagazineRifleBibis.suffix }
+ent-MagazineBoxLightRiflePracticeBibis = коробка укреплённых шариков.
+    .desc = ДА НЕ ЗАСУНУТЬ СУДА НАСТОЯЩИЙ ПАТРОН!
+    .suffix = { "Страйкбол" }
+ent-MagazineBoxPistolPracticeBibis = коробка мягких шариков
+    .desc = Маде ин чина...
+    .suffix = { ent-MagazineBoxLightRiflePracticeBibis.suffix }
+ent-MagazineBoxRiflePracticeBibis = коробка шариков
+    .desc = Страйкбольные шарики
+    .suffix = { ent-MagazineBoxLightRiflePracticeBibis.suffix }
+ent-BoxShotgunPracticeBibis = коробка картечи шариков
+    .desc = Коробка в коробке, которая в коробке.
+    .suffix = { ent-MagazineBoxLightRiflePracticeBibis.suffix }
+ent-WeaponSniperHristovBibis = страйкбольный Христов
+    .desc = Реплика "Христов", сделанная для игры в страйкбол.
+    .suffix = { "Страйкбол" }
+ent-MusketBibis = страйкбольный Мушкет
+    .desc = Реплика "Мушкет", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponSniperHristovBibis.suffix }
+ent-ADTWeaponRifleLecterBibis = страйкбольный "Лектер"
+    .desc = Релика штурмовой винтовки "Лектер", сделанная для игры в страйкбол.
+    .suffix = { "Страйкбол" }
+ent-WeaponRifleAkBibis = страйкбольный АКМС
+    .desc = Реплика "АКМС", сделанная для игры в страйкбол.
+    .suffix = { "Страйкбол" }
+ent-WeaponSubMachineGunAtreidesBibis = страйкбольный Атрейдес
+    .desc = Реплика "Атрейдес", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-WeaponSubMachineGunC20rBibis = страйкбольный C-20r
+    .desc = Реплика "C-20r", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-WeaponSubMachineGunWt550Bibis = страйкбольный WT550
+    .desc = Реплика "WT550", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-WeaponRifleM90GrenadeLauncherBibis = страйкбольный M-90gl
+    .desc = Реплика "M-90gl", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-WeaponLightMachineGunL6Bibis = страйкбольный L6 SAW
+    .desc = Реплика "L6 SAW", сделанная для игры в страйкбол. Будьте не как все!
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-ADTWeaponRifleXC67Bibis = страйкбольный xC-67
+    .desc = Реплика "xC-67", сделанная для игры в страйкбол.
+    .suffix = { ent-WeaponRifleAkBibis.suffix }
+ent-CrateWeaponAirsoftSecure = защищённый ящик для страйкболла
+    .suffix = НЕ МАППИТЬ, Пустой
+    .desc = Ящик для страйкбольных наборов.
+ent-ADTArmorAirsoftCrate = набор брони для страйкболла
+    .desc = Содержит по 6 штук брони разных цветов.
+ent-ADTWeaponAirsoftCrate = набор оружия для страйкболла
+    .desc = Содержит все виды существующих оружий для страйкболла.
+ent-ADTPistolAirsoftCrate = набор шариков для страйкболла
+    .desc = Содержит шарики и магазины страйкбольного оружия.
+ent-ClothingOuterArmorAirsoftRed = Страйкбольная броня
+    .desc = Полугибкий поликарбонатный бронекостюм с ослабленной защитой. Броня для страйкбола
+    .suffix = Страйкбол
+ent-ClothingOuterArmorAirsoftBlue = { ent-ClothingOuterArmorAirsoftRed }
+    .desc = { ent-ClothingOuterArmorAirsoftRed.desc }
+    .suffix = { ent-ClothingOuterArmorAirsoftRed.suffix }
+ent-ADTCartridgeStrikeballBibis = страйкбольный шарик
+    .desc = Маленький, пластиковый шарик, используемый для страйкбола.
+    .suffix = { "Страйкбол" }
+ent-ADTCartridgeStrikeballBibisReinforced = укреплённый страйкбольный шарик
+    .desc = Маленький, ПОЧТИ металлический шарик, используемый для страйкбола.
+    .suffix = { ent-ADTCartridgeStrikeballBibis.suffix }
+ent-ADTCartridgeStrikeballBibisSoft = лёгкий страйкбольный шарик
+    .desc = Маленький, ПОЧТИ пластиковый шарик, используемый для страйкбола.
+    .suffix = { ent-ADTCartridgeStrikeballBibis.suffix }
+ent-ShellShotgunBibis = картечь страйкбольных шариков
+    .desc = Безопасность 99%. Пластик 100%.
+    .suffix = { ent-ADTCartridgeStrikeballBibis.suffix }
+
+ent-ADTClothingOuterExplorerBomber = бомбер исследователя
+    .desc = Вперёд навстречу новым исследованиям и приключениям!.. Как жаль, что на Лаваленде многие приключения ведут к смерти... От него пахнет... Пеплом?
+ent-ADTClothingUniformJumpskirtTeto = юбка-костюм Тето
+    .desc = Юбка костюм 31-летней женщины уталоида.
+ent-ADTClothingHeadTetoWig = парик Тето
+    .desc = Хвосты по бокам похожи на сверла.
+ent-ADTClothingUniformJumpsuitHawaiiShirt = гавайская рубашка
+    .desc = Идеальный вариант для тех, кто должен выглядеть серьезно, но при этом не хочет скрывать свою жизнерадостную натуру. Производство компании "Modeling Agency Dar-Vaxed".
+    .suffix = { "" }
+
+reagent-name-styptic-powder = Кровоостанавливающая пудра
+reagent-desc-styptic-powder = При нанесении на кожу заживляет травмы.
+reagent-name-silver-sulfadiazine = Сульфадиазин серебра
+reagent-desc-silver-sulfadiazine = При нанесении на кожу заживляет ожоги.
+
+NFWeaponRifleSniperHristov = { ent-WeaponSniperHristov }
+    .desc = { ent-WeaponSniperHristov.desc }

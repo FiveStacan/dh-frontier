@@ -305,11 +305,11 @@
       children:
       - id: JetpackBlueFilled
       - id: JetpackMiniFilled # Frontier JetpackBlackFilled<JetpackMiniFilled
-    # - !type:GroupSelector # Frontier
-    #   children: # Frontier
-    #   - id: PKAUpgradeDamage # Frontier
-    #   - id: PKAUpgradeRange # Frontier
-    #   - id: PKAUpgradeFireRate # Frontier
+    - !type:GroupSelector 
+      children: 
+      - id: PKAUpgradeDamage 
+      - id: PKAUpgradeRange 
+      - id: PKAUpgradeFireRate
     - id: PowerCellAntiqueProto # Frontier
     - id: NFShovel # Frontier
 

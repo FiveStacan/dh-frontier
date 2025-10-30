@@ -154,6 +154,7 @@ cmd-savemap-not-exist = Целевая карта не существует.
 cmd-savemap-init-warning = Попытка сохранить карту после инициализации без принудительного сохранения.
 cmd-savemap-attempt = Попытка сохранить карту { $mapId } в { $path }.
 cmd-savemap-success = Карта успешно сохранена.
+cmd-savemap-unsuccess = Карта НЕ сохранена!
 cmd-hint-savemap-id = <MapID>
 cmd-hint-savemap-path = <Path>
 cmd-hint-savemap-force = [bool]

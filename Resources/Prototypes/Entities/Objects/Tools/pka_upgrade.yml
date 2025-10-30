@@ -20,7 +20,7 @@
   id: PKAUpgradeDamage
   parent: BasePKAUpgrade
   name: PKA modkit (damage)
-  categories: [HideSpawnMenu] # Frontier
+  #categories: [HideSpawnMenu] # Frontier #DH
   components:
   - type: Sprite
     layers:
@@ -44,7 +44,7 @@
   id: PKAUpgradeRange
   parent: BasePKAUpgrade
   name: PKA modkit (range)
-  categories: [HideSpawnMenu] # Frontier
+  #categories: [HideSpawnMenu] # Frontier #DH
   components:
   - type: Sprite
     layers:
@@ -65,7 +65,7 @@
   id: PKAUpgradeFireRate
   parent: BasePKAUpgrade
   name: PKA modkit (fire rate)
-  categories: [HideSpawnMenu] # Frontier
+  #categories: [HideSpawnMenu] # Frontier #DH
   components:
   - type: Sprite
     layers:

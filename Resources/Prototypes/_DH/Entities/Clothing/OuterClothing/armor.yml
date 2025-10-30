@@ -31,3 +31,29 @@
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
+
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  id: ClothingOuterArmorAirsoftBlue
+  name: airsoft suit
+  description: Semi-flexible polycarbonate armor suit with weakened protection. Airsoft armor
+  suffix: airsoft
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/OuterClothing/Armor/airsoft_blue_armor.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/OuterClothing/Armor/airsoft_blue_armor.rsi
+  - type: GroupExamine
+
+- type: entity
+  parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]
+  id: ClothingOuterArmorAirsoftRed
+  name: airsoft suit
+  description: Semi-flexible polycarbonate armor suit with weakened protection. Airsoft armor
+  suffix: airsoft
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/OuterClothing/Armor/airsoft_red_armor.rsi
+  - type: Clothing
+    sprite: _DH/Clothing/OuterClothing/Armor/airsoft_red_armor.rsi
+  - type: GroupExamine

@@ -62,8 +62,8 @@
 
 - type: latheRecipePack
   id: SalvageSecurityWeapons
-  recipes: [] # Frontier: empty list
+  recipes: 
   # - WeaponProtoKineticAccelerator # Frontier
-  # - PKAUpgradeDamage # Frontier
-  # - PKAUpgradeRange # Frontier
-  # - PKAUpgradeFireRate # Frontier
+  - PKAUpgradeDamage # Frontier
+  - PKAUpgradeRange # Frontier
+  - PKAUpgradeFireRate # Frontier

@@ -26,7 +26,7 @@
     state: normal
   product: CrateServiceReplacementColoredLights
   cost: 600
-  category: Service
+  category: cargoproduct-category-name-service
   group: market
 
 - type: cargoProduct

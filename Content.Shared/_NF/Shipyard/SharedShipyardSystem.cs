@@ -27,7 +27,13 @@ public enum ShipyardConsoleUiKey : byte
     CentComm,
     LuaTech,
     // Add ships to this key if they are only available from mothership consoles. Shipyards using it are inherently empty and are populated using the ShipyardListingComponent.
-    Custom
+    Custom,
+//DH 1 April Fool Day 
+    Honk, //DH
+    HonkMED, //DH
+    HonkNFSD, //DH
+    HonkSynd, //DH
+    HonkExped //DH
 }
 
 public abstract class SharedShipyardSystem : EntitySystem

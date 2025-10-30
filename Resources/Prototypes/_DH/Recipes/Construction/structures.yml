@@ -1,0 +1,16 @@
+- type: construction
+  id: WCatwalk
+  graph: WCatwalk
+  startNode: start
+  targetNode: WCatwalk
+  category: construction-category-structures
+  conditions:
+    - !type:TileNotBlocked
+      failIfSpace: false
+    - !type:TileType
+      targets:
+        - Lattice
+        - Plating
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canBuildInImpassable: false

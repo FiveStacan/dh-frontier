@@ -17,8 +17,8 @@
   guidebookPage: Null
   class:
   #DH Civilian<Mercenary
-  #- Civilian
-  #- Pursuit
+  - Civilian
+  - Pursuit
   engine:
   - Uranium
   addComponents:

@@ -78,6 +78,27 @@
   name: holiday-name-april-fool-day
   beginDay: 1
   beginMonth: April
+  #DH
+  entityReplacements: 
+    ComputerShipyard: ComputerShipyardClown 
+    ComputerTabletopShipyard: ComputerShipyardClown 
+    MercyShipComputer: ComputerShipyardClown
+    ComputerShipyardSr: ComputerShipyardClown
+    ComputerShipyardBlackMarket: ComputerShipyardClown
+    ComputerTabletopShipyardBlackMarket: ComputerShipyardClown
+    ComputerShipyardScrap: ComputerShipyardClown
+    ComputerTabletopShipyardScrap: ComputerShipyardClown
+    ComputerShipyardSecurity: ComputerShipyardClown
+    ComputerTabletopShipyardSecurity: ComputerShipyardClown
+    ComputerShipyardLuatech: ComputerShipyardClown
+
+    ComputerShipyardMedical: ComputerShipyardClownMed
+    ComputerShipyardNfsd: ComputerShipyardClownNFSD
+    ComputerTabletopShipyardNfsd: ComputerShipyardClownNFSD
+    ComputerShipyardExpedition: ComputerShipyardClownExp
+    ComputerTabletopShipyardExpedition: ComputerShipyardClownExp
+    ComputerShipyardSyndicate: ComputerShipyardClownSyn
+    ComputerShipyardTypan: ComputerShipyardClownSyn
 
 - type: holiday
   id: AutismAwarenessDay
@@ -335,6 +356,8 @@
     KitchenDeepFryer: KitchenDeepFryerCauldron # Frontier
     KitchenDeepFryerPOI: KitchenDeepFryerCauldronPOI # Frontier
     RandomPainting: RandomPaintingHalloween # Frontier
+    AmeShielding: AmeShieldingHalloween #DH
+    AmeController: AmeControllerHalloween #DH
 
 - type: holiday
   id: VeganDay

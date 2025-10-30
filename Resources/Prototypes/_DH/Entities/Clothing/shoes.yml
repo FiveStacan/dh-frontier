@@ -110,3 +110,14 @@
       collection: FootstepSoldier
       params:
         volume: -2
+
+#region Socks
+
+- type: entity
+  parent: ClothingUnderwearSocksBase
+  id: ADTClothingUnderwearSocksThighBlack
+  name: black thigh socks
+  description: Black thigh socks.
+  components:
+  - type: Sprite
+    sprite: _DH/Clothing/Socks/black_thigh.rsi
