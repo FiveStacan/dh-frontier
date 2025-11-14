@@ -217,15 +217,50 @@
   - type: Projectile
     damage:
       types:
-        Heat: 5
+        Shock: 1
     soundHit:
       path: "/Audio/Weapons/Guns/Hits/taser_hit.ogg"
     forceSound: true
+  - type: TimedDespawn
+    lifetime: 0.170 # Very short range
   - type: StunOnCollide
-    stunAmount: 2 #2 #5 - Lua. Still too good
-    knockdownAmount: 2 #2 #5 - Lua. Still too good
+    stunAmount: 2 #DH
+    knockdownAmount: 2 # Enough to subdue and follow up with a stun batong
+    slowdownAmount: 2.5
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
   - type: TimedDespawn
     lifetime: 0.25 #DH
+
+- type: entity
+  parent: BulletTaser
+  id: BulletTaserSuper
+  categories: [ HideSpawnMenu ]
+  name: taser bolt
+  description: If you can see this, you've probably been stun-meta'd
+  components:
+  - type: Sprite
+    noRot: true
+    sprite: Structures/Power/Generation/Tesla/energy_miniball.rsi
+    color: "#ffff33"
+    layers:
+    - state: tesla_projectile
+      shader: unshaded
+  - type: PointLight
+    enabled: true
+    color: "#ffff33"
+    radius: 2.0
+    energy: 7.01
+  - type: TimedDespawn
+    lifetime: 1.0 # Not so short range
+  - type: StunOnCollide
+    stunAmount: 5
+    knockdownAmount: 10
+    slowdownAmount: 10
+    walkSpeedModifier: 0.5
+    sprintSpeedModifier: 0.5
+  - type: TimedDespawn
+    lifetime: 0.26 #DH
 
 - type: entity
   name: disabler bolt
@@ -266,46 +301,6 @@
     damage:
       types:
         Heat: 0
-    soundHit:
-      collection: WeakHit
-    forceSound: true
-
-- type: entity
-  name: Laser bolt
-  id: ADTBulletLaser
-  parent: BaseBullet
-  categories: [ HideSpawnMenu ]
-  components:
-  - type: Reflective
-    reflective:
-    - Energy
-  - type: FlyBySound
-    sound:
-      collection: EnergyMiss
-      params:
-        volume: 5
-  - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Projectiles/projectiles_ss.rsi
-    layers:
-    - state: omnilaser
-      shader: unshaded
-  - type: Physics
-  - type: Fixtures
-    fixtures:
-      projectile:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.15,-0.3,0.15,0.3"
-        hard: false
-        mask:
-        - Opaque
-      fly-by: *flybyfixture
-  - type: Ammo
-  - type: Projectile
-    impactEffect: BulletImpactEffectLaser
-    damage:
-      types:
-        Heat: 40 #Lua 20<40
     soundHit:
       collection: WeakHit
     forceSound: true
@@ -504,7 +499,7 @@
       projectile:
         shape:
           !type:PhysShapeAabb
-          bounds: "-0.2,-0.2,0.2,0.2"
+          bounds: "-0.05,-0.05,0.05,0.05"
         hard: false
         mask:
         - Opaque
@@ -539,7 +534,7 @@
     impactEffect: BulletImpactEffectKinetic
     damage:
       types:
-        Blunt: 25
+        Blunt: 15
         Structural: 30
   # Short lifespan
   - type: TimedDespawn
@@ -608,8 +603,8 @@
         - MobState
     damage:
       types:
-        Blunt: 20
-        Slash: 5
+        Blunt: 18
+        Slash: 4
   - type: Projectile
     impactEffect: BulletImpactEffectKinetic
     damage:
@@ -618,6 +613,21 @@
   # Short lifespan
   - type: TimedDespawn
     lifetime: 0.4
+
+  # Deals less damage, glaive has better HP recovery
+- type: entity
+  id: BulletChargeGlaive
+  name: leech bolt
+  parent: BulletCharge
+  components:
+  - type: DamageMarkerOnCollide
+    whitelist:
+      components:
+        - MobState
+    damage:
+      types:
+        Blunt: 1
+        Slash: 5
 
 - type: entity
   parent: BaseBullet
@@ -880,6 +890,7 @@
     totalIntensity: 150 #150 # a ~2 tile radius
     intensitySlope: 5 #5
     maxIntensity: 10 #10
+    canCreateVacuum: false
   - type: Projectile # Wasn't, couldn't penetrate any entity (MONO still fixing it)
     damage:
       types:
@@ -910,7 +921,6 @@
     timeRemaining: 0.3
   - type: DeleteOnTrigger
 
-# This is supposed to spawn shrapnel and stuff so uhh... TODO?
 - type: entity
   id: BulletGrenadeFrag
   name: frag grenade
@@ -929,9 +939,16 @@
   - type: ExplodeOnTrigger
   - type: Explosive
     explosionType: Default
-    totalIntensity: 175 # about a ~6 tile radius
+    totalIntensity: 50
     intensitySlope: 1
-    maxIntensity: 10
+    maxIntensity: 5
+    canCreateVacuum: false
+  - type: ContainerContainer
+    containers:
+      cluster-payload: !type:Container
+  - type: ProjectileGrenade
+    fillPrototype: NFPelletClusterLessLethal # Frontier: use NF variant
+    capacity: 30
 
 - type: entity
   parent: BaseBulletTrigger
@@ -997,7 +1014,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
-    sprite: Objects/Fun/toys.rsi
+    sprite: Objects/Fun/capgun.rsi
     layers:
       - state: capbullet
   - type: Projectile

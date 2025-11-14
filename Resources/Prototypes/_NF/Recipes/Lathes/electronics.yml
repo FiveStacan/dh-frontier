@@ -1,11 +1,4 @@
 # region Machines
-- type: latheRecipe
-  id: SalvageTechFabCircuitboardNF
-  parent: [BaseCircuitboardRecipe, BaseSupplyMachineRecipeCategory]
-  result: SalvageTechFabCircuitboardNF
-  materials:
-    Steel: 800
-    Glass: 900
 
 - type: latheRecipe
   id: BlueprintLithographMachineCircuitboard
@@ -123,6 +116,11 @@
   parent: [BaseGoldCircuitboardRecipe, BaseResearchComputerRecipeCategory]
   result: ResearchComputerCircuitboard
 
+- type: latheRecipe
+  id: NFScreenTimerElectronics
+  parent: BaseCircuitboardRecipe
+  result: ScreenTimerElectronics
+
 # region Thrusters
 - type: latheRecipe
   id: ThrusterSecurityMachineCircuitboard
@@ -185,3 +183,15 @@
   id: PortableGeneratorDKJrMachineCircuitboard
   parent: [ BaseGoldCircuitboardRecipe, BaseEngineeringMachineRecipeCategory ]
   result: PortableGeneratorDKJrMachineCircuitboard
+  materials:
+    Steel: 800
+    Glass: 900
+
+# Battery
+- type: latheRecipe
+  id: PortableSMESMachineCircuitboard
+  parent: BaseCircuitboardRecipe
+  result: PortableSMESMachineCircuitboard
+  materials:
+    Steel: 800
+    Glass: 900

@@ -46,6 +46,7 @@
   - CellRechargerCircuitboard #DH
   - WeaponCapacitorRechargerCircuitboard
   - FreezerElectronics
+  - PortableSMESMachineCircuitboard # Frontier
 
 - type: latheRecipePack
   id: EngineeringBoardsStatic
