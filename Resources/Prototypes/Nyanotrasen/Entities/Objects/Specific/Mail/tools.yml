@@ -4,7 +4,6 @@
   parent: NFBaseClothingBeltStorageBag # Frontier: BaseStorageItem<NFBaseClothingBeltStorageBag
   suffix: Frontier
   description: Here's the mail, it never fails...
-  suffix: Frontier
   components:
   # Frontier: layered sprite
   - type: Sprite

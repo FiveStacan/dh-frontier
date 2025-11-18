@@ -33,6 +33,10 @@
         whitelist:
           tags:
             - ADTMagazineRifleBibis
+  - type: MagazineVisuals
+    magState: mag
+    steps: 1
+    zeroVisible: true
 
 - type: entity
   id: ADTWeaponRifleXC67Bibis
@@ -185,6 +189,9 @@
       types:
         Piercing: 0
         Bloodloss: 0
+  - type: UseDelayOnShoot
+  - type: UseDelay
+    delay: 4
 
 # Пулемёты
 - type: entity

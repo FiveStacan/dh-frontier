@@ -222,3 +222,39 @@
     Glass: 1000
     Steel: 500
     Gold: 500
+
+- type: latheRecipe
+  id: MagazineM16A4
+  result: MagazineM16A4
+  categories:
+  - Ammo
+  completetime: 5
+  materials:
+    Steel: 325
+
+- type: latheRecipe
+  id: MagazineM16A4Extended
+  result: MagazineM16A4Extended
+  categories:
+  - Weapons
+  completetime: 12
+  materials:
+    Steel: 650
+
+- type: latheRecipe
+  id: MagazineFamas
+  result: MagazineFamas
+  categories:
+  - Ammo
+  completetime: 5
+  materials:
+    Steel: 325
+
+- type: latheRecipe
+  id: MagazineFamasExtended
+  result: MagazineFamasExtended
+  categories:
+  - Weapons
+  completetime: 12
+  materials:
+    Steel: 650

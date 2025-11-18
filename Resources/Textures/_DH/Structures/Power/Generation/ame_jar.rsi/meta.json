@@ -11,6 +11,9 @@
       "name": "jar"
     },
     {
+      "name": "jar_expandet"
+    },
+    {
       "name": "jar_bluespace",
       "delays": [
         [

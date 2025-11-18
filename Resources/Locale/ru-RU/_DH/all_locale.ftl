@@ -1070,8 +1070,6 @@ ent-BoxUtensil = коробка столовых инструментов
     .desc = Коробка столовых инструментов
 
 name-controller-component-fuel-slot-fail-locked = Выключите питание Ядерного ДАМ перед манипуляциями с его топливом.
-chat-emote-name-BCatMeow = фурри вирус эмот
-chat-emote-msg-BCatMeow = рррр...
 
 ent-FlippoLighterSunriseBase = { ent-FlippoLighter }
     .desc = { ent-FlippoLighter.desc }
@@ -1473,13 +1471,6 @@ ent-GasPipeManifold = коллектор газовой трубы
     .desc = Позволяет соединять между собой газовые трубы различной конфигурации.
 strip-all-verb-get-data-text = Снять все
 
-gunnery-window-title = консоль управления вооружением
-gunnery-guns = вооружение
-gunnery-select-all = выбрать все
-gunnery-unselect-all = убрать все
-gunnery-window-connected = Сервер подключен
-gunnery-window-disconnected = Сервер отключен
-
 anomaly-generator-refund-message = Обнаружены ингибиторы аномалий. Сгенерируйте в другой области.
 ent-VendingMachinePickNPackPOI = Пик-Н-Пак
     .desc = Вкладываем оружие в ваши руки с 2549 года.
@@ -1804,3 +1795,51 @@ reagent-desc-silver-sulfadiazine = При нанесении на кожу за�
 
 NFWeaponRifleSniperHristov = { ent-WeaponSniperHristov }
     .desc = { ent-WeaponSniperHristov.desc }
+
+custom-objective-button-text = Напишите свою историю
+
+# UI
+custom-objective-window-title = Ваша история
+custom-objective-window-submit-button-text = Готово
+custom-objective-window-explain = Напишите о своих приключениях здесь!
+custom-objective-window-explain-type-here = Начните писать свою историю...
+custom-objective-window-explain-edit = Вы всегда можете отредактировать это в любое время до окончания раунда.
+
+# End of round
+custom-objective-format = [color=#FFAEC9]{$line}[/color]
+
+ent-DisabilitiesPeopleCrate = ящик для людей с ограниченными возможностями
+    .desc = { ent-CratePlastic.desc }
+
+ent-ActionMechCycleEquipment = Переключить снаряжение
+    .desc = Переключает выбранное снаряжение.
+ent-ActionMechLights = Свет
+    .desc = Переключает освещение меха.
+sector-name-PrisonSector = Космическая Тюрьма
+ent-CoordinatesDiskPrison = диск координат
+    .desc = Содержит координаты сектора КТ.
+    .suffix = Тюрьма
+ent-CoordinatesDiskDEBUG = диск координат
+    .desc = Содержит координаты всех секторов.
+    .suffix = DEBUG
+
+
+ent-WeaponRifleAKM = АКM
+    .desc = Культовое оружие войны. Заряжается патронами калибра .30 винтовочный.
+ent-WeaponRifleAKMU = АКМ-У
+    .desc = Укороченый вариант культового оружия войны. Заряжается патронами калибра .30 винтовочный.
+ent-WeaponRifleM16A4 = M16A4
+    .desc = Легкая, универсальная штурмовая винтовка. До сих пор сохраняет актуальность среди наемников и ополченцев. Заряжается патронами калибра .20 винтовочный.
+ent-WeaponSTG44 = STG 44
+    .desc = Признанная классикой, эта конструкция была воспринята как первая успешная концепция штурмовой винтовки, обычно называемая "штурмовой винтовкой". Имеет более высокую, чем обычно, скорострельность для своего класса.
+
+ent-MagazineSTG44 = магазин STG44
+    .desc = { ent-BaseItem.desc }
+ent-MagazineFamas = магазин автомата автомата фамаз
+    .desc = Использует патроны калибра .20 винтовочные.
+ent-MagazineFamasExtended = расширенный магазин Famas
+    .desc = { ent-MagazineFamas.desc }
+ent-MagazineM16A4 = магазин M16A4
+    .desc = Использует патроны калибра .20 винтовочные.
+ent-MagazineM16A4Extended = расширенный магазин M16A4
+    .desc = { ent-MagazineM16A4.desc }

@@ -64,3 +64,15 @@
 
 - type: Tag
   id: ADTMagazineRifleBibisSoftBig # Магазин пулемёта
+
+- type: Tag
+  id: MagazineFamas
+
+- type: Tag
+  id: MagazineP90
+
+- type: Tag
+  id: MagazineM16A4
+
+- type: Tag
+  id: MagazineSTG44

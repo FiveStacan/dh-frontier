@@ -143,3 +143,15 @@
   id: RevolversPutIn
   files:
   - /Audio/_DH/Weapons/Guns/Pistols/Revolvers/putin1.ogg
+
+- type: soundCollection
+  id: ak47
+  files:
+  - /Audio/_DH/Weapons/Guns/Gunshots/ak47-1.ogg
+  - /Audio/_DH/Weapons/Guns/Gunshots/ak47-2.ogg
+
+- type: soundCollection
+  id: famas
+  files:
+  - /Audio/_DH/Weapons/Guns/Gunshots/famas-1.ogg
+  - /Audio/_DH/Weapons/Guns/Gunshots/famas-2.ogg

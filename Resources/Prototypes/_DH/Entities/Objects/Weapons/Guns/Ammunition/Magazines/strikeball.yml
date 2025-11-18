@@ -39,6 +39,7 @@
     whitelist:
       tags:
         - ADTCartridgeBibis
+        - ADTMagazineRifleBibisSoft
     proto: ADTCartridgeStrikeballBibis
     capacity: 50
   - type: Sprite
@@ -76,6 +77,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
+        - ADTCartridgeBibis
         - ADTCartridgeBibisSoft
     proto: ADTCartridgeStrikeballBibisSoft
     capacity: 500

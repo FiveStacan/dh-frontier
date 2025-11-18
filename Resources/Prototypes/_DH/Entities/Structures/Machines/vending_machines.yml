@@ -21,8 +21,8 @@
     brokenState: broken
     normalState: normal-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: SecDrobeAds
+#  - type: Advertise
+#    pack: SecDrobeAds
   - type: SpeakOnUIClosed
     pack: GenericVendGoodbyes
   - type: Sprite
@@ -55,8 +55,8 @@
     normalState: normal-unshaded
     ejectState: eject-unshaded
     denyState: deny-unshaded
-  - type: Advertise
-    pack: SecTechAds
+#  - type: Advertise
+#    pack: SecTechAds
   - type: SpeakOnUIClosed
     pack: SecTechGoodbyes
   - type: Sprite
@@ -90,8 +90,8 @@
   components:
   - type: SpeakOnUIClosed
     enabled: false
-  - type: Advertise
-    enabled: false
+#  - type: Advertise
+#    enabled: false
   - type: VendingMachine
     pack: prisonersclothingInventory
     dispenseOnHitChance: 0.25
@@ -126,8 +126,8 @@
   components:
   - type: SpeakOnUIClosed
     enabled: false
-  - type: Advertise
-    enabled: false
+#  - type: Advertise
+#    enabled: false
   - type: VendingMachine
     pack: DHSustenanceInventory
     dispenseOnHitChance: 0.25
@@ -161,8 +161,8 @@
   components:
   - type: SpeakOnUIClosed
     enabled: false
-  - type: Advertise
-    enabled: false
+#  - type: Advertise
+#    enabled: false
   - type: VendingMachine
     pack: TrollInventory
     dispenseOnHitChance: 0.25
@@ -202,8 +202,8 @@
       offState: off
       brokenState: broken
       normalState: normal-unshaded
-    - type: Advertise
-      pack: AmmoVendAds
+#    - type: Advertise
+#      pack: AmmoVendAds
     - type: Speech
     - type: Sprite
       sprite: _DH/Structures/Machines/VendingMachines/lootbox.rsi

@@ -252,37 +252,10 @@
   - type: NFFuel # Frontier
 
 - type: entity
-  parent: BaseItem
-  id: BluespaceNukeAmeJar
-  name: топливный блюспейс-бак ядерного ДАМ
-  description: Герметичный блюспейс-сосуд с антивеществом использующийся в ядерном реакторе антиматерии.
-  components:
-  - type: Item
-    size: Normal
-    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
-  - type: Sprite
-    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
-    state: jar_bluespace
-  - type: AmeFuelContainer
-    fuelAmount: 3500
-    fuelCapacity: 3500
-  - type: StaticPrice
-    price: 600
-    vendPrice: 8000 # Frontier: FuelVend price
-  - type: GuideHelp
-    guides: [ AME, Power ]
-  - type: Tag # Frontier
-    tags: # Frontier
-    - Recyclable # Frontier
-    - NAMEFuel
-  - type: NFFuel # Frontier
-
-
-
-- type: entity
   id: AmeShieldingHalloween
   name: экранирование ДАМ
   description: Впускает антиматерию и выпускает материю. Похоже, оно было модифицированно тёмной магией.... Или кто-то поменял подсветку в ядре?
+  categories: [ HideSpawnMenu ]
   placement:
     mode: SnapgridCenter
   components:
@@ -382,6 +355,7 @@
   id: AmeControllerHalloween
   name: контроллер ДАМ
   description: Это контроллер для двигателя антиматерии.
+  categories: [HideSpawnMenu]
   placement:
     mode: SnapgridCenter
   components:
@@ -495,3 +469,57 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: ame
+  
+#region Expandet AME
+
+- type: entity
+  parent: BaseItem
+  id: ExpandetAmeJar
+  name: топливный ДАМ
+  description: Герметичный блюспейс-сосуд с антивеществом использующийся в ядерном реакторе антиматерии.
+  components:
+  - type: Item
+    size: Normal
+    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
+  - type: Sprite
+    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
+    state: jar_expandet
+  - type: AmeFuelContainer
+    fuelAmount: 2000
+    fuelCapacity: 2000
+  - type: StaticPrice
+    price: 400
+    vendPrice: 6000 # Frontier: FuelVend price
+  - type: GuideHelp
+    guides: [ AME, Power ]
+  - type: Tag # Frontier
+    tags: # Frontier
+    - Recyclable # Frontier
+    - NAMEFuel
+  - type: NFFuel # Frontier
+
+- type: entity
+  parent: BaseItem
+  id: BluespaceAmeJar
+  name: топливный блюспейс-бак ДАМ
+  description: Герметичный блюспейс-сосуд с антивеществом использующийся в реакторе антиматерии.
+  components:
+  - type: Item
+    size: Normal
+    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
+  - type: Sprite
+    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
+    state: jar_bluespace
+  - type: AmeFuelContainer
+    fuelAmount: 4700
+    fuelCapacity: 4700
+  - type: StaticPrice
+    price: 780
+    vendPrice: 9700 # Frontier: FuelVend price
+  - type: GuideHelp
+    guides: [ AME, Power ]
+  - type: Tag # Frontier
+    tags: # Frontier
+    - Recyclable # Frontier
+    - NAMEFuel
+  - type: NFFuel # Frontier

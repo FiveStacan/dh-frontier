@@ -12,12 +12,10 @@
     minAngle: -0 # Set to 0 because GunRequiresWield
     maxAngle: -0
   - type: Gun
-    angleDecay: 4
-    availableModes: 4
     projectileSpeed: 30
-    minAngle: 2
+    minAngle: 1.4
     maxAngle: 8
-    angleIncrease: 0.4
+    angleIncrease: 5.6
     angleDecay: 2
     fireRate: 1
     selectedMode: SemiAuto

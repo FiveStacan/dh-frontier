@@ -18,6 +18,17 @@
       disk_slot:
       - CoordinatesDiskMercenary
 
+#DH PrisonSector
+- type: entity
+  parent: ComputerShuttle
+  id: ComputerShuttleWithPrisonDisk
+  suffix: Диск Тюрьма
+  components:
+  - type: ContainerFill
+    containers:
+      disk_slot:
+      - CoordinatesDiskPrison
+
 - type: entity
   parent: ComputerShuttle
   id: ComputerShuttleWithNordfallDisk
@@ -67,6 +78,17 @@
     containers:
       disk_slot:
       - CoordinatesDiskMercenary
+
+#DH PrisonSector
+- type: entity
+  parent: ComputerTabletopShuttle
+  id: ComputerTabletopShuttleWithPrisonDisk
+  suffix: Диск Тюрьма
+  components:
+  - type: ContainerFill
+    containers:
+      disk_slot:
+      - CoordinatesDiskPrison
 
 - type: entity
   parent: ComputerTabletopShuttle

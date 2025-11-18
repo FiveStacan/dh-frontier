@@ -179,6 +179,7 @@ public enum VesselClass : byte
     Medical,
     Civilian, // Service catch-all - reporter, legal, entertainment, misc. ships
     Kitchen,
+    Prison, //DH PrisonSector
     // Antag ships
     Syndicate,
     Pirate,

@@ -182,3 +182,119 @@
       tags:
       - NFCartridgeRifle30  # 57x28
     capacity: 0
+
+- type: entity
+  id: MagazineFamas
+  name: Famas magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - MagazineFamas
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    proto: NFCartridgeRifle20
+    whitelist:
+      tags:
+      - NFCartridgeRifle20
+      - CartridgeRifle
+    capacity: 25
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Ammunition/Magazines/famas.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineSTG44
+  name: STG44 magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - MagazineSTG44
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
+      tags:
+      - NFCartridgeRifle30
+      - CartridgeLightRifle  # 762x39
+    proto: NFCartridgeRifle30  # 762x39
+    capacity: 30
+  - type: Item
+    size: Small
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Ammunition/Magazines/stg44.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  id: MagazineM16A4
+  name: M16A4 magazine
+  parent: BaseItem
+  components:
+  - type: Tag
+    tags:
+    - MagazineM16A4
+  - type: Item
+    size: Small
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    proto: NFCartridgeRifle20  # 556
+    whitelist:
+      tags:
+      - NFCartridgeRifle20
+      - CartridgeRifle  # 556
+    capacity: 30
+  - type: ContainerContainer
+    containers:
+      ballistic-ammo: !type:Container
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Guns/Ammunition/Magazines/m16a4.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+  - type: Appearance
+
+- type: entity
+  parent: MagazineFamas
+  id: MagazineFamasExtended
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 34
+  
+- type: entity
+  parent: MagazineM16A4
+  id: MagazineM16A4Extended
+  components:
+  - type: BallisticAmmoProvider
+    capacity: 34
