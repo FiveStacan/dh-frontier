@@ -3,7 +3,7 @@
   name: job-name-cadet-nf
   description: job-description-cadet-nf
   playTimeTracker: JobSecurityCadet
-  salary: 35000
+  salary: 28000 #35000<28k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 21600 # 6 hours

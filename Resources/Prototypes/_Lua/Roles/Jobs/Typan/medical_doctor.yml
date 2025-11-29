@@ -6,7 +6,7 @@
   id: OutpostSyndicateMedic
   name: job-name-typan-medic
   playTimeTracker: JobOutpostTypanMedic
-  salary: 50000 #Lua 35000<50000
+  salary: 32000 #Lua 35000<50000<32000 #DH
   description: Боевой медик, конвертирующий фарш обратно в оперативников Нордфолла
   startingGear: SyndicateParamedic
   icon: "JobIconSyndicateParamedic"

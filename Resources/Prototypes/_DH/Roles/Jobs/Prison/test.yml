@@ -1,6 +1,6 @@
 - type: job
   id: PrisonDoctorTest
-  name: job-name-prison-doctor 1
+  name: job-name-prison-doctor
   description: job-description-prison-doctor
   playTimeTracker: JobPrisonDoctorT
   requirements:

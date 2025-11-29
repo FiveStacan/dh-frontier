@@ -352,7 +352,7 @@
     sprite: _DH/Objects/Weapons/Guns/Rifles/stg44/tiny.rsi
   - type: GunWieldBonus
     minAngle: -21
-    maxAngle: -41
+    maxAngle: -40
   - type: Gun
     projectileSpeed: 30
     minAngle: 25
@@ -394,3 +394,6 @@
   - type: Wieldable
   - type: UseDelay
     delay: 1.8
+  - type: ClothingSpeedModifier
+    walkModifier: 0.80
+    sprintModifier: 0.80

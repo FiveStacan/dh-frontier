@@ -3,7 +3,7 @@
   name: job-name-plant-technician
   description: job-description-plant-technician
   playTimeTracker: JobPlantTechnician
-  salary: 30000
+  salary: 29000 #30k<29k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 432000 # Frontier - 120 hrs Lua

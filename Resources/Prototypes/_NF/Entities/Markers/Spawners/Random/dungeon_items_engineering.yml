@@ -381,6 +381,9 @@
     prototypes:
     - Autolathe
     - Protolathe
+    - EngineeringTechFab
+    - EngineeringTechFab
+    - EngineeringTechFab
     - CircuitImprinter
     - MachineFlatpacker
     - SpawnDungeonMachineFrame
@@ -521,6 +524,7 @@
     - AlertsComputerCircuitboard
     # Lathes
     - CircuitImprinterMachineCircuitboard
+    - EngineeringTechFabCircuitboard
     - ProtolatheMachineCircuitboard
     - AutolatheMachineCircuitboard
     - FlatpackerMachineCircuitboard
@@ -571,6 +575,7 @@
     - ExosuitFabricatorFlatpack
     - ProtolatheFlatpack
     - CircuitImprinterFlatpack
+    - EngineeringTechFabFlatpack
     - MaterialReclaimerFlatpack
     - CutterMachineFlatpack
     - WeaponCapacitorRechargerFlatpack

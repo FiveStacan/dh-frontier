@@ -240,6 +240,9 @@
       - id: BlockGameArcadeComputerCircuitboard
       - id: MiniStationAnchorCircuitboard
       - id: CircuitImprinterMachineCircuitboard
+      - id: EngineeringTechFabCircuitboard
+      - id: SalvageTechFabCircuitboardNF
+      - id: ServiceTechFabCircuitboard
       - id: MaterialReclaimerMachineCircuitboard
       - id: SpaceHeaterMachineCircuitBoard
       - id: ReagentGrinderMachineCircuitboard
@@ -282,9 +285,11 @@
       - id: StasisBedMachineCircuitboard
       - id: ResearchComputerCircuitboard
       - id: MercenaryTechFabCircuitboardNF
+      - id: MercenaryTechFabCircuitboardHackedNF
       - id: PortableGeneratorDKMachineCircuitboard
       - id: MedicalTechFabCircuitboard
       - id: MedicalAssemblerMachineCircuitboard
+      - id: McServiceTechFabCircuitboard
 
 - type: entityTable
   id: TableScrapProcessorRandomToolsParts

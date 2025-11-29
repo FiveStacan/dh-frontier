@@ -3,7 +3,7 @@
   name: job-name-janitor
   description: job-description-janitor
   playTimeTracker: JobJanitor
-  salary: 25000
+  salary: 15000 #DH 25k<15k
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800

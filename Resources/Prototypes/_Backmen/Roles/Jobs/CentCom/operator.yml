@@ -3,7 +3,7 @@
   name: job-name-centcomoper
   description: job-description-centcomoper
   playTimeTracker: JobCentralCommandOperator
-  salary: 150000
+  salary: 124000 #150000<124k #DH
   setPreference: true
   startingGear: OperatorCC
   icon: JobIconNanotrasen

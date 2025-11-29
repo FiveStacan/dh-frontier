@@ -3,7 +3,7 @@
   name: job-name-sheriff
   description: job-description-sheriff
   playTimeTracker: JobHeadOfSecurity
-  salary: 80000
+  salary: 68000 #80000<68k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 129600 # 36 hours

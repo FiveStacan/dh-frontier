@@ -119,13 +119,30 @@ public sealed class SectorSystem : EntitySystem
     public void EnsureSector(string configId)
     {
         if (_instances.ContainsKey(configId)) return;
-        if (!_protos.TryIndex<SectorSystemPrototype>(configId, out var cfg)) { Log.Error($"Sector config '{configId}' not ffund"); return; }
-        Log.Info($"[SectorSystem] EnsureSector begin id='{configId}' name='{cfg.Name}' station='{cfg.Station}'");
+        if (!_protos.TryIndex<SectorSystemPrototype>(configId, out var cfg)) { Log.Error($"Sector config '{configId}' not found"); return; } // Исправлена опечатка в сообщении об ошибке
+        Log.Info($"[SectorSystem] EnsureSector begin id='{configId}' name='{cfg.Name}' stations='{string.Join(", ", cfg.Stations)}'"); // Изменено сообщение для отражения массива станций
+
         var preset = _ticker.CurrentPreset?.ID;
         if (!string.IsNullOrEmpty(cfg.RequiredGamePreset) && !string.Equals(cfg.RequiredGamePreset, preset, StringComparison.Ordinal)) return;
+
+        // --- НАЧАЛО ИЗМЕНЕНИЯ ---
+        // Выбираем случайную станцию из массива cfg.Stations
+        var stationPrototypes = cfg.Stations.Where(s => !string.IsNullOrWhiteSpace(s)).ToArray(); // Фильтруем пустые строки
+        if (stationPrototypes.Length == 0)
+        {
+            Log.Error($"Sector config '{configId}' has no valid station prototypes defined.");
+            return;
+        }
+        var selectedStationPrototype = _rng.Pick(stationPrototypes);
+        Log.Info($"[SectorSystem] Selected station prototype: '{selectedStationPrototype}' for sector '{configId}'");
+        // --- КОНЕЦ ИЗМЕНЕНИЯ ---
+
         var mapUid = _map.CreateMap(out var mapId, false);
         var opts = Robust.Shared.EntitySerialization.DeserializationOptions.Default with { InitializeMaps = true };
-        var stationGrid = _ticker.MergeGameMap(_protos.Index<GameMapPrototype>(cfg.Station), mapId, opts).FirstOrNull(HasComp<BecomesStationComponent>)!.Value;
+        // --- НАЧАЛО ИЗМЕНЕНИЯ ---
+        // Используем выбранную станцию
+        var stationGrid = _ticker.MergeGameMap(_protos.Index<GameMapPrototype>(selectedStationPrototype), mapId, opts).FirstOrNull(HasComp<BecomesStationComponent>)!.Value;
+        // --- КОНЕЦ ИЗМЕНЕНИЯ ---
         _meta.SetEntityName(mapUid, cfg.Name);
         EnsureComp<SectorAtmosSupportComponent>(mapUid);
         if (stationGrid.IsValid())

@@ -153,6 +153,25 @@
 
 - type: latheRecipe
   parent: BaseToolRecipe
+  id: SprayPainterAdvanced
+  result: SprayPainterAdvanced
+  materials:
+    Steel: 400
+    Plastic: 300
+    Silver: 150
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: SprayPainterExperemental
+  result: SprayPainterExperemental
+  materials:
+    Steel: 300
+    Plastic: 150
+    Silver: 200
+    bluespace: 100
+
+- type: latheRecipe
+  parent: BaseToolRecipe
   id: SprayPainter
   result: SprayPainterEmpty
   materials:
@@ -166,6 +185,15 @@
   materials:
     Steel: 150
     Plastic: 50
+
+- type: latheRecipe
+  parent: BaseToolRecipe
+  id: SprayPainterAdvancedAmmo
+  result: SprayPainterAdvancedAmmo
+  materials:
+    Steel: 350
+    Plastic: 250
+    Silver: 100
 
 - type: latheRecipe
   parent: BaseToolRecipe

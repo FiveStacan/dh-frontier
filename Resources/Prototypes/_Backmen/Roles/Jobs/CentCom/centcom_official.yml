@@ -3,7 +3,7 @@
   name: job-name-centcomoffBK
   description: job-description-centcomoffBK
   playTimeTracker: JobCentralCommandOfficial
-  salary: 140000
+  salary: 115000 #140000<115k #DH
   setPreference: true
   startingGear: CentComCorvax
   icon: JobIconNT

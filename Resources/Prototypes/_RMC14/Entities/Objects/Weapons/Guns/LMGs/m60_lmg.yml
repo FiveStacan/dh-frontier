@@ -93,7 +93,9 @@
       rmc-aslot-underbarrel: 0.618, -0.263
   - type: Wieldable
   - type: GunRequiresWield
-
+  - type: GunWieldBonus
+    minAngle: -16
+    maxAngle: -22 #DH
 
 - type: entity
   parent: RMCMagazineLMGBase

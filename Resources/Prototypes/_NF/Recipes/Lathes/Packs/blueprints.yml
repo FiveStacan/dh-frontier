@@ -133,6 +133,11 @@
   # PersonalPropulsion
   - JetpackBlue
   - JetpackCaptain
+  #DH
+  - BaseAmeJar
+  - ExpandetAmeJar
+  - AmeJar
+  - BluespaceAmeJar
 
 # region Medical
 - type: latheRecipePack
@@ -221,6 +226,10 @@
   - JetpackVoid
   # HardsuitsExperimentalIndustrial
   - ClothingOuterHardsuitMaximPrototype
+  #DH
+  - Binoculars
+  - BinocularsMagmite
+  - NFDartTracking
 
 # region NFSD
 - type: latheRecipePack
@@ -235,6 +244,8 @@
   - NFGrenadeEMP
   # PersonalPropulsion
   - JetpackNfsd
+  #DH
+  - NFDartTracking
 
 # region Salvage
 - type: latheRecipePack

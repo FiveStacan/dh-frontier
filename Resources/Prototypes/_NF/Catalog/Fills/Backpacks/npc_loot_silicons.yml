@@ -112,8 +112,8 @@
   #  - id: SpawnDungeonLootCircuitBoardEngi
   #    amount: 1
   #    prob: 0.8
-  #  - id: SpawnDungeonLootCircuitBoardScience
-  #    prob: 0.8
+    - id: SpawnDungeonLootCircuitBoardScience
+      prob: 0.2
     # Flatpacks
   #  - id: SpawnDungeonLootFlatpacks
   #    prob: 0.8

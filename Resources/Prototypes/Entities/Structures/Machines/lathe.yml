@@ -241,6 +241,9 @@
     # WD EDIT START
     - VisionGoggles
     # WD EDIT END
+    #DH
+    - DHEngineering
+    - DHTools
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - NfsdAmmoStatic # Frontier: SecurityAmmo<NfsdAmmoStatic

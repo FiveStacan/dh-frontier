@@ -68,8 +68,10 @@
     - EnergyShield
     - TelecomServerCircuitboard
     - ComputerIFFCircuitboard
+    - EngineeringTechFabCircuitboard
     - MedicalTechFabCircuitboard
     - MedipenTechFabCircuitboard
+    - ServiceTechFabCircuitboard
     - ClothingOuterArmorReflective
     - ShuttleGunSvalinnMachineGunCircuitboard
     - AmmoTechFabCircuitboard

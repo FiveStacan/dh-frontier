@@ -3,17 +3,20 @@
 - type: technology
   id: tracking
   name: Слежка
-  entityIcon: NFPouchEngineering
-  discipline: NFService
+  entityIcon: Binoculars
+  discipline: NFArsenalMercenary
   tier: 2
-  cost: 7000
+  cost: 8000
   recipeUnlocks:
   - Binoculars
   - BinocularsMagmite
-  - PinpointerUniversal
+  #- PinpointerUniversal
+  - PinpointerUniversalNF
   - NFDartTracking
-  - QuantumLeaping
-  position: 12, 1
+  #- QuantumLeaping
+  technologyPrerequisites:
+  - NFBountyHunting
+  position: 1, 41
 
 - type: technology
   id: painting
@@ -21,8 +24,38 @@
   entityIcon: NFPouchEngineering
   discipline: NFService
   tier: 1
-  cost: 5000
+  cost: 6000
   recipeUnlocks:
   - SprayPainter
   - SprayPainterAmmo
-  position: 12, 2
+  technologyPrerequisites:
+  - NFPushHorn
+  - NFBasicSpray
+  position: 2, 20
+
+- type: technology
+  id: AdvancedPainting
+  name: Улучшенная покраска
+  entityIcon: SprayPainterAdvanced
+  discipline: NFService
+  tier: 1
+  cost: 9500
+  recipeUnlocks:
+  - SprayPainterAdvanced
+  - SprayPainterAdvancedAmmo
+  technologyPrerequisites:
+  - painting
+  position: 3, 20
+
+- type: technology
+  id: ExperementalPainting
+  name: Эксперементальная покраска
+  entityIcon: SprayPainterExperemental
+  discipline: NFService
+  tier: 1
+  cost: 15000
+  recipeUnlocks:
+  - SprayPainterExperemental
+  technologyPrerequisites:
+  - AdvancedPainting
+  position: 3, 20

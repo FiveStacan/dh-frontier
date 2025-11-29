@@ -15,6 +15,7 @@
 - type: latheRecipePack
   id: NFSalvageBoardsStatic
   recipes:
+  - SalvageTechFabCircuitboardNF
   - ShuttleGunKineticCircuitboard
   - NFScrapProcessorCircuitboard
   - OreProcessorMachineCircuitboard

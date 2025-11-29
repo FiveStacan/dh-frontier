@@ -3,7 +3,7 @@
   name: job-name-plant-manager
   description: job-description-plant-manager
   playTimeTracker: JobPlantManager
-  salary: 40000
+  salary: 42000 #DH 40k<42k
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 720000 # Frontier - 200 hrs Lua

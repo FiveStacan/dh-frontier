@@ -6,7 +6,7 @@
   id: OutpostSyndicateResearcher
   name: job-name-typan-researcher
   playTimeTracker: JobOutpostTypanResearcher
-  salary: 35000 #Lua 25<35
+  salary: 25000 #Lua 25<35<25 #DH
   description: Самый мирный человек в секторе, распространяющий исключительно добро и позитив.
   startingGear: SyndicateResearcher
   icon: "JobIconSyndicateResearcher"

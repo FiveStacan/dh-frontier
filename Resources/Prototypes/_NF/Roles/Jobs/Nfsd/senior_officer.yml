@@ -3,7 +3,7 @@
   name: job-name-senior-officer
   description: job-description-senior-officer
   playTimeTracker: JobSeniorOfficer
-  salary: 60500
+  salary: 48200 #60500<48k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 108000 # 30 hours

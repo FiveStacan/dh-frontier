@@ -3,7 +3,7 @@
   name: job-name-centcomcargo
   description: job-description-centcomcargo
   playTimeTracker: JobCentralCommandCargo
-  salary: 100000
+  salary: 70000 #100000<70k #DH
   setPreference: true
   startingGear: CCCargo
   icon: JobIconCCCargoTech

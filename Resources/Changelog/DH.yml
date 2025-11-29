@@ -93,3 +93,15 @@ Entries:
       message: M16A4, Famas, AKMS, AKM-U, STG 44
   id: 6
   time: '2025-11-17T12:00:00.0000000+00:00'
+- author: FiveStacan
+  changes:
+    - type: Tweak
+      message: Теперь можно задавать списки карт в sectorSystemPrototype для основной станции сектора которая будет выбираться случайно.
+  id: 7
+  time: '2025-11-21T12:00:00.0000000+00:00'
+- author: FiveStacan
+  changes:
+    - type: Tweak
+      message: Респрайт и перевод настенных тюремных шкафов.
+  id: 8
+  time: '2025-11-24T12:00:00.0000000+00:00'

@@ -11,8 +11,8 @@
   - Multitool
   # - NetworkConfigurator # Frontier: downgrade vs. multitool
   - Signaller
-  - SprayPainter
-  - SprayPainterAmmo
+  #- SprayPainter
+  #- SprayPainterAmmo
   - FlashlightLantern
   # - HandheldGPSBasic # Frontier: little value
   - TRayScanner
@@ -63,6 +63,10 @@
   - JawsOfLife
   # - Fulton # Frontier
   # - FultonBeacon # Frontier
+  - Binoculars #DH
+  - BinocularsMagmite #DH
+  - PinpointerUniversalNF #DH
+  - NFDartTracking #DH
 
 - type: latheRecipePack
   id: AtmosTools

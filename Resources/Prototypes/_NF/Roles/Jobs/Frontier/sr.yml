@@ -3,7 +3,7 @@
   name: job-name-sr
   description: job-description-sr
   playTimeTracker: JobHeadOfPersonnel
-  salary: 80000
+  salary: 67000 #80000<67k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 72000 # 20 hrs

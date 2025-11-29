@@ -5,7 +5,7 @@
   startingGear: MailCarrierGear
   alwaysUseSpawner: true
   playTimeTracker: JobMailCarrier
-  salary: 30000
+  salary: 28000 #30k<28k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 10800

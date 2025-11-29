@@ -3,7 +3,7 @@
   name: job-name-brigmedic
   description: job-description-brigmedic-nf
   playTimeTracker: JobBrigmedic
-  salary: 45000
+  salary: 42000 #45000<42k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 43200 # 12 hours

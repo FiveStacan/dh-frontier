@@ -3,7 +3,7 @@
   name: job-name-pilot
   description: job-description-pilot
   playTimeTracker: JobPilot
-  salary: 7100
+  salary: 5200 #DH 7100<5200
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 43200

@@ -3,7 +3,7 @@
   name: job-name-doctor
   description: job-description-doctor
   playTimeTracker: JobMedicalDoctor
-  salary: 40000
+  salary: 37000 #40000<37k #DH
   setPreference: true # Lua
   requirements:
     - !type:OverallPlaytimeRequirement

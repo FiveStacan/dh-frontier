@@ -429,7 +429,8 @@ ent-SprayPainterAdvanced = улучшенный краскопульт
 ent-SprayPainterExperemental = экспериментальный краскопульт
     .desc = { ent-SprayPainter.desc }
     .suffix = автоперезарядка
-
+SprayPainterAdvancedAmmo = улучшенная сжатая краска
+    .desc = Картридж улучшенной сжатой краски для пополнения зарядов краскопульта.
 
 department-prison = Космическая Тюрьма
 
@@ -1811,8 +1812,6 @@ custom-objective-format = [color=#FFAEC9]{$line}[/color]
 ent-DisabilitiesPeopleCrate = ящик для людей с ограниченными возможностями
     .desc = { ent-CratePlastic.desc }
 
-ent-ActionMechCycleEquipment = Переключить снаряжение
-    .desc = Переключает выбранное снаряжение.
 ent-ActionMechLights = Свет
     .desc = Переключает освещение меха.
 sector-name-PrisonSector = Космическая Тюрьма
@@ -1843,3 +1842,53 @@ ent-MagazineM16A4 = магазин M16A4
     .desc = Использует патроны калибра .20 винтовочные.
 ent-MagazineM16A4Extended = расширенный магазин M16A4
     .desc = { ent-MagazineM16A4.desc }
+
+dh-research-technology-amejar = Антиматериальное топливо
+dh-research-technology-expandetamejar = Расширенные топливные баки
+dh-research-technology-BaseAmeJar = Базовое антиматериальное топливо
+dh-research-technology-bluespaceamejar = Бездонное антиматериальное топливо
+
+lathe-category-computers = Компьютеры
+lathe-category-engineering = Инженерия
+lathe-category-general = Общее
+lathe-category-medical = Медицина
+lathe-category-research = Наука
+lathe-category-security = Безопасность
+lathe-category-service = Сервис
+lathe-category-supply = Снабжение
+
+ent-RadiationBullet = поток радиоактивных частиц
+    .desc = { ent-BaseBullet.desc }
+ent-RadiationEmitter = излучатель радиации
+    .desc = Пистолет, спроектированный на основе всеми известного М.А.Р.Т.Ы.Х. При выстреле испускает медленный поток радиоактивных частиц.
+
+ent-LockerWallBasePrisoner = настенный тюремный шкаф
+    .desc = Это настенный защищенный шкафчик для личных вещей заключенного, которые запрещенно хранить во время пребывания в тюрьме.
+ent-LockerWallBasePrisoner2 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 2
+ent-LockerWallBasePrisoner3 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 3
+ent-LockerWallBasePrisoner4 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 4
+ent-LockerWallBasePrisoner5 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 5
+ent-LockerWallBasePrisoner6 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 6
+ent-LockerWallBasePrisoner7 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 7
+ent-LockerWallBasePrisoner8 = настенный тюремный шкаф
+    .desc = { ent-LockerPrisoner.desc }
+    .suffix = 8
+
+prison-lobby-outpost-subtext = Космическая Тюрьма.
+prison-lobby-outpost-description = Это Космическая Тюрьма для заключенных. Здесь вы можете:
+   - Мотать срок за заключенного
+   - Работать уборщиком, шахтером, ученым или повором
+   - Пытаться сбежать
+   - Наблюдать за заключенными и устраивать их на работу

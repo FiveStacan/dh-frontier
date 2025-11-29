@@ -6,7 +6,7 @@
   id: OutpostSyndicateRD
   name: job-name-typan-rd
   playTimeTracker: JobOutpostTypanRD
-  salary: 70000 #Lua 45000<70000
+  salary: 59000 #Lua 45000<70000<59k #DH
   description: Руководитель, назначающий оперативникам дату смерти в героическом штурме
   startingGear: SyndicateRD
   icon: "JobIconSyndicateRD"

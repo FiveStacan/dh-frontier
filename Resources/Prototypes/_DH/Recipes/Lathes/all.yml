@@ -3,7 +3,7 @@
   result: Binoculars
   completetime: 4
   materials:
-    Steel: 150
+    Steel: 250
     Glass: 200
 
 - type: latheRecipe
@@ -11,8 +11,9 @@
   result: BinocularsMagmite
   completetime: 8
   materials:
-    Steel: 200
+    Steel: 300
     Magmite: 250
+    Glass: 150
 
 - type: latheRecipe
   id: PinpointerUniversal
@@ -258,3 +259,54 @@
   completetime: 12
   materials:
     Steel: 650
+
+- type: latheRecipe
+  id: ExpandetAmeJar
+  result: ExpandetAmeJar
+  categories:
+  - Engineering
+  completetime: 14
+  materials:
+    Plasma: 950
+    Uranium: 650
+    Magmite: 490
+    Plastic: 400
+    Steel: 400
+
+- type: latheRecipe
+  id: AmeJar
+  result: AmeJar
+  categories:
+  - Engineering
+  completetime: 16
+  materials:
+    Steel: 600
+    Plasma: 350
+    Uranium: 590
+    Plastic: 400
+
+- type: latheRecipe
+  id: BaseAmeJar
+  result: BaseAmeJar
+  categories:
+  - Engineering
+  completetime: 10
+  materials:
+    Steel: 600
+    Plasma: 250
+    Uranium: 150
+    Plastic: 300
+
+- type: latheRecipe
+  id: BluespaceAmeJar
+  result: BluespaceAmeJar
+  categories:
+  - Engineering
+  completetime: 10
+  materials:
+    Plasma: 1250
+    Uranium: 1750
+    Magmite: 800
+    Plastic: 500
+    Steel: 800
+    Bluespace: 820

@@ -221,6 +221,62 @@
   - NFAdvancedToolsTechnology
   position: 3, 4
 
+#DH
+- type: technology
+  id: DHBaseAmeJarTechnology
+  name: dh-research-technology-BaseAmeJar
+  entityIcon: BaseAmeJar
+  discipline: NFEngineering
+  tier: 1
+  cost: 8000
+  recipeUnlocks:
+  - AmeJar
+  technologyPrerequisites:
+  - NFAdvancedCyborgToolsTechnology
+  position: 4, 4
+
+- type: technology
+  id: DHAmeJarTechnology
+  name: dh-research-technology-amejar
+  entityIcon: AmeJar
+  discipline: NFEngineering
+  tier: 1
+  cost: 22000
+  recipeUnlocks:
+  - AmeJar
+  technologyPrerequisites:
+  - DHBaseAmeJarTechnology
+  position: 5, 4
+
+- type: technology
+  id: DHExpandetAmeJarTechnology
+  name: dh-research-technology-expandetamejar
+  entityIcon: ExpandetAmeJar
+  discipline: NFEngineering
+  tier: 1
+  cost: 31000
+  recipeUnlocks:
+  - ExpandetAmeJar
+  technologyPrerequisites:
+  - DHAmeJarTechnology
+  position: 6, 4
+
+
+- type: technology
+  id: DHBluespaceAmeJarTechnology
+  name: dh-research-technology-bluespaceamejar
+  entityIcon: BluespaceAmeJar
+  discipline: NFEngineering
+  tier: 1
+  cost: 59000
+  recipeUnlocks:
+  - BluespaceAmeJar
+  technologyPrerequisites:
+  - DHExpandetAmeJarTechnology
+  - NFBluespaceStorage
+  position: 6, 3
+#DH - 
+
 - type: technology
   id: NFMatterEnergyConversion
   name: nf-research-technology-matter-energy-conversion
@@ -1711,7 +1767,7 @@
   - NFHandcuffs
   - ClothingOuterArmorBulletproofNF
   - ClothingOuterCoatBHTrench
-  - PinpointerUniversalNF
+  #- PinpointerUniversalNF
   - ClothingEyesHudBountyHunter
   - NFForensicPad
   - FlashlightSecliteNF

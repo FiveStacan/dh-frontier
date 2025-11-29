@@ -30,8 +30,8 @@
   - HandLabeler
   - Signaller
   - ClothingMaskWeldingGas
-  - SprayPainter
-  - SprayPainterAmmo
+  #- SprayPainter
+  #- SprayPainterAmmo
   - FlashlightLantern
   - Floodlight
   - LanternNF

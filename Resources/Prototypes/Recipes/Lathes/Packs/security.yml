@@ -78,6 +78,8 @@
   - PowerCageSmall
   - NFTelescopicShield # Frontier: use NF prefix
   - NFClothingBackpackHarmpack # Frontier: use NF prefix
+  - NFDartTracking #DH
+  - PinpointerUniversalNF #DH
 
 - type: latheRecipePack
   id: SecurityBoards

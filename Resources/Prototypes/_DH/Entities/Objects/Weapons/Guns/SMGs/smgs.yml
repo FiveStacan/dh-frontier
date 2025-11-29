@@ -15,8 +15,8 @@
     - state: mag-0
       map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
-    minAngle: 2
-    maxAngle: 54
+    minAngle: 4
+    maxAngle: 50
     fireRate: 7
     soundGunshot:
       path: /Audio/_DH/Weapons/Guns/SMGs/scorpion/scorpion_shot.ogg

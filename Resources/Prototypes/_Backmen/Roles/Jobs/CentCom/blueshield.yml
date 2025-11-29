@@ -3,7 +3,7 @@
   name: job-name-centcomblueshield
   description: job-description-centcomblueshield
   playTimeTracker: JobBlueShieldOfficer
-  salary: 205000
+  salary: 178900 #205000<178k #DH
   setPreference: true
   startingGear: BlueShieldOfficerGear
   icon: JobIconBlueShieldOfficer

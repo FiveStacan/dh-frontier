@@ -3,7 +3,12 @@
   parent: [ CMBaseWeaponGun, BaseItem, BaseGunWieldable ]
   id: RMCBaseWeaponLMG
   components:
+  - type: GunWieldBonus #DH
+    minAngle: -19
+    maxAngle: -28 
   - type: Gun
+    minAngle: 21 #DH
+    maxAngle: 32 #DH
     baseFireRate: 3.3
     shotsPerBurst: 5
     selectedMode: FullAuto

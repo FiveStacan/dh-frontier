@@ -6,7 +6,7 @@
   id: OutpostSyndicateChef
   name: job-name-typan-chef
   playTimeTracker: JobOutpostTypanChef
-  salary: 35000 #Lua 25000<35000
+  salary: 19500 #Lua 25000<35000<19500 #DH
   description: Сервисный работник, задача которого - напоить и накормить группу самых мирных людей в секторе
   startingGear: SyndicateChef
   icon: "JobIconOutpostSyndicateChef"

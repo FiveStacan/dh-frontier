@@ -4,3 +4,18 @@
   - MechThruster
   - MechAirTank
   - RipleyUpgradeKit
+
+- type: latheRecipePack
+  id: DHEngineering
+  recipes:
+  - ExpandetAmeJar
+  - AmeJar
+
+- type: latheRecipePack
+  id: DHTools
+  recipes:
+  - SprayPainter
+  - SprayPainterAdvanced
+  - SprayPainterExperemental
+  - SprayPainterAmmo
+  

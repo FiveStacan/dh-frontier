@@ -3,7 +3,7 @@
   name: job-name-centcomassistant
   description: job-description-centcomassistant
   playTimeTracker: JobCentralCommandAssistant
-  salary: 93000
+  salary: 49000 #93000<49k #DH
   setPreference: true
   startingGear: CentComInternGear
   icon: JobIconServiceWorker

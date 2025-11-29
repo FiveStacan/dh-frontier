@@ -3,7 +3,7 @@
   name: job-name-centcomoso
   description: job-description-centcomoso
   playTimeTracker: JobCentralCommandSpecialOperationsOfficer
-  salary: 327000
+  salary: 285000 #327000<285k #DH
   setPreference: true
   startingGear: CentcomSpecialOperationsOfficerGear
   icon: JobIconNanotrasenRed

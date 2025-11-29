@@ -8,5 +8,7 @@
     FuelUranium: 4294967295 # Infinite
     FuelBananium: 4294967295 # Infinite
     FuelBluespace: 4294967295 # Lua
+    BaseAmeJar: 4294967295 #DH
     AmeJar: 4294967295 # Infinite
+    ExpandetAmeJar: 4294967295 #DH
     JerryCanWeldingFuel: 4294967295 # Infinite

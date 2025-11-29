@@ -3,7 +3,7 @@
   name: job-name-security-guard
   description: job-description-security-guard
   playTimeTracker: JobSecurityGuard
-  salary: 40500
+  salary: 32000 #40500<32k #DH
   requirements:
     - !type:OverallPlaytimeRequirement
       time: 36000 # Frontier - 10 hrs

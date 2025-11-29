@@ -3,7 +3,7 @@
   name: job-name-centcomsecofficer
   description: job-description-centcomsecofficer
   playTimeTracker: JobCentralCommandSecOfficer
-  salary: 110000
+  salary: 90000 #110000<90k #DH
   setPreference: true
   startingGear: CentComPrivateOfficerGear
   icon: JobIconSecurityOfficer

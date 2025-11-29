@@ -102,3 +102,26 @@
       Plastic: 10
   - type: StaticPrice
     price: 30
+
+- type: entity
+  parent: BaseItem
+  id: SprayPainterAdvancedAmmo
+  name: compressed paint
+  description: A cartridge of highly compressed paint, commonly used in spray painters.
+  components:
+  - type: SprayPainterAmmo
+  - type: Sprite
+    sprite: Objects/Tools/spray_painter.rsi
+    state: ammo
+    color: "#27cf97"
+  - type: Item
+    sprite: Objects/Tools/spray_painter.rsi
+    heldPrefix: ammo
+    color: "#27cf97"
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 20
+      Plastic: 10
+      Silver: 5
+  - type: StaticPrice
+    price: 60

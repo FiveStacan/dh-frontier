@@ -414,6 +414,9 @@
   - type: RandomSpawner
     prototypes:
     - CutterMachine
+    - SalvageTechfabNF
+    - ServiceTechFab
+    - EngineeringTechFab
     - Autolathe
     - Protolathe
     - CircuitImprinter
@@ -717,6 +720,9 @@
     - SurveillanceCameraWirelessRouterCircuitboard
     - SurveillanceWirelessCameraMonitorCircuitboard
     # Boards
+    - SalvageTechFabCircuitboardNF
+    - ServiceTechFabCircuitboard
+    - EngineeringTechFabCircuitboard
     - AmmoTechFabCircuitboard
     - MedicalTechFabCircuitboard
     - OreProcessorIndustrialMachineCircuitboard
