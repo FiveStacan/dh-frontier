@@ -1864,25 +1864,25 @@ ent-RadiationEmitter = излучатель радиации
 
 ent-LockerWallBasePrisoner = настенный тюремный шкаф
     .desc = Это настенный защищенный шкафчик для личных вещей заключенного, которые запрещенно хранить во время пребывания в тюрьме.
-ent-LockerWallBasePrisoner2 = настенный тюремный шкаф
+ent-LockerWallPrisoner2 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 2
-ent-LockerWallBasePrisoner3 = настенный тюремный шкаф
+ent-LockerWallPrisoner3 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 3
-ent-LockerWallBasePrisoner4 = настенный тюремный шкаф
+ent-LockerWallPrisoner4 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 4
-ent-LockerWallBasePrisoner5 = настенный тюремный шкаф
+ent-LockerWallPrisoner5 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 5
-ent-LockerWallBasePrisoner6 = настенный тюремный шкаф
+ent-LockerWallPrisoner6 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 6
-ent-LockerWallBasePrisoner7 = настенный тюремный шкаф
+ent-LockerWallPrisoner7 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 7
-ent-LockerWallBasePrisoner8 = настенный тюремный шкаф
+ent-LockerWallPrisoner8 = настенный тюремный шкаф
     .desc = { ent-LockerPrisoner.desc }
     .suffix = 8
 
@@ -1892,3 +1892,8 @@ prison-lobby-outpost-description = Это Космическая Тюрьма д
    - Работать уборщиком, шахтером, ученым или повором
    - Пытаться сбежать
    - Наблюдать за заключенными и устраивать их на работу
+
+YupiTransferCartridge = картридж YUPI переводов
+    .desc = Программа для осуществления банковских переводов между пользователями.
+NanoTaskCartridge = картридж NanoTask
+    .desc = Программа, позволяющая вести список задач, которые нужно выполнить. 

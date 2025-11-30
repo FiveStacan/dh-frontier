@@ -155,3 +155,11 @@
   files:
   - /Audio/_DH/Weapons/Guns/Gunshots/famas-1.ogg
   - /Audio/_DH/Weapons/Guns/Gunshots/famas-2.ogg
+
+- type: soundCollection
+  id: mace
+  files:
+  - /Audio/_DH/Weapons/Melee/Mace/Mace_smash_air1.ogg
+  - /Audio/_DH/Weapons/Melee/Mace/Mace_smash_air2.ogg
+  - /Audio/_DH/Weapons/Melee/Mace/Mace_smash_air3.ogg
+  - /Audio/_DH/Weapons/Melee/Mace/Mace_smash_air4.ogg
