@@ -1470,13 +1470,6 @@ entities:
       parent: 201
     - type: Physics
       bodyType: Static
-- proto: OreProcessor
-  entities:
-  - uid: 169
-    components:
-    - type: Transform
-      pos: -0.5,-4.5
-      parent: 201
 - proto: OxygenCanister
   entities:
   - uid: 58

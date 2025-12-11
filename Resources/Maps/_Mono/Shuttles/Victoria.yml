@@ -1800,13 +1800,6 @@ entities:
     - type: Transform
       pos: 2.5,1.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 240
-    components:
-    - type: Transform
-      pos: 1.5,2.5
-      parent: 1
 - proto: PlushieRainbowLizard
   entities:
   - uid: 241

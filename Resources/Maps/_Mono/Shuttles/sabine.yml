@@ -1856,13 +1856,6 @@ entities:
     - type: Transform
       pos: -0.5,3.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 380
-    components:
-    - type: Transform
-      pos: -2.5,-2.5
-      parent: 1
 - proto: PaperBin20
   entities:
   - uid: 169

@@ -27208,13 +27208,6 @@ entities:
     - type: Transform
       pos: 3.5,64.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 4846
-    components:
-    - type: Transform
-      pos: 51.5,33.5
-      parent: 1
 - proto: OrganHumanBrain
   entities:
   - uid: 2460
@@ -32721,13 +32714,6 @@ entities:
     components:
     - type: Transform
       pos: 110.5,58.5
-      parent: 1
-- proto: ScrapProcessor
-  entities:
-  - uid: 4851
-    components:
-    - type: Transform
-      pos: 52.5,33.5
       parent: 1
 - proto: Screwdriver
   entities:

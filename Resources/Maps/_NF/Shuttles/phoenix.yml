@@ -4527,13 +4527,6 @@ entities:
     - type: Transform
       pos: -4.5,-0.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 500
-    components:
-    - type: Transform
-      pos: -6.5,12.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 501
@@ -4858,13 +4851,6 @@ entities:
     components:
     - type: Transform
       pos: -4.071113,2.5328054
-      parent: 1
-- proto: ScrapProcessor
-  entities:
-  - uid: 268
-    components:
-    - type: Transform
-      pos: -11.5,10.5
       parent: 1
 - proto: ShuttersNormalOpen
   entities:
