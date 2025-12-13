@@ -1723,15 +1723,6 @@ entities:
     - type: CollisionWake
       enabled: False
     - type: Conveyed
-- proto: OreProcessor
-  entities:
-  - uid: 150
-    components:
-    - type: Transform
-      pos: 5.5,-2.5
-      parent: 1
-    - type: MaterialStorageMagnetPickup
-      magnetEnabled: True
 - proto: OxygenCanister
   entities:
   - uid: 155
@@ -1911,15 +1902,6 @@ entities:
     components:
     - type: Transform
       pos: 3.5,-4.5
-      parent: 1
-    - type: MaterialStorageMagnetPickup
-      magnetEnabled: True
-- proto: ScrapProcessor
-  entities:
-  - uid: 8
-    components:
-    - type: Transform
-      pos: 5.5,-3.5
       parent: 1
     - type: MaterialStorageMagnetPickup
       magnetEnabled: True

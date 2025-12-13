@@ -2919,13 +2919,6 @@ entities:
       bodyType: Static
     - type: Lock
       locked: False
-- proto: OreProcessor
-  entities:
-  - uid: 272
-    components:
-    - type: Transform
-      pos: -0.5,-12.5
-      parent: 3
 - proto: OxygenCanister
   entities:
   - uid: 368

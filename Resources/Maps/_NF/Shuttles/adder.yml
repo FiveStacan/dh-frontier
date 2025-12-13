@@ -1175,13 +1175,6 @@ entities:
     - type: Transform
       pos: 4.516633,-1.3279996
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 69
-    components:
-    - type: Transform
-      pos: 4.5,-1.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 150

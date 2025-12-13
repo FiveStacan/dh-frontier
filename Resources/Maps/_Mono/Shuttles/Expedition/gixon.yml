@@ -13184,13 +13184,6 @@ entities:
           ents: []
         machine_parts: !type:Container
           ents: []
-- proto: OreProcessor
-  entities:
-  - uid: 2200
-    components:
-    - type: Transform
-      pos: 5.5,-13.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 2201

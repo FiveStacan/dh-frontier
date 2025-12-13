@@ -3055,13 +3055,6 @@ entities:
       parent: 1
     - type: Physics
       bodyType: Static
-- proto: OreProcessor
-  entities:
-  - uid: 437
-    components:
-    - type: Transform
-      pos: 3.5,2.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 483

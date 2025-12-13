@@ -1734,13 +1734,6 @@ entities:
       rot: 3.141592653589793 rad
       pos: 4.5952806,-7.666134
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 114
-    components:
-    - type: Transform
-      pos: 5.5,-3.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 233

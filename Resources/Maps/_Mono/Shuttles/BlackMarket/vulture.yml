@@ -15221,13 +15221,6 @@ entities:
     - type: Transform
       pos: 19.5,28.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 2408
-    components:
-    - type: Transform
-      pos: 22.5,38.5
-      parent: 1
 - proto: OxygenCanister
   entities:
   - uid: 2409
@@ -15891,13 +15884,6 @@ entities:
     components:
     - type: Transform
       pos: 22.5,39.5
-      parent: 1
-- proto: ScrapProcessor
-  entities:
-  - uid: 2523
-    components:
-    - type: Transform
-      pos: 22.5,37.5
       parent: 1
 - proto: SheetPlasteel1
   entities:

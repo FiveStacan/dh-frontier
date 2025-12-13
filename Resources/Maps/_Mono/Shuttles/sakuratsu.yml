@@ -2897,13 +2897,6 @@ entities:
     - type: Transform
       pos: 2.5,5.5
       parent: 1
-- proto: OreProcessor
-  entities:
-  - uid: 516
-    components:
-    - type: Transform
-      pos: 2.5,8.5
-      parent: 1
 - proto: PlasmaReinforcedWindowDirectional
   entities:
   - uid: 510
