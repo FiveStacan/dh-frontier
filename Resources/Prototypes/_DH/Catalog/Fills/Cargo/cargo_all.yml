@@ -7,3 +7,14 @@
   cost: 3450
   category: cargoproduct-category-name-fun
   group: market
+
+- type: cargoProduct
+  id: ShiparmoryResearchAndDevelopmentServerFlatpack
+  icon:
+    sprite: _DH/Structures/Machines/server.rsi
+    state: server
+    state: variant-shiparmory
+  product: ShiparmoryResearchAndDevelopmentServerFlatpack
+  cost: 16450
+  category: Корабельное вооружение
+  group: market

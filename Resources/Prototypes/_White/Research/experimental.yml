@@ -6,7 +6,7 @@
   entityIcon: ClothingEyesNightVisionGoggles
   discipline: NFScience
   tier: 2
-  cost: 10000
+  cost: 25000
   recipeUnlocks:
   - ClothingEyesNightVisionGoggles
   technologyPrerequisites:
@@ -19,9 +19,10 @@
   entityIcon: ClothingEyesThermalVisionGoggles
   discipline: NFScience
   tier: 2
-  cost: 10000
+  cost: 30000
   recipeUnlocks:
   - ClothingEyesThermalVisionGoggles
   technologyPrerequisites:
   - NightVisionTech
-  position: 6, 10
+  - NFHardsuitsExperimentalIndustrial #DH
+  position: 6, 8

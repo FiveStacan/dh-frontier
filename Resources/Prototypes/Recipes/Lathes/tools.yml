@@ -217,11 +217,33 @@
   parent: BaseToolRecipe
   id: WelderExperimental
   result: WelderExperimentalEmpty # Frontier - WelderExperimental<WelderExperimentalEmpty
-  completetime: 6
+  completetime: 9
   materials:
     Steel: 2000
     Plasma: 1000
     Silver: 900
+    bluespace: 120
+
+# - type: latheRecipe
+#   parent: BaseToolRecipe
+#   id: WelderIndustrial
+#   result: WelderIndustrialEmpty
+#   completetime: 5
+#   materials:
+#     Steel: 600
+#     Glass: 400
+#     Silver: 100
+
+# - type: latheRecipe
+#   parent: BaseToolRecipe
+#   id: WelderIndustrialAdvanced
+#   result: WelderIndustrialAdvancedEmpty
+#   completetime: 7
+#   materials:
+#     Steel: 900
+#     Glass: 500
+#     Plasma: 400
+#     Silver: 400
 
 - type: latheRecipe
   parent: BaseToolRecipe

@@ -1194,6 +1194,8 @@
   - MedicalBlueScrubs
   - MedicalGreenScrubs
   - MedicalPurpleScrubs
+  fallbacks:
+  - MedicalDoctorJumpsuit
 
 - type: loadoutGroup
   id: MedicalDoctorOuterClothing

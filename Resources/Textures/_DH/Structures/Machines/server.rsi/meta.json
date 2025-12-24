@@ -11,6 +11,9 @@
             "name": "server"
         },
         {
+            "name": "server-shiparmory"
+        },
+        {
             "name": "server-nopower"
         },
         {

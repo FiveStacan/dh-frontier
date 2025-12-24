@@ -36,13 +36,13 @@
      - NFEngineering
      - NFMedical
      - NFArsenalMercenary
-     - NFArsenalNfsd
+     #- NFArsenalNfsd
      - NFSalvage
      - NFScience
      - NFService
      # End Frontier: Tech Tree
      # Start Lua: Tech Tree
-     - Shiparmory
+     #- Shiparmory
      # End Lua: Tech Tree
   - type: ApcPowerReceiver
     powerLoad: 200

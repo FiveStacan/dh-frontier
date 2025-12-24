@@ -28,7 +28,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.05
+    fireRate: 0.036
     projectileSpeed: 900
     shootThermalSignature: 18000000 # ~8.5km after firing
     soundGunshot:
@@ -40,12 +40,12 @@
     autoRechargeRate: 350
   - type: SpaceArtillery
     powerChargeRate: 350
-    powerUsePassive: 1000
-    powerUseActive: 7500
+    powerUsePassive: 1100
+    powerUseActive: 7600
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipRailgunProjectile
-    fireCost: 1500
+    fireCost: 2000
   - type: Fixtures
     fixtures:
       fix1:
@@ -96,7 +96,7 @@
   - type: WirelessNetworkConnection
     range: 500
   - type: Gun
-    fireRate: 0.05
+    fireRate: 0.039
     projectileSpeed: 1250
     shootThermalSignature: 18000000 # ~8.5m after firing
     soundGunshot:

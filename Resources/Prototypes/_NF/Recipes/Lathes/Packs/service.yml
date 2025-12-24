@@ -158,6 +158,15 @@
   - PlantAnalyzer # Frontier
   - JanicartFlatpack # Frontier
   - PlantBagOfHolding # Delta-V
+  - BorgModuleClowning #DH
+  - BorgModuleMusique #DH
+  - BorgModuleCleaning #DH
+  - BorgModuleBureaucracy #DH
+  - BorgModuleChef #DH
+  - BorgModuleNFService #DH
+  - BorgModuleCustodial #DH
+  - BorgModuleGardening #DH
+  - BorgModuleHarvesting #DH
 
 - type: latheRecipePack
   id: NFPietyStatic

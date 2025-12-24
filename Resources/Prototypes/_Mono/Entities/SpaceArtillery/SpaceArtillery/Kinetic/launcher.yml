@@ -483,7 +483,7 @@
   - type: Actions
   - type: ProjectileBatteryAmmoProvider
     proto: ShipMiniRailgunProjectile
-    fireCost: 1000
+    fireCost: 1200
   - type: Fixtures
     fixtures:
       fix1:
@@ -550,7 +550,7 @@
         - MachineLayer
   - type: Gun
     projectileSpeed: 180 #155
-    fireRate: 0.075
+    fireRate: 0.065
     soundGunshot:
       path: /Audio/_Mono/Weapons/Guns/Gunshots/cannon.ogg
     soundEmpty:

@@ -123,3 +123,23 @@ Entries:
       message: Удалены ЛГБТ флаги.
   id: 10
   time: '2025-12-21T12:00:00.0000000+00:00'
+- author: FiveStacan
+  changes:
+    - type: Tweak
+      message: Мелкие исправления
+    - type: Tweak
+      message: Изменено количество звезд в секторе - от 7 до 14
+    - type: Tweak
+      message: Перевод
+    - type: Tweak
+      message: Баланс цен
+    - type: Tweak
+      message: Несколько новых технологий и изменения баланса цен технологий.
+    - type: Add
+      message: Новый шаттл для Lua верфи - Caolition.
+    - type: Add
+      message: Новые тайлы.
+    - type: Remove
+      message: Временно убрана космическая тюрьма
+  id: 11
+  time: '2025-12-24T12:00:00.0000000+00:00'

@@ -158,11 +158,14 @@
   recipes:
 # Shared lathe recipes
 ## Advanced tools
+  - WelderIndustrial
+  - WelderIndustrialAdvanced
   - WelderExperimental
   - JawsOfLife
   - PowerDrill
   - JetpackVoid
   - PowerCellHigh
+  - PowerCellMedium
   # - PowerCellHyperNF
   - PowerCellMicroreactor
 # Mercenary techfab

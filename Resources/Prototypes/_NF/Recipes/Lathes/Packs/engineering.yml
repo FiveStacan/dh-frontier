@@ -51,6 +51,24 @@
   - CondenserMachineCircuitBoard
 
 - type: latheRecipePack
+  id: NFEngineeringStructureBoardsStaticAUTOLATHE
+  recipes:
+  - AirAlarmElectronics
+  - APCElectronics
+  - DoorElectronics
+  - FireAlarmElectronics
+  - FirelockElectronics
+  - FreezerElectronics
+  - MailingUnitElectronics
+  - StationMapElectronics
+  - SubstationMachineCircuitboard
+  - SMESMachineCircuitboard
+  #- PortableSMESMachineCircuitboard
+  - StationMapElectronics
+  - WallmountSubstationElectronics
+  #- SMESAdvancedMachineCircuitboard
+
+- type: latheRecipePack
   id: NFEngineeringMaterialsStatic
   recipes:
   #- NFSheetRGlassProcessed
@@ -71,8 +89,11 @@
   - NanoManipulatorStockPart
   - PowerDrill
   - JawsOfLife
+  - WelderIndustrial #DH
+  - WelderIndustrialAdvanced #DH
   - BorgModuleRCD
   - BorgModuleAdvancedTool
+  - BorgModuleJetpack #DH
 
 - type: latheRecipePack
   id: NFEngineeringBoards
@@ -84,6 +105,9 @@
   recipes:
   - ShipyardRCD
   - ShipyardRCDAmmo
+  - RCD #DH
+  - RCDAmmo #DH
+  - HandheldRoboAnalyzer #DH
   - ConstructionBagOfHolding
   - ClothingBeltChiefEngineer
   - ClothingShoesBootsMag

@@ -6,7 +6,7 @@
   entityIcon: Binoculars
   discipline: NFArsenalMercenary
   tier: 2
-  cost: 8000
+  cost: 8800
   recipeUnlocks:
   - Binoculars
   - BinocularsMagmite
@@ -21,10 +21,11 @@
 - type: technology
   id: painting
   name: Покраска
-  entityIcon: NFPouchEngineering
+  entityIcon: SprayPainter
   discipline: NFService
   tier: 1
   cost: 6000
+  prerequisiteLineType: Tree
   recipeUnlocks:
   - SprayPainter
   - SprayPainterAmmo
@@ -45,7 +46,7 @@
   - SprayPainterAdvancedAmmo
   technologyPrerequisites:
   - painting
-  position: 3, 20
+  position: 4, 20
 
 - type: technology
   id: ExperementalPainting
@@ -53,9 +54,9 @@
   entityIcon: SprayPainterExperemental
   discipline: NFService
   tier: 1
-  cost: 15000
+  cost: 18400
   recipeUnlocks:
   - SprayPainterExperemental
   technologyPrerequisites:
   - AdvancedPainting
-  position: 3, 20
+  position: 5, 20

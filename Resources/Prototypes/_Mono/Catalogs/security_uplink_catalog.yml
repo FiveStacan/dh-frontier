@@ -426,3 +426,19 @@
       whitelist:
         tags:
           - SecurityUplink
+
+- type: listing
+  id: UplinkSecurityNFSDRnDServerFlatpack
+  name: Сервер РнД ДСБФ
+  description: Упаковка, при помощи которой можно создать сервер РНД ДСБФ
+  productEntity: NFSDResearchAndDevelopmentServerFlatpack
+  icon: { sprite: _DH/Structures/Machines/server.rsi, state: server }
+  cost:
+    FrontierUplinkCoin: 7
+  categories:
+    - UplinkSecurityUtility
+  conditions:
+    - !type:StoreWhitelistCondition
+      whitelist:
+        tags:
+          - SecurityUplink

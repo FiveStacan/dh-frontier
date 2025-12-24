@@ -4,7 +4,7 @@
   entityIcon: MechRipley2
   discipline: NFEngineering
   tier: 2
-  cost: 8000
+  cost: 17000
   recipeUnlocks:
   - RipleyMKIIHarness
   - RipleyUpgradeKit

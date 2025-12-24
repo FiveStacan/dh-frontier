@@ -4,13 +4,13 @@
   entityIcon: WeaponMagmiteCrusher
   discipline: NFArsenalNfsd
   tier: 3
-  cost: 25000
+  cost: 42000
   recipeUnlocks:
   - WeaponMagmiteCrusher
   - WeaponMagmiteCrusherGlaive
-  - ClothingShoesBootsJetBoots
+  #- ClothingShoesBootsJetBoots #DH
   - WeaponMagmiteAccelerator
   technologyPrerequisites:
-  - NFSalvageWeapons
-  - NFMagnetsTechCombat
+  - NFImprovedSalvageWeapons #DH
+  - NFAdvancedSalvageCyborg #DH
   position: 4, 39

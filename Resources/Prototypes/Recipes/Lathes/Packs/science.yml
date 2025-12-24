@@ -31,6 +31,8 @@
   - DeviceQuantumSpinInverter # Frontier
   - DeviceDesynchronizer
   - NFClothingBackpackHarmpack # Frontier: use NF variant
+  - WelderIndustrial #DH
+  - WelderIndustrialAdvanced #DH
 
 - type: latheRecipePack
   id: ScienceClothing
@@ -49,6 +51,7 @@
   - PowerCellMicroreactor
   - PowerCellHigh
   - PowerCellHyper
+  - PowerCellMedium
 
 - type: latheRecipePack
   id: ScienceWeapons

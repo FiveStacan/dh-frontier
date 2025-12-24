@@ -115,16 +115,16 @@
   id: ClothingShoesBootsCombatFilled
   price: 1200
   equipment:
-    eyes: ClothingShoesBootsCombatFilled
+    shoes: ClothingShoesBootsCombatFilled
 
 - type: loadout
   id: ClothingShoesBootsJackFilled
   price: 0
   equipment:
-    eyes: ClothingShoesBootsJackFilled
+    shoes: ClothingShoesBootsJackFilled
 
 - type: loadout
   id: DHClothingHandsGlovesCombat
   price: 0
   equipment:
-    eyes: ClothingHandsGlovesCombat
+    gloves: ClothingHandsGlovesCombat

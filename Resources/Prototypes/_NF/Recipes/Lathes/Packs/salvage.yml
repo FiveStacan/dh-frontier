@@ -26,6 +26,9 @@
   - JetpackBlue
   - MineralScannerEmpty
   - BorgModuleAdvancedMining
+  - BorgModuleMining #DH
+  - BorgModuleAppraisal #DH
+  - BorgModuleTraversal #DH
 
 - type: latheRecipePack
   id: NFSalvage

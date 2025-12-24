@@ -44,6 +44,7 @@
   - SubstationMachineCircuitboard
   - WallmountSubstationElectronics
   - CellRechargerCircuitboard #DH
+  - PortableSMESMachineCircuitboard #DH
   - WeaponCapacitorRechargerCircuitboard
   - FreezerElectronics
   - PortableSMESMachineCircuitboard # Frontier

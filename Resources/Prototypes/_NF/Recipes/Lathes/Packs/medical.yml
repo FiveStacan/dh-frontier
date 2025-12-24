@@ -23,7 +23,7 @@
 
 - type: latheRecipePack
   id: NFMedicalClothingStatic
-  recipes: 
+  recipes:
   - UniformScrubsColorBlue
   - UniformScrubsColorGreen
   - UniformScrubsColorPurple
@@ -35,7 +35,7 @@
 
 - type: latheRecipePack
   id: NFChemistryBasicStatic
-  recipes: 
+  recipes:
   - Jug
   - ChemistryEmptyBottle01
   - ClothingEyesGlassesChemical
@@ -93,6 +93,8 @@
   - DefibrillatorCompact
   - ReinforcedJug
   - BorgModuleAdvancedParamedic
+  - BorgModuleDiagnosis #DH
+  - BorgModuleChemical #DH
   - MedicalPouch
 
 - type: latheRecipePack

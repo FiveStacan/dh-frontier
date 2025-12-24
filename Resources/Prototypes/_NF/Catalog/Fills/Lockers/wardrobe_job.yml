@@ -8,7 +8,7 @@
     - id: ClothingUniformJumpskirtPrisoner
     - id: ClothingShoesColorBlack
     - id: ClothingMaskMuzzle
-    - id: ClothingHeadsetPrison
+    - id: ClothingHeadsetPrisoner
 
 - type: entity
   id: NFWardrobePrisonFilled

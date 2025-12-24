@@ -14,7 +14,7 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
-    - NFGeneral
+    #- NFGeneral
     - NFEngineering
     - NFMedical
     - NFSalvage
@@ -41,7 +41,7 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
-    - NFGeneral
+    #- NFGeneral
     - NFEngineering
     - NFSalvage
     - NFScience
@@ -49,6 +49,7 @@
     - Shiparmory
     - NFArsenal
     - NFArsenalMercenary
+    - NFArsenalNfsd
 
 - type: entity
   id: SyndicateResearchAndDevelopmentServer
@@ -66,7 +67,7 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
-    - NFGeneral
+    #- NFGeneral
     - NFEngineering
     - NFMedical
     - NFSalvage
@@ -122,7 +123,7 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
-    - NFGeneral
+    #- NFGeneral
     - NFEngineering
     - Shiparmory
     - NFService
@@ -144,9 +145,55 @@
         map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: TechnologyDatabase
     supportedDisciplines:
-    - NFGeneral
+    #- NFGeneral
     - NFEngineering
     - NFMedical
     - NFScience
     - NFService
     - NFArsenalNfsd
+
+- type: entity
+  id: ShiparmoryResearchAndDevelopmentServer
+  parent: ResearchAndDevelopmentServer
+  name: Shiparmory R&D server
+  suffix: Shiparmory
+  components:
+  - type: Sprite
+    sprite:  _DH/Structures/Machines/server.rsi
+    snapCardinals: true
+    layers:
+      - state: server
+      - state: variant-shiparmory
+      - state: server_o
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: TechnologyDatabase
+    supportedDisciplines:
+    - Shiparmory
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: ShiparmoryResearchAndDevelopmentServerFlatpack
+  name: shiparmory research and development server flatpack
+  description: A flatpack used for constructing a shiparmory research and development server.
+  components:
+  - type: Flatpack
+    entity: ShiparmoryResearchAndDevelopmentServer
+  - type: StaticPrice
+    price: 300
+  - type: Sprite
+    layers:
+    - state: science_server
+
+- type: entity
+  parent: BaseNFFlatpack
+  id: NFSDResearchAndDevelopmentServerFlatpack
+  name: NFSD research and development server flatpack
+  description: A flatpack used for constructing a NFSD research and development server.
+  components:
+  - type: Flatpack
+    entity: NFSDResearchAndDevelopmentServer
+  - type: StaticPrice
+    price: 260
+  - type: Sprite
+    layers:
+    - state: science_server

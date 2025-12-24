@@ -50,8 +50,8 @@
 #    back: ClothingBackpackPrisonGuard
 #    shoes: ClothingShoesBootsCombatFilled
 #    eyes: ClothingEyesGlassesSecurity
-    head: ClothingHeadPrisonGuard
-    outerClothing: ClothingOuterArmorBasic # Frontier
+#    head: ClothingHeadPrisonGuard
+#    outerClothing: ClothingOuterArmorBasic # Frontier
     id: PrisonGuardPDA
     ears: ClothingHeadsetPrison
     belt: ClothingBeltPrisonGuardianFilled

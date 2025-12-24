@@ -1,15 +1,15 @@
 - type: starmapConfig
   id: StarmapConfig
-  basePixelsPerDistance: 90
+  basePixelsPerDistance: 95
   zoomMin: 0.05
   zoomMax: 4.0
   gridLines: 10
   gridColor: "#2F4F4F"
   backgroundColor: "#05050AFF"
-  minStars: 15
-  maxStars: 26
+  minStars: 7 #DH
+  maxStars: 14 #DH
   starDistanceMin: 5
-  starDistanceMax: 15
+  starDistanceMax: 14
   hyperlaneMaxDistance: 1200
   hyperlaneNeighbors: 3
   parallaxLayers:

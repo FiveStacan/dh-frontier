@@ -46,7 +46,7 @@
   id: JobPrisonGuard #
   groups:
    - PrisonGuardHead
-   - PrisonGuardNeck
+   #- PrisonGuardNeck
    - PrisonGuardJumpsuit
    - NfsdGlovesBrown #
    - NfsdBackpackBrown
@@ -71,7 +71,7 @@
    - SocksUnderwear #
 
 - type: roleLoadout
-  id: JobPrisonGuardDH
+  id: JobDHPrisonGuard
   groups:
    - PrisonGuardHead
 #   - PrisonGuardNeck
@@ -159,7 +159,6 @@
   - PantsUnderwear
   - SocksUnderwear
 #  - GroupTankHarness
-#  - MedicalDoctorHead
 #  - PrisonMedicalMask
 #  - MedicalDoctorJumpsuit
 #  - PrisonDoctorIDCard

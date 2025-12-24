@@ -105,6 +105,8 @@
   - HolofanProjector
   # AdvancedToolsTechnology
   - WelderExperimental
+  - WelderIndustrial #DH
+  - WelderIndustrialAdvanced #DH
   - PowerDrill
   - JawsOfLife
   - ClothingBeltChiefEngineer
@@ -114,6 +116,8 @@
   # RapidConstruction
   - ShipyardRCD
   - ShipyardRCDAmmo
+  - RCD
+  - RCDAmmo
   # ConstructionBags
   - ConstructionBagOfHolding
   # HardsuitsSpecialized
@@ -138,6 +142,9 @@
   - ExpandetAmeJar
   - AmeJar
   - BluespaceAmeJar
+  - BorgModuleJetpack
+  - BorgModuleConstruction
+  - HandheldRoboAnalyzer
 
 # region Medical
 - type: latheRecipePack
@@ -152,6 +159,8 @@
   - SyringeCryostasis
   # MechanizedTreatment
   - BorgModuleAdvancedParamedic
+  - BorgModuleDiagnosis #DH
+  - BorgModuleChemical #DH
   # RoboticCleanliness
   - PortablePumpMachineCircuitBoard
   # AdvancedCleaning
@@ -246,6 +255,9 @@
   - JetpackNfsd
   #DH
   - NFDartTracking
+  - BorgModulEnergySecurity
+  - BorgModuleSecurity
+  - BorgModuleArrestSecurity
 
 # region Salvage
 - type: latheRecipePack
@@ -285,6 +297,9 @@
   - MiningDrillDiamond
   - AdvancedMineralScannerEmpty
   - BorgModuleAdvancedMining
+  - BorgModuleMining #DH
+  - BorgModuleAppraisal #DH
+  - BorgModuleTraversal #DH
   ## Frontier
   # HardsuitsSpecialized
   - ClothingOuterHardsuitSpatio
@@ -340,6 +355,8 @@
   - ProtolatheHyperConvectionMachineCircuitboard
   # AdvancedToolsTechnology
   - BorgModuleAdvancedTool
+  #DH
+  - DeviceQuantumSpinInverter
 
 # region Service
 - type: latheRecipePack
@@ -426,6 +443,15 @@
   - ClothingOuterHardsuitClown
   - ClothingOuterHardsuitMime
   - ClothingOuterHardsuitPilot
+  - BorgModuleClowning #DH
+  - BorgModuleMusique #DH
+  - BorgModuleCleaning #DH
+  - BorgModuleBureaucracy #DH
+  - BorgModuleChef #DH
+  - BorgModuleNFService #DH
+  - BorgModuleCustodial #DH
+  - BorgModuleGardening #DH
+  - BorgModuleHarvesting #DH
 
 #################
 #               #
@@ -512,6 +538,7 @@
   recipes:
   # AdvancedPowercells
   - PowerCellHigh
+  - PowerCellMedium
   - TurboItemRechargerCircuitboard
   # BluespaceStorage
   - ClothingBackpackHolding

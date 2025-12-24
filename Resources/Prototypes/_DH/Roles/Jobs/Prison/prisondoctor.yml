@@ -42,10 +42,9 @@
 #    head: ClothingHeadPrisonGuard
 #    mask: ClothingMaskBreathMedicalSecurity
 #    outerClothing: ClothingOuterArmorBasic
-#    id: PrisonDoctorIDCard
+    id: PrisonDoctorIDCard
 #    ears: ClothingHeadsetBrigmedic
-#    belt: ClothingBeltMedicalFilled
-#   pocket1: NFWeaponPistolMk58
+    belt: ClothingBeltMedicalFilled
 #    gloves: ClothingHandsGlovesLatex
 #    innerClothingSkirt: ClothingUniformJumpskirtMedicalDoctor
 #    satchel: ClothingBackpackSatchelMedical

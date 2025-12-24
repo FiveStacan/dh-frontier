@@ -8,7 +8,7 @@
   entityIcon: ComputerGunneryConsole
   discipline: Shiparmory
   tier: 1
-  cost: 10500
+  cost: 16500
   recipeUnlocks:
   - GunneryControlComputerCircuitboard
   - MachineGCSLowCircuitboard
@@ -22,7 +22,7 @@
   entityIcon: ShuttleGunKinetic
   discipline: Shiparmory
   tier: 1
-  cost: 12500
+  cost: 19500
   recipeUnlocks:
   - ShuttleGunKineticCircuitboard
   - ShuttleGunSvalinnMachineGunCircuitboard
@@ -36,7 +36,7 @@
   entityIcon: PowerCageSmallEmpty
   discipline: Shiparmory
   tier: 1
-  cost: 13500
+  cost: 21800
   recipeUnlocks:
   - PowerCageSmallEmpty
   - PowerCageMediumEmpty
@@ -52,7 +52,7 @@
   entityIcon: ShuttleGunPerforator
   discipline: Shiparmory
   tier: 1
-  cost: 14800
+  cost: 23800
   recipeUnlocks:
   - ShuttleGunPerforatorCircuitboard
   technologyPrerequisites:
@@ -65,7 +65,7 @@
   entityIcon: NFGrenadeBlast
   discipline: Shiparmory
   tier: 1
-  cost: 12100
+  cost: 21100
   recipeUnlocks:
   - NFGrenadeBlast
   - NFCannonBall
@@ -81,7 +81,7 @@
   entityIcon: ShuttleGunFriendship
   discipline: Shiparmory
   tier: 2
-  cost: 18200
+  cost: 28800
   recipeUnlocks:
   - ShuttleGunFriendshipCircuitboard
   - ShuttleGunPirateCannonCircuitboard
@@ -95,7 +95,7 @@
   entityIcon: NFCannonBallGrapeshot
   discipline: Shiparmory
   tier: 2
-  cost: 16900
+  cost: 30200
   recipeUnlocks:
   - NFCannonBallGrapeshot
   - NFCannonBallGlassshot
@@ -109,7 +109,7 @@
   entityIcon: NFGrenadeEMP
   discipline: Shiparmory
   tier: 2
-  cost: 14800
+  cost: 27800
   recipeUnlocks:
   - NFGrenadeEMP
   - NFGrenadeBaton
@@ -123,7 +123,7 @@
   entityIcon: ShuttleGunDuster
   discipline: Shiparmory
   tier: 2
-  cost: 21100
+  cost: 38400
   recipeUnlocks:
   - NFMagazineGrenadeEmpty
   - ShuttleGunDusterCircuitboard

@@ -45,7 +45,7 @@
     - NFServiceTechfabDeprecatedStatic
     - NFPaperAndPaperAccessories
     - ReportingStatic # DeltaV
-    dynamicPacks: 
+    dynamicPacks:
     - DHTools
   - type: EmagLatheRecipes
     emagStaticPacks:
@@ -199,6 +199,8 @@
     - NfsdToolsStatic
     - NfsdTargetsStatic
     - NfsdBoardsStatic
+    dynamicPacks:
+    - NfsdDynamic
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -252,7 +254,7 @@
     - NFMercenaryMagazineStatic
     - NFTopicalsStatic
     - NFMercenaryArchetypeStatic
-    dynamicPacks: 
+    dynamicPacks:
     - NFMercenaryTechfabDynamicDeprecated
   - type: BlueprintReceiver
     whitelist:

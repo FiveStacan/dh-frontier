@@ -39,6 +39,16 @@
   - type: Icon
     sprite: _DH/Objects/Devices/pda.rsi
     state: pda-space-prison-prisoner
+  - type: CartridgeLoader
+    uiKey: enum.PdaUiKey.Key
+    preinstalled:
+      #- CrewManifestCartridge
+      - NotekeeperCartridge
+      #- YupiTransferCartridge
+      - NanoTaskCartridge
+      - NewsReaderCartridge
+      #- BountyContractsCartridge
+      #- AstroNavCartridge
 
 - type: entity
   parent: BasePDA

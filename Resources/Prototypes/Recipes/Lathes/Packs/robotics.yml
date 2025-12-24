@@ -40,6 +40,7 @@
   - BorgModuleAdvancedChemical
   - BorgModuleAdvancedMining
   - BorgModuleAdvancedParamedic # Frontier
+  - BorgModuleDiagnosis #DH
   - BorgModuleRCD # Frontier
 
 - type: latheRecipePack

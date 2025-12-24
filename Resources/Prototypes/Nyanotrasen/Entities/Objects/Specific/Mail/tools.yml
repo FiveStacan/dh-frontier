@@ -36,6 +36,7 @@
       components:
         - Mail
         - Envelope
+        - WrappedParcel #DH
       tags: # Frontier
         - MailCapsule # Frontier
         - Paper

@@ -90,3 +90,16 @@
   recipes:
   - GyroscopeNfsdMachineCircuitboard
   - ThrusterNfsdMachineCircuitboard
+
+#DH
+- type: latheRecipePack
+  id: NfsdDynamic
+  recipes:
+  - BorgModulEnergySecurity
+  - BorgModuleSecurity
+  - Binoculars
+  - BinocularsMagmite
+  - PinpointerUniversalNF
+  - NFDartTracking
+  - BorgModuleArrestSecurity
+

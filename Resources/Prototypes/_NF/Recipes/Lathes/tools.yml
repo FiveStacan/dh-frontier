@@ -16,6 +16,7 @@
   materials:
     Steel: 600
     Glass: 400
+    Plastic: 100
 
 - type: latheRecipe
   id: WelderIndustrialAdvanced
@@ -26,6 +27,7 @@
     Steel: 600
     Glass: 200
     Plastic: 200
+    Silver: 100
 
 - type: latheRecipe
   id: ContrabandAppraisalTool
