@@ -9,7 +9,8 @@
     whitelist:
       tags:
         - CartridgeCaselessRifle
-    # proto: CartridgeCaselessRifle # Frontier
+        - NFCartridgeRifle25 #DH
+    proto: NFCartridgeRifle25 #DH # Frontier
     capacity: 60
   - type: Item
     size: Small

@@ -493,7 +493,7 @@ WeaponDisablerSMG: NFWeaponEnergySubMachineGunDisabler
 # WeaponEmpEmitter: ? # not migrated
 WeaponEnergyGun: NFWeaponEnergySubMachineGunDeltaV
 WeaponEnergyGunMultiphase: NFWeaponEnergyPistolLaserX01Multiphase
-WeaponEnergyShotgun: null
+#WeaponEnergyShotgun: null
 WeaponLaserCannon: NFWeaponEnergyRifleSniperCannon
 WeaponLaserCarbine: NFWeaponEnergyRifleCarbine
 WeaponLaserCarbinePractice: NFWeaponEnergyRifleCarbinePractice

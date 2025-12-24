@@ -53,6 +53,102 @@
       map: ["closed-coin"]
       visible: false
 
+#DH
+
+- type: entity
+  parent: ClothingWalletLeatherBrown
+  id: ClothingWalletLeatherGreen
+  components:
+  - type: Sprite
+    layers:
+    - state: closed-green
+      map: ["closeLayer"]
+    - state: open-green
+      map: ["openLayer"]
+      visible: false
+    - state: closed-paper
+      map: ["closed-paper"]
+      visible: false
+    - state: closed-cash
+      map: ["closed-cash"]
+      visible: false
+    - state: closed-coin
+      map: ["closed-coin"]
+      visible: false
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  parent: ClothingWalletLeatherBrown
+  id: ClothingWalletLeatherPurple
+  components:
+  - type: Sprite
+    layers:
+    - state: closed-purple
+      map: ["closeLayer"]
+    - state: open-purple
+      map: ["openLayer"]
+      visible: false
+    - state: closed-paper
+      map: ["closed-paper"]
+      visible: false
+    - state: closed-cash
+      map: ["closed-cash"]
+      visible: false
+    - state: closed-coin
+      map: ["closed-coin"]
+      visible: false
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  parent: ClothingWalletLeatherBrown
+  id: ClothingWalletLeatherWhite
+  components:
+  - type: Sprite
+    layers:
+    - state: closed-white
+      map: ["closeLayer"]
+    - state: open-white
+      map: ["openLayer"]
+      visible: false
+    - state: closed-paper
+      map: ["closed-paper"]
+      visible: false
+    - state: closed-cash
+      map: ["closed-cash"]
+      visible: false
+    - state: closed-coin
+      map: ["closed-coin"]
+      visible: false
+  - type: StaticPrice
+    price: 10
+
+- type: entity
+  parent: ClothingWalletLeatherBrown
+  id: ClothingWalletLeatherPink
+  components:
+  - type: Sprite
+    layers:
+    - state: closed-pink
+      map: ["closeLayer"]
+    - state: open-pink
+      map: ["openLayer"]
+      visible: false
+    - state: closed-paper
+      map: ["closed-paper"]
+      visible: false
+    - state: closed-cash
+      map: ["closed-cash"]
+      visible: false
+    - state: closed-coin
+      map: ["closed-coin"]
+      visible: false
+  - type: StaticPrice
+    price: 10
+
+#DH -
+
 - type: entity
   parent: ClothingWalletLeatherBrown
   id: ClothingWalletLeatherMail

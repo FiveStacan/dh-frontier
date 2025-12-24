@@ -166,13 +166,14 @@
             - MagazineCaselessRifle
       gun_chamber:
         name: Chamber
-        startingItem: CartridgeCaselessRifle
+        startingItem: NFCartridgeRifle25 #DH
         priority: 1
         whitelist:
           tags:
             - NFCartridgeRifle30
             - CartridgeLightRifle
             - CartridgeCaselessRifle
+            - NFCartridgeRifle25 #DH
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot

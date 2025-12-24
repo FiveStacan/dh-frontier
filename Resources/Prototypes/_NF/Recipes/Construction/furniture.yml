@@ -344,7 +344,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerNanotrasenNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -356,7 +356,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerCargoNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -368,7 +368,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerEngineeringNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -380,7 +380,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerMedicalNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -392,7 +392,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerScienceNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -404,7 +404,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerSecurityNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -416,7 +416,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerBlueNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -428,7 +428,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerRedNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -440,7 +440,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerYellowNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -452,7 +452,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerGreenNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -464,7 +464,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerRevolutionNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -476,7 +476,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerSyndicateNode
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false
@@ -488,7 +488,7 @@
   graph: BannersGraph
   startNode: start
   targetNode: BannerFsb
-  category: construction-category-furniture
+  category: construction-category-flags
   objectType: Structure
   placementMode: SnapgridCenter
   canBuildInImpassable: false

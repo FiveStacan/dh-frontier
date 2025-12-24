@@ -97,8 +97,7 @@
   name: loadout-group-contractor-gloves
   minLimit: 1
   loadouts:
-  - NfsdClothingHandsGlovesCombat
   - NfsdClothingHandsGlovesCombatNfsdBrown
   - NfsdClothingHandsGlovesCombatNfsdCream
   fallbacks:
-  - NfsdClothingHandsGlovesCombat
+  - DHClothingHandsGlovesCombat

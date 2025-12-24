@@ -125,3 +125,34 @@
       color: "#ec1d1d"
     - map: ["computerLayerKeys"]
       state: generic_keys
+
+- type: entity
+  id: ScienceMothershipComputer
+  parent: BaseMothershipComputer
+  name: science shipyard console
+  components:
+  - type: Sprite
+    sprite: _NF/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_medical
+    - map: ["computerLayerKeyboard"]
+      state: generic_keyboard_clean
+    - map: ["computerLayerScreen"]
+      state: contraband
+    - map: ["computerLayerKeys"]
+      state: telesci_key
+  - type: ShipyardConsole
+    newAccessLevels: [Captain, Science]
+  - type: ShipyardListing
+    shuttles:
+    - Investigator
+    - GFSYRiman
+    - Lyrae
+    - Pulsar
+    - Victoria
+    - Phoenix
+    - Spectre
+    - MonoKestrel
+    - Sakuratsu
+    - Iapetus

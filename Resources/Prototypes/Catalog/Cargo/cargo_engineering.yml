@@ -143,7 +143,7 @@
 
 - type: cargoProduct
   id: EngineeringParticleDecelerators
-  #abstract: true # Frontier
+  abstract: true # Frontier
   icon:
     sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
     state: base

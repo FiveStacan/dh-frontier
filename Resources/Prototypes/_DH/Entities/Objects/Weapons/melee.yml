@@ -328,32 +328,41 @@
     range: 1.15
     autoAttack: true
     wideAnimation: WeaponArcMaceSlash
-    angle: 135
+    angle: 145
     wideAnimationRotation: 220
-    bluntStaminaDamageFactor: 1.4
-    clickDamageModifier: 1.65
-    attackRate: 0.75
+    bluntStaminaDamageFactor: 1.45
+    clickDamageModifier: 1.72
+    attackRate: 0.72
     damage:
       types:
-        Blunt: 7
-        Piercing: 1
+        Blunt: 6
+        Piercing: 2
         Structural: 4
     soundHit:
       collection: mace
+      volume: 30
   - type: Wieldable
   - type: IncreaseDamageOnWield
     damage:
       types:
-        Blunt: 17
-        Piercing: 3
-        Structural: 18
+        Blunt: 18
+        Piercing: 4
+        Structural: 16
   - type: Tool
     qualities:
       - Prying
-    speedModifier: 0.8
+    speedModifier: 0.3
+  - type: Prying
+    speedModifier: 0.3
+    pryPowered: !type:Bool
+      false
+    force: !type:Bool
+      true
   - type: Clothing
     sprite: Nyanotrasen/Objects/Weapons/Melee/breaching_hammer.rsi
     quickEquip: false
+    equipDelay: 1.6
+    unequipDelay: 0.5
     slots:
     - back
     - suitStorage # Frontier - Same as axe
@@ -363,6 +372,11 @@
         Blunt: 6
   - type: StaminaDamageOnCollide
     damage: 30
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.91
+  - type: HeldSpeedModifier
+    sprintModifier: 0.85
+    mirrorClothingModifier: false
 
 - type: entity
   id: WeaponArcMaceSmash

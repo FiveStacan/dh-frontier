@@ -4,12 +4,12 @@
 
 - type: vessel
   parent: BaseVessel
-  id: Wasp
+  id: LuaWasp
   name: NSF Wasp
   description: Крупный корабль для патруля космоса. Имеет вооружение и медицинский
     отсек.
   limit: 1
-  price: 193000 #133000
+  price: 694800 #133000
   category: Large
   group: Security
   class:
@@ -21,7 +21,7 @@
     - type: IFF
       color: "#96B089"
 - type: gameMap
-  id: Wasp
+  id: LuaWasp
   mapName: 'NSF Wasp'
   mapPath: /Maps/_Lua/Shuttles/SD/wasp.yml
   minPlayers: 0

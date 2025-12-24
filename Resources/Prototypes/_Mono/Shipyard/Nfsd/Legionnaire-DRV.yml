@@ -9,7 +9,7 @@
   name: Legionnaire-DRV
   description: Слабо бронированный корабль поддержки, с совмещённым типом орудий.
   limit: 2
-  price: 626500 #110000 x 1.15
+  price: 470200 #110000 x 1.15
   category: Medium
   group: Security
   access: Security

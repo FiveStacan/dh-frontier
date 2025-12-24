@@ -5,7 +5,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: ContentEye
-    maxZoom: 8.916104, 8.916104
+    maxZoom: 11.916104, 11.916104
   - type: Tag
     tags:
     - InstantDoAfters
@@ -140,7 +140,7 @@
   - type: BypassInteractionChecks
   - type: BankAccount # Frontier
   - type: MovementSpeedModifier
-    baseWalkSpeed: 30
+    baseWalkSpeed: 40
   - type: InteractionPopup
     successChance: 1
     interactSuccessString: hugging-success-generic

@@ -345,6 +345,17 @@
       state: generic_panel_open
 
 - type: entity
+  parent: ComputerTabletopComms
+  id: ComputerTabletopCommsNoShuttle
+  components:
+  - type: CommunicationsConsole
+    title: comms-console-announcement-title-station
+    global: true #SR WILL NOT BE IGNORED
+    canShuttle: false
+    InitialDelay: 60
+    Delay: 120
+
+- type: entity
   parent: [BaseStructureComputerTabletop, ComputerComms]
   id: MobileComputerTabletopComms
   components:

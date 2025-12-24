@@ -66,6 +66,24 @@
         },
         {
             "name": "open-fs"
+        },
+        {
+            "name": "closed-purple"
+        },
+        {
+            "name": "open-purple"
+        },
+        {
+            "name": "closed-white"
+        },
+        {
+            "name": "open-white"
+        },
+        {
+            "name": "closed-pink"
+        },
+        {
+            "name": "open-pink"
         }
     ]
 }

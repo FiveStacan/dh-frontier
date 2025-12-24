@@ -169,13 +169,13 @@
   result: WeaponForceGun
   categories:
   - Tools
-  completetime: 5
+  completetime: 23
   materials:
-    Steel: 500
+    Steel: 200
     Glass: 400
-    Silver: 200
-    Bluespace: 150 #DH
-    Magmite: 50 #DH
+    Silver: 100
+    Bluespace: 250 #DH
+    Magmite: 350 #DH
 
 - type: latheRecipe
   id: DeviceQuantumSpinInverter
@@ -212,12 +212,12 @@
   result: WeaponTetherGun
   categories:
   - Tools
-  completetime: 5
+  completetime: 18
   materials:
     Steel: 500
     Glass: 400
     Silver: 100
-    Bluespace: 50 #DH
+    Bluespace: 150 #DH
     Uranium: 200 #DH
     Magmite: 150 #DH
 

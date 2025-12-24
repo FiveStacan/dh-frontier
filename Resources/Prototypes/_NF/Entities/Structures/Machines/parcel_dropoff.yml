@@ -37,6 +37,7 @@
       components:
       - WrappedParcel
       - Envelope
+      - Mail
     checkAccessOnInsert: false # access only needed for withdrawal
     insertSound:
       path: /Audio/_NF/Effects/mail-slot.ogg

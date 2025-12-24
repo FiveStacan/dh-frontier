@@ -66,7 +66,7 @@
 - type: sectorSystemPrototype
   id: PrisonSector
   name: "Сектор КТ"
-  station: FrontierPrison
+  station: SpacePrison
   worldgenConfig: Default
   autoStart: true
   defaultGamePreset: NFPirates

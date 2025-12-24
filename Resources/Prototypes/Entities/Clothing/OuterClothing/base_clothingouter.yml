@@ -20,12 +20,17 @@
   id: ClothingOuterBase
   components:
   - type: Clothing
+    equipDelay: 4.4 #DH
+    unequipDelay: 3.8 #DH
+    stripDelay: 4 #DH
     slots:
     - outerClothing
   - type: Sprite
     state: icon
   - type: StaticPrice # Frontier: setting base price to make material arbitrage happier
     price: 30 # Frontier
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.98
 
 - type: entity
   abstract: true
@@ -116,6 +121,8 @@
       toggleable-clothing: !type:ContainerSlot {}
       storagebase: !type:Container
         ents: []
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.98
 
 - type: entity
   abstract: true
@@ -250,6 +257,8 @@
       toggleable-clothing: !type:ContainerSlot {}
       storagebase: !type:Container
         ents: []
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.97
 
 - type: entity
   abstract: true
@@ -258,3 +267,5 @@
   components:
   - type: Item
     size: Huge
+  - type: ClothingSpeedModifier
+    sprintModifier: 0.96

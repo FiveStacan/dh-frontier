@@ -9,7 +9,7 @@
   parent: BaseVesselAntag
   name: TSF-SKR Spear
   description: A small ship meant as an escort and stealth killer. Horrible interior space, and not much in the way of comfort.
-  price: 540000
+  price: 166000
   category: Small
   group: Security
   access: Security

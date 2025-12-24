@@ -260,6 +260,7 @@
   - type: Storage #DH
     whitelist:
       tags:
+         - WireBrush #DH
          - Wrench
          - Bottle
          - Spray

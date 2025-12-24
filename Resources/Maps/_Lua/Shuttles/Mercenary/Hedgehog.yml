@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 261.2.0
+  engineVersion: 267.3.0
   forkId: ""
   forkVersion: ""
-  time: 10/27/2025 15:28:06
-  entityCount: 149
+  time: 12/22/2025 17:09:58
+  entityCount: 160
 maps: []
 grids:
 - 1
@@ -245,15 +245,6 @@ entities:
     - type: InsideEntityStorage
 - proto: CableApcExtension
   entities:
-  - uid: 91
-    components:
-    - type: Transform
-      parent: 104
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
-- proto: CableApcExtension
-  entities:
   - uid: 61
     components:
     - type: Transform
@@ -349,6 +340,12 @@ entities:
     - type: Transform
       pos: 0.5,-0.5
       parent: 1
+  - uid: 150
+    components:
+    - type: Transform
+      pos: -0.5,-2.5
+      parent: 1
+    - type: InsideEntityStorage
 - proto: CableHV
   entities:
   - uid: 45
@@ -398,12 +395,12 @@ entities:
     - type: Transform
       pos: 2.5,-4.5
       parent: 1
-  - uid: 142
+  - uid: 155
     components:
     - type: Transform
       pos: 1.5,-4.5
       parent: 1
-  - uid: 143
+  - uid: 156
     components:
     - type: Transform
       pos: 1.5,-5.5
@@ -454,7 +451,7 @@ entities:
       parent: 1
 - proto: Chair
   entities:
-  - uid: 141
+  - uid: 151
     components:
     - type: Transform
       pos: 4.5,-1.5
@@ -498,7 +495,7 @@ entities:
       parent: 1
 - proto: ExtinguisherCabinetFilled
   entities:
-  - uid: 45
+  - uid: 152
     components:
     - type: Transform
       rot: 3.141592653589793 rad
@@ -666,6 +663,7 @@ entities:
           occludes: True
           ents:
           - 91
+          - 145
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -715,23 +713,21 @@ entities:
   - uid: 145
     components:
     - type: Transform
-      parent: 142
+      parent: 104
     - type: Physics
       canCollide: False
-- proto: PortableGeneratorPacmanShuttle
-  entities:
-  - uid: 145
-    components:
-    - type: Transform
-      parent: 142
-    - type: Physics
-      canCollide: False
+    - type: InsideEntityStorage
 - proto: PortableGeneratorPacmanShuttle
   entities:
   - uid: 65
     components:
     - type: Transform
       pos: 4.5,-4.5
+      parent: 1
+  - uid: 153
+    components:
+    - type: Transform
+      pos: -0.5,-3.5
       parent: 1
 - proto: Poweredlight
   entities:
@@ -800,7 +796,7 @@ entities:
       parent: 1
 - proto: SheetPlasma
   entities:
-  - uid: 62
+  - uid: 154
     components:
     - type: Transform
       pos: 5.484103,-4.4501
@@ -916,7 +912,7 @@ entities:
         weapon1: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 143
+          ent: 158
         weapon2: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -924,11 +920,11 @@ entities:
         weapon3: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: 145
+          ent: 143
         weapon4: !type:ContainerSlot
           showEnts: False
           occludes: True
-          ent: null
+          ent: 159
         weapon5: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -1255,30 +1251,26 @@ entities:
       parent: 142
     - type: Physics
       canCollide: False
+  - uid: 158
+    components:
+    - type: Transform
+      parent: 142
+    - type: Physics
+      canCollide: False
+  - uid: 159
+    components:
+    - type: Transform
+      parent: 142
+    - type: Physics
+      canCollide: False
 - proto: Wrench
   entities:
-  - uid: 147
+  - uid: 157
     components:
     - type: Transform
       pos: 1.6234488,-0.28449726
       parent: 1
-- proto: WeaponPistolG22
-  entities:
-  - uid: 143
-    components:
-    - type: Transform
-      parent: 142
-    - type: Physics
-      canCollide: False
-  - uid: 144
-    components:
-    - type: Transform
-      parent: 142
-    - type: Physics
-      canCollide: False
-- proto: Wrench
-  entities:
-  - uid: 140
+  - uid: 160
     components:
     - type: Transform
       pos: 1.414846,-4.455455

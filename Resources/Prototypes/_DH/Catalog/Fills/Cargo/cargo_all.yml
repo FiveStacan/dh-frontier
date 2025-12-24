@@ -1,10 +1,9 @@
 - type: cargoProduct
   id: CrateDisabilitiesPeopleCrate
   icon:
-    sprite: Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
-    state: dase
+    sprite: Objects/Weapons/Melee/white_cane.rsi
+    state: icon
   product: DisabilitiesPeopleCrate
-  cost: 3000
+  cost: 3450
   category: cargoproduct-category-name-fun
   group: market
-  

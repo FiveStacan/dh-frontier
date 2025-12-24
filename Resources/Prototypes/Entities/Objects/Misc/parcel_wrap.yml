@@ -116,7 +116,7 @@
 - type: entity
   parent: BaseItem
   id: ParcelWrapTrash
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   name: parcel wrap
   description: The disappointing remnants of an unwrapped parcel.
   components:

@@ -124,7 +124,7 @@
     eyes: ClothingShoesBootsJackFilled
 
 - type: loadout
-  id: NfsdClothingHandsGlovesCombat
+  id: DHClothingHandsGlovesCombat
   price: 0
   equipment:
-    eyes: NfsdClothingHandsGlovesCombat
+    eyes: ClothingHandsGlovesCombat

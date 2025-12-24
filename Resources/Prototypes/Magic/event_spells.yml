@@ -54,8 +54,8 @@
         orGroup: Guns
       - id: WeaponRifleAk #DH
         orGroup: Guns
-      # - id: NFWeaponRifleAssaultM90GrenadeLauncher # Frontier: WeaponRifleM90GrenadeLauncher<NFWeaponRifleAssaultM90GrenadeLauncher
-      #   orGroup: Guns
+      - id: NFWeaponRifleAssaultM90GrenadeLauncher # Frontier: WeaponRifleM90GrenadeLauncher<NFWeaponRifleAssaultM90GrenadeLauncher
+        orGroup: Guns
       - id: NFWeaponRifleAssaultLecter # Frontier: WeaponRifleLecter<NFWeaponRifleAssaultLecter
         orGroup: Guns
       - id: NFWeaponShotgunBulldog # Frontier: add NF prefix
@@ -98,8 +98,8 @@
       #   orGroup: Guns
       - id: WeaponTetherGun
         orGroup: Guns
-      # - id: WeaponForceGun # Frontier
-      #   orGroup: Guns # Frontier
+      - id: WeaponForceGun # Frontier
+        orGroup: Guns # Frontier
       - id: WeaponGrapplingGun
         orGroup: Guns
       - id: NFWeaponLightMachineGunL6 # Frontier: WeaponLightMachineGunL6<NFWeaponLightMachineGunL6
@@ -116,38 +116,44 @@
         orGroup: Guns
       - id: NFWeaponEnergyRifleCarbine # Frontier: WeaponLaserCarbine<NFWeaponEnergyRifleCarbine
         orGroup: Guns
-      # - id: WeaponPulsePistol # Frontier
-      #   orGroup: Guns # Frontier
-      # - id: WeaponPulseCarbine # Frontier
-      #   orGroup: Guns # Frontier
-      # - id: WeaponPulseRifle # Frontier
-      #   orGroup: Guns # Frontier
+      - id: NFWeaponEnergyPistolPulse #DH #WeaponPulsePistol # Frontier
+        orGroup: Guns # Frontier
+      - id: NFWeaponEnergyRifleAssaultPulseCarbine #WeaponPulseCarbine # Frontier
+        orGroup: Guns # Frontier
+      - id: NFWeaponEnergyRiflePulse #WeaponPulseRifle # Frontier
+        orGroup: Guns # Frontier
       # - id: WeaponLaserCannon # Frontier
       #   orGroup: Guns # Frontier
       # - id: WeaponParticleDecelerator # Frontier
       #   orGroup: Guns # Frontier
-      # - id: WeaponXrayCannon # Frontier
-      #   orGroup: Guns # Frontier
+      - id: NFWeaponEnergyRifleSniperXrayCannon #WeaponXrayCannon # Frontier
+        orGroup: Guns # Frontier
       - id: NFWeaponEnergyPistolDisablerPractice # Frontier: WeaponDisablerPractice<NFWeaponEnergyPistolDisablerPractice
         orGroup: Guns
       - id: NFWeaponEnergyPistolDisabler # Frontier: WeaponDisabler<NFWeaponEnergyPistolDisabler
         orGroup: Guns
       - id: NFWeaponEnergySubMachineGunDisabler # Frontier: WeaponDisablerSMG<NFWeaponEnergySubMachineGunDisabler
         orGroup: Guns
-      # - id: WeaponTaser # Frontier
-      #   orGroup: Guns # Frontier
+      - id: RMCWeaponTaser #WeaponTaser # Frontier
+        orGroup: Guns # Frontier
       - id: NFWeaponEnergyPistolLaserAntique # Frontier: WeaponAntiqueLaser<NFWeaponEnergyPistolLaserAntique
         orGroup: Guns # Frontier
-      # - id: WeaponAdvancedLaser # Frontier
-      #   orGroup: Guns # Frontier
+      - id: NFWeaponEnergyPistolLaserAdvanced #WeaponAdvancedLaser # Frontier
+        orGroup: Guns # Frontier
+      - id: NFWeaponEnergyPistolLaserX01Multiphase #DH
+        orGroup: Guns
+      - id: ADTWeaponPistolX01 #DH
+        orGroup: Guns
+      - id: WeaponPistolG22 #DH
+        orGroup: Guns
       - id: NFWeaponPistolCHIMP # Frontier
         orGroup: Guns
       - id: NFWeaponBehonkerLaser # Frontier
         orGroup: Guns
-      # - id: WeaponEnergyShotgun # Frontier
-      #   orGroup: Guns # Frontier
-      # - id: WeaponMinigun # Frontier
-      #   orGroup: Guns # Frontier
+      - id: WeaponEnergyShotgun #DH
+        orGroup: Guns
+      - id: N14WeaponMinigun #WeaponMinigun #DH
+        orGroup: Guns #DH
       - id: BowImprovised
         orGroup: Guns
       - id: WeaponFlareGun

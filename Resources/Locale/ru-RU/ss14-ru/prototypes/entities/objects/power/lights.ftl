@@ -40,3 +40,5 @@ ent-LightTubeCrystalGreen = зелёная кристальная лампа-т�
     .desc = { ent-LightTubeCrystalCyan.desc }
 ent-DimLightBulb = тусклая лампа
     .desc = Приглушённая лампочка для рассеивания тьмы технических туннелей.
+ent-LightTubeCrystalYellow = жёлтая кристальная лампа-трубка
+    .desc = { ent-LightTubeCrystalCyan.desc }

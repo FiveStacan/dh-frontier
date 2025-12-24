@@ -275,7 +275,7 @@
   - DHExpandetAmeJarTechnology
   - NFBluespaceStorage
   position: 6, 3
-#DH - 
+#DH -
 
 - type: technology
   id: NFMatterEnergyConversion
@@ -379,6 +379,31 @@
   - NFAdvancedToolsTechnology
   - NFAdvancedAnomalyResearch
   position: 3, 5
+
+# - type: technology
+#   id: GravityManipulation
+#   name: research-technology-gravity-manipulation
+#   icon:
+#     sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
+#     state: base
+#   discipline: Experimental
+#   tier: 1
+#   cost: 100000
+#   recipeUnlocks:
+#     - WeaponForceGun
+#     - WeaponTetherGun
+
+# - type: technology
+#   id: QuantumLeaping
+#   name: research-technology-quantum-leaping
+#   icon:
+#     sprite: Objects/Devices/swapper.rsi
+#     state: icon
+#   discipline: Experimental
+#   tier: 1
+#   cost: 20000
+#   recipeUnlocks:
+#   - DeviceQuantumSpinInverter
 
 - type: technology
   id: NFSuperParts

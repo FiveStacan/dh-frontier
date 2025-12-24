@@ -5,11 +5,11 @@
 # Shuttle Notes:
 #
 - type: vessel
-  id: Kestrel
+  id: MonoKestrel
   parent: BaseVessel
   name: SKR Kestrel
-  description: A small jump-capable science vessel meant for long-term missions. Comes with a living suite and a decent defensive armament for its size, though it is without much maneuvering performance.
-  price: 554500
+  description: Небольшой научно-исследовательский корабль с возможностью прыжков, предназначенный для длительных миссий. Оснащён жилым модулем и неплохим для своих размеров оборонительным вооружением, хотя и не отличается высокой маневренностью.
+  price: 176400
   category: Small
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/kestrel.yml
@@ -23,12 +23,12 @@
     - type: IFF
       color: "#ffffff"
 - type: gameMap
-  id: Kestrel
+  id: MonoKestrel
   mapName: 'SKR Kestrel'
   mapPath: /Maps/_Mono/Shuttles/kestrel.yml
   minPlayers: 0
   stations:
-    Kestrel:
+    MonoKestrel:
       stationProto: StandardFrontierVessel
       components:
         - type: StationNameSetup

@@ -127,7 +127,7 @@
 - type: entity
   id: TurnstileGenpopKarcer
   parent: Turnstile
-  suffix: Karcer
+  suffix: Karcer, Enter
   components:
   - type: Sprite
     layers:
@@ -136,7 +136,7 @@
     - state: marker_karcer
       map: [ "enum.TurnstileVisualLayers.Marker" ]
   - type: AccessReader
-    access: [["Armory"]]
+    access: [["Armory"], ["GenpopEnter"]]
   - type: Destructible
     thresholds:
     - trigger:

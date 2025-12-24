@@ -13,6 +13,8 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#0000ff"
   - type: MagazineVisuals
     magState: mag
     steps: 6
@@ -44,6 +46,18 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#0000ff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#0000ff"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#0000ff"
 
 - type: entity
   id: MagazineCaselessRifleShortRubber
@@ -60,3 +74,140 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#0000ff"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#0000ff"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#0000ff"
+
+
+#DH
+
+- type: entity
+  #categories: [ HideSpawnMenu ] # Frontier
+  id: MagazinePistolCaselessRifle
+  name: "pistol magazine (.25 caseless)"
+  parent: BaseMagazinePistolCaselessRifle
+  description: 10-round magazine for the Cobra pistol. Intended to hold general-purpose kinetic ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle25 # Frontier
+    capacity: 10
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+
+- type: entity
+  categories: [ HideSpawnMenu ] # Frontier
+  id: MagazinePistolCaselessRiflePractice
+  name: "pistol magazine (.25 caseless practice)"
+  parent: BaseMagazinePistolCaselessRifle
+  description: 10-round magazine for the Cobra pistol. Intended to hold non-harmful chalk ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    # proto: CartridgeCaselessRiflePractice # Frontier
+    capacity: 10
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_pistol_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#dbdbdb"
+  - type: MagazineVisuals
+    magState: mag
+    steps: 6
+    zeroVisible: false
+  - type: Appearance
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#dbdbdb"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#dbdbdb"
+
+- type: entity
+  #categories: [ HideSpawnMenu ] # Frontier
+  id: MagazineCaselessRifle
+  name: "magazine (.25 caseless)"
+  parent: BaseMagazineCaselessRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle25 #DH
+    # proto: CartridgeCaselessRifle # Frontier
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#9b0000"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-right-stripe
+        color: "#9b0000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#9b0000"
+
+- type: entity
+  #categories: [ HideSpawnMenu ] # Frontier
+  id: MagazineCaselessRiflePractice
+  name: "magazine (.25 caseless practice)"
+  parent: BaseMagazineCaselessRifle
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle25Practice # Frontier
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/CaselessRifle/caseless_rifle_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: stripe
+      color: "#dbdbdb"
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#dbdbdb"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#dbdbdb"

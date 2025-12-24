@@ -10,3 +10,29 @@
   price: 0
   equipment:
     wallet: ClothingWalletLeatherBlack
+
+#DH
+
+- type: loadout
+  id: ContractorClothingWalletLeatherGreen
+  price: 900
+  equipment:
+    wallet: ClothingWalletLeatherGreen
+
+- type: loadout
+  id: ContractorClothingWalletLeatherPink
+  price: 900
+  equipment:
+    wallet: ClothingWalletLeatherPink
+
+- type: loadout
+  id: ContractorClothingWalletLeatherPurple
+  price: 400
+  equipment:
+    wallet: ClothingWalletLeatherPurple
+
+- type: loadout
+  id: ContractorClothingWalletLeatherWhite
+  price: 400
+  equipment:
+    wallet: ClothingWalletLeatherWhite

@@ -3,6 +3,7 @@
   name: guide-entry-jobs
   text: "/ServerInfo/Guidebook/Jobs.xml"
   children:
+  - FrontierJobs #DH
   - Service
   # - Cargo # Frontier: irrelevant
   - Medical

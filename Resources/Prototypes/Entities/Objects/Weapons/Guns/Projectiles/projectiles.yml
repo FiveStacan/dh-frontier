@@ -1234,7 +1234,7 @@
   categories: [ HideSpawnMenu ]
   components:
   - type: Ammo
-    # muzzleFlash: MuzzleFlashEffectHeavyLaser # Frontier
+    muzzleFlash: MuzzleFlashEffectHeavyLaser # Frontier
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
     layers:

@@ -7,7 +7,7 @@
   id: TYPioneer
   name: TY Pioneer
   description: Корабль для секретных заданий и конспирации
-  price: 42646
+  price: 149960
   category: Small
   group: Typan
   access: SyndicateAgent

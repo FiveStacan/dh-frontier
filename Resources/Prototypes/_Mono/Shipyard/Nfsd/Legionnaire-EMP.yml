@@ -9,7 +9,7 @@
   name: Legionnaire-EMP
   description: слабо бронированный Корабль поддержки, предназначенный для радиоэлектронного подавления вражеских суден.
   limit: 2
-  price: 641500 #123000 x 1.15
+  price: 482350 #123000 x 1.15
   category: Medium
   group: Security
   access: Security

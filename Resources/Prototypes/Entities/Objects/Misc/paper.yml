@@ -307,6 +307,7 @@
   - type: CargoBountyLabel
   - type: StaticPrice
     price: 0
+    vendPrice: 250
   # - type: GuideHelp # Frontier: removed guidebook entries
   #   guides: # Frontier: removed guidebook entries
   #   - CargoBounties # Frontier: removed guidebook entries

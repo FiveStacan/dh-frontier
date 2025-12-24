@@ -11,11 +11,30 @@
     back:
     - GasAnalyzer
     - trayScanner
-    - AccessConfiguratorUniversal
     - Multitool
     - PowerDrill
     - JawsOfLife
+    - AccessConfiguratorUniversal
+    - UniversalIDCard
+    - UniversalIDCard
     - WelderIndustrialAdvanced
+    - AtmosAlertsMonitorUnpowered
+    - EngiAlertsMonitorUnpowered
+    - PortableSurveillanceCameraMonitorUnpowered
+    - HandheldCriminalRecordsMonitor
+    - HandheldCrewMonitor
+    - AdvancedMineralScannerUnpowered
+    - Screwdriver
+    - MeleeDebug100
+    - MeleeDebug200
+    - MeleeDebugGib
+    - ChameleonProjector
+    - HandTeleporterAdmin
+    - WeaponTetherGunAdmin
+    - WeaponForceGunAdmin
+    - ResearchDiskDebug
+    - CoordinatesDiskDEBUG
+    - ShipVoucherDebug
 
 - type: startingGear
   id: MobClippyGear

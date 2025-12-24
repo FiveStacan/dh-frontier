@@ -65,8 +65,8 @@
     allowedEmotes: ['Click', 'Chitter']
   - type: UltraVision # Lua start
   - type: ContentEye
-    maxZoom: 1.35, 1.35
-    targetZoom: 1.35, 1.35 # Lua end
+    maxZoom: 1.7, 1.7 #DH 1.35<1.7
+    targetZoom: 1.45, 1.45 # Lua end
   - type: Vocal
     sounds:
       Male: UnisexArachnid

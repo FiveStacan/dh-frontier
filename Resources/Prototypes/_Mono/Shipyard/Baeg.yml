@@ -8,8 +8,8 @@
   id: Baeg
   parent: BaseVessel
   name: Z-22 Baeg
-  description: Ironically named it's tiny, compact and primarily used for short excursions or small time mining operations by IPCs...or organics that misunderstand its name, or are just desperate.
-  price: 554800
+  description: Иронично названный, он крошечный, компактный и используется в основном для коротких экспедиций или небольших горнодобывающих операций неразборчивыми космическими кораблями... или органическими существами, которые неправильно понимают его название или просто отчаялись.
+  price: 17500
   category: Micro
   group: Shipyard
   shuttlePath: /Maps/_Mono/Shuttles/Baeg.yml

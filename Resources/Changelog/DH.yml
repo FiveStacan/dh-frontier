@@ -33,8 +33,6 @@ Entries:
       message: Респрайт большенства гранат.
     - type: Tweak
       message: Респрайт настенных раздатчиков жидкостей.
-    - type: Remove
-      message: Удалены ЛГБТ флаги.
   id: 2
   time: '2025-10-25T12:00:00.0000000+00:00'
 - author: FiveStacan
@@ -111,3 +109,17 @@ Entries:
       message: Новое оружие - Булава.
   id: 9
   time: '2025-11-30T12:00:00.0000000+00:00'
+- author: FiveStacan
+  changes:
+    - type: Tweak
+      message: Баланс цен
+    - type: Tweak
+      message: Возвращена возможность присоеденяться на шаттлы игроков.
+    - type: Tweak
+      message: Перевод
+    - type: Add
+      message: 4 новых кошелька.
+    - type: Remove
+      message: Удалены ЛГБТ флаги.
+  id: 10
+  time: '2025-12-21T12:00:00.0000000+00:00'

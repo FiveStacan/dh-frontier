@@ -1411,6 +1411,26 @@
   parent: NFBaseBootRecipe
   result: ClothingWalletLeatherPirate
 
+- type: latheRecipe
+  id: ClothingWalletLeatherGreen
+  parent: NFBaseBootRecipe
+  result: ClothingWalletLeatherGreen
+
+- type: latheRecipe
+  id: ClothingWalletLeatherWhite
+  parent: NFBaseBootRecipe
+  result: ClothingWalletLeatherWhite
+
+- type: latheRecipe
+  id: ClothingWalletLeatherPink
+  parent: NFBaseBootRecipe
+  result: ClothingWalletLeatherPink
+
+- type: latheRecipe
+  id: ClothingWalletLeatherPurple
+  parent: NFBaseBootRecipe
+  result: ClothingWalletLeatherPurple
+
 # region Backpacks
 - type: latheRecipe
   id: ClothingBackpackSatchelLeather

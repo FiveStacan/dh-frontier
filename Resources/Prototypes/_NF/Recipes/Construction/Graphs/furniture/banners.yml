@@ -14,7 +14,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerCargoNode
           completed:
@@ -24,7 +24,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerEngineeringNode
           completed:
@@ -34,7 +34,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerMedicalNode
           completed:
@@ -44,7 +44,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerScienceNode
           completed:
@@ -54,7 +54,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerSecurityNode
           completed:
@@ -64,7 +64,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerBlueNode
           completed:
@@ -74,7 +74,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerRedNode
           completed:
@@ -84,7 +84,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerYellowNode
           completed:
@@ -94,7 +94,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerGreenNode
           completed:
@@ -104,7 +104,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerRevolutionNode
           completed:
@@ -114,7 +114,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerSyndicateNode
           completed:
@@ -124,7 +124,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
         - to: BannerFsb
           completed:
@@ -134,7 +134,7 @@
               amount: 2
               doAfter: 1
             - material: Cloth
-              amount: 2
+              amount: 4
               doAfter: 1
 
     - node: BannerNanotrasenNode
@@ -147,7 +147,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -162,7 +162,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -177,7 +177,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -192,7 +192,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -207,7 +207,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -222,7 +222,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -237,7 +237,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -252,7 +252,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -267,7 +267,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -282,7 +282,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -297,7 +297,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -312,7 +312,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1
@@ -327,7 +327,7 @@
               amount: 2
             - !type:SpawnPrototype
               prototype: MaterialCloth1
-              amount: 2
+              amount: 4
           steps:
             - tool: Screwing
               doAfter: 1

@@ -1,5 +1,5 @@
 - type: entity
-  categories: [ HideSpawnMenu ]
+  #categories: [ HideSpawnMenu ]
   id: LuaMagazineCaselessRifle
   name: "magazine (.25 caseless)"
   parent: BaseMagazineCaselessRifle

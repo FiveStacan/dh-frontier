@@ -916,6 +916,10 @@
   loadouts:
   - ContractorClothingWalletLeatherBrown
   - ContractorClothingWalletLeatherBlack
+  - ContractorClothingWalletLeatherGreen #DH
+  - ContractorClothingWalletLeatherPink #DH
+  - ContractorClothingWalletLeatherPurple #DH
+  - ContractorClothingWalletLeatherWhite #DH
   fallbacks:
   - ContractorClothingWalletLeatherBrown
 

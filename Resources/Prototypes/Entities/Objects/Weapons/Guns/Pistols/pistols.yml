@@ -223,11 +223,11 @@
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
         name: Chamber
-        # startingItem: CartridgeCaselessRifle # Frontier
+        startingItem: NFCartridgeRifle25 #DH # Frontier
         priority: 1
         whitelist:
           tags:
-            - CartridgeCaselessRifle
+            - NFCartridgeRifle25 #DH
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
