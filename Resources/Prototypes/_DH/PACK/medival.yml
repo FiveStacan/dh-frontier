@@ -5,9 +5,9 @@
   description: Магическая шляпа из лунного шёлка с вкраплениями ярких металлов на полях.
   components:
   - type: Sprite
-    sprite: _DH/Medieval/Clothing/Head/bib_hat.rsi
+    sprite: _DH/Medieval/Clothing/Head/Hats/bib_hat.rsi
   - type: Clothing
-    sprite: _DH/Medieval/Clothing/Head/bib_hat.rsi
+    sprite: _DH/Medieval/Clothing/Head/Hats/bib_hat.rsi
 
 - type: entity
   parent: ClothingHandsButcherable
@@ -16,12 +16,12 @@
   description: Украшена изящными извилистыми узорами, что постоянно играют на свету.
   components:
   - type: Sprite
-    sprite: _DH/Clothing/Gloves/bib_gloves.rsi
+    sprite: _DH/Clothing/Hands/Gloves/bib_gloves.rsi
     layers:
     - state: icon
   - type: Item
   - type: Clothing
-    sprite: _DH/Clothing/Gloves/bib_gloves.rsi
+    sprite: _DH/Clothing/Hands/Gloves/bib_gloves.rsi
 
 - type: entity
   parent: ClothingMaskBase
@@ -46,7 +46,7 @@
   description: Полотно позолоченного у кромок лунного шёлка, что принято обвязывать у шеи.
   components:
   - type: Sprite
-    sprite: _DH/Clothing/Cloaks/bib_neck.rsi
+    sprite: _DH/Clothing/Neck/Cloaks/bib_neck.rsi
   - type: Insulated
 
 - type: entity
@@ -56,7 +56,7 @@
   description: Мрачная накидка из шкуры вендиго.
   components:
   - type: Sprite
-    sprite: _DH/Clothing/Cloaks/spookyvendigo.rsi
+    sprite: _DH/Clothing/Neck/Cloaks/spookyvendigo.rsi
   - type: Insulated
   - type: IngestionBlocker
   - type: IdentityBlocker
@@ -117,9 +117,9 @@
   description: Покоцанная пара толстых сапог, протоптавшая не один десяток руин.
   components:
   - type: Sprite
-    sprite: _DH/Clothing/Shoes/bib_boots.rsi
+    sprite: _DH/Clothing/Shoes/Boots/bib_boots.rsi
   - type: Clothing
-    sprite: _DH/Clothing/Shoes/bib_boots.rsi
+    sprite: _DH/Clothing/Shoes/Boots/bib_boots.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -128,9 +128,9 @@
   description: Грубо сшитая, но инкрустированная яркими металлами роба из лунного шёлка.
   components:
   - type: Sprite
-    sprite: _DH/Clothing/ShitCloth/shit_cloth_78.rsi
+    sprite: _DH/Clothing/Uniforms/Costume/shit_cloth_78.rsi
   - type: Clothing
-    sprite: _DH/Clothing/ShitCloth/shit_cloth_78.rsi
+    sprite: _DH/Clothing/Uniforms/Costume/shit_cloth_78.rsi
 
 - type: entity
   id: MedievalBaseTree
@@ -1405,262 +1405,6 @@
   - type: Sprite
     sprite: _DH/Structures/Walls/Medieval/stone_wall.rsi
     state: icon
-
-- type: entity
-  parent: CratePirate
-  id: MedievalChest
-  name: MedievalChest
-  components:
-  - type: Sprite
-    sprite: _DH/Structures/Storage/Crateschest.rsi
-  - type: Icon
-    sprite: _DH/Structures/Storage/Crateschest.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 125
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank1:
-            min: 2
-            max: 4
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Physics
-    bodyType: Dynamic
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.29"
-        density: 135
-        mask:
-        - SmallMobMask
-        layer:
-        - MachineLayer
-  - type: Construction
-    graph: CrateLivestockM
-    node: CrateLivestockM
-    containers:
-    - entity_storage
-
-- type: construction
-  hide: true
-  name: Ящик
-  id: CrateLivestockM
-  graph: CrateLivestockM
-  startNode: start
-  targetNode: CrateLivestockM
-  category: construction-category-storage
-  description: Деревянный ящик.
-  objectType: Structure
-
-- type: constructionGraph
-  id: CrateLivestockM
-  start: start
-  graph:
-    - node: start
-      edges:
-        - to: CrateLivestockM
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 5
-
-
-    - node: CrateLivestockM
-      entity: MedievalChest
-      edges:
-        - to: start
-          steps:
-            - tool: Prying
-              doAfter: 5
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank1
-              amount: 5
-            - !type:EmptyAllContainers
-            - !type:DeleteEntity
-
-- type: entity
-  parent: CratePirate
-  id: MedievalChest2
-  name: MedievalChest2
-  components:
-  - type: Sprite
-    sprite: _DH/Structures/Storage/Crateschest2.rsi
-  - type: Icon
-    sprite: _DH/Structures/Storage/Crateschest2.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 425
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank1:
-            min: 2
-            max: 4
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Physics
-    bodyType: Dynamic
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.29"
-        density: 135
-        mask:
-        - SmallMobMask
-        layer:
-        - MachineLayer
-  - type: Construction
-    graph: CrateLivestock
-    node: cratelivestock
-    containers:
-    - entity_storage
-
-- type: entity
-  parent: CratePirate
-  id: MedievalChest3
-  name: MedievalChest3
-  components:
-  - type: Sprite
-    sprite: _DH/Structures/Storage/Crateschest3.rsi
-  - type: Icon
-    sprite: _DH/Structures/Storage/Crateschest3.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 755
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank1:
-            min: 2
-            max: 4
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Physics
-    bodyType: Dynamic
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.29"
-        density: 135
-        mask:
-        - SmallMobMask
-        layer:
-        - MachineLayer
-  - type: Construction
-    graph: CrateLivestock
-    node: cratelivestock
-    containers:
-    - entity_storage
-
-- type: entity
-  parent: CratePirate
-  id: MedievalChest4
-  name: MedievalChest4
-  components:
-  - type: Sprite
-    sprite: _DH/Structures/Storage/Crateschest4.rsi
-  - type: Icon
-    sprite: _DH/Structures/Storage/Crateschest4.rsi
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 55
-      behaviors:
-      - !type:PlaySoundBehavior
-        sound:
-          path: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          MaterialWoodPlank1:
-            min: 1
-            max: 2
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-  - type: Physics
-    bodyType: Dynamic
-  - type: Fixtures
-    fixtures:
-      fix1:
-        shape:
-          !type:PhysShapeAabb
-          bounds: "-0.4,-0.4,0.4,0.29"
-        density: 135
-        mask:
-        - SmallMobMask
-        layer:
-        - MachineLayer
-  - type: Construction
-    graph: MedievalChest4
-    node: MedievalChest4
-
-- type: construction
-  id: MedievalChest4
-  name: деревянный сундук
-  description: Самый простой сундук.
-  graph: MedievalChest4
-  startNode: start
-  targetNode: MedievalChest4
-  category: construction-category-furniture
-  icon:
-    sprite: _DH/Structures/Storage/Crateschest4.rsi
-    state: base
-  objectType: Structure
-  placementMode: SnapgridCenter
-  canBuildInImpassable: false
-  conditions:
-    - !type:TileNotBlocked
-
-- type: constructionGraph
-  id: MedievalChest4
-  start: start
-  graph:
-    - node: start
-      actions:
-        - !type:DestroyEntity {}
-      edges:
-        - to: MedievalChest4
-          completed:
-            - !type:SnapToGrid { }
-          steps:
-            - material: WoodPlank
-              amount: 5
-              doAfter: 12
-    - node: MedievalChest4
-      entity: MedievalChest4
-      edges:
-        - to: start
-          completed:
-            - !type:SpawnPrototype
-              prototype: MaterialWoodPlank
-              amount: 5
-          steps:
-            - tool: Prying
-              doAfter: 500
 
 #region Tiles
 

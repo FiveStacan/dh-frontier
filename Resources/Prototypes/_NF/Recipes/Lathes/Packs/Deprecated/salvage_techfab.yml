@@ -62,6 +62,7 @@
     - OreBag
     - ConstructionBag
     - MiningDrill
+    - NFWeaponPkaSawn
     - NFWeaponPka
     - NFWeaponPkaCannon
     - ClothingNeckIFFNeutral
@@ -93,3 +94,31 @@
     - NFAmmunitionBoxRifle30
 #       - GrenadeBlast
     - ClothingHeadHelmetCosmonaut
+
+- type: latheRecipePack
+  id: NFSalvageTechfabDeprecatedDynamic
+  recipes:
+  - MineralScannerEmpty
+  - WeaponCrusher
+  - WeaponCrusherDagger
+  - MiningDrillDiamond
+  - AdvancedMineralScannerEmpty
+  - WeaponPlasmaCutter
+  - WeaponCrusherGlaive
+  - OreBagOfHolding
+  - ClothingShoesBootsMag
+  - ClothingShoesBootsJetBoots
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitSalvage
+  - ClothingOuterHardsuitLuxury
+  - JetpackBlue
+  - JetpackMining
+  - JetpackMini
+  - BluespaceAirTank
+  - SmallBluespaceAirTank
+ #DH
+  - ADTClothingOuterArmorMinerLight
+  - ADTClothingOuterArmorMiner
+  - ADTClothingOuterArmorMinerHeavy
+  - WeaponBasePlasmaCutter
+  - ClothingShoesBootsJump

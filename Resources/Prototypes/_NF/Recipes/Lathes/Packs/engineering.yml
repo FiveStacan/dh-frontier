@@ -91,9 +91,6 @@
   - JawsOfLife
   - WelderIndustrial #DH
   - WelderIndustrialAdvanced #DH
-  - BorgModuleRCD
-  - BorgModuleAdvancedTool
-  - BorgModuleJetpack #DH
 
 - type: latheRecipePack
   id: NFEngineeringBoards
@@ -110,6 +107,7 @@
   - HandheldRoboAnalyzer #DH
   - ConstructionBagOfHolding
   - ClothingBeltChiefEngineer
+  - ClothingMaskGasCE
   - ClothingShoesBootsMag
   # - FireExtinguisherBluespace # Delta-V
   - RPED

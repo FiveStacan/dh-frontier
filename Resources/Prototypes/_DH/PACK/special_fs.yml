@@ -1,5 +1,9 @@
-
-#region СКЕБОБ
+- type: sponsorLoadout
+  id: FiveStakan
+  entity: ClothingBackpackFS
+  sponsorOnly: true
+  login: FiveStakan
+#region
 
 - type: entity
   parent: ClothingBackpack

@@ -179,6 +179,13 @@
     NFMagazineRifle30Uranium: 4294967295
     NFMagazineRifle30Practice: 4294967295
     NFMagazineRifle30Rubber: 4294967295
+    NFMagazineExtendedRifle30Empty: 4294967295
+    NFMagazineExtendedRifle30: 4294967295
+    NFMagazineExtendedRifle30Overpressure: 4294967295
+    NFMagazineExtendedRifle30Incendiary: 4294967295
+    NFMagazineExtendedRifle30Uranium: 4294967295
+    NFMagazineExtendedRifle30Practice: 4294967295
+    NFMagazineExtendedRifle30Rubber: 4294967295
     NFMagazineLowCapacityRifle30Empty: 4294967295
     NFMagazineLowCapacityRifle30: 4294967295
     NFMagazineLowCapacityRifle30Overpressure: 4294967295

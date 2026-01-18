@@ -1,0 +1,29 @@
+- type: entity #hitscan
+  id: BulletRedLaser
+  parent: NFBaseBulletLaser
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 14
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Projectiles/hitscan_tracer.rsi
+    state: red_laser
+
+- type: entity #hitscan
+  id: BulletRedLaserPractice
+  parent: NFBaseBulletLaser
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Heat: 1
+  - type: Reflective
+    reflective:
+    - Energy
+  - type: Sprite
+    sprite: _DH/Objects/Weapons/Projectiles/hitscan_tracer.rsi
+    state: red_laser

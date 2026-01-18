@@ -69,7 +69,7 @@
           True: {state: stunbaton_on}
           False: {state: stunbaton_off}
   - type: StaticPrice
-    price: 80
+    price: 140
   - type: Riggable
   - type: SolutionContainerManager
     solutions:

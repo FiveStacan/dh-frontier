@@ -13,7 +13,7 @@
   - type: AmmoCounter
   - type: Appearance
   - type: StaticPrice
-    price: 500
+    price: 920
 
 - type: entity
   id: NFBaseItemWeaponGunMagazineFed
@@ -195,8 +195,8 @@
     attackRate: 1.1
     damage:
       types:
-        Blunt: 6
-        Structural: 4
+        Blunt: 4
+        Structural: 2
     angle: 30
     wideAnimationRotation: 90
     animation: WeaponArcThrust

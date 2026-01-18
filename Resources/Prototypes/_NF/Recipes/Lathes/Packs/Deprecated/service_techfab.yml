@@ -146,3 +146,9 @@
   recipes:
     - NFHappyHonkNukieEmpty
     - NFHappyHonkCluwneEmpty
+
+- type: latheRecipePack
+  id: DHServiceTechfabDeprecatedDynamic
+  recipes:
+  - ClothingOuterEVASuitMailman
+  - ClothingOuterEVASuitStc

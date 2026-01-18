@@ -92,9 +92,6 @@
   - StasisBedMachineCircuitboard
   - DefibrillatorCompact
   - ReinforcedJug
-  - BorgModuleAdvancedParamedic
-  - BorgModuleDiagnosis #DH
-  - BorgModuleChemical #DH
   - MedicalPouch
 
 - type: latheRecipePack

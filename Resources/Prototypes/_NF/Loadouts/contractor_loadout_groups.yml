@@ -166,6 +166,8 @@
   - ContractorClothingUniformJumpsuitTshirtJeansPeach
   - ContractorClothingUniformJumpsuitCaptain
   - ContractorClothingUniformJumpskirtCaptain
+  - ContractorClothingUniformJumpsuitWhiteCaptain
+  - ContractorClothingUniformJumpsuitCommandCaptain
   - ContractorClothingUniformJumpsuitCapFormal
   - ContractorClothingUniformJumpskirtCapFormalDress
   - ContractorClothingUniformJumpsuitMilitaryCaptain
@@ -535,6 +537,7 @@
   - ContractorClothingHeadHatFedoraGrey
   - ContractorClothingHeadHatFedoraBrown
   - ContractorClothingHeadHatCapcap
+  - ContractorClothingHeadHatCapcapWhite
   - ContractorClothingHeadHatCaptain
   - ContractorClothingHeadTinfoil
   - ContractorClothingHeadHatBeretRND
@@ -619,6 +622,7 @@
   - ContractorClothingHandsGlovesBoxingRed
   - ContractorClothingHandsGlovesBoxingYellow
   - ContractorClothingHandsGlovesCaptain
+  - ContractorClothingHandsGlovesCaptainWhite
   - ContractorClothingHandsGlovesColorWhite
 
 - type: loadoutGroup
@@ -684,6 +688,7 @@
   - ContractorClothingNeckMantleCap
   - ContractorClothingNeckCloakCap
   - ContractorClothingNeckCloakCapFormal
+  - ContractorClothingNeckCaptainWide #DH
   - ContractorClothingNeckCloakQm
   - ContractorClothingNeckMantleQM
 #  - ContractorClothingCloakCmo # Temp removed for DOC. Will return if replaced.
@@ -742,6 +747,7 @@
   minLimit: 0
   loadouts:
   - ContractorClothingEyesGlasses
+  - ContractorClothingEyesStuttering
   - ContractorClothingEyesGlassesCheapSunglasses
   - ContractorClothingEyesBlindfold
   - ContractorClothingEyesEyepatch
@@ -749,6 +755,7 @@
   - ContractorClothingEyesGlassesChemical
   - ContractorClothingEyesHudDiagnostic
   - ContractorClothingEyesGlassesMeson
+  - ContractorClothingEyesGlassesWelding
   - ContractorClothingEyesHudMedical
   - ContractorClothingEyesPunkGoggles # Punkish (Randomized visuals)
   - ContractorClothingEyesPunkInfoShades # Punkish (Randomized visuals)

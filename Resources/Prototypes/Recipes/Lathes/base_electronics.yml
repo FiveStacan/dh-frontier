@@ -37,10 +37,11 @@
   parent: BaseCircuitboardRecipe
   abstract: true
   id: BaseGoldCircuitboardRecipe
+  completetime: 5
   materials:
-    Steel: 100
+    Steel: 150
     Glass: 500
-    Gold: 100
+    Gold: 150
 
 - type: latheRecipe
   parent: BaseCircuitboardRecipe

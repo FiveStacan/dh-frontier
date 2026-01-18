@@ -108,7 +108,7 @@
   - type: WiresVisuals
   # Frontier: vending machine modifications
   - type: MarketModifier
-    mod: 10
+    mod: 12
   - type: PotentialDeadDrop
     hintText: dead-drop-hint-vendor
   - type: VendingMachine
@@ -258,7 +258,7 @@
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: MarketModifier # Frontier
-    mod: 12 # Frontier
+    mod: 14 # Frontier
 
 - type: entity
   parent: VendingMachine
@@ -1128,6 +1128,8 @@
     radius: 1.5
     energy: 1.6
     color: "#c73434"
+  - type: MarketModifier #DH
+    mod: 15 #DH
 
 - type: entity
   parent: VendingMachineSnack
@@ -2201,7 +2203,7 @@
     sprite: Structures/Machines/VendingMachines/tankdispenser.rsi #TODO add visualiser for remaining tanks as layers
     state: dispenser
   - type: MarketModifier # Frontier
-    mod: 5 # Frontier
+    mod: 18 # Frontier
     #DH
     soundVend:
       path: /Audio/_DH/Items/GasTanks/remove.ogg
@@ -2252,6 +2254,8 @@
     guides:
     - Chemicals
     - Chemist
+  - type: MarketModifier #DH
+    mod: 25 #DH
 
 - type: entity
   parent: VendingMachineChemicals

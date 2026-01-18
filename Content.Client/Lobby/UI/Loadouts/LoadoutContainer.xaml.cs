@@ -59,7 +59,7 @@ public sealed partial class LoadoutContainer : BoxContainer
                 Sprite.SetEntity(_entity);
 
                 var spriteTooltip = new Tooltip();
-                var description = hasDescription ? loadProto.Description : _entManager.GetComponent<MetaDataComponent>(_entity.Value).EntityDescription; 
+                var description = hasDescription ? loadProto.Description : _entManager.GetComponent<MetaDataComponent>(_entity.Value).EntityDescription;
                 spriteTooltip.SetMessage(FormattedMessage.FromUnformatted(description));
                 Sprite.TooltipSupplier = _ => spriteTooltip; // Frontier: TooltipSupplier<Sprite.TooltipSupplier?
             }

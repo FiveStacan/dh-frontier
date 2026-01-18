@@ -76,8 +76,11 @@
     - FullAuto
     - Burst
     selectedMode: Burst
+    fireRate: 4.8
+    angleIncrease: 1.2
+    maxAngle: 23.5
     burstFireRate: 16
-    burstCooldown: 0.5
+    burstCooldown: 0.6
     projectileSpeed: 22.5 # _Lua
     soundGunshot:
       path: /Audio/_Goobstation/Weapons/Guns/Gunshots/bwuh.ogg

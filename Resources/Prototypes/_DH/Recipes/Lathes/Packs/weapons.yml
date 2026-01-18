@@ -59,8 +59,3 @@
   - NFAmmunitionBoxBigRifle25Incendiary
   - NFAmmunitionBoxBigRifle30Incendiary
   - MagazineBoxCMCartridgeSniper10x28mmIncendiary
-
-- type: latheRecipePack
-  id: DHSalvage
-  recipes:
-  - NFWeaponPkaSawn

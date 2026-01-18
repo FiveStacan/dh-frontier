@@ -29,6 +29,18 @@
   - type: UseDelayOnShoot
   - type: UseDelay
     delay: 5
+  - type: MeleeWeapon #DH
+    attackRate: 1
+    range: 1.8
+    damage:
+      types:
+        Blunt: 6
+        Structural: 4
+    angle: 30
+    wideAnimationRotation: 230
+    animation: WeaponArcThrust
+    soundHit:
+      collection: MetalThud
 
 - type: entity
   id: NFWeaponRifleFoam

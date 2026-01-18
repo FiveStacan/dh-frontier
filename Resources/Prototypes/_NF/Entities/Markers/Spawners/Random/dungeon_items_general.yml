@@ -722,6 +722,7 @@
     # Boards
     - SalvageTechFabCircuitboardNF
     - ServiceTechFabCircuitboard
+    - McServiceTechFabCircuitboard #DH
     - EngineeringTechFabCircuitboard
     - AmmoTechFabCircuitboard
     - MedicalTechFabCircuitboard

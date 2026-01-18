@@ -4,9 +4,11 @@
   id: RMCWeaponLMGM60
   description: The Pig. The Action Hero's dream. Chambered in 7.62x51 NATO
   components:
+  - type: UseDelay
+    delay: 1
   - type: ClothingSpeedModifier
-    walkModifier: 0.75
-    sprintModifier: 0.75
+    walkModifier: 0.72
+    sprintModifier: 0.72
   - type: HeldSpeedModifier
     walkModifier: 0.6
     sprintModifier: 0.6
@@ -25,6 +27,10 @@
       offset: -0.6, 0
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/LMGs/m60.rsi
+    quickEquip: false
+    stripDelay: 1
+    unequipDelay: 1
+    equipDelay: 1.2
   - type: Tag
     tags:
     - RMCWeaponLMGM60

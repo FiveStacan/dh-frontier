@@ -206,3 +206,101 @@
     PresentRandomCash: 50
   emaggedInventory:
     PresentRandomInsane: 10
+
+- type: vendingMachineInventory
+  id: ArmVendInventory
+  startingInventory:
+  #helmets
+    ClothingHeadHatHardhatArmored: 8
+    ClothingHeadHelmetRiot: 8
+    ClothingHeadHelmetBasic: 6
+    ClothingHeadHelmetJusticeEmpty: 5
+    ClothingHeadHelmetSwat: 5
+    ClothingHeadHelmetMercenaryBlack: 6
+    ADTClothingHeadUSSPjuggernautHelmetArmored: 4
+  #gloves
+    ClothingHandsGlovesCombat: 8
+    ClothingHandsGlovesCaptain: 5
+  #shoes
+    ClothingShoesBootsJack: 8
+    ClothingShoesBootsCombat: 6
+    ClothingShoesSwat: 4
+    ClothingShoesBootsMagSecurity: 6
+    ClothingShoesBootsMagArmy: 4
+    ClothingShoesBootsJetBoots: 2
+  #Belts
+    ClothingBeltSecurity: 8
+    ClothingBeltAssault: 6
+    ClothingBeltSecurityWebbing: 6
+    ClothingBeltMilitaryWebbing: 5
+    ClothingOuterArmorNTRG: 3
+    ClothingBeltBandolier: 3
+    ClothingBeltHolster: 2
+  #Armor
+    ClothingOuterArmorBasicSlim: 8
+    ClothingOuterArmorBasic: 8
+    ClothingOuterArmorCaptainCarapace: 5
+    ClothingOuterArmorBulletproof: 6
+    NFClothingOuterArmorReflective: 5
+    ClothingOuterArmorRiot: 6
+    ClothingOuterArmorReflective: 5
+    ClothingOuterArmorHeavy: 5
+    ClothingOuterArmorUSSPjuggernaut: 4
+    ClothingOuterArmorSWAT: 4
+  #Shield
+    RiotShield: 6
+    NFMetalShield: 6
+    RiotBulletShield: 6
+    NFShieldBallistic: 6
+    RiotLaserShield: 5
+    NFShieldReflective: 5
+    TelescopicShield: 5
+
+- type: vendingMachineInventory
+  id: ArmVendPOIInventory
+  startingInventory:
+  #helmets
+    ClothingHeadHatHardhatArmored: 4294967295
+    ClothingHeadHelmetRiot: 4294967295
+    ClothingHeadHelmetBasic: 4294967295
+    ClothingHeadHelmetJusticeEmpty: 4294967295
+    ClothingHeadHelmetSwat: 4294967295
+    ClothingHeadHelmetMercenaryBlack: 4294967295
+    ADTClothingHeadUSSPjuggernautHelmetArmored: 4294967295
+  #gloves
+    ClothingHandsGlovesCombat: 4294967295
+    ClothingHandsGlovesCaptain: 4294967295
+  #shoes
+    ClothingShoesBootsJack: 4294967295
+    ClothingShoesBootsCombat: 4294967295
+    ClothingShoesSwat: 4294967295
+    ClothingShoesBootsMagSecurity: 4294967295
+    ClothingShoesBootsMagArmy: 4294967295
+    ClothingShoesBootsJetBoots: 4294967295
+  #Belts
+    ClothingBeltSecurity: 4294967295
+    ClothingBeltAssault: 4294967295
+    ClothingBeltSecurityWebbing: 4294967295
+    ClothingBeltMilitaryWebbing: 4294967295
+    ClothingOuterArmorNTRG: 4294967295
+    ClothingBeltBandolier: 4294967295
+    ClothingBeltHolster: 4294967295
+  #Armor
+    ClothingOuterArmorBasicSlim: 4294967295
+    ClothingOuterArmorBasic: 4294967295
+    ClothingOuterArmorCaptainCarapace: 4294967295
+    ClothingOuterArmorBulletproof: 4294967295
+    NFClothingOuterArmorReflective: 4294967295
+    ClothingOuterArmorRiot: 4294967295
+    ClothingOuterArmorReflective: 4294967295
+    ClothingOuterArmorHeavy: 4294967295
+    ClothingOuterArmorUSSPjuggernaut: 4294967295
+    ClothingOuterArmorSWAT: 4294967295
+  #Shield
+    RiotShield: 4294967295
+    NFMetalShield: 4294967295
+    RiotBulletShield: 4294967295
+    NFShieldBallistic: 4294967295
+    RiotLaserShield: 4294967295
+    NFShieldReflective: 4294967295
+    TelescopicShield: 4294967295

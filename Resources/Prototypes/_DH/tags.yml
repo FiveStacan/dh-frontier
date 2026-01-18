@@ -79,3 +79,21 @@
 
 - type: Tag
   id: DHMaintInterior
+
+- type: Tag
+  id: SheetBlueprintPaper
+
+- type: Tag
+  id: ADTMinerArmor
+
+- type: Tag
+  id: ADTBadgeBronze
+
+- type: Tag
+  id: ADTBadgeSilver
+
+- type: Tag
+  id: ADTBadgeGolden
+
+- type: Tag
+  id: AIWearable

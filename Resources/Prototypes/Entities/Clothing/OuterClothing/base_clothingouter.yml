@@ -16,7 +16,7 @@
 
 - type: entity
   abstract: true
-  parent: [ Clothing, AllowSuitStorageClothing, RecyclableItemClothDurable ] # Frontier: added AllowSuitStorageClothing and RecyclableItemClothDurable
+  parent: [ Clothing, AllowSuitStorageClothing, RecyclableItemClothDurable, BadgeOnClothingWithContainer ] #DH # Frontier: added AllowSuitStorageClothing and RecyclableItemClothDurable
   id: ClothingOuterBase
   components:
   - type: Clothing
@@ -242,6 +242,14 @@
 #    materialComposition: # Frontier
 #      Durathread: 100 # Frontier
 #      Cloth: 50 # Frontier
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.92
+        Slash: 0.92
+        Piercing: 0.95
+        Heat: 0.90
+        Radiation: 0.40
 
 - type: entity
   parent: ClothingOuterBase

@@ -13,6 +13,8 @@
     capacity: 60
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
+  - type: StaticPrice #DH
+    price: 25
 
 - type: entity
   id: NFBaseAmmunitionBoxBigRifle10
@@ -30,6 +32,8 @@
   - type: Sprite
     scale: 1.15, 1.15
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi
+  - type: StaticPrice #DH
+    price: 88
 
 #region base .20
 - type: entity
@@ -45,6 +49,8 @@
     capacity: 60
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
+  - type: StaticPrice #DH
+    price: 30
 
 - type: entity
   id: NFBaseAmmunitionBoxBigRifle20
@@ -62,6 +68,8 @@
   - type: Sprite
     scale: 1.15, 1.15
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi
+  - type: StaticPrice #DH
+    price: 105
 
 #region base .25
 - type: entity
@@ -77,6 +85,8 @@
     capacity: 60
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
+  - type: StaticPrice #DH
+    price: 35
 
 - type: entity
   id: NFBaseAmmunitionBoxBigRifle25
@@ -94,6 +104,8 @@
   - type: Sprite
     scale: 1.15, 1.15
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi
+  - type: StaticPrice #DH
+    price: 125
 
 #region base .30
 - type: entity
@@ -109,6 +121,8 @@
     capacity: 60
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
+  - type: StaticPrice #DH
+    price: 40
 
 - type: entity
   id: NFBaseAmmunitionBoxBigRifle30
@@ -126,6 +140,8 @@
   - type: Sprite
     scale: 1.15, 1.15
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi
+  - type: StaticPrice #DH
+    price: 140
 
 #region base .60
 - type: entity
@@ -143,6 +159,8 @@
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
   - type: MagazineVisuals
     magState: mag-60
+  - type: StaticPrice #DH
+    price: 45
 
 - type: entity
   id: NFBaseAmmunitionBoxBigRifle60
@@ -162,6 +180,8 @@
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle_big.rsi
   - type: MagazineVisuals
     magState: mag-60
+  - type: StaticPrice #DH
+    price: 160
 
 #region .10 rifle
 - type: entity

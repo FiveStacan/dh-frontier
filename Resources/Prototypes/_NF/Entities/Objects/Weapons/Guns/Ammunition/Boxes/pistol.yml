@@ -13,6 +13,8 @@
     capacity: 80
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+  - type: StaticPrice #DH
+    price: 25
 
 - type: entity
   id: NFBaseAmmunitionBoxPistol45
@@ -28,6 +30,8 @@
     capacity: 60
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/pistol.rsi
+  - type: StaticPrice #DH
+    price: 30
 
 #region .35 pistol
 - type: entity

@@ -3,20 +3,23 @@
   startingInventory:
   # Weapons
     NFWeaponPistolMk58: 6
+    WeaponPistolG22: 6
     NFWeaponPistolPollock: 6
-    NFWeaponRifleAssaultGestio: 6
-    NFWeaponRifleAssaultNovaliteC1: 6
-    NFWeaponShotgunKammerer: 6
+    #NFWeaponEnergyPistolLaser: 5
+    NFWeaponRifleAssaultGestio: 5
+    NFWeaponRifleAssaultNovaliteC1: 5
+    NFWeaponShotgunKammerer: 5
   # Magazines
-    NFMagazinePistol35Empty: 6
-    NFMagazineLowCapacityRifle30Empty: 6
-    NFMagazineClipRifle20Empty: 6
+    NFMagazinePistol35Empty: 8
+    MagazineGlock22Empty: 8
+    NFMagazineLowCapacityRifle30Empty: 8
+    NFMagazineClipRifle20Empty: 8
   # Ammo boxes
-    NFAmmunitionBoxPistol35: 6
-    NFAmmunitionBoxRifle20: 6
-    NFAmmunitionBoxRifle30: 6
-    NFAmmunitionBoxShellShotgunBuckshot: 6
-    NFAmmunitionBoxShellShotgunBeanbag: 6
+    NFAmmunitionBoxPistol35: 7
+    NFAmmunitionBoxRifle20: 7
+    NFAmmunitionBoxRifle30: 7
+    NFAmmunitionBoxShellShotgunBuckshot: 7
+    NFAmmunitionBoxShellShotgunBeanbag: 7
 
 - type: vendingMachineInventory
   id: PickNPackPOIInventory

@@ -256,6 +256,8 @@
       radius: 1.5
       energy: 1.6
       color: "#ff033e"
+    - type: MarketModifier #DH
+      mod: 14
 
 - type: entity
   parent: [BaseStructureDisableAnchoring, LessLethalVendingMachine]
@@ -584,6 +586,8 @@
       shader: unshaded
     - state: panel
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: MarketModifier #DH
+    mod: 14
 
 - type: entity
   id: BaseCiviMedVend

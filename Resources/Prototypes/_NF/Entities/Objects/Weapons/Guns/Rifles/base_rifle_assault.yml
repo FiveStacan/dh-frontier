@@ -69,6 +69,8 @@
     fireRate: 3.2
   - type: NFWeaponDetails
     class: weapon-details-manufacturer-frontier-gunsmith-consortium
+  - type: StaticPrice
+    price: 2590
 
 #region chamber
 - type: entity

@@ -207,14 +207,15 @@
   - type: PressureProtection
     highPressureMultiplier: 0.02
     lowPressureMultiplier: 1000
-  - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+  - type: ClothingSpeedModifier #DH
+    walkModifier: 0.99
+    sprintModifier: 0.99
   - type: Armor
     modifiers:
       coefficients:
         Blunt: 0.6
         Slash: 0.6
+        Caustic: 0.45 #DH
         Piercing: 0.5
         Heat: 0.3
         Radiation: 0.1

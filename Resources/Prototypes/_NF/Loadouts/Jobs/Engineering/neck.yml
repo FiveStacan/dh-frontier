@@ -9,3 +9,9 @@
   price: 0
   equipment:
     neck: ClothingNeckCloakCe
+
+- type: loadout
+  id: PlantManagerClothingNeckEliteCloakCECloak
+  price: 0
+  equipment:
+    neck: ClothingNeckEliteCloakCECloak

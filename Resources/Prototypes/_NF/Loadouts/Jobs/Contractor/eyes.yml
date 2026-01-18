@@ -1,13 +1,19 @@
 #T0
 - type: loadout
   id: ContractorClothingEyesGlasses
-  price: 200
+  price: 300
   equipment:
     eyes: ClothingEyesGlasses
 
 - type: loadout
+  id: ContractorClothingEyesStuttering
+  price: 990
+  equipment:
+    eyes: ClothingEyesStuttering
+
+- type: loadout
   id: ContractorClothingEyesGlassesCheapSunglasses
-  price: 200
+  price: 260
   equipment:
     eyes: ClothingEyesGlassesCheapSunglasses
 
@@ -19,7 +25,7 @@
 
 - type: loadout
   id: ContractorClothingEyesEyepatch
-  price: 200
+  price: 250
   equipment:
     eyes: ClothingEyesEyepatch
 
@@ -59,6 +65,15 @@
   price: 750
   equipment:
     eyes: ClothingEyesGlassesMeson
+
+- type: loadout
+  id: ContractorClothingEyesGlassesWelding
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT1
+  price: 800
+  equipment:
+    eyes: ClothingEyesGlassesWelding
 
 - type: loadout
   id: ContractorClothingEyesHudMedical

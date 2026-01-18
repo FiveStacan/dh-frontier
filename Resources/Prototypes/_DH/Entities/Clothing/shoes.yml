@@ -67,6 +67,12 @@
       collection: FootstepSoldier
       params:
         volume: -2
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.97
+        Piercing: 0.98
 
 - type: entity
   parent: [ClothingShoesBootsMagBase, BaseToggleClothing, BaseSecurityContraband]

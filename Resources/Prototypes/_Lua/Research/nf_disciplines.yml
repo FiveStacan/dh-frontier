@@ -47,6 +47,18 @@
     3: 0.75
 
 - type: techDiscipline
+  id: NFArsenalPirate
+  name: nf-research-discipline-arsenal-nfsd
+  color: "#574c43"
+  icon:
+    sprite: _NF/Interface/Misc/research_disciplines.rsi
+    state: pirate
+  tierPrerequisites:
+    1: 0
+    2: 0.75
+    3: 0.75
+
+- type: techDiscipline
   id: NFSalvage
   name: nf-research-discipline-salvage
   color: "#6D5736"

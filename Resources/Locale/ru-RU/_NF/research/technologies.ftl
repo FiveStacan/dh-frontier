@@ -5,6 +5,7 @@ nf-research-discipline-arsenal-nfsd = ДСБФ
 nf-research-discipline-salvage = Утилизация
 nf-research-discipline-science = Наука
 nf-research-discipline-service = Обслуживание
+nf-research-discipline-all = Все
 
 # Сохраняйте ключи в алфавитном порядке
 nf-research-technology-abnormal-artifact-manipulation = Переработка артефактов
@@ -32,7 +33,7 @@ nf-research-technology-advanced-salvage-weapons = Улучшенные дроб�
 nf-research-technology-advanced-smes = Улучшённые крупные накопители энергии
 nf-research-technology-advanced-spray = Высоконапорные распылители
 nf-research-technology-advanced-tools = Продвинутые инструменты
-nf-research-technology-advanced-welder = Экспериментальные сварочные инструменты
+nf-research-technology-advanced-welder = Промышленные сварочные инструменты
 nf-research-technology-anomaly-harnessing = Применение ядер аномалий
 nf-research-technology-anti-gravitational-fields = Антигравитационные поля
 nf-research-technology-applied-biochemical-stasis = Прикладной биохимический стазис

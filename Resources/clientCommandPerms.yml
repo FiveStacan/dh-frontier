@@ -82,6 +82,8 @@
     - toggledecals
     - drawline
     - showaccessreaders
+    - mappingclientsidesetup #DH
+    - DHmappingclientsidesetup #DH
 
 - Flags: QUERY
   Commands:

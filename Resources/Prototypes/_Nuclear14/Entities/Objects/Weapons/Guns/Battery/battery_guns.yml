@@ -191,6 +191,10 @@
     autoRecharge: true
     autoRechargeRate: 25
   - type: Gun
+    maxAngle: 10
+    minAngle: 3.5
+    angleDecay: 2
+    angleIncrease: 1
     soundGunshot:
       collection: N14RechargerRifleGunshot
     selectedMode: SemiAuto
@@ -559,7 +563,7 @@
     soundGunshot:
       collection: N14MultiplasGunshot
 
-#MARK: Focused  
+#MARK: Focused
 # (just a different looking laser rifle until we get more options)
 
 - type: entity

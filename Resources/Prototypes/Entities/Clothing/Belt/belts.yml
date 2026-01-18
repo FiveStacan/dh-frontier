@@ -231,6 +231,12 @@
   - type: EmitSoundOnLand
     sound:
       path: /Audio/_DH/Items/Handling/toolbelt_drop.ogg
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: ClothingBeltAssault
@@ -558,6 +564,11 @@
           - SmokeOnTrigger
     sprite: Clothing/Belt/belt_overlay.rsi
   - type: Appearance
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
 
 - type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseC1Contraband] # Frontier: BaseCommandContraband<BaseC1Contraband
@@ -610,6 +621,11 @@
       tags:
         - ShellShotgun
     capacity: 14
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: ClothingBeltBase
@@ -625,6 +641,10 @@
   - type: Tag
     tags:
     - Kangaroo
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Piercing: 0.99
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
@@ -639,6 +659,11 @@
   # - type: Storage # Frontier: commented out
     # grid: # Frontier: commented out
     # - 0,0,3,1 # Frontier: commented out
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
 
 - type: entity
   parent: [NFClothingBeltStorageBase, BaseC3SyndicateContraband, ContrabandClothing] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseSyndicateContraband<BaseC3SyndicateContraband, added ContrabandClothing as parent
@@ -661,6 +686,11 @@
         # - Gun
         # - BallisticAmmoProvider
         # - CartridgeAmmo
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
@@ -672,6 +702,12 @@
     sprite: Clothing/Belt/securitywebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/securitywebbing.rsi
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.98
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, remove BaseSecurityCargoContraband
@@ -683,6 +719,12 @@
     sprite: Clothing/Belt/mercwebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/mercwebbing.rsi
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.98
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
@@ -694,6 +736,11 @@
     sprite: Clothing/Belt/salvagewebbing.rsi
   - type: Clothing
     sprite: Clothing/Belt/salvagewebbing.rsi
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.98
+        Slash: 0.98
 
 - type: entity
   parent: [NFClothingBeltStorageBase, ContentsExplosionResistanceBase, BaseC1Contraband] # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, BaseSyndicateContraband<BaseC1Contraband
@@ -709,6 +756,12 @@
     damageCoefficient: 0.1
   - type: StaticPrice
     price: 500
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.98
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: ClothingBeltMilitaryWebbing
@@ -724,6 +777,12 @@
     #size: Huge # Frontier
   - type: ExplosionResistance
     damageCoefficient: 0.1
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
+        Piercing: 0.99
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase

@@ -61,7 +61,7 @@
   equipment:
     head: ClothingHeadHatBeretCmo
     eyes: ClothingEyesHudMedical
-    mask: ClothingMaskSterile
+    mask: ClothingBreathMaskCMO #DH #ClothingMaskSterile
     neck: ClothingCloakCmo
     outerClothing: ClothingOuterCoatLabCmo
     gloves: ClothingHandsGlovesNitrile

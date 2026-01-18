@@ -66,7 +66,7 @@
   - ContractorClothingShoesDameDane
   fallbacks:
   - ContractorClothingShoesColorBlack
-    
+
 - type: loadoutGroup
   id: PrisonerHead
   name: loadout-group-contractor-head
@@ -93,7 +93,7 @@
   - ContractorClothingHeadHatHoodNunHood
   - ContractorClothingHeadHatKippah
   - ContractorClothingHeadBandGold
-    
+
 - type: loadoutGroup
   id: PrisonerNeck
   name: loadout-group-contractor-neck
@@ -126,17 +126,18 @@
   - ClothingNeckAutismPin
   - ClothingNeckGoldAutismPin
   - ContractorClothingNeckBling
-    
+
 - type: loadoutGroup
   id: PrisonerGlasses
   name: loadout-group-contractor-glasses
   minLimit: 0
   loadouts:
   - ContractorClothingEyesGlasses
+  - ContractorClothingEyesStuttering
   - ContractorClothingEyesBlindfold
   - ContractorClothingEyesEyepatch
   - ContractorClothingEyesGlassesJamjar
-    
+
 - type: loadoutGroup
   id: PrisonerHandItems
   name: loadout-group-contractor-hand-items

@@ -43,6 +43,12 @@
   - type: Clothing
     sprite: _NF/Clothing/Shoes/Boots/pirate.rsi
   - type: Matchbox
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.98
+        Piercing: 0.98
 
 - type: entity
   parent: ClothingShoesBaseButcherable

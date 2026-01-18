@@ -230,7 +230,7 @@
       air:
         volume: 1.5
     - type: StaticPrice
-      price: 95
+      price: 140
 
 # Filled mini
 - type: entity

@@ -30,7 +30,7 @@
   - type: Clothing
     sprite: _Lua/Objects/Weapons/Guns/Pistols/plasma_cutter.rsi
   - type: Gun
-    fireRate: 1.6
+    fireRate: 1.5 #DH 1.5<1.6
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

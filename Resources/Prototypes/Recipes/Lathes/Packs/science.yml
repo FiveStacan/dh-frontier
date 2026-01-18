@@ -93,6 +93,14 @@
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
+  - ExosuitFabricatorHyperConvectionMachineCircuitboard #DH
+  - UniformPrinterHyperConvectionMachineCircuitboard #DH
+
+  - AutolatheHyperSpeedMachineCircuitboard #DH
+  - UniformPrinterHyperSpeedMachineCircuitboard #DH
+  - CircuitImprinterHyperSpeedMachineCircuitboard #DH
+  - ProtolatheHyperSpeedMachineCircuitboard #DH
+  - ExosuitFabricatorHyperSpeedMachineCircuitboard #DH
   # - TechDiskComputerCircuitboard # Frontier: no tech disks
   - FlatpackerMachineCircuitboard
   - SheetifierMachineCircuitboard

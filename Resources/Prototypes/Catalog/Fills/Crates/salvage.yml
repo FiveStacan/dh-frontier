@@ -121,6 +121,8 @@
         orGroup: DripLoot
       - id: ClothingEyesGlassesGarGiga
         orGroup: DripLoot
+      - id: ClothingEyesGlasses #DH
+        prob: 0.001
       - id: ClothingEyesGlasses
         orGroup: DripLoot
       - id: ClothingEyesGlassesSunglasses

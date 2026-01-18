@@ -88,6 +88,9 @@
     - SuitEVA
     - MonkeyWearable
     - WhitelistChameleon
+  - type: ClothingSpeedModifier
+    walkModifier: 0.7
+    sprintModifier: 0.7
 
 #NTSRA Voidsuit / Ancient Voidsuit
 - type: entity

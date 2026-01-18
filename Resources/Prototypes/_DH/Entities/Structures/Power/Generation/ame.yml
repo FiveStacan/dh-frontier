@@ -469,7 +469,7 @@
     requirePower: true
     highVoltageNode: input
     mediumVoltageNode: ame
-  
+
 #region Expandet AME
 
 - type: entity
@@ -480,12 +480,12 @@
   components:
   - type: Item
     size: Normal
-    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
-    color: "#916439"
+    sprite: Objects/Power/AME/ame_jar.rsi
+    color: "#835ee7"
   - type: Sprite
-    sprite: _DH/Structures/Power/Generation/ame_jar.rsi
-    state: jar_expandet
-    color: "#916439"
+    sprite: Objects/Power/AME/ame_jar.rsi
+    state: jar
+    color: "#835ee7"
   - type: AmeFuelContainer
     fuelAmount: 195
     fuelCapacity: 195
@@ -502,7 +502,7 @@
 
 - type: entity
   parent: BaseItem
-  id: ExpandetAmeJar
+  id: ExtendedAmeJar
   name: расширенный топливный бак ДАМ
   description: Герметичный сосуд с антивеществом использующийся в реакторе антиматерии.
   components:
@@ -511,7 +511,7 @@
     sprite: _DH/Structures/Power/Generation/ame_jar.rsi
   - type: Sprite
     sprite: _DH/Structures/Power/Generation/ame_jar.rsi
-    state: jar_expandet
+    state: jar_extended
   - type: AmeFuelContainer
     fuelAmount: 1800
     fuelCapacity: 1800
@@ -520,8 +520,8 @@
     vendPrice: 8200
   - type: GuideHelp
     guides: [ AME, Power ]
-  - type: Tag 
-    tags: 
+  - type: Tag
+    tags:
     - Recyclable
     - NAMEFuel
   - type: NFFuel
@@ -543,11 +543,11 @@
     fuelCapacity: 5200
   - type: StaticPrice
     price: 2000
-    vendPrice: 19750 
+    vendPrice: 19750
   - type: GuideHelp
     guides: [ AME, Power ]
-  - type: Tag 
-    tags: 
-    - Recyclable 
+  - type: Tag
+    tags:
+    - Recyclable
     - NAMEFuel
-  - type: NFFuel 
+  - type: NFFuel

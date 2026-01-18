@@ -4,3 +4,10 @@
   storage:
     back:
     - ClothingMaskGasAtmos
+
+- type: loadout
+  id: EngineeringClothingMaskGasCE
+  price: 0
+  storage:
+    back:
+    - ClothingMaskGasCE

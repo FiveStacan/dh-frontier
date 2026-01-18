@@ -47,6 +47,12 @@
     clothingPrototype: ClothingHeadHelmetHardsuitOmni
   - type: StaticPrice
     price: 9500
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: BarestepHard
+      params:
+        variation: 0.09
+        volume: -6
 
 - type: entity
   parent: ClothingOuterHardsuitBlueShield
@@ -89,11 +95,17 @@
     whitelist:
       tags:
         - BluespaceBox
+        - BoxCardboard
+        - Sheet
+        - Ingot
+        - RawMaterial
+        - Ore
+        - NAMEFuel
   - type: Sprite
     sprite: _DH/Clothing/OuterClothing/Suits/cargo-suit.rsi
   - type: Clothing
     sprite: _DH/Clothing/OuterClothing/Suits/cargo-suit.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
+    walkModifier: 0.88
+    sprintModifier: 0.88
   - type: HeldSpeedModifier

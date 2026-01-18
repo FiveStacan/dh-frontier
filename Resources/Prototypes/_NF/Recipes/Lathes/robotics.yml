@@ -138,6 +138,18 @@
 
 - type: latheRecipe
   parent: BaseBorgModuleRecipe
+  id: BorgModuleRCDShipyard
+  result: BorgModuleRCDShipyard
+  completetime: 7
+  materials:
+    Steel: 1400
+    Plastic: 500
+    Uranium: 300
+    Gold: 300
+    Silver: 100
+
+- type: latheRecipe
+  parent: BaseBorgModuleRecipe
   id: BorgModuleCleaning
   result: BorgModuleCleaning
   completetime: 4

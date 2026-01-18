@@ -19,3 +19,5 @@
     steps: 6
     zeroVisible: true
   - type: Appearance
+  - type: StaticPrice #DH
+    price: 30

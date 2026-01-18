@@ -49,3 +49,13 @@
     Gold: 1000
     Silver: 2300
     Uranium: 1000
+
+- type: latheRecipe
+  id: ClothingShoesBootsMagArmy
+  result: ClothingShoesBootsMagArmy
+  completetime: 21
+  materials:
+    Steel: 4300
+    Gold: 1100
+    Silver: 2350
+    Uranium: 1000

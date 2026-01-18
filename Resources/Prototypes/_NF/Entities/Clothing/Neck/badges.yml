@@ -12,12 +12,22 @@
     layers: []
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_bronze_badge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSecurityCadet
   name: NFSD cadet badge
   suffix: Bronze - Cadet
+  components:
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeBronze
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
@@ -29,7 +39,12 @@
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silver_badge.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silver_badge.rsi
-    
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeSilver
+    - ADTBadge
+
 - type: entity
   parent: ClothingNeckNfsdBadge
   id: ClothingNeckNfsdBadgeSecurityBrigmedic
@@ -40,6 +55,11 @@
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silvercross_badge.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silvercross_badge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeSilver
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
@@ -51,6 +71,11 @@
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silver_badge.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_silver_badge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeSilver
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
@@ -62,6 +87,11 @@
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeGolden
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
@@ -73,6 +103,11 @@
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_gold_badge.rsi
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeGolden
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckNfsdBadge
@@ -85,6 +120,11 @@
   - type: Clothing
     sprite: _NF/Clothing/Neck/Scarfs/nfsd_star_badge.rsi
   - type: EmbeddableProjectile # pointy
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadgeGolden
+    - ADTBadge
 
 - type: entity
   parent: ClothingNeckBase
@@ -99,3 +139,7 @@
     sprite: _NF/Clothing/Neck/Misc/palbadge.rsi
   - type: TypingIndicatorClothing
     proto: pal
+  - type: Badge
+  - type: Tag
+    tags:
+    - ADTBadge

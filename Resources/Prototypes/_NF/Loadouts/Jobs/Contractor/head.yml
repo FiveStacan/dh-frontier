@@ -410,6 +410,18 @@
     head: ClothingHeadHatCapcap
 
 - type: loadout
+  id: ContractorClothingHeadHatCapcapWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  hideEffects:
+  - !type:GroupLoadoutEffect
+    proto: NFHeadwearCapable
+  price: 1300
+  equipment:
+    head: ClothingHeadHatCapcapWhite
+
+- type: loadout
   id: ContractorClothingHeadTinfoil
   effects:
   - !type:GroupLoadoutEffect

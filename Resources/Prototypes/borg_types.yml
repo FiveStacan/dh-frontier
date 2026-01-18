@@ -6,7 +6,7 @@
   dummyPrototype: BorgChassisGeneric
 
   # Functional
-  extraModuleCount: 5
+  extraModuleCount: 7
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -14,8 +14,8 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleArtifact
-  - BorgModuleAnomaly
+  #- BorgModuleArtifact #DH
+  #- BorgModuleAnomaly #DH
   - BorgModuleJetpack # Frontier
 
   radioChannels:
@@ -41,7 +41,7 @@
   dummyPrototype: BorgChassisEngineer
 
   # Functional
-  extraModuleCount: 3
+  extraModuleCount: 6 #DH
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -49,9 +49,9 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleConstruction
-  - BorgModuleRCDShipyard # Frontier: RCD<RCDShipyard
-  - BorgModuleCable
+  #- BorgModuleConstruction #DH
+  #- BorgModuleRCDShipyard # Frontier: RCD<RCDShipyard #DH
+  #- BorgModuleCable #DH
   - BorgModuleJetpack # Frontier
 
   radioChannels:
@@ -78,7 +78,7 @@
   dummyPrototype: BorgChassisMining
 
   # Functional
-  extraModuleCount: 3
+  extraModuleCount: 6 #DH
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -86,9 +86,9 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleMining
-  - BorgModuleTraversal
-  - BorgModuleAppraisal
+  #- BorgModuleMining #DH
+  #- BorgModuleTraversal #DH
+  #- BorgModuleAppraisal #DH
   - BorgModuleJetpack # Frontier
 
   radioChannels:
@@ -116,7 +116,7 @@
   dummyPrototype: BorgChassisJanitor
 
   # Functional
-  extraModuleCount: 3
+  extraModuleCount: 6 #DH
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -124,8 +124,8 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleCleaning
-  - BorgModuleCustodial
+  #- BorgModuleCleaning #DH
+  #- BorgModuleCustodial #DH
   - BorgModuleJetpack # Frontier
 
   radioChannels:
@@ -153,7 +153,7 @@
   dummyPrototype: BorgChassisMedical
 
   # Functional
-  extraModuleCount: 3
+  extraModuleCount: 5 #DH
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -161,9 +161,9 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleChemical
-  - BorgModuleTopicals
-  - BorgModuleRescue
+  #- BorgModuleChemical #DH
+  #- BorgModuleTopicals #DH
+  #- BorgModuleRescue
   # - BorgModuleAdvancedTreatment # Frontier
   # - BorgModuleDefibrillator # Frontier
   - BorgModuleJetpack # Frontier
@@ -206,7 +206,7 @@
   dummyPrototype: BorgChassisService
 
   # Functional
-  extraModuleCount: 3
+  extraModuleCount: 8
   moduleWhitelist:
     tags:
     - BorgModuleGeneric
@@ -214,14 +214,14 @@
 
   defaultModules:
   - BorgModuleTool
-  - BorgModuleMusique
+  #- BorgModuleMusique
   # - BorgModuleService # Frontier: deprecated, use NF variant
-  - BorgModuleClowning
-  - BorgModuleGardening
-  - BorgModuleHarvesting
-  - BorgModuleBureaucracy # Frontier: FIXME - stacked as hell
-  - BorgModuleNFService # Frontier
-  - BorgModuleChef # Frontier
+  #- BorgModuleClowning
+  #- BorgModuleGardening
+  #- BorgModuleHarvesting
+  #- BorgModuleBureaucracy # Frontier: FIXME - stacked as hell
+  #- BorgModuleNFService # Frontier
+  #- BorgModuleChef # Frontier
   - BorgModuleJetpack # Frontier
 
   radioChannels:

@@ -43,6 +43,7 @@
       - id: ClothingBeltSuspendersBlack
       - id: ClothingEyesEyepatch
       - id: ClothingEyesGlasses
+      - id: ClothingEyesStuttering #DH
       - id: ClothingHandsGlovesLatex
       - id: ClothingHandsGlovesFingerless
       - id: ClothingHandsGlovesColorBlack

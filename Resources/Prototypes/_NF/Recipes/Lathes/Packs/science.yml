@@ -8,6 +8,4 @@
   recipes:
       - JetpackVoid # Frontier
       - ClothingShoesBootsMagAdv # Frontier
-      - BorgModuleAnomaly #DH
-      - BorgModuleArtifact #DH
       - DeviceQuantumSpinInverter #DH

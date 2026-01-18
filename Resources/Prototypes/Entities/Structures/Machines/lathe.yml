@@ -245,6 +245,7 @@
     - DHEngineering
     - DHTools
     - NFEngineeringBoardsStatic
+    - DHBaseOuterClothing
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - NfsdAmmoStatic # Frontier: SecurityAmmo<NfsdAmmoStatic
@@ -306,11 +307,11 @@
     - MedicalBoardsStatic
     - EngineeringBoardsStatic
     - CircuitFloorsStatic
-    - NFScienceBoardsStatic # Frontier
     - NFServiceBoardsStatic # Frontier
     - NFSalvageBoardsStatic # Frontier
     - LuaCircuitBoardsStatic # Lua
     dynamicPacks:
+    - NFScienceBoardsStatic #DH
     - EngineeringBoards
     - CargoBoards
     - MedicalBoards
@@ -476,12 +477,12 @@
     - SecurityWeaponsStatic
     dynamicPacks:
     #- SalvageSecurityBoards # Frontier
-    #- SalvageSecurityWeapons # Frontier
-    #- SecurityEquipment # Frontier
+    - SalvageSecurityWeapons # Frontier
+    - SecurityEquipment # Frontier
     #- SecurityBoards # Frontier
     #- SecurityExplosives
     #- SecurityAmmo # Frontier
-    #- SecurityWeapons # Frontier
+    - SecurityWeapons # Frontier
     #- SecurityDisablers # Frontier
     # Mono - Mech parts
     - WeaponMechCombatImmolationGun
@@ -493,6 +494,8 @@
     - WeaponMechCombatDisabler
     - WeaponMechCombatFlashbangLauncher
     - WeaponMechCombatMissileRack8
+    #DH
+    - DHBaseArmor
   - type: MaterialStorage
     whitelist:
       tags:

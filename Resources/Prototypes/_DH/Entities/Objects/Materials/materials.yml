@@ -71,3 +71,57 @@
     state: pyroblock
   - type: Stack
     count: 20
+
+- type: entity
+  parent: SheetOtherBase
+  id: SheetBlueprintPaper
+  name: BlueprintPaper
+  description: A sheet of material, used often on the station in various applications.
+  suffix: Full
+  components:
+  - type: Tag
+    tags:
+    - SheetBlueprintPaper
+    - Sheet
+  - type: Stack
+    stackType: BlueprintPaper
+    baseLayer: base
+    layerStates:
+    - bp_paper
+    - bp_paper_2
+    - bp_paper_3
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      BlueprintPaper: 100
+  - type: Sprite
+    sprite: _DH/Objects/Materials/Sheets/Other.rsi
+    state: bp_paper_3
+    layers:
+    - state: bp_paper_3
+      map: ["base"]
+  - type: Item
+    sprite: _DH/Objects/Materials/Sheets/Other.rsi
+    heldPrefix: bp_paper
+  - type: Appearance
+  - type: Extractable
+    grindableSolutionName: bp_paper
+  - type: SolutionContainerManager
+    solutions:
+      bp_paper:
+        reagents:
+        - ReagentId: Cellulose
+          Quantity: 3
+        - ReagentId: Silver
+          Quantity: 1
+
+- type: entity
+  parent: SheetBlueprintPaper
+  id: SheetBlueprintPaper1
+  name: paper
+  suffix: Single
+  components:
+  - type: Sprite
+    state: bspaper
+  - type: Stack
+    count: 1

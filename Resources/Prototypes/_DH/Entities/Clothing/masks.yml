@@ -50,6 +50,11 @@
   - type: BreathMask
   - type: IngestionBlocker
   - type: FlashImmunity
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.99
+        Slash: 0.99
 
 - type: entity
   parent: ClothingMaskBase

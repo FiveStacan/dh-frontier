@@ -5,7 +5,7 @@
   suffix: NFSD
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true
     layers:
       - state: server
@@ -26,13 +26,40 @@
     - NFArsenalNfsd
 
 - type: entity
+  id: PirateResearchAndDevelopmentServer
+  parent: ResearchAndDevelopmentServer
+  name: Pirate R&D server
+  suffix: NFSD
+  components:
+  - type: Sprite
+    sprite: _DH/Structures/Machines/server.rsi
+    snapCardinals: true
+    layers:
+      - state: server
+      - state: variant-pirate
+      - state: server_o
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: TechnologyDatabase
+    supportedDisciplines:
+    #- NFGeneral
+    - NFEngineering
+    - NFMedical
+    - NFSalvage
+    - NFScience
+    - NFService
+    - Shiparmory
+    - NFArsenal
+    - NFArsenalMercenary
+    - NFArsenalPirate
+
+- type: entity
   id: MercenaryResearchAndDevelopmentServer
   parent: ResearchAndDevelopmentServer
   name: Mercenary R&D server
   suffix: Mercenary
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true # Frontier
     layers:
       - state: server
@@ -58,7 +85,7 @@
   suffix: Syndicate
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true # Frontier
     layers:
       - state: server
@@ -85,7 +112,7 @@
   suffix: Debug
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true # Frontier
     layers:
       - state: server
@@ -114,7 +141,7 @@
   suffix: Engineering
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true
     layers:
       - state: server
@@ -136,7 +163,7 @@
   suffix: Prison
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true
     layers:
       - state: server
@@ -159,7 +186,7 @@
   suffix: Shiparmory
   components:
   - type: Sprite
-    sprite:  _DH/Structures/Machines/server.rsi
+    sprite: _DH/Structures/Machines/server.rsi
     snapCardinals: true
     layers:
       - state: server

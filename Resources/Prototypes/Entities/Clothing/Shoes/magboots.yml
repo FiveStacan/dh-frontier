@@ -38,6 +38,12 @@
   - type: Tag
     tags:
     - WhitelistChameleon
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.98
+        Piercing: 0.99
 
 - type: entity
   parent: [ClothingShoesBootsMagBase]
@@ -99,8 +105,8 @@
   - type: Clothing
     sprite: Clothing/Shoes/Boots/magboots-syndicate.rsi
   - type: ClothingSpeedModifier
-    walkModifier: 0.9
-    sprintModifier: 0.9
+    walkModifier: 0.88
+    sprintModifier: 0.88
   - type: GasTank
     outputPressure: 42.6
     air:
@@ -115,6 +121,12 @@
     size: Normal
   - type: StaticPrice
     price: 1500
+  - type: Armor #DH
+    modifiers:
+      coefficients:
+        Blunt: 0.97
+        Slash: 0.98
+        Piercing: 0.98
 
 - type: entity
   parent: BaseAction

@@ -89,6 +89,8 @@
   - gridtc
   - togglespritenetsync
   - drawline
+  - mappingclientsidesetup #DH
+  - DHmappingclientsidesetup #DH
 
 - Flags: ADMIN
   Commands:
@@ -138,6 +140,8 @@
   - fuck
   - replay_recording_start
   - replay_recording_stop
+  - restart #DH
+  - shutdown #DH
 
 - Flags: QUERY
   Commands:

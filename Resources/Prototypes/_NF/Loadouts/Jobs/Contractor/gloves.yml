@@ -176,9 +176,18 @@
   effects:
   - !type:GroupLoadoutEffect
     proto: ContractorT2
-  price: 1000
+  price: 1100
   equipment:
     gloves: ClothingHandsGlovesCaptain
+
+- type: loadout
+  id: ContractorClothingHandsGlovesCaptainWhite
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1100
+  equipment:
+    gloves: ClothingHandsGlovesCaptainWhite
 
 #T3 for lols
 - type: loadout

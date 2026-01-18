@@ -121,6 +121,8 @@
       - state: inhand-right
       - state: inhand-right-unshaded
         shader: unshaded
+  - type: StaticPrice
+    price: 680
 
 #region Pulse
 - type: entity

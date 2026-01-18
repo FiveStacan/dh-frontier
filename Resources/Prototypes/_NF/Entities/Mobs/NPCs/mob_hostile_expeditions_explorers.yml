@@ -568,6 +568,15 @@
   - type: ActionGun
     action: ActionSeismicCharge
     gunProto: SeismicChargeGun
+  - type: PassiveDamage
+    allowedStates:
+    - Alive
+    damageCap: 500
+    damage:
+      groups:
+        Brute: -0.5
+        Burn: -0.5
+        Airloss: -1
 
 - type: entity
   id: SeismicChargeGun

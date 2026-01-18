@@ -23,6 +23,7 @@
     - PortableSurveillanceCameraMonitorUnpowered
     - HandheldCriminalRecordsMonitor
     - HandheldCrewMonitor
+    - HandheldHealthAnalyzerUnpowered
     - AdvancedMineralScannerUnpowered
     - Screwdriver
     - MeleeDebug100

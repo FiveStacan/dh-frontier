@@ -130,15 +130,20 @@
   # - SpeedLoaderMagnumIncendiary # Frontier
   # - SpeedLoaderMagnumUranium # Frontier
 
-#- type: latheRecipePack # Frontier
-  #id: SecurityWeapons # Frontier
-  #recipes: # Frontier
-  #- Truncheon # Frontier
-  #- WeaponAdvancedLaser # Frontier
-  #- WeaponLaserCannon # Frontier
-  #- WeaponLaserCarbine # Frontier
-  #- WeaponXrayCannon # Frontier
-  #- WeaponTemperatureGun # Frontier
+- type: latheRecipePack
+  id: SecurityWeapons
+  recipes:
+  - Truncheon
+  - WeaponAdvancedLaser
+  - WeaponLaserCannon
+  - WeaponLaserCarbine
+  - WeaponXrayCannon
+  - WeaponTemperatureGun
+  #Borg
+  - BorgModulEnergySecurity
+  - BorgModuleArrestSecurity
+  - BorgModuleSecurity
+  - BorgModuleMercenary
 
 #- type: latheRecipePack # Frontier
   #id: SecurityDisablers # Frontier

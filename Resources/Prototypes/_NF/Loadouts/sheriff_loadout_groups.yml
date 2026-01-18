@@ -4,6 +4,7 @@
   loadouts:
   - SheriffClothingUniformJumpsuitSheriff
   - SheriffClothingUniformJumpskirtSheriff
+  - SheriffClothingUniformJumpsuitSheriffDH
   fallbacks:
   - SheriffClothingUniformJumpsuitSheriff
   - SheriffClothingUniformJumpskirtSheriff

@@ -11,11 +11,12 @@
   - NFWeaponHoloflareGun
   - NFMetalShield
   - Signaller
+  - WeaponBasePlasmaCutter #DH
 
 - type: latheRecipePack
   id: NFSalvageBoardsStatic
   recipes:
-  - SalvageTechFabCircuitboardNF
+  #- SalvageTechFabCircuitboardNF #DH
   - ShuttleGunKineticCircuitboard
   - NFScrapProcessorCircuitboard
   - OreProcessorMachineCircuitboard
@@ -24,11 +25,9 @@
   id: NFSalvageArchetypeStatic
   recipes:
   - JetpackBlue
+  - JetpackMining
+  - JetpackMini
   - MineralScannerEmpty
-  - BorgModuleAdvancedMining
-  - BorgModuleMining #DH
-  - BorgModuleAppraisal #DH
-  - BorgModuleTraversal #DH
 
 - type: latheRecipePack
   id: NFSalvage

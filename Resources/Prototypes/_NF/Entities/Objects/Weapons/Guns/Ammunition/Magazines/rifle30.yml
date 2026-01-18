@@ -64,6 +64,36 @@
   - type: MagazineVisuals
     steps: 7
 
+#DH
+- type: entity
+  id: NFBaseMagazineExtendedRifle30
+  name: extended magazine (.30 rifle)
+  parent: NFBaseMagazineRifle30
+  abstract: true
+  components:
+  - type: Tag
+    tags:
+      - NFMagazineLowCapacityRifle30
+  - type: Item
+    size: Tiny
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle30_extended_mag.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      right:
+      - state: inhand-right-mag
+  - type: BallisticAmmoProvider
+    capacity: 35
+  - type: Sprite
+    sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle30_extended_mag.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-8
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    steps: 9
+
 #region .30 magazines
 - type: entity
   id: NFMagazineRifle30Empty
@@ -348,6 +378,154 @@
     - state: decal-01
       color: "#00b0ff"
     - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#00b0ff"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#00b0ff"
+
+#region extended .30 magazines
+- type: entity
+  id: NFMagazineExtendedRifle30Empty
+  name: extended magazine (.30 rifle, any)
+  parent: NFBaseMagazineExtendedRifle30
+  suffix: empty
+  components:
+  - type: BallisticAmmoProvider
+    proto: null
+
+- type: entity
+  id: NFMagazineExtendedRifle30
+  name: extended magazine (.30 rifle)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30
+
+- type: entity
+  id: NFMagazineExtendedRifle30Overpressure
+  name: extended magazine (.30 rifle, overpressure)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Overpressure
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-01
+      color: "#ff8d00"
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff8d00"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff8d00"
+
+- type: entity
+  id: NFMagazineExtendedRifle30Incendiary
+  name: extended magazine (.30 rifle, incendiary)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Incendiary
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-01
+      color: "#ff0000"
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#ff0000"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#ff0000"
+
+- type: entity
+  id: NFMagazineExtendedRifle30Uranium
+  name: extended magazine (.30 rifle, uranium)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Uranium
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-01
+      color: "#00ff00"
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#00ff00"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#00ff00"
+
+- type: entity
+  id: NFMagazineExtendedRifle30Practice
+  name: extended magazine (.30 rifle, practice)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Practice
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-01
+      color: "#dddddd"
+    - state: mag-7
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-mag
+      - state: inhand-left-stripe
+        color: "#dddddd"
+      right:
+      - state: inhand-right-mag
+      - state: inhand-right-stripe
+        color: "#dddddd"
+
+- type: entity
+  id: NFMagazineExtendedRifle30Rubber # MagazineLightRifleRubber
+  name: extended magazine (.30 rifle, rubber)
+  parent: NFBaseMagazineExtendedRifle30
+  components:
+  - type: BallisticAmmoProvider
+    proto: NFCartridgeRifle30Rubber
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: decal-01
+      color: "#00b0ff"
+    - state: mag-7
       map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     inhandVisuals:

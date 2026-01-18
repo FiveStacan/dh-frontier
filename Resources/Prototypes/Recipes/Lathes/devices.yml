@@ -180,12 +180,13 @@
 - type: latheRecipe
   id: DeviceQuantumSpinInverter
   result: DeviceQuantumSpinInverter
-  completetime: 26
+  completetime: 32 #DH
   materials: #DH
-    Silver: 500
-    Bluespace: 1000
+    Silver: 650
+    Bluespace: 1200
     Uranium: 500
-    Magmite: 400
+    Magmite: 600
+    Glass: 300
 
 - type: latheRecipe
   id: DeviceDesynchronizer

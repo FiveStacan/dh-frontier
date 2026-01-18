@@ -297,6 +297,17 @@
         type: HolopadBoundUserInterface
       enum.StationAiCustomizationUiKey.Key:
         type: StationAiCustomizationBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface #DH
+  - type: Inventory #DH
+    templateId: AiHat
+    speciesId: Ai
+    displacements:
+      head:
+        sizeMaps:
+          32:
+            sprite: _DH/Mobs/Silicon/AiScreen/displacement.rsi
+            state: head
 
 # The job-ready version of an AI spawn.
 - type: entity

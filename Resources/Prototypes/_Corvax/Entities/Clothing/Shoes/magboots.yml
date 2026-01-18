@@ -11,8 +11,8 @@
     sprite: Corvax/Clothing/Shoes/Boots/jetboots.rsi
   - type: Magboots
   - type: ClothingSpeedModifier
-    walkModifier: 1
-    sprintModifier: 1
+    walkModifier: 0.90
+    sprintModifier: 0.90
   - type: NoSlip
 
 - type: entity

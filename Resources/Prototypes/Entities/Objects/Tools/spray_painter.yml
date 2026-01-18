@@ -104,7 +104,7 @@
     price: 30
 
 - type: entity
-  parent: BaseItem
+  parent: SprayPainterAmmo
   id: SprayPainterAdvancedAmmo
   name: compressed paint
   description: A cartridge of highly compressed paint, commonly used in spray painters.

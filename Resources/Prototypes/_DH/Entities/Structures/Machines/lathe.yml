@@ -49,6 +49,147 @@
   - type: OreSiloClient
 
 - type: entity
+  id: PirateTechFab
+  parent: [ NFBlueprintReceiverBase, SecurityTechFab ]
+  name: Пиратский ТехФаб
+  description: Печатает все необходимое пиратское снаряжение.
+  components:
+  - type: MaterialStorage
+    whitelist: # Frontier
+      tags: # Frontier
+        - Sheet # Frontier
+        - RawMaterial # Frontier
+        - Ingot # Frontier
+        - DHMaterials
+  - type: Sprite
+    sprite: _DH/Structures/Machines/techfab.rsi
+    snapCardinals: true # Frontier
+    layers:
+      - state: icon
+        map: ["enum.LatheVisualLayers.IsRunning"]
+      - state: pirate
+      - state: unlit
+        shader: unshaded
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: inserting
+        map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      - state: panel
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: PirateTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    staticPacks:
+    - GoobWeaponAmmo
+    - N14AmmoPack
+    - RMCAmmoPack
+    - NfsdAmmoStatic
+    - RMCAmmoPack
+    #dynamicPacks:
+  - type: BlueprintReceiver
+    whitelist:
+      tags:
+      - NFBlueprintNfsdTechfab
+      - NFBlueprintMercenaryTechfab
+  - type: OreSiloClient
+
+- type: entity
+  id: ResearchPointsDiskGenerator
+  parent: [ NFBlueprintReceiverBase, SecurityTechFab ]
+  name: фабрикатор исследовательских дисков
+  description: Печатает исследовательские диски.
+  components:
+  #- type: StationAiWhitelist
+  - type: SpriteFade
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - RawMaterial
+        - Sheet
+        - RawMaterial
+        - Ingot
+        - DHMaterials
+  - type: Sprite
+    sprite: _DH/Structures/Machines/points_generator.rsi
+    offset: 0,1
+    drawdepth: Mobs
+    layers:
+      - state: icon
+        map: ["enum.LatheVisualLayers.IsRunning"]
+      - state: unshaded
+        shader: unshaded
+        map: ["enum.PowerDeviceVisualLayers.Powered"]
+      - state: inserting
+        map: ["enum.MaterialStorageVisualLayers.Inserting"]
+      - state: panel
+        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Transform
+    anchored: true
+  - type: ExtensionCableReceiver
+  - type: ApcPowerReceiver
+    powerLoad: 2000
+  - type: AmbientSound
+    range: 5
+    volume: -6
+    sound:
+      path: /Audio/Ambience/Objects/anomaly_generator.ogg
+  #- type: Machine
+  #  board: Circuitboard
+  - type: Physics
+    bodyType: Static
+  - type: Lathe
+    idleState: icon
+    runningState: generating
+    unlitRunningState: generating_unshaded
+    staticPacks:
+    - ResearchDisks
+    dynamicPacks:
+    - ResearchDisksAdw
+ # - type: BlueprintReceiver
+ #   whitelist:
+ #     tags:
+ #     - NFBlueprintNfsdTechfab
+ #     - NFBlueprintMercenaryTechfab
+  - type: OreSiloClient
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-1.5,-0.5,1.5,0.6"
+        density: 50
+        mask:
+        - LargeMobMask
+        layer:
+        - WallLayer
+  - type: Repairable
+    fuelCost: 10
+    doAfterDelay: 5
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 1200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: Appearance
+  - type: StaticPrice
+    price: 10000
+  - type: GuideHelp
+    guides:
+    - AnomalousResearch
+  - type: TypingIndicator
+    proto: robot
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Borg
+  - type: SentienceTarget
+    flavorKind: station-event-random-sentience-flavor-mechanical
+    weight: 0.2
+
+- type: entity
   id: ProtolatheSyndicate
   parent: Protolathe
   name: кроваво-красный протолат
@@ -74,7 +215,6 @@
     - ChemistryStatic
     - SurgeryStatic
     dynamicPacks:
-    - DHSalvage
     - AdvancedTools
     - ScienceEquipment
     - ScienceExplosives

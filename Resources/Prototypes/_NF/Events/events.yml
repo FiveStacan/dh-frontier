@@ -37,7 +37,7 @@
     endAnnouncement: station-event-power-grid-check-nf-end-announcement # Frontier: add nf-
     startAudio:
       params:
-        volume: -0
+        volume: -4 #DH
       path: /Audio/_Lua/Announcements/poweroff2.ogg # Lua
   #  endAudio:
   #    path: /Audio/_NF/Announcements/PocketSizedAndy/andy1_power_onnf.ogg  ##PowerGridCheckRule handles end audio, leaving this incase that breaks

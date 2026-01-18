@@ -36,6 +36,8 @@
         Heat: 5 # the average lightbulb only does around four damage!
   - type: DiseaseProtection #Backmen & Ataraxia anti viral
     protection: 0.1
+  - type: StaticPrice
+    price: 38 #DH
 
 - type: entity
   abstract: true

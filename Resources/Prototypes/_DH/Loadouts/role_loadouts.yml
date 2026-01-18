@@ -73,17 +73,17 @@
 - type: roleLoadout
   id: JobDHPrisonGuard
   groups:
+   - PrisonGuardJumpsuit
    - PrisonGuardHead
 #   - PrisonGuardNeck
-   - PrisonGuardJumpsuit
-   - PrisonGuardGloves
-   - PrisonGuardBackpack
-   - PrisonGuardOuterClothing
+#   - PrisonGuardGloves
+#   - PrisonGuardBackpack
+#   - PrisonGuardOuterClothing
    - NfsdForcedOuterClothing
-   - PrisonGuardShoes
+#   - PrisonGuardShoes
    - NfsdFace
-   - PrisonGuardGlasses
-   - PrisonGuardEars
+#   - PrisonGuardGlasses
+#   - PrisonGuardEars
    - NfsdBoxSurvival
    - ContractorWallet
    - ContractorCartridge
@@ -91,9 +91,9 @@
    #- ContractorEncryptionKey
    - ContractorBackpackItems
    #- ContractorHandItems
-   - NfsdSpeciesSpecific
-   - Trinkets
-   - SecurityTrinkets
+#   - NfsdSpeciesSpecific
+#   - Trinkets
+#   - SecurityTrinkets
    - TopUnderwear
    - PantsUnderwear
    - SocksUnderwear

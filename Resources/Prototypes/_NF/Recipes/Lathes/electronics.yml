@@ -7,6 +7,8 @@
   materials:
     Steel: 800
     Glass: 900
+    Plastic: 150 #DH
+    Silver: 100 #DH
 
 - type: latheRecipe
   id: BlueprintLithographMachineCircuitboard
@@ -15,6 +17,9 @@
   materials:
     Steel: 800
     Glass: 900
+    Plastic: 600 #DH
+    Silver: 200 #DH
+    Gold: 150 #DH
 
 - type: latheRecipe
   id: MaterialSiloMachineCircuitboard

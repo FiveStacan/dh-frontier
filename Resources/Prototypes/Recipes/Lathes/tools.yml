@@ -193,7 +193,7 @@
   materials:
     Steel: 350
     Plastic: 250
-    Silver: 100
+    Silver: 50
 
 - type: latheRecipe
   parent: BaseToolRecipe

@@ -26,6 +26,12 @@
     contents:
       - id: NFWeaponSubMachineGunWt550Expedition
         amount: 2
+        prob: 0.3
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponSubMachineGunWt550ExpeditionWorn
+        amount: 2
+        prob: 0.7
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
       - id: NFMagazineSubMachineGunTopMounted35
         amount: 4
 
@@ -41,7 +47,13 @@
   - type: StorageFill
     contents:
       - id: NFWeaponShotgunEnforcerExpedition
+        amount: 1
+        prob: 0.27
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponShotgunEnforcerExpeditionWorn
         amount: 2
+        prob: 0.73
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
       - id: NFAmmunitionBoxShellShotgunBuckshot
         amount: 3
 
@@ -58,6 +70,12 @@
     contents:
       - id: NFWeaponEnergyRifleCarbineExpedition
         amount: 3
+        prob: 0.25
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponEnergyRifleCarbineExpeditionWorn
+        amount: 3
+        prob: 0.75
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   id: CrateArmoryEnergyGunExpedition
@@ -72,6 +90,12 @@
     contents:
       - id: NFWeaponEnergySubMachineGunDeltaVExpedition
         amount: 3
+        prob: 0.30
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponEnergySubMachineGunDeltaVExpeditionWorn
+        amount: 3
+        prob: 0.70
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   id: CrateArmoryPistolsExpedition
@@ -86,6 +110,12 @@
     contents:
     - id: NFWeaponPistolMk58Expedition
       amount: 2
+      prob: 0.40
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolMk58ExpeditionWorn
+      amount: 3
+      prob: 0.60
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazinePistol35
       amount: 4
 
@@ -102,6 +132,12 @@
     contents:
       - id: NFWeaponRifleAssaultGestioExpedition
         amount: 2
+        prob: 0.2
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponRifleAssaultGestioExpeditionWorn
+        amount: 2
+        prob: 0.8
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
       - id: NFMagazineLowCapacityRifle30
         amount: 6
 
@@ -116,8 +152,14 @@
   components:
   - type: StorageFill
     contents:
-      - id: NFWeaponRifleAssaultNovaliteC1Expedition
+      - id: NFWeaponRifleAssaultNovaliteC1ExpeditionWorn
         amount: 2
+        prob: 0.86
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+      - id: NFWeaponRifleAssaultNovaliteC1Expedition
+        amount: 1
+        prob: 0.14
+        orGroup: WeaponExpeditionOrWeaponExpeditionWorn
       - id: NFMagazineClipRifle20
         amount: 6
 

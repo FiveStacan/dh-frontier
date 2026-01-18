@@ -4,6 +4,11 @@
     jumpsuit: ClothingUniformJumpsuitNfsdTacGray
 
 - type: loadout
+  id: SheriffClothingUniformJumpsuitSheriffDH
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSheriff
+
+- type: loadout
   id: SheriffClothingUniformJumpskirtSheriff
   equipment:
     jumpsuit: ClothingUniformJumpskirtNfsd

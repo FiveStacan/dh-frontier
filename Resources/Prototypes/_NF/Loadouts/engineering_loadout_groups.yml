@@ -69,6 +69,7 @@
   loadouts:
   - EngineeringClothingOuterVestHazard
   - PlantManagerClothingOuterWinterCE
+  - ClothingOuterCoatCEOvercoatWhite #DH
 
 - type: loadoutGroup
   id: EngineeringOuterClothing
@@ -164,6 +165,7 @@
   loadouts:
   - PlantManagerClothingNeckMantleCE
   - PlantManagerClothingNeckCloakCe
+  - PlantManagerClothingNeckEliteCloakCECloak #DH
 
 - type: loadoutGroup
   id: PlantManagerPDA
@@ -207,6 +209,16 @@
   hidden: true
   loadouts:
   - EngineeringClothingMaskGasAtmos
+  fallbacks:
+  - EngineeringClothingMaskGasAtmos
+
+- type: loadoutGroup
+  id: PlantManagerFace
+  name: loadout-group-contractor-face
+  hidden: true
+  loadouts:
+  - EngineeringClothingMaskGasAtmos
+  - EngineeringClothingMaskGasCE
   fallbacks:
   - EngineeringClothingMaskGasAtmos
 

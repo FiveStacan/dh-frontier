@@ -749,7 +749,7 @@
   parent: IDCardStandard
   id: PrisonerIDCard
   name: prisoner ID card
-  categories: [HideSpawnMenu] # Frontier: use NF variant
+  #categories: [HideSpawnMenu] # Frontier: use NF variant
   description: A generically printed ID card for scummy prisoners.
   components:
   - type: Sprite
@@ -777,6 +777,7 @@
     - WhitelistChameleon
     - WhitelistChameleonIdCard
     - Recyclable
+    - PrisonerIDCard #DH
   - type: StaticPrice # these are infinitely producible.
     price: 0
 

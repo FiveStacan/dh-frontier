@@ -53,6 +53,9 @@
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
+  - ExosuitFabricatorHyperConvectionMachineCircuitboard #DH
+  - UniformPrinterHyperConvectionMachineCircuitboard #DH
+  - EngineeringTechFabCircuitboard #DH
   technologyPrerequisites:
   - NFAdvancedParts
   position: 1, 2
@@ -66,6 +69,7 @@
   cost: 6500
   recipeUnlocks:
   - ClothingBeltChiefEngineer
+  - ClothingMaskGasCE #DH
   prerequisiteLineType: Diagonal
   technologyPrerequisites:
   - NFAdvancedParts
@@ -186,13 +190,15 @@
   discipline: NFEngineering
   tier: 1
   cost: 19200
-  prerequisiteLineType: Tree
+  prerequisiteLineType: Diagonal
+  #prerequisiteLineType: Tree
   recipeUnlocks:
   - WelderExperimental
   technologyPrerequisites:
-  - NFAdvancedCyborgToolsTechnology
-  - NFSuperParts
-  position: 4, 5
+  - NFAdvancedToolsTechnology
+  - NFAdvancedAnomalyResearch #DH
+  #- NFSuperParts
+  position: 2, 5
 
 - type: technology
   id: NFRapidConstruction
@@ -204,6 +210,7 @@
   recipeUnlocks:
   - ShipyardRCD
   - ShipyardRCDAmmo
+  - BorgModuleRCDShipyard
   technologyPrerequisites:
   - NFMechanicalCompression
   position: 3, 1
@@ -223,7 +230,7 @@
   - ConstructionBagOfHolding
   technologyPrerequisites:
   - NFMiscellaneousItemsOrganization
-  position: 4, 3
+  position: 3, 3
 
 - type: technology
   id: NFAdvancedCyborgToolsTechnology
@@ -244,71 +251,15 @@
   entityIcon: RCD
   discipline: NFEngineering
   tier: 1
-  cost: 79750
-  prerequisiteLineType: Tree
+  cost: 83750
+  #prerequisiteLineType: Tree
   recipeUnlocks:
   - RCD
   - RCDAmmo
   technologyPrerequisites:
   - NFMatterEnergyConversion
   - NFBluespaceStorage
-  position: 5, 2
-
-#DH
-- type: technology
-  id: DHBaseAmeJarTechnology
-  name: dh-research-technology-BaseAmeJar
-  entityIcon: BaseAmeJar
-  discipline: NFEngineering
-  tier: 1
-  cost: 8000
-  recipeUnlocks:
-  - AmeJar
-  technologyPrerequisites:
-  - NFAdvancedCyborgToolsTechnology
-  position: 4, 4
-
-- type: technology
-  id: DHAmeJarTechnology
-  name: dh-research-technology-amejar
-  entityIcon: AmeJar
-  discipline: NFEngineering
-  tier: 1
-  cost: 22000
-  recipeUnlocks:
-  - AmeJar
-  technologyPrerequisites:
-  - DHBaseAmeJarTechnology
-  position: 5, 4
-
-- type: technology
-  id: DHExpandetAmeJarTechnology
-  name: dh-research-technology-expandetamejar
-  entityIcon: ExpandetAmeJar
-  discipline: NFEngineering
-  tier: 1
-  cost: 31000
-  recipeUnlocks:
-  - ExpandetAmeJar
-  technologyPrerequisites:
-  - DHAmeJarTechnology
-  position: 6, 4
-
-
-- type: technology
-  id: DHBluespaceAmeJarTechnology
-  name: dh-research-technology-bluespaceamejar
-  entityIcon: BluespaceAmeJar
-  discipline: NFEngineering
-  tier: 1
-  cost: 59000
-  recipeUnlocks:
-  - BluespaceAmeJar
-  technologyPrerequisites:
-  - DHExpandetAmeJarTechnology
-  - NFBluespaceStorage
-  position: 6, 3
-#DH -
+  position: 4, 3
 
 - type: technology
   id: NFMatterEnergyConversion
@@ -316,13 +267,14 @@
   entityIcon: BorgModuleRCD
   discipline: NFEngineering
   tier: 1
-  cost: 15000
+  cost: 15200
+  prerequisiteLineType: Diagonal
   recipeUnlocks:
   - BorgModuleRCD
   technologyPrerequisites:
   - NFRapidConstruction
   - NFAdvancedCyborgToolsTechnology
-  position: 3, 2
+  position: 4, 2
 
 # region Xenoarch
 
@@ -383,20 +335,6 @@
   - NFBasicXenoArcheology
   position: 1, 6
 
-- type: technology #DH
-  id: DHResearchBorgModules
-  name: dh-research-technology-basic-research-borg-modules
-  entityIcon: BorgModuleAnomaly
-  discipline: NFScience
-  tier: 1
-  cost: 10000
-  recipeUnlocks:
-  - BorgModuleAnomaly
-  - BorgModuleArtifact
-  technologyPrerequisites:
-  - NFBasicAnomalousResearch
-  position: 1, 7
-
 - type: technology
   id: NFAdvancedAnomalyResearch
   name: nf-research-technology-advanced-anomaly-research
@@ -417,53 +355,56 @@
   entityIcon: DeviceDesynchronizer
   discipline: NFScience
   tier: 1
-  cost: 40000
+  cost: 48500
   recipeUnlocks:
   - DeviceDesynchronizer
-  prerequisiteLineType: Tree
+  prerequisiteLineType: Diagonal
   technologyPrerequisites:
   - NFAdvancedToolsTechnology
   - NFAdvancedAnomalyResearch
   position: 3, 5
 
 - type: technology
-  id: GravityManipulation
+  id: GravityManipulationTether
   name: research-technology-gravity-manipulation
   entityIcon: WeaponTetherGun
   discipline: NFScience
   tier: 1
   cost: 300000
+  technologyPrerequisites:
+  - QuantumLeaping
+  - NFBluespaceStorage
   recipeUnlocks:
-    - WeaponTetherGun
-  position: 7, 4
+  - WeaponTetherGun
+  position: 5, 5
 
 - type: technology
-  id: GravityManipulation
+  id: GravityManipulationForce
   name: research-technology-gravity-manipulation
   entityIcon: WeaponForceGun
   discipline: NFScience
   tier: 1
   cost: 400000
+  technologyPrerequisites:
+  - GravityManipulationTether
   recipeUnlocks:
-    - WeaponForceGun
-  position: 8, 4
+  - WeaponForceGun
+  position: 6, 5
 
 - type: technology
   id: QuantumLeaping
   name: research-technology-quantum-leaping
-  icon:
-    sprite: Objects/Devices/swapper.rsi
-    state: icon
-  discipline: Experimental
+  entityIcon: DeviceQuantumSpinInverter
+  discipline: NFScience
   tier: 1
   cost: 185000
-  prerequisiteLineType: Tree
+  prerequisiteLineType: Diagonal
   recipeUnlocks:
   - DeviceQuantumSpinInverter
   technologyPrerequisites:
   - NFBluespaceTimeManipulation
   - NFSuperParts
-  position: 5, 6
+  position: 4, 5
 
 - type: technology
   id: NFSuperParts
@@ -479,6 +420,7 @@
   - PicoManipulatorStockPart
   technologyPrerequisites:
   - NFAdvancedAnomalyResearch
+  - NFAdvancedToolsTechnology
   position: 3, 6
 
 # region Hardsuits
@@ -488,39 +430,186 @@
   name: nf-research-technology-hardsuits-entertainment
   entityIcon: ClothingOuterHardsuitClown
   discipline: NFService
+  prerequisiteLineType: Diagonal
   tier: 1
-  cost: 3500
+  cost: 3700
   recipeUnlocks:
   - ClothingOuterHardsuitClown
   - ClothingOuterHardsuitMime
+  - ClothingOuterHardsuitSanta #DH
   technologyPrerequisites:
-  - NFHardsuitsBasic
+  - DHHardsuitsBasic
   position: 0, 7
 
 - type: technology
-  id: NFHardsuitsBasic
-  name: nf-research-technology-hardsuits-basic
-  entityIcon: ClothingOuterHardsuitSpatio
+  id: DHOuterClothingBasic
+  name: dh-research-technology-outercloth-basic
+  entityIcon: ClothingOuterSuitFire
+  discipline: NFScience
+  secondaryDiscipline: NFEngineering
+  tier: 1
+  cost: 3200
+  recipeUnlocks:
+  - ClothingOuterSuitRad
+  - ClothingOuterSuitFire
+  - ClothingHeadHelmetFire
+  - ClothingOuterSuitAtmosFire
+  - ClothingHeadHelmetAtmosFire
+  - ClothingOuterSuitBomb
+  - ClothingHeadHelmetBombSuit
+  - ClothingOuterSuitCargo
+  - ClothingOuterBioScientist
+  - ClothingHeadHatHoodBioScientist
+  - ClothingHeadHatHardhatArmored
+  position: 0, 8
+
+- type: technology
+  id: DHArmorBasic
+  name: dh-research-technology-Armor-basic
+  entityIcon: ClothingOuterArmorBasicSlim
+  discipline: NFScience
+  tier: 1
+  cost: 3000
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterArmorBasicSlim
+  - ClothingHeadHelmetRiot
+  technologyPrerequisites:
+  - DHOuterClothingBasic
+  position: 1, 9
+
+- type: technology
+  id: DHArmor
+  name: dh-research-technology-Armor
+  entityIcon: ClothingOuterArmorRiot
+  discipline: NFScience
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+  - ClothingOuterArmorRiot
+  - ClothingOuterArmorBasic
+  - ClothingHeadHelmetBasic
+  - ClothingHeadHelmetJustice
+  technologyPrerequisites:
+  - DHArmorBasic
+  position: 2, 9
+
+- type: technology
+  id: DHArmorSalvage
+  name: dh-research-technology-Armor-salvage
+  entityIcon: ADTClothingOuterArmorMiner
+  discipline: NFSalvage
+  tier: 1
+  cost: 17500
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ADTClothingOuterArmorMinerLight
+  - ADTClothingOuterArmorMiner
+  - ADTClothingOuterArmorMinerHeavy
+  technologyPrerequisites:
+  - DHArmor
+  - NFHardsuitsField
+  position: 3, 10
+
+- type: technology
+  id: DHArmorAdw
+  name: dh-research-technology-Armor-adw
+  entityIcon: ClothingOuterArmorSWAT
+  discipline: NFScience
+  tier: 1
+  cost: 16500
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterArmorUSSPjuggernaut
+  - ClothingOuterArmorSWAT
+  - ClothingHeadHelmetSwat
+  - ClothingOuterArmorHeavy
+  - ClothingOuterArmorHeavyGreen
+  - ClothingOuterArmorHeavyRed
+  - ADTClothingOuterArmorCrusader
+  technologyPrerequisites:
+  - DHArmor
+  position: 3, 11
+
+- type: technology
+  id: DHEVAHardsuitsBasic
+  name: dh-research-technology-evahardsuits-basic
+  entityIcon: ClothingOuterHardsuitEVA
   discipline: NFEngineering
   tier: 1
-  cost: 6500
+  cost: 6800
   recipeUnlocks:
-  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitEVA
+  - ClothingOuterSuitEmergency
+  - ClothingHeadHelmetEVALarge
+  - ClothingHeadHelmetEVA
+  - ClothingOuterHardsuitAncientEVA
+  - ClothingHeadHelmetAncient
+  - ClothingHeadHelmetCosmonaut
+  technologyPrerequisites:
+  - DHOuterClothingBasic
+  position: 1, 8
+
+- type: technology
+  id: DHHardsuitsBasic
+  name: dh-research-technology-evahardsuits
+  entityIcon: ClothingOuterHardsuitPilot
+  discipline: NFEngineering
+  tier: 1
+  cost: 9750
+  recipeUnlocks:
   - ClothingOuterHardsuitPilot
-  position: 0, 8
+  - ClothingOuterEVASuitScientist
+  - ClothingOuterEVASuitMailman
+  - ClothingOuterEVASuitStc
+  - ClothingOuterEVASuitCaptain
+  technologyPrerequisites:
+  - DHEVAHardsuitsBasic
+  position: 2, 8
 
 - type: technology
   id: NFHardsuitsField
   name: nf-research-technology-hardsuits-field
+  entityIcon: ClothingOuterHardsuitSpatio
+  discipline: NFSalvage
+  tier: 1
+  cost: 16200
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterHardsuitSpatio
+  - ClothingOuterHardsuitAtmos
+  - ClothingOuterHardsuitEngineering
+  technologyPrerequisites:
+  - DHHardsuitsBasic
+  position: 3, 9
+
+- type: technology
+  id: DHHardsuitsSalvage
+  name: dh-research-technology-hardsuits-salvage
   entityIcon: ClothingOuterHardsuitSalvage
   discipline: NFSalvage
   tier: 1
-  cost: 14000
+  cost: 11200
+  prerequisiteLineType: Diagonal
   recipeUnlocks:
   - ClothingOuterHardsuitSalvage
   technologyPrerequisites:
-  - NFHardsuitsBasic
-  position: 1, 8
+  - NFHardsuitsField
+  position: 4, 10
+
+- type: technology
+  id: DHHardsuitsLuxury
+  name: dh-research-technology-hardsuits-luxury
+  entityIcon: ClothingOuterHardsuitLuxury
+  discipline: NFSalvage
+  tier: 1
+  cost: 16800
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterHardsuitLuxury
+  technologyPrerequisites:
+  - DHHardsuitsSalvage
+  position: 5, 11
 
 - type: technology
   id: NFHardsuitsMedical
@@ -528,28 +617,28 @@
   entityIcon: ClothingOuterHardsuitMedical
   discipline: NFMedical
   tier: 1
-  cost: 4500
+  cost: 4900
   recipeUnlocks:
   - ClothingOuterHardsuitMedical
-  prerequisiteLineType: Tree
+  prerequisiteLineType: Diagonal
   technologyPrerequisites:
-  - NFHardsuitsBasic
+  - DHHardsuitsBasic
   - NFBiochemicalStasis
-  position: 1, 9
+  position: 0, 9
 
-- type: technology
-  id: NFHardsuitsEngineering
-  name: nf-research-technology-hardsuits-engineering
-  entityIcon: ClothingOuterHardsuitEngineering
-  discipline: NFEngineering
-  tier: 1
-  cost: 6000
-  recipeUnlocks:
-  - ClothingOuterHardsuitAtmos
-  - ClothingOuterHardsuitEngineering
-  technologyPrerequisites:
-  - NFHardsuitsField
-  position: 2, 8
+# - type: technology
+#   id: NFHardsuitsEngineering
+#   name: nf-research-technology-hardsuits-engineering
+#   entityIcon: ClothingOuterHardsuitEngineering
+#   discipline: NFEngineering
+#   tier: 1
+#   cost: 6000
+#   recipeUnlocks:
+#   - ClothingOuterHardsuitAtmos
+#   - ClothingOuterHardsuitEngineering
+#   technologyPrerequisites:
+#   - NFHardsuitsField
+#   position: 2, 8
 
 - type: technology
   id: NFHardsuitsAdvanced
@@ -557,14 +646,14 @@
   entityIcon: ClothingOuterHardsuitEngineeringWhite
   discipline: NFEngineering
   tier: 1
-  cost: 14000
+  cost: 18000
   recipeUnlocks:
   - ClothingOuterHardsuitCap
   - ClothingOuterHardsuitEngineeringWhite # CE
-  - ClothingOuterHardsuitLuxury
-
+  #- ClothingOuterHardsuitLuxury
   technologyPrerequisites:
-  - NFHardsuitsEngineering
+  - NFHardsuitsField #DH
+  #- NFHardsuitsEngineering
   position: 3, 8
 
 - type: technology
@@ -573,7 +662,7 @@
   entityIcon: ClothingOuterHardsuitRd
   discipline: NFScience
   tier: 1
-  cost: 15000
+  cost: 19000
   recipeUnlocks:
   - ClothingOuterHardsuitRd
   - ClothingOuterHardsuitHostileEnvironment
@@ -589,7 +678,7 @@
   entityIcon: ClothingOuterHardsuitMercenary
   discipline: NFArsenalMercenary
   tier: 1
-  cost: 23000
+  cost: 25000
   recipeUnlocks:
   - ClothingOuterHardsuitMercenary
   - ClothingOuterHardsuitPrivateSecurity
@@ -604,7 +693,7 @@
   entityIcon: ClothingOuterHardsuitSurplus
   discipline: NFArsenalMercenary
   tier: 1
-  cost: 16000
+  cost: 16500
   recipeUnlocks:
   - ClothingOuterHardsuitSurplus
   prerequisiteLineType: Diagonal
@@ -619,7 +708,7 @@
   discipline: NFScience
   secondaryDiscipline: NFArsenalMercenary
   tier: 1
-  cost: 28000
+  cost: 30000
   recipeUnlocks:
   - ClothingOuterHardsuitMaximPrototype
   prerequisiteLineType: Tree
@@ -634,7 +723,7 @@
   entityIcon: ClothingOuterHardsuitScaf
   discipline: NFArsenalMercenary
   tier: 1
-  cost: 31700
+  cost: 36700
   recipeUnlocks:
   - ClothingOuterHardsuitScaf
   - ClothingOuterHardsuitNoble
@@ -681,6 +770,7 @@
   tier: 1
   cost: 27900
   recipeUnlocks:
+  - BluespacePillCanister #DH
   - BluespaceBeaker
   - SyringeBluespace
   - JugBluespace
@@ -698,13 +788,14 @@
   discipline: NFMedical
   tier: 1
   cost: 17500
+  prerequisiteLineType: Diagonal
   recipeUnlocks:
   - ChemMasterMachineCircuitboard
   - ChemDispenserMachineCircuitboard
   - BorgModuleChemical
   technologyPrerequisites:
   - NFReinforcedJug
-  position: 1, 11
+  position: 1, 12
 
 - type: technology
   id: NFMechanizedTreatment
@@ -713,6 +804,7 @@
   discipline: NFMedical
   tier: 1
   cost: 15200
+  prerequisiteLineType: Diagonal
   recipeUnlocks:
   - BorgModuleAdvancedParamedic
   - BorgModuleAdvancedChemical
@@ -731,10 +823,11 @@
   recipeUnlocks:
   - MedicalAssemblerMachineCircuitboard
   - HotplateMachineCircuitboard
+  - MedicalTechFabCircuitboard
   - DefibrillatorCompact
   technologyPrerequisites:
   - NFBasicMedicine
-  position: 2, 11
+  position: 1, 11
 
 - type: technology
   id: NFSyringeGun
@@ -746,7 +839,6 @@
   recipeUnlocks:
   - LauncherSyringe
   - MiniSyringe
-  prerequisiteLineType: Diagonal
   technologyPrerequisites:
   - NFBasicMedicine
   position: 2, 12
@@ -763,7 +855,7 @@
   - CryoPodMachineCircuitboard
   technologyPrerequisites:
   - NFEngineeringMedicine
-  position: 3, 11
+  position: 2, 11
 
 # region Magboots
 
@@ -849,19 +941,34 @@
   position: 2, 14
 
 - type: technology
+  id: DHMagnetsTechJumpBoots
+  name: dh-research-technology-magnets-tech-jump
+  entityIcon: ClothingShoesBootsJump
+  discipline: NFSalvage
+  secondaryDiscipline: NFScience
+  tier: 1
+  cost: 14000
+  recipeUnlocks:
+  - ClothingShoesBootsJump
+  technologyPrerequisites:
+  - NFMagnetsTechAdvanced
+  position: 4, 14
+
+- type: technology
   id: DHMagnetsTechJetBoots
   name: nf-research-technology-magnets-tech-jet
   entityIcon: ClothingShoesBootsJetBoots
-  discipline: NFScience
-  secondaryDiscipline: NFArsenalMercenary
+  discipline: NFArsenalMercenary
+  secondaryDiscipline: NFScience
   tier: 1
-  cost: 15000
+  cost: 15800
   recipeUnlocks:
+  - ClothingShoesBootsMagArmy
   - ClothingShoesBootsJetBoots
   prerequisiteLineType: Diagonal
   technologyPrerequisites:
-  - NFMagnetsTechAdvanced
-  position: 3, 14
+  - DHMagnetsTechJumpBoots
+  position: 5, 13
 
 # region Robotics & Mechs
 
@@ -1253,6 +1360,7 @@
   - BoozeDispenserMachineCircuitboard
   - SodaDispenserMachineCircuitboard
   - ImpCoffeeMachineCircuitboard
+  - ServiceTechFabCircuitboard #DH
   technologyPrerequisites:
   - NFAdvancedHydroponicsEquipment
   position: 1, 24
@@ -1452,8 +1560,8 @@
 
 - type: technology
   id: NFPortableSMES
-  name: nf-research-technology-portable-fission
-  entityIcon: PortableRecharger
+  name: nf-research-technology-portable-smes
+  entityIcon: PortableSMES
   discipline: NFEngineering
   tier: 1
   cost: 10000
@@ -1682,6 +1790,7 @@
   cost: 5700
   recipeUnlocks:
   - JetpackBlue
+  - JetpackMining
   position: 0, 36
 
 - type: technology
@@ -1708,6 +1817,7 @@
   cost: 7000
   recipeUnlocks:
   - JetpackCaptain
+  - JetpackMini
   technologyPrerequisites:
   - NFBasicPersonalPropulsion
   position: 1, 36
@@ -1750,6 +1860,7 @@
   cost: 2500
   recipeUnlocks:
   - OreProcessorIndustrialMachineCircuitboard
+  - BorgModuleAppraisal
   technologyPrerequisites:
   - NFExcavation
   position: 1, 38
@@ -1777,8 +1888,10 @@
   cost: 7500
   recipeUnlocks:
   - MiningDrill
+  - WeaponBasePlasmaCutter
   - MineralScannerEmpty
   - BorgModuleMining
+  - SalvageTechFabCircuitboardNF
   position: 0, 38
 
 - type: technology
@@ -1877,6 +1990,7 @@
   - SmallBluespaceAirTank
   technologyPrerequisites:
   - NFAdvancedPersonalPropulsion
+  - NFBluespaceStorage
   position: 3, 36
 # region Munitions
 
@@ -1921,7 +2035,7 @@
   - NFBasicAmmunitionProduction
   position: 1, 42
 
-- type: technology
+- type: technology #DH
   id: DHSecurityBorgModules
   name: Security Borg Modules
   entityIcon: BorgModuleSecurity
@@ -2093,6 +2207,7 @@
   - NFAmmunitionBoxBigRifle20Overpressure
   - NFAmmunitionBoxBigRifle30
   - NFAmmunitionBoxBigRifle30Overpressure
+  - NFMagazineExtendedRifle30Empty
   technologyPrerequisites:
   - NFImprovedRifleAmmo
   position: 3, 44

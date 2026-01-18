@@ -1,0 +1,793 @@
+# The list contains only the guns that were previously obtainable as expedition reward
+# or as a loose guns on the expedition
+
+# region Tiered Weapons
+
+- type: entity
+  parent: BaseC2ExpeditionContraband
+  id: BaseExpeditionWeaponWorn
+  suffix: Worn
+  abstract: true
+  components:
+  - type: Sprite
+    color: "#cabbab"
+
+- type: entity
+  parent: BaseExpeditionWeaponWorn
+  id: BaseExpeditionWeaponTier1Worn
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 750
+
+- type: entity
+  parent: BaseExpeditionWeaponWorn
+  id: BaseExpeditionWeaponTier2Worn
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 1500
+
+- type: entity
+  parent: BaseExpeditionWeaponWorn
+  id: BaseExpeditionWeaponTier3Worn
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 2250
+
+- type: entity
+  parent: BaseExpeditionWeaponWorn
+  id: BaseExpeditionWeaponTier4Worn
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 3750
+
+- type: entity
+  parent: BaseExpeditionWeaponWorn
+  id: BaseExpeditionWeaponTier5Worn
+  abstract: true
+  components:
+  - type: StaticPrice
+    price: 7500
+
+# For syndicate/pirate labeled guns
+- type: entity
+  parent:
+  - BaseC3SyndicateContraband
+  - BaseExpeditionWeaponTier1Worn
+  id: BaseExpeditionWeaponTier1SyndicateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3PirateContraband
+  - BaseExpeditionWeaponTier2Worn
+  id: BaseExpeditionWeaponTier2PirateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3PirateContraband
+  - BaseExpeditionWeaponTier3Worn
+  id: BaseExpeditionWeaponTier3PirateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3SyndicateContraband
+  - BaseExpeditionWeaponTier2Worn
+  id: BaseExpeditionWeaponTier2SyndicateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3SyndicateContraband
+  - BaseExpeditionWeaponTier3Worn
+  id: BaseExpeditionWeaponTier3SyndicateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3SyndicateContraband
+  - BaseExpeditionWeaponTier4Worn
+  id: BaseExpeditionWeaponTier4SyndicateWorn
+  abstract: true
+
+- type: entity
+  parent:
+  - BaseC3SyndicateContraband
+  - BaseExpeditionWeaponTier5Worn
+  id: BaseExpeditionWeaponTier5SyndicateWorn
+  abstract: true
+
+# region Tier 1
+## Pistols
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponPistolMk58
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolMk58ExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponPistolPollockHighCapacityMag
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolPollockExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponPistolUniversal
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolUniversalExpeditionWorn
+
+## Revolvers
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponRevolverArgenti
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverArgentiExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponRevolverFaith
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverFaithExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponRevolverDeckard
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverDeckardExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1SyndicateWorn
+  - NFWeaponRevolverRitland45
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverRitland45ExpeditionWorn
+
+## Rifles
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1SyndicateWorn
+  - NFWeaponRifleBarlowsBolt
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleBarlowsBoltExpeditionWorn
+  components:
+  - type: MeleeWeapon
+    attackRate: .80
+    damage:
+      types:
+       Slash: 10
+       Piercing: 3
+    angle: 0
+    wideAnimationRotation: -135
+    animation: WeaponArcThrust
+    soundHit:
+      path: /Audio/Weapons/bladeslice.ogg
+  - type: GunWieldBonus
+    minAngle: -0
+    maxAngle: -0
+  - type: Gun
+    projectileSpeed: 26
+    minAngle: 2.4
+    maxAngle: 18
+    angleIncrease: 0.8
+    angleDecay: 2.9
+    fireRate: 2.5
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponRifleCeremonial
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleCeremonialExpeditionWorn
+  components:
+  - type: Gun
+    projectileSpeed: 28
+    minAngle: 2.3
+    maxAngle: 22
+    angleIncrease: 0.9
+    angleDecay: 2.9
+    fireRate: 2.2
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier1Worn
+  - NFWeaponRifleRepeater
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleRepeaterExpeditionWorn
+  components:
+  - type: Gun
+    projectileSpeed: 28
+    minAngle: 2.3
+    maxAngle: 22
+    angleIncrease: 0.9
+    angleDecay: 2.9
+    fireRate: 2.2
+
+# region Tier 2
+## Pistols
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2SyndicateWorn
+  - NFWeaponPistolCobra
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolCobraExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponPistolN1984
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolN1984ExpeditionWorn
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2SyndicateWorn
+  - NFWeaponPistolViper
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponPistolViperExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.8
+    maxAngle: 24.6
+    angleIncrease: 2.1
+    angleDecay: 4.3
+    fireRate: 2.7
+
+## Revolvers
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRevolverFitz
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverFitzExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 2.5
+    angleDecay: 2
+    fireRate: 2
+    minAngle: 3.2
+    maxAngle: 17
+    projectileSpeed: 22
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRevolverLucky
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverLuckyExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 2.4
+    angleDecay: 4
+    fireRate: 2
+    maxAngle: 16.2
+    projectileSpeed: 22
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2PirateWorn
+  - NFWeaponRevolverPirate
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverPirateExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3
+    maxAngle: 17.8
+    angleIncrease: 2.2
+    angleDecay: 3.4
+    fireRate: 2.5
+    projectileSpeed: 22
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRevolverWard45
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRevolverWard45ExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.6
+    maxAngle: 24.5
+    angleIncrease: 1.5
+    angleDecay: 2
+    fireRate: 2.3
+    projectileSpeed: 21.5
+
+## Shotguns
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponShotgunKammerer
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponShotgunKammererExpeditionWorn
+
+## SMGs
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2SyndicateWorn
+  - NFWeaponSubMachineGunC20r
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponSubMachineGunC20rExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 3
+    angleDecay: 0.7
+    fireRate: 4.9
+    projectileSpeed: 21
+    minAngle: 3.5
+    maxAngle: 19.8
+
+## Assault Rifles
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRifleAssaultNovaliteC1
+  categories: [ HideSpawnMenu ]
+  name: z123
+  description: z321
+  id: NFWeaponRifleAssaultNovaliteC1ExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.2
+    maxAngle: 16.5
+    angleIncrease: 5
+    angleDecay: 1
+    fireRate: 2.8
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRifleAssaultJackdaw
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultJackdawExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 4.2
+    maxAngle: 20
+    angleIncrease: 2.5
+    angleDecay: 2
+    fireRate: 3
+    projectileSpeed: 29
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRifleAssaultGestio
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultGestioExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 6
+    maxAngle: 13.8
+    angleIncrease: 3.2
+    angleDecay: 1.8
+    fireRate: 2.9
+    projectileSpeed: 27
+
+## Rifles
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponRifleSVS
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleSVSExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 2.9
+    maxAngle: 21.5
+    angleIncrease: 2.2
+    angleDecay: 1.2
+    fireRate: 2
+    projectileSpeed: 28.4
+
+## Energy
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier2Worn
+  - NFWeaponEnergyPistolLaser
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyPistolLaserExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 2.3
+    maxAngle: 14
+    angleIncrease: 2
+    angleDecay: 2.1
+    fireRate: 2.4
+    projectileSpeed: 27.2
+  - type: Battery
+    maxCharge: 900
+    startingCharge: 0
+
+# region Tier 3
+## Assault Rifles
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3Worn
+  - NFWeaponRifleAssaultLecter
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultLecterExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.6
+    maxAngle: 17.4
+    angleIncrease: 4.2
+    angleDecay: 1
+    fireRate: 4.3
+    projectileSpeed: 29
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3SyndicateWorn
+  - NFWeaponRifleAssaultM90GrenadeLauncher
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultM90GrenadeLauncherExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 4.3
+    angleDecay: 0.5
+    fireRate: 4
+    minAngle: 3.5
+    maxAngle: 13.6
+    projectileSpeed: 28.5
+
+## Snipers
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3SyndicateWorn
+  - NFWeaponRifleSniperHristov
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleSniperHristovExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 6.2
+    angleDecay: 2.6
+    fireRate: 0.7
+    projectileSpeed: 29.2
+    maxAngle: 10.8
+    minAngle: 2.1
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3PirateWorn
+  - NFWeaponRifleMusket
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleMusketExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.2
+    maxAngle: 11.3
+    angleIncrease: 2.1
+    angleDecay: 0.2
+    fireRate: 1
+    projectileSpeed: 19.3
+
+## SMGs
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3Worn
+  - NFWeaponSubMachineGunWt550
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponSubMachineGunWt550ExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 4.5
+    maxAngle: 19.8
+    angleIncrease: 5.7
+    angleDecay: 1.1
+    fireRate: 5.2
+    projectileSpeed: 20.4
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3Worn
+  - NFWeaponSubMachineGunDrozd
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponSubMachineGunDrozdExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 4.8
+    maxAngle: 20.2
+    angleIncrease: 3.3
+    angleDecay: 2.1
+    fireRate: 4.9
+    projectileSpeed: 22
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3SyndicateWorn
+  - NFWeaponSubMachineGunAtreides
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponSubMachineGunAtreidesExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3
+    maxAngle: 19.5
+    angleIncrease: 2.2
+    angleDecay: 5.1
+    fireRate: 4
+    projectileSpeed: 21.9
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3Worn
+  - NFWeaponSubMachineGunTypewriter
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponSubMachineGunTypewriterExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 4
+    maxAngle: 18
+    angleIncrease: 2
+    angleDecay: 1.7
+    fireRate: 4.1
+    projectileSpeed: 21.4
+
+## Energy
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier3Worn
+  - NFWeaponEnergyPistolLaserSvalinn
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyPistolLaserSvalinnExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.5
+    maxAngle: 17.7
+    angleIncrease: 1.9
+    angleDecay: 1.2
+    fireRate: 2.2
+    projectileSpeed: 28
+
+# region Tier 4
+## Shotguns
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4Worn
+  - NFWeaponShotgunEnforcer
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponShotgunEnforcerExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 5
+    maxAngle: 22.5
+    fireRate: 1.8
+    angleIncrease: 1
+    angleDecay: 2
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4SyndicateWorn
+  - NFWeaponShotgunBulldog
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponShotgunBulldogExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 5.7
+    maxAngle: 23
+    fireRate: 2.2
+    angleIncrease: 3
+    angleDecay: 0.2
+
+## Rifles
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4SyndicateWorn
+  - NFWeaponRifleAssaultSm
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultSmExpeditionWorn
+  components:
+  - type: Gun
+    angleIncrease: 0.9
+    angleDecay: 0.2
+    fireRate: 4.4
+    projectileSpeed: 29
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4Worn
+  - NFWeaponRifleAssaultVulcan
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponRifleAssaultVulcanExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3
+    maxAngle: 19.4
+    angleIncrease: 2
+    angleDecay: 2.4
+    fireRate: 2.9
+
+## Energy
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4Worn
+  - NFWeaponEnergyRifleCarbine
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyRifleCarbineExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.4
+    maxAngle: 13.8
+    angleIncrease: 1
+    angleDecay: 0.8
+    fireRate: 1.65
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4Worn
+  - NFWeaponEnergyPistolLaserAdvanced
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyPistolLaserAdvancedExpeditionWorn
+  components:
+  - type: Battery
+    maxCharge: 1360
+    startingCharge: 0
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 9
+  - type: Gun
+    minAngle: 7.1
+    maxAngle: 21
+    angleIncrease: 1.9
+    angleDecay: 2
+    fireRate: 2
+    projectileSpeed: 28
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier4Worn
+  - NFWeaponEnergyPistolLaserAntique
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyPistolLaserAntiqueExpeditionWorn
+  components:
+  - type: Battery
+    maxCharge: 1420
+    startingCharge: 0
+  - type: BatterySelfRecharger
+    autoRecharge: true
+    autoRechargeRate: 12
+  - type: Gun
+    minAngle: 6.4
+    maxAngle: 19.5
+    angleIncrease: 1.3
+    angleDecay: 2
+    fireRate: 2.2
+    projectileSpeed: 29
+
+# region Tier 5
+# Turrets
+# - type: entity
+#   parent:
+#   - BaseExpeditionWeaponTier5Worn
+#   - WeaponTurretAsmgtHostileUniversallyPacked
+#   categories: [ HideSpawnMenu ]
+#   id: WeaponTurretAsmgtHostileUniversallyPackedExpeditionWorn
+
+# Launchers
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5Worn
+  - NFWeaponLauncherRocket
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponLauncherRocketExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 5
+    maxAngle: 19
+    angleIncrease: 8
+    angleDecay: 2
+    fireRate: 0.5
+    projectileSpeed: 21
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5SyndicateWorn
+  - NFWeaponLauncherChinaLake
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponLauncherChinaLakeExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 18
+    maxAngle: 60
+    angleIncrease: 12
+    angleDecay: 1
+    fireRate: 0.9
+
+# LMGs
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5SyndicateWorn
+  - NFWeaponLightMachineGunL6
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponLightMachineGunL6ExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 5
+    maxAngle: 20
+    angleIncrease: 2
+    angleDecay: 3.7
+    projectileSpeed: 29
+    fireRate: 3.7
+    burstFireRate: 4.1
+    burstCooldown: 2
+
+# Energy
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5Worn
+  - NFWeaponEnergySubMachineGunDeltaV
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergySubMachineGunDeltaVExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 2.4
+    maxAngle: 12
+    angleIncrease: 0.8
+    angleDecay: 2.7
+    fireRate: 3.8
+  - type: Battery
+    maxCharge: 2200
+    startingCharge: 0
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5Worn
+  - NFWeaponEnergyRifleSniperXrayCannon
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyRifleSniperXrayCannonExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 5
+    maxAngle: 12
+    angleIncrease: 1
+    angleDecay: 0.2
+    fireRate: 0.9
+  - type: Battery
+    maxCharge: 2200
+    startingCharge: 0
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5Worn
+  - NFWeaponEnergyRifleSniperCannon
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyRifleSniperCannonExpeditionWorn
+  components:
+  - type: Gun
+    minAngle: 3.2
+    maxAngle: 9.5
+    angleIncrease: 1
+    angleDecay: 0.2
+    fireRate: 0.9
+  - type: Battery
+    maxCharge: 2290
+    startingCharge: 0
+
+- type: entity
+  parent:
+  - BaseExpeditionWeaponTier5Worn
+  - NFWeaponEnergyRifleTemperature
+  categories: [ HideSpawnMenu ]
+  id: NFWeaponEnergyRifleTemperatureExpeditionWorn
+  components:
+  - type: Battery
+    maxCharge: 2850
+    startingCharge: 0
+  - type: Gun
+    minAngle: 5
+    maxAngle: 13
+    angleIncrease: 1.2
+    angleDecay: 3
+    fireRate: 1.7
+    projectileSpeed: 23

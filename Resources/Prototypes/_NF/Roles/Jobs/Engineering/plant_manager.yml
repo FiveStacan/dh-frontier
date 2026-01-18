@@ -43,7 +43,7 @@
   hasMindShield: true
   equipment:
     head: ClothingHeadHatBeretEngineering
-    mask: ClothingMaskBreath
+    mask: ClothingMaskGasCE #DH #ClothingMaskBreath
     neck: ClothingNeckCloakCe
     outerClothing: ClothingOuterWinterCE
     gloves: ClothingHandsGlovesColorYellow

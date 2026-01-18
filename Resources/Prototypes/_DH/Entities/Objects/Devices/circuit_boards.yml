@@ -16,6 +16,23 @@
         Steel: 10
 
 - type: entity
+  id: PirateTechFabCircuitboard
+  parent: BaseMachineCircuitboard
+  name: пиратский ТехФаб (машинная плата)
+  description: Печатная плата пиратского ТехФаба.
+  components:
+    - type: Sprite
+      state: security
+    - type: MachineBoard
+      prototype: PirateTechFab
+      requirements:
+        Capacitor: 1
+        Manipulator: 1
+      stackRequirements:
+        Glass: 10
+        Steel: 10
+
+- type: entity
   parent: BaseMachineCircuitboard
   id: ProtolatheHyperSpeedMachineCircuitboard
   name: гиперскоростной протолат (машинная плата)
@@ -102,7 +119,7 @@
   description: Печатная плата гиперскоростного принтера униформы.
   components:
   - type: Sprite
-    state: science
+    state: generic
   - type: MachineBoard
     prototype: UniformPrinterHyperSpeed
     requirements: # Frontier

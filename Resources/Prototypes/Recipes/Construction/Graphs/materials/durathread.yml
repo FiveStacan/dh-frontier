@@ -10,8 +10,9 @@
               amount: 1
           steps:
             - material: Cloth
-              amount: 1
+              amount: 5
             - material: Plastic
-              amount: 1
+              amount: 4
+              doAfter: 12
     - node: MaterialDurathread
       entity: MaterialDurathread

@@ -16,7 +16,7 @@
     availableModes:
     - SemiAuto
   - type: StaticPrice
-    price: 250
+    price: 480 #DH
   - type: NFWeaponDetails
     class: weapon-details-class-pistol
   - type: FireOnLand # DeltaV - gun safety

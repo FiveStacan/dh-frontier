@@ -11,6 +11,9 @@
     sprite: _NF/Clothing/Shoes/Boots/magboots-security.rsi
   - type: Magboots
     magbootsAlert: MagbootsSecurity
+  - type: ClothingSpeedModifier
+    walkModifier: 0.81
+    sprintModifier: 0.81
 
 - type: entity
   parent: ClothingShoesBootsMagSecurity
@@ -25,6 +28,9 @@
     sprite: _NF/Clothing/Shoes/Boots/magboots-mercenary.rsi
   - type: Magboots
     magbootsAlert: MagbootsMercenary
+  - type: ClothingSpeedModifier
+    walkModifier: 0.81
+    sprintModifier: 0.81
 
 - type: entity
   parent: ClothingShoesBootsMag
@@ -55,7 +61,7 @@
     magbootsAlert: MagbootsNfsd
   - type: ClothingSpeedModifier
     walkModifier: 0.95
-    sprintModifier: 0.9
+    sprintModifier: 0.88
 
 - type: entity
   parent: [BaseC3PirateContraband, ClothingShoesBootsMagNfsd]
@@ -70,3 +76,6 @@
     sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
   - type: Magboots
     magbootsAlert: MagbootsPirate
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85

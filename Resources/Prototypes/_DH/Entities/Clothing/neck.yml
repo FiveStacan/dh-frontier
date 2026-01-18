@@ -135,6 +135,9 @@
   - type: Construction
     graph: AtmosCrossCraft
     node: cross
+  - type: Reflect
+    reflectProb: .01
+    spread: 30
 
 - type: entity
   parent: ClothingNeckBase

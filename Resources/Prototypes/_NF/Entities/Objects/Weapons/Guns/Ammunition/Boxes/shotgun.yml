@@ -12,6 +12,8 @@
     capacity: 20
   - type: Sprite
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/shotgun.rsi
+  - type: StaticPrice #DH
+    price: 40
 
 #region boxesPellets
 - type: entity

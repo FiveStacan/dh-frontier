@@ -1538,6 +1538,24 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtCaptain
 
+- type: loadout
+  id: ContractorClothingUniformJumpsuitWhiteCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1000
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitWhiteCaptain
+
+- type: loadout
+  id: ContractorClothingUniformJumpsuitCommandCaptain
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1200
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCommandCaptain
+
 # T3
 - type: loadout
   id: ContractorClothingUniformJumpsuitCapFormal

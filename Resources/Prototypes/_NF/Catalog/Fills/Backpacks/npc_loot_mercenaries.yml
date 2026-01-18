@@ -101,7 +101,9 @@
       prob: 0.45
     # Weapons
     - id: NFWeaponPistolMk58Expedition
-      prob: 0.9
+      prob: 0.22
+    - id: NFWeaponPistolMk58ExpeditionWorn
+      prob: 0.7
     # Armor
     - id: ClothingOuterVestWebMercenary
       prob: 0.4
@@ -154,8 +156,10 @@
     - id: SpaceCash500
       prob: 0.45
     # Weapons
+    - id: NFWeaponRifleAssaultNovaliteC1ExpeditionWorn
+      prob: 0.7
     - id: NFWeaponRifleAssaultNovaliteC1Expedition
-      prob: 0.9
+      prob: 0.05
     # Armor
     - id: ClothingOuterVestWebMercenary
       prob: 0.4
@@ -216,7 +220,9 @@
       prob: 0.45
     # Weapons
     - id: NFWeaponShotgunKammererExpedition
-      prob: 0.6
+      prob: 0.1
+    - id: NFWeaponShotgunKammererExpeditionWorn
+      prob: 0.5
     # Armor
     - id: ClothingOuterArmorBasicSlim
       prob: 0.4
@@ -337,8 +343,10 @@
     - id: SpaceCash1000
       prob: 0.2
     # Weapons
+    - id: NFWeaponEnergyPistolLaserExpeditionWorn
+      prob: 0.7
     - id: NFWeaponEnergyPistolLaserExpedition
-      prob: 0.9
+      prob: 0.1
     - id: SawElectric
       prob: 0.7
     # Armor
@@ -410,7 +418,9 @@
       prob: 0.2
     # Weapons
     - id: NFWeaponRifleAssaultGestioExpedition
-      prob: 0.9
+      prob: 0.05
+    - id: NFWeaponRifleAssaultGestioExpeditionWorn
+      prob: 0.6
     # Armor
     # Items
     - id: SpawnDungeonLootKitsFirstAid
@@ -509,7 +519,9 @@
       prob: 0.1
     # Weapons
     - id: NFWeaponRifleRepeaterExpedition
-      prob: 0.9
+      prob: 0.24
+    - id: NFWeaponRifleRepeaterExpeditionWorn
+      prob: 0.62
     # Armor
     - id: ClothingOuterArmorBulletproof
       prob: 0.4

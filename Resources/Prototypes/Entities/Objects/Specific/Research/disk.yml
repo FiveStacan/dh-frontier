@@ -36,6 +36,18 @@
   - type: StaticPrice
     price: 628
 
+#DH
+- type: entity
+  parent: ResearchDisk
+  id: ResearchDisk25000
+  name: research point disk (25000)
+  description: A disk for the R&D server containing 25000 points.
+  components:
+  - type: ResearchDisk
+    points: 25000
+  - type: StaticPrice
+    price: 1550
+
 - type: entity
   parent: ResearchDisk
   id: ResearchDiskDebug

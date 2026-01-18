@@ -110,6 +110,7 @@
   - PowerDrill
   - JawsOfLife
   - ClothingBeltChiefEngineer
+  - ClothingMaskGasCE #DH
   - BorgModuleAdvancedTool
   # PortableFission
   - PortableGeneratorDKJrMachineCircuitboard
@@ -136,11 +137,13 @@
   - ClothingShoesBootsMag
   # PersonalPropulsion
   - JetpackBlue
+  - JetpackMining
+  - JetpackMini
   - JetpackCaptain
   #DH
   - BaseAmeJar
-  - ExpandetAmeJar
   - AmeJar
+  - ExpandetAmeJar
   - BluespaceAmeJar
   - BorgModuleJetpack
   - BorgModuleConstruction
@@ -442,6 +445,7 @@
   # HardsuitsSpecialized
   - ClothingOuterHardsuitClown
   - ClothingOuterHardsuitMime
+  - ClothingOuterHardsuitSanta #DH
   - ClothingOuterHardsuitPilot
   - BorgModuleClowning #DH
   - BorgModuleMusique #DH
@@ -506,6 +510,7 @@
   - NFAmmunitionBoxShellShotgunOverpressure
   - NFMagazineRifle20Empty
   - NFMagazineRifle30Empty
+  - NFMagazineExtendedRifle30Empty #DH
   - NFMagazineDrumRifle20Empty
   - MagazineAsmgtUniversalEmpty
   # BulkRifleAmmo

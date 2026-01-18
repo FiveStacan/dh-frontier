@@ -20,6 +20,9 @@
             "name": "general"
         },
         {
+            "name": "pirate"
+        },
+        {
             "name": "experemental",
             "delays": [
             [

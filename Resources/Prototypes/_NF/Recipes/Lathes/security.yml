@@ -464,6 +464,13 @@
 
 - type: latheRecipe
   parent: BaseEmptyMagazineRecipe
+  id: NFMagazineExtendedRifle30Empty
+  result: NFMagazineExtendedRifle30Empty
+  materials:
+    Steel: 40
+
+- type: latheRecipe
+  parent: BaseEmptyMagazineRecipe
   id: MagazineAsmgtUniversalEmpty
   result: MagazineAsmgtUniversalEmpty
   materials:
@@ -624,16 +631,18 @@
   id: NFMetalShield
   result: NFMetalShield
   materials:
-    Steel: 600
+    Steel: 650
     Glass: 400
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseShieldRecipe
   id: NFShieldBallistic
   result: NFShieldBallistic
   materials:
-    Steel: 400
+    Steel: 500
     Glass: 400
+    Plastic: 200
 
 - type: latheRecipe
   parent: BaseShieldRecipe
@@ -641,7 +650,8 @@
   result: NFShieldReflective
   materials:
     Steel: 400
-    Glass: 400
+    Glass: 600
+    Plastic: 100
 
 # region Misc
 - type: latheRecipe

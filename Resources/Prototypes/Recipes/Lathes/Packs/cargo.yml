@@ -27,5 +27,6 @@
   id: CargoBoards
   recipes:
   - OreProcessorIndustrialMachineCircuitboard
+  - SalvageTechFabCircuitboardNF #DH
   # - CargoTelepadMachineCircuitboard # Frontier
   # - ShuttleGunKineticCircuitboard # Frontier

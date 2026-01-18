@@ -2,14 +2,14 @@
 - type: loadout
   id: ContractorClothingMaskBreath
   storage:
-    back: 
+    back:
     - ClothingMaskBreath
 
 - type: loadout
   id: ContractorClothingMaskBreathMedical
   price: 200
   storage:
-    back: 
+    back:
     - ClothingMaskBreathMedical
 
 #T1
@@ -20,7 +20,7 @@
     proto: ContractorT1
   price: 200
   storage:
-    back: 
+    back:
     - ClothingMaskSterile
 
 - type: loadout
@@ -92,7 +92,7 @@
     proto: ContractorT2
   price: 1500
   storage:
-    back: 
+    back:
     - ClothingMaskMime
 
 - type: loadout
@@ -134,3 +134,24 @@
   storage:
     back:
     - ClothingMaskClownBald
+
+#T3
+- type: loadout #DH
+  id: ContractorClothingBreathMaskQM
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1300
+  storage:
+    back:
+    - ClothingBreathMaskQM
+
+- type: loadout #DH
+  id: ContractorClothingMaskIAA
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ContractorT2
+  price: 1450
+  storage:
+    back:
+    - ClothingMaskIAA

@@ -136,6 +136,11 @@
   equipment:
     outerClothing: ClothingOuterWinterMed
 
+- type: loadout #DH
+  id: MedicalOuterCoatCMOOvercoat
+  equipment:
+    outerClothing: ClothingOuterCoatCMOOvercoat
+
 - type: loadout
   id: SeniorPhysicianLabCoat
   effects:
@@ -175,6 +180,11 @@
   id: SterileMask
   equipment:
     mask: ClothingMaskSterile
+
+- type: loadout #DH
+  id: BreathMaskCMO
+  equipment:
+    mask: ClothingBreathMaskCMO
 
 #Eyewear
 - type: loadout

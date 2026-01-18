@@ -74,8 +74,13 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponRevolverRitland45Expedition
+        prob: 0.08
+      - id: NFWeaponRevolverRitland45ExpeditionWorn
+        prob: 0.72
       - id: NFSpeedLoaderPistol45Uranium
+        prob: 0.9
       - id: NFSpeedLoaderPistol45Uranium
+        prob: 0.8
       - id: SpaceCash5000
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -88,7 +93,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -104,8 +109,13 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponRevolverRitland45Expedition
+        prob: 0.09
+      - id: NFWeaponRevolverRitland45ExpeditionWorn
+        prob: 0.75
       - id: NFSpeedLoaderPistol45Incendiary
+        prob: 0.9
       - id: NFSpeedLoaderPistol45Incendiary
+        prob: 0.75
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -118,7 +128,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -147,7 +157,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -174,7 +184,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -191,6 +201,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponEnergyPistolLaserAdvancedExpedition
+        prob: 0.15
+      - id: NFWeaponEnergyPistolLaserAdvancedExpeditionWorn
+        prob: 0.52
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -203,7 +216,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -219,6 +232,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponEnergyPistolLaserExpedition
+        prob: 0.1
+      - id: NFWeaponEnergyPistolLaserExpeditionWorn
+        prob: 0.8
       - id: SpaceCash2500
       # Bonus Loot T3
       - id: SpaceCash1000
@@ -231,7 +247,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -259,7 +275,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -287,7 +303,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -304,7 +320,11 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponRifleAssaultSmExpedition
+        prob: 0.06
+      - id: NFWeaponRifleAssaultSmExpeditionWorn
+        prob: 0.52
       - id: NFMagazineRifle30Uranium
+        prob: 0.65
       - id: NFMagazineRifle30Uranium
         prob: 0.2
       - id: ClothingShoesBootsMagSyndie
@@ -333,8 +353,12 @@
   components:
   - type: SpawnItemsOnUse
     items:
+      - id: NFWeaponRifleAssaultM90GrenadeLauncherExpeditionWorn
+        prob: 0.54
       - id: NFWeaponRifleAssaultM90GrenadeLauncherExpedition
+        prob: 0.06
       - id: NFMagazineRifle20Incendiary
+        prob: 0.65
       - id: NFMagazineRifle20Incendiary
         prob: 0.2
       - id: ClothingShoesBootsMagSyndie
@@ -367,6 +391,7 @@
       - id: NFMagazineRifle30Overpressure
         prob: 0.2
       - id: ClothingShoesBootsMagSyndie
+        prob: 0.5
       - id: SpaceCash10000
       # Bonus Loot T4
       - id: SpaceCash2500
@@ -418,8 +443,12 @@
   components:
   - type: SpawnItemsOnUse
     items:
+      - id: NFWeaponSubMachineGunC20rExpeditionWorn
+        prob: 0.3
       - id: NFWeaponSubMachineGunC20rExpedition
+        prob: 0.05
       - id: NFMagazineSubMachineGun35Uranium
+        prob: 0.65
       - id: NFMagazineSubMachineGun35Uranium
         prob: 0.2
       - id: SpaceCash1000
@@ -435,7 +464,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -450,7 +479,10 @@
   components:
   - type: SpawnItemsOnUse
     items:
+      - id: NFWeaponSubMachineGunWt550ExpeditionWorn
+        prob: 0.6
       - id: NFWeaponSubMachineGunWt550Expedition
+        prob: 0.09
       - id: NFMagazineSubMachineGunTopMounted35Uranium
       - id: SpaceCash1000
       - id: SpaceCash500
@@ -465,7 +497,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -481,6 +513,7 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFAmmunitionBoxPistol35Overpressure
+        prob: 0.7
       - id: NFAmmunitionBoxPistol35Uranium
         prob: 0.2
       - id: SpaceCash1000
@@ -491,12 +524,12 @@
       - id: SpaceCash500
         prob: 0.9
       - id: SpaceCash1000
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootMaterialsValuableFull
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -515,16 +548,16 @@
       - id: SpaceCash500
       # Bonus Loot T3
       - id: SpaceCash1000
-        prob: 0.9
+        prob: 0.8
       - id: SpaceCash500
         prob: 0.9
       - id: SpawnDungeonLootMaterialsBasicFull
         prob: 0.7
       - id: SpaceCash1000
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootFlatpacks
         prob: 0.5
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -541,6 +574,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponPistolViperExpedition
+        prob: 0.1
+      - id: NFWeaponPistolViperExpeditionWorn
+        prob: 0.67
       - id: NFMagazineHighCapacityPistol35Uranium
       - id: NFMagazineHighCapacityPistol35Uranium
         prob: 0.2
@@ -563,6 +599,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponPistolMk58Expedition
+        prob: 0.15
+      - id: NFWeaponPistolMk58ExpeditionWorn
+        prob: 0.65
       - id: NFMagazineHighCapacityPistol35Incendiary
       - id: NFMagazineHighCapacityPistol35Incendiary
         prob: 0.2
@@ -738,6 +777,9 @@
   - type: SpawnItemsOnUse
     items:
       - id: NFWeaponShotgunKammererExpedition
+        prob: 0.1
+      - id: NFWeaponShotgunKammererExpeditionWorn
+        prob: 0.69
       - id: SyndicateJawsOfLife
       - id: NFAmmunitionBoxShellShotgunUranium
       - id: SpaceCash1000
@@ -751,7 +793,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -778,7 +820,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -804,7 +846,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -829,7 +871,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -861,7 +903,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -888,7 +930,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -914,7 +956,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -940,7 +982,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -968,7 +1010,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -995,7 +1037,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -1022,7 +1064,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering
@@ -1049,7 +1091,7 @@
         prob: 0.7
       - id: SpawnDungeonLootPartsEngi
         amount: 2
-        prob: 0.7
+        prob: 0.6
       - id: SpawnDungeonLootCircuitBoardEngi
         prob: 0.7
       - id: SpawnDungeonLootToolsAdvancedEngineering

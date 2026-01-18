@@ -4,6 +4,7 @@
     SecurityWhistle: 1 # Frontier 5<1
     Handcuffs: 3 # Frontier 8<3
     GrenadeFlashBang: 1 # Frontier 4<1
+    GrenadeBarrier: 4 #DH
     TearGasGrenade: 1 # Frontier 4<1
     ClusterBangFull: 1 # Frontier 2<1
     GrenadeStinger: 1 # Frontier 4<1
@@ -31,3 +32,5 @@
   #   FoodDonutHomer: 12 # Frontier
   #   FoodBoxDonut: 2 # Frontier
     #box evidence
+  contrabandInventory:
+    Purplecuffs: 1 #DH

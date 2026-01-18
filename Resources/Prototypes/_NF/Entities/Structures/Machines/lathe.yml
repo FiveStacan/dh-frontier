@@ -46,7 +46,8 @@
     - NFPaperAndPaperAccessories
     - ReportingStatic # DeltaV
     dynamicPacks:
-    - DHTools
+    - DHTools #DH
+    - DHServiceTechfabDeprecatedDynamic #DH
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFServiceTechfabDeprecatedEmagStatic
@@ -111,9 +112,12 @@
     runningState: icon
     staticPacks:
     - NFEngineeringTechfabDeprecatedStatic
+    - NFInflatablesStatic
     dynamicPacks: #DH
     - DHEngineering
     - AdvancedTools
+    - NFEngineeringTechfabDeprecatedDynamic
+    - DHEngineeringMech
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -147,6 +151,8 @@
     runningState: icon
     staticPacks:
     - NFSalvageTechfabDeprecatedStatic
+    dynamicPacks:
+    - NFSalvageTechfabDeprecatedDynamic
   - type: EmagLatheRecipes
     emagStaticPacks:
     - NFSalvageTechfabDeprecatedEmag
@@ -201,6 +207,7 @@
     - NfsdBoardsStatic
     dynamicPacks:
     - NfsdDynamic
+    - DHBaseArmor #DH
   - type: BlueprintReceiver
     whitelist:
       tags:
@@ -391,8 +398,10 @@
         - MachineLayer
   - type: BlueprintLathe
     blueprintPrintMaterials:
-      Paper: 300
-    blueprintPrintTime: 5
+      Steel: 100
+      #BlueprintPaper: 100 #DH
+      #MaterialDurathread: 100 #DH
+    blueprintPrintTime: 12 #DH
   - type: BlueprintLatheClientState # persistent, per-client UI state
   - type: MaterialStorage
     whitelist:
@@ -425,7 +434,7 @@
     anchored: true
   - type: Pullable
   - type: StaticPrice
-    price: 800
+    price: 850 #DH
   - type: ResearchClient
   - type: TechnologyDatabase
   - type: MaterialStorageMagnetPickup

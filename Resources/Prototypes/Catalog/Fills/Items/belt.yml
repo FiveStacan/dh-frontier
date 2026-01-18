@@ -48,7 +48,7 @@
     - id: Stunbaton
     - id: Handcuffs
     - id: Handcuffs
-    - id: HoloprojectorNfsd #DH
+    #- id: HoloprojectorNfsd #DH
     # - id: HoloprojectorSecurity # Frontier
     # - id: RadioHandheldSecurity # Frontier
     - id: ContrabandAppraisalTool # Frontier

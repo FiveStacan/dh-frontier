@@ -18,6 +18,12 @@
     contents:
     - id: NFWeaponPistolMk58Expedition
       amount: 1
+      prob: 0.45
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolMk58ExpeditionWorn
+      amount: 1
+      prob: 0.65
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineHighCapacityPistol35
       amount: 2
 
@@ -31,6 +37,12 @@
     contents:
     - id: NFWeaponPistolN1984Expedition
       amount: 1
+      prob: 0.25
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolN1984ExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazinePistol45
       amount: 2
 
@@ -44,6 +56,12 @@
     contents:
     - id: NFWeaponPistolViperExpedition
       amount: 1
+      prob: 0.20
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolViperExpeditionWorn
+      amount: 1
+      prob: 0.80
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineHighCapacityPistol35
       amount: 2
 
@@ -57,6 +75,12 @@
     contents:
     - id: NFWeaponPistolCobraExpedition
       amount: 1
+      prob: 0.29
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolCobraExpeditionWorn
+      amount: 1
+      prob: 0.71
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazinePistol45
       amount: 2
 
@@ -70,6 +94,12 @@
     contents:
     - id: NFWeaponPistolUniversalExpedition
       amount: 1
+      prob: 0.28
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolUniversalExpeditionWorn
+      amount: 1
+      prob: 0.72
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineHighCapacityPistol35
       amount: 2
 
@@ -83,6 +113,12 @@
     contents:
     - id: NFWeaponPistolPollockExpedition
       amount: 1
+      prob: 0.30
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponPistolPollockExpeditionWorn
+      amount: 1
+      prob: 0.70
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineHighCapacityPistol35
       amount: 2
 
@@ -97,6 +133,12 @@
     contents:
     - id: NFWeaponRevolverArgentiExpedition
       amount: 1
+      prob: 0.40
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverArgentiExpeditionWorn
+      amount: 1
+      prob: 0.60
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol35
       amount: 2
 
@@ -110,6 +152,12 @@
     contents:
     - id: NFWeaponRevolverDeckardExpedition
       amount: 1
+      prob: 0.22
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverDeckardExpeditionWorn
+      amount: 1
+      prob: 0.88
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -123,6 +171,12 @@
     contents:
     - id: NFWeaponRevolverRitland45Expedition
       amount: 1
+      prob: 0.21
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverRitland45ExpeditionWorn
+      amount: 1
+      prob: 0.79
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -136,6 +190,12 @@
     contents:
     - id: NFWeaponRevolverWard45Expedition
       amount: 1
+      prob: 0.30
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverWard45ExpeditionWorn
+      amount: 1
+      prob: 0.70
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -149,6 +209,12 @@
     contents:
     - id: NFWeaponRevolverFitzExpedition
       amount: 1
+      prob: 0.45
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverFitzExpeditionWorn
+      amount: 1
+      prob: 0.55
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -162,6 +228,12 @@
     contents:
     - id: NFWeaponRevolverFaithExpedition
       amount: 1
+      prob: 0.40
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverFaithExpeditionWorn
+      amount: 1
+      prob: 0.60
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -175,6 +247,12 @@
     contents:
     - id: NFWeaponRevolverLuckyExpedition
       amount: 1
+      prob: 0.02
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverLuckyExpeditionWorn
+      amount: 1
+      prob: 0.98
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -188,6 +266,12 @@
     contents:
     - id: NFWeaponRevolverPirateExpedition
       amount: 1
+      prob: 0.40
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRevolverPirateExpeditionWorn
+      amount: 1
+      prob: 0.60
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFSpeedLoaderPistol45
       amount: 2
 
@@ -202,6 +286,12 @@
     contents:
     - id: NFWeaponShotgunKammererExpedition
       amount: 1
+      prob: 0.26
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponShotgunKammererExpeditionWorn
+      amount: 1
+      prob: 0.74
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFAmmunitionBoxShellShotgunBuckshot
       amount: 2
 
@@ -215,6 +305,12 @@
     contents:
     - id: NFWeaponShotgunEnforcerExpedition
       amount: 1
+      prob: 0.20
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponShotgunEnforcerExpeditionWorn
+      amount: 1
+      prob: 0.80
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFAmmunitionBoxShellShotgunBuckshot
       amount: 2
 
@@ -228,6 +324,12 @@
     contents:
     - id: NFWeaponShotgunBulldogExpedition
       amount: 1
+      prob: 0.14
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponShotgunBulldogExpeditionWorn
+      amount: 1
+      prob: 0.86
+      orGroup: WeaponExpeditionOrWeaponExpeditionWo
     - id: NFMagazineShotgunDrum
       amount: 2
 
@@ -242,6 +344,12 @@
     contents:
     - id: NFWeaponSubMachineGunWt550Expedition
       amount: 1
+      prob: 0.15
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponSubMachineGunWt550ExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineSubMachineGunTopMounted35
       amount: 3
 
@@ -255,6 +363,12 @@
     contents:
     - id: NFWeaponSubMachineGunAtreidesExpedition
       amount: 1
+      prob: 0.25
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponSubMachineGunAtreidesExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineSubMachineGun35
       amount: 3
 
@@ -268,6 +382,12 @@
     contents:
     - id: NFWeaponSubMachineGunDrozdExpedition
       amount: 1
+      prob: 0.22
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponSubMachineGunDrozdExpeditionWorn
+      amount: 1
+      prob: 0.78
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineSubMachineGun35
       amount: 3
 
@@ -281,6 +401,12 @@
     contents:
     - id: NFWeaponSubMachineGunC20rExpedition
       amount: 1
+      prob: 0.20
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponSubMachineGunC20rExpeditionWorn
+      amount: 1
+      prob: 0.80
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineSubMachineGun35
       amount: 3
 
@@ -294,6 +420,12 @@
     contents:
     - id: NFWeaponSubMachineGunTypewriterExpedition
       amount: 1
+      prob: 0.30
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponSubMachineGunTypewriterExpeditionWorn
+      amount: 1
+      prob: 0.70
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineSubMachineGun35
       amount: 3
 
@@ -308,6 +440,12 @@
     contents:
     - id: NFWeaponRifleAssaultGestioExpedition
       amount: 1
+      prob: 0.18
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleAssaultGestioExpeditionWorn
+      amount: 1
+      prob: 0.82
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineLowCapacityRifle30
       amount: 3
 
@@ -321,6 +459,12 @@
     contents:
     - id: NFWeaponRifleAssaultNovaliteC1Expedition
       amount: 1
+      prob: 0.84
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleAssaultNovaliteC1Expedition
+      amount: 1
+      prob: 0.16
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineClipRifle20
       amount: 2
 
@@ -334,6 +478,12 @@
     contents:
     - id: NFWeaponRifleAssaultLecterExpedition
       amount: 1
+      prob: 0.20
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleAssaultLecterExpeditionWorn
+      amount: 1
+      prob: 0.80
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineRifle20
       amount: 2
 
@@ -347,6 +497,12 @@
     contents:
     - id: NFWeaponRifleAssaultSm
       amount: 1
+      prob: 0.10
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleAssaultSmWorn
+      amount: 1
+      prob: 0.90
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineRifle30
       amount: 2
 
@@ -373,6 +529,12 @@
     contents:
     - id: NFWeaponRifleSVSExpedition
       amount: 1
+      prob: 0.35
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleSVSExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineLowCapacityRifle30
       amount: 2
 
@@ -386,6 +548,12 @@
     contents:
     - id: NFWeaponRifleAssaultVulcanExpedition
       amount: 1
+      prob: 0.30
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleAssaultVulcanExpeditionWorn
+      amount: 1
+      prob: 0.70
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineRifle30
       amount: 2
 
@@ -397,8 +565,14 @@
   components:
   - type: StorageFill
     contents:
+    - id: NFWeaponRifleAssaultJackdawExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFWeaponRifleAssaultJackdawExpedition
       amount: 1
+      prob: 0.25
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineRifle20
       amount: 2
 
@@ -413,6 +587,12 @@
     contents:
     - id: NFWeaponEnergyPistolLaserExpedition
       amount: 2
+      prob: 0.45
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergyPistolLaserExpeditionWorn
+      amount: 2
+      prob: 0.55
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   parent: [WeaponCaseShort, RareWeaponCase]
@@ -424,6 +604,12 @@
     contents:
     - id: NFWeaponEnergyPistolLaserSvalinnExpedition
       amount: 1
+      prob: 0.25
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergyPistolLaserSvalinnExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: PowerCellHigh
       amount: 2
 
@@ -437,6 +623,12 @@
     contents:
     - id: NFWeaponEnergyRifleCarbineExpedition
       amount: 1
+      prob: 0.22
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergyRifleCarbineExpeditionWorn
+      amount: 1
+      prob: 0.88
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   parent: [WeaponCaseLong, RareWeaponCase]
@@ -448,6 +640,12 @@
     contents:
     - id: NFWeaponEnergySubMachineGunDeltaVExpedition
       amount: 1
+      prob: 0.24
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergySubMachineGunDeltaVExpeditionWorn
+      amount: 1
+      prob: 0.86
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   parent: [WeaponCaseShort, RareWeaponCase]
@@ -459,6 +657,12 @@
     contents:
     - id: NFWeaponEnergyPistolLaserAntiqueExpedition
       amount: 1
+      prob: 0.10
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergyPistolLaserAntiqueExpeditionWorn
+      amount: 1
+      prob: 0.90
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   parent: [WeaponCaseShort, RareWeaponCase]
@@ -470,6 +674,12 @@
     contents:
     - id: NFWeaponEnergyPistolLaserAdvancedExpedition
       amount: 1
+      prob: 0.15
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponEnergyPistolLaserAdvancedExpeditionWorn
+      amount: 1
+      prob: 0.85
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
 
 - type: entity
   parent: [WeaponCaseLong, RareWeaponCase]
@@ -528,6 +738,12 @@
     contents:
     - id: NFWeaponRifleSniperHristovExpedition
       amount: 1
+      prob: 0.25
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleSniperHristovExpeditionWorn
+      amount: 1
+      prob: 0.75
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFAmmunitionBoxRifle60
       amount: 2
 
@@ -541,6 +757,12 @@
     contents:
     - id: NFWeaponRifleRepeaterExpedition
       amount: 1
+      prob: 0.27
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleRepeaterExpeditionWorn
+      amount: 1
+      prob: 0.73
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFAmmunitionBoxRifle20
       amount: 2
 
@@ -554,6 +776,12 @@
     contents:
     - id: NFWeaponRifleMusketExpedition
       amount: 1
+      prob: 0.5
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponRifleMusketExpeditionWorn
+      amount: 1
+      prob: 0.5
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFAmmunitionBoxRifle60
       amount: 2
 
@@ -608,6 +836,12 @@
     contents:
     - id: NFWeaponLightMachineGunL6Expedition
       amount: 1
+      prob: 0.10
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: NFWeaponLightMachineGunL6ExpeditionWorn
+      amount: 1
+      prob: 0.90
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
     - id: NFMagazineBoxRifle20
       amount: 4
 

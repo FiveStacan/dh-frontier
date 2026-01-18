@@ -1582,7 +1582,7 @@ INSERT INTO player_round (players_id, rounds_id) VALUES ({players[player]}, {id}
             notesCol.AddRange(await GetGroupedServerRoleBansAsNotesForUser(db, player));
             return notesCol;
         }
-        
+
         // ADT-BookPrinter-Start
 		public async Task<List<BookPrinterEntry>> GetBookPrinterEntries()
         {

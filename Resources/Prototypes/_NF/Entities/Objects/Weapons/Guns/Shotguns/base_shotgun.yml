@@ -38,6 +38,8 @@
   - type: GunWieldBonus
     minAngle: -1
     maxAngle: -4
+  - type: StaticPrice
+    price: 1690
 
 #region chamber
 - type: entity
