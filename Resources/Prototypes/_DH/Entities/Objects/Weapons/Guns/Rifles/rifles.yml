@@ -1,6 +1,6 @@
 - type: entity
   name: AKMS
-  parent: BaseWeaponRifle
+  parent: [BaseWeaponRifle, NFBaseGunMeleeAttackMedium]
   id: WeaponRifleAKM
   components:
   - type: Sprite
@@ -18,13 +18,17 @@
     - 0,0,5,2
     sprite: _DH/Objects/Weapons/Guns/Rifles/akms/tiny.rsi
   - type: GunWieldBonus
-    minAngle: -15
-    maxAngle: -35
+    minAngle: -14
+    maxAngle: -36
+    angleDecay: 3
+    angleIncrease: -3.2
   - type: Gun
-    projectileSpeed: 28
+    angleDecay: 1.2
+    angleIncrease: 4
+    projectileSpeed: 31
     minAngle: 24
-    maxAngle: 45
-    fireRate: 5.1  # 10 в секунду - реалистично. 5, так как сс14
+    maxAngle: 46
+    fireRate: 5.1
     soundGunshot:
       collection: ak47
   - type: ItemSlots
@@ -39,14 +43,15 @@
           tags:
             - MagazineLightRifle
             - NFMagazineRifle30
+            - NFMagazineExtendedCapacityRifle30
       gun_chamber:
         name: Chamber
-        startingItem: NFCartridgeRifle30  # 762x39
+        startingItem: NFCartridgeRifle30
         priority: 1
         whitelist:
           tags:
             - CartridgeLightRifle
-            - NFCartridgeRifle30  # 762x39
+            - NFCartridgeRifle30
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -65,7 +70,7 @@
 
 - type: entity
   name: AKM-U
-  parent: BaseWeaponRifle
+  parent: [BaseWeaponRifle, NFBaseGunMeleeAttackMedium]
   id: WeaponRifleAKMU
   components:
   - type: Sprite
@@ -81,10 +86,15 @@
     - 0,0,3,2
   - type: GunWieldBonus
     minAngle: -12
-    maxAngle: -25
+    maxAngle: -20
+    angleDecay: 0.9
+    angleIncrease: -0.8
   - type: Gun
+    angleDecay: 1.8
+    angleIncrease: 3
+    projectileSpeed: 24
     minAngle: 24
-    maxAngle: 45
+    maxAngle: 39
     fireRate: 5.5
     soundGunshot:
       collection: ak47
@@ -101,6 +111,7 @@
           tags:
           - NFMagazineRifle30
           - MagazineLightRifle
+          - NFMagazineExtendedCapacityRifle30
       gun_chamber:
         name: Chamber
         startingItem: NFCartridgeRifle30  # 762x39
@@ -124,7 +135,7 @@
 
 - type: entity
   name: AK-514
-  parent: BaseWeaponRifle
+  parent: [BaseWeaponRifle, BaseC3SyndicateContraband]
   id: WeaponRifleAK514
   components:
   - type: Sprite
@@ -148,7 +159,7 @@
     projectileSpeed: 34
     minAngle: 24
     maxAngle: 45
-    fireRate: 6  # 10 в секунду - реалистично. 5, так как сс14
+    fireRate: 6
     soundGunshot:
       collection: ak47
   - type: ItemSlots

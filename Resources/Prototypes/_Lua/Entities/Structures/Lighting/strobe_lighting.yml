@@ -4,7 +4,7 @@
 
 - type: entity
   id: PoweredStrobeLightEpsilonFullSound
-  suffix: Epsilon, Звук
+  suffix: Epsilon, Sound
   parent: PoweredStrobeLightEpsilon
   components:
   - type: WirelessNetworkConnection

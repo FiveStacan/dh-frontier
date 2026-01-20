@@ -89,7 +89,7 @@
 
 - type: entity
   name: Рапира Мифистофеля
-  parent: BaseItem
+  parent: [BaseItem, BaseSword]
   id: MythistophelRapier
   description: Рапира выкована стариком Мифистофелем, чувствуется запах напалма
   components:
@@ -325,7 +325,7 @@
   - type: Item
     size: Huge
   - type: MeleeWeapon
-    range: 1.15
+    range: 1.35
     autoAttack: true
     wideAnimation: WeaponArcMaceSlash
     angle: 145

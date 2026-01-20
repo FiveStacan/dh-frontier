@@ -12,7 +12,7 @@
     layers:
     - state: soap-4
       map: ["enum.SolutionContainerLayers.Fill"]
-      scale: 0.5,0.5
+      scale: 0.8,0.8
   - type: SolutionContainerVisuals
     maxFillLevels: 4
     fillBaseName: soap-
@@ -82,7 +82,7 @@
     layers:
     - state: nt-4
       map: ["enum.SolutionContainerLayers.Fill"]
-      scale: 0.5,0.5
+      scale: 0.8,0.8
   - type: SolutionContainerVisuals
     fillBaseName: nt-
   - type: Item
@@ -108,6 +108,7 @@
     layers:
     - state: deluxe-4
       map: ["enum.SolutionContainerLayers.Fill"]
+      scale: 0.8,0.8
   - type: SolutionContainerVisuals
     fillBaseName: deluxe-
   - type: Item
@@ -126,6 +127,7 @@
     layers:
     - state: syndie-4
       map: ["enum.SolutionContainerLayers.Fill"]
+      scale: 0.8,0.8
   - type: SolutionContainerVisuals
     fillBaseName: syndie-
   - type: Slippery
@@ -195,6 +197,7 @@
     layers:
     - state: gibs-4
       map: ["enum.SolutionContainerLayers.Fill"]
+      scale: 0.8,0.8
   - type: SolutionContainerVisuals
     fillBaseName: gibs-
   - type: Slippery
@@ -219,6 +222,7 @@
     layers:
     - state: omega-4
       map: ["enum.SolutionContainerLayers.Fill"]
+      scale: 0.9,0.9
   - type: SolutionContainerVisuals
     fillBaseName: omega-
   - type: Slippery

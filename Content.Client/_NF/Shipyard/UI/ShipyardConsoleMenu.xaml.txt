@@ -1,0 +1,109 @@
+<!-- Используем стандартное пространство имён и добавляем необходимые -->
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:gfx="clr-namespace:Robust.Client.Graphics;assembly=Robust.Client"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      SetSize="640 500"
+                      MinSize="640 300"
+                      StyleClasses="ShipyardConsoleWindow">
+
+  <!-- Общий контейнер с внутренними отступами -->
+  <BoxContainer Orientation="Vertical" Margin="10" StyleClasses="ShipyardConsoleMainContainer">
+
+    <!-- Верхняя панель с информацией (баланс, оценка) -->
+    <BoxContainer Orientation="Vertical" Margin="0 0 0 10" StyleClasses="ShipyardConsoleTopPanel">
+      <BoxContainer Orientation="Horizontal" Margin="5">
+        <Label Text="{Loc 'bank-atm-menu-balance-label'}"
+               StyleClasses="ShipyardConsoleInfoLabel" />
+        <Label Name="BalanceLabel"
+               Text="{Loc 'shipyard-console-no-bank'}"
+               StyleClasses="ShipyardConsoleInfoValue" />
+      </BoxContainer>
+      <BoxContainer Orientation="Horizontal" Margin="5">
+        <Label Text="{Loc 'shipyard-console-appraisal-label'}"
+               StyleClasses="ShipyardConsoleInfoLabel" />
+        <Label Name="ShipAppraisalLabel"
+               Text="{Loc 'shipyard-console-no-deed'}"
+               StyleClasses="ShipyardConsoleInfoValue" />
+      </BoxContainer>
+    </BoxContainer>
+
+    <!-- Поле поиска -->
+    <LineEdit Name="SearchBar"
+              PlaceHolder="{Loc 'cargo-console-menu-search-bar-placeholder'}"
+              HorizontalExpand="True"
+              Margin="0 5 0 10"
+              StyleClasses="ShipyardConsoleSearchBar"/>
+
+    <!-- Кнопки фильтров и сортировки -->
+    <BoxContainer Orientation="Horizontal" Margin="0 0 0 5" StyleClasses="ShipyardConsoleFilterContainer">
+      <OptionButton Name="Categories"
+                    Prefix="{Loc 'shipyard-console-menu-size-label'}"
+                    HorizontalExpand="True"
+                    StyleClasses="ShipyardConsoleOptionButton" />
+      <OptionButton Name="Classes"
+                    Prefix="{Loc 'shipyard-console-menu-class-label'}"
+                    HorizontalExpand="True"
+                    StyleClasses="ShipyardConsoleOptionButton" />
+      <OptionButton Name="Sorting"
+                    Prefix="{Loc 'shipyard-console-menu-sorting-label'}"
+                    HorizontalExpand="True"
+                    StyleClasses="ShipyardConsoleOptionButton" />
+      <OptionButton Name="Engines"
+                    Prefix="{Loc 'shipyard-console-menu-engine-label'}"
+                    HorizontalExpand="True"
+                    StyleClasses="ShipyardConsoleOptionButton" />
+    </BoxContainer>
+
+    <!-- Контейнер для списка шаттлов с прокруткой -->
+    <ScrollContainer HorizontalExpand="True"
+                     VerticalExpand="True"
+                     SizeFlagsStretchRatio="7"
+                     Margin="0 10 0 0"
+                     StyleClasses="ShipyardConsoleScrollContainer">
+      <BoxContainer Name="Vessels"
+                    Orientation="Vertical"
+                    HorizontalExpand="True"
+                    VerticalExpand="True"
+                    StyleClasses="ShipyardConsoleVesselList">
+        <!-- Vessels get added here by code -->
+      </BoxContainer>
+    </ScrollContainer>
+
+    <!-- Нижняя панель действий -->
+    <GridContainer Columns="4" HorizontalExpand="True" Margin="0 15 0 5" StyleClasses="ShipyardConsoleActionGrid">
+      <Button Name="TargetIdButton" Access="Public" StyleClasses="ShipyardConsoleActionButton"/>
+      <controls:ConfirmButton Name="SellShipButton"
+                              Text="{Loc 'cargo-pallet-sell-button'}"
+                              ConfirmationText="{Loc 'admin-notes-delete-confirm'}"
+                              Disabled="True"
+                              StyleClasses="ShipyardConsoleConfirmButton" />
+      <controls:ConfirmButton Name="UnassignDeedButton"
+                              Text="{Loc 'shipyard-console-unassign-deed'}"
+                              ConfirmationText="{Loc 'admin-notes-delete-confirm'}"
+                              Disabled="True"
+                              StyleClasses="ShipyardConsoleConfirmButton" />
+      <BoxContainer Orientation="Vertical" Name="NoDeedHelperContainer" Visible="True" StyleClasses="ShipyardConsoleHelperTextContainer">
+        <Label Text="{Loc 'shipyard-console-no-idcard-helper-line1'}" StyleClasses="ShipyardConsoleHelperLabel"/>
+        <Label Text="{Loc 'shipyard-console-no-idcard-helper-line2'}" StyleClasses="ShipyardConsoleHelperLabel"/>
+      </BoxContainer>
+      <BoxContainer Orientation="Vertical" Name="DeedContainer" Visible="False" StyleClasses="ShipyardConsoleDeedContainer">
+        <Label Text="{Loc 'shipyard-console-deed-label'}" StyleClasses="ShipyardConsoleDeedLabel"/>
+        <Label Name="DeedTitle" Text="" StyleClasses="ShipyardConsoleDeedValue"/>
+      </BoxContainer>
+    </GridContainer>
+
+    <!-- Контейнер для переименования -->
+    <BoxContainer Orientation="Horizontal" Margin="0 5 0 0" Name="RenameContainer" Visible="False" StyleClasses="ShipyardConsoleRenameContainer">
+      <LineEdit Name="RenameLineEdit"
+                PlaceHolder="Name"
+                MinWidth="140"
+                Editable="False"
+                StyleClasses="ShipyardConsoleRenameLineEdit" />
+      <Button Name="RenameButton"
+              Text="Rename"
+              Disabled="True"
+              StyleClasses="ShipyardConsoleRenameButton" />
+    </BoxContainer>
+
+  </BoxContainer>
+</controls:FancyWindow>

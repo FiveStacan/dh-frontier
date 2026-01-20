@@ -107,3 +107,5 @@
     reflects:
       - Energy
     # reflectingInHands: false
+  - type: StaticPrice
+    price: 240

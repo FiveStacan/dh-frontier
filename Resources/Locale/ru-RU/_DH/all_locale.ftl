@@ -1855,7 +1855,7 @@ ent-MagazineM16A4Extended = расширенный магазин M16A4
     .desc = { ent-MagazineM16A4.desc }
 
 dh-research-technology-amejar = Антиматериальное топливо
-dh-research-technology-expandetamejar = Расширенные топливные баки
+dh-research-technology-extendedamejar = Расширенные топливные баки
 dh-research-technology-BaseAmeJar = Базовое антиматериальное топливо
 dh-research-technology-bluespaceamejar = Бездонное антиматериальное топливо
 
@@ -1954,40 +1954,54 @@ ent-NFInflatableDoor = надувная дверь
 ent-NFInflatableDoorWindow = надувная оконная дверь
     .desc = Дверь, куда она ведёт?
 ent-NFInflatableDoorStack1 = надувная дверь
+    .desc = { ent-NFInflatableDoor.desc }
     .suffix = 1
 ent-NFInflatableDoorStack = надувная дверь
+    .desc = { ent-NFInflatableDoor.desc }
     .suffix = Полный
 ent-NFInflatableDoorWindowStack = надувная оконная дверь
+    .desc = { ent-NFInflatableDoorWindow.desc }
     .suffix = Полный
 ent-NFInflatableDoorWindowStack1 = надувная оконная дверь
+    .desc = { ent-NFInflatableDoorWindow.desc }
     .suffix = 1
 ent-NFInflatableDock = надувной внешний шлюз
     .desc = Надувной шлюз с усиленными точками крепления, способная к стыковке. Активируйте для спуска воздуха. Не прокалывайте.
 ent-NFInflatableDockStack = надувной внешний шлюз
+    .desc = { ent-NFInflatableDoor.desc }
     .suffix = Полный
 ent-NFInflatableDockStack1 = надувной внешний шлюз
+    .desc = { ent-NFInflatableDoor.desc }
     .suffix = 1
 ent-NFInflatableWall = надувная стена
     .desc = Надутая стена. Активируйте, чтобы спустить воздух. Не прокалывайте.
 ent-NFInflatableWallStack1 = надувная стена
+    .desc = { ent-NFInflatableWall.desc }
     .suffix = 1
 ent-NFInflatableWallStack5 = надувная стена
+    .desc = { ent-NFInflatableWall.desc }
     .suffix = 5
 ent-NFInflatableWallStack = надувная стена
+    .desc = { ent-NFInflatableWall.desc }
     .suffix = Полный
 ent-NFInflatableWindow = надувное окно
     .desc = Надутое окно. Активируйте, чтобы спустить воздух. Не прокалывайте.
 ent-NFInflatableWindowStack1 = надувное окно
+    .desc = { ent-NFInflatableWindow.desc }
     .suffix = 1
 ent-NFInflatableWindowStack5 = надувное окно
+    .desc = { ent-NFInflatableWindow.desc }
     .suffix = 5
 ent-NFInflatableWindowStack = надувное окно
+    .desc = { ent-NFInflatableWindow.desc }
     .suffix = Полный
 ent-NFInflatableCrate = надувной ящик
     .desc = Одноразовый надувной контейнер для хранения. Не сдувается. Не прокалывать.
 ent-NFInflatableCrateStack = надувной ящик
+    .desc = { ent-NFInflatableCrate.desc }
     .suffix = Полный
 ent-NFInflatableCrateStack1 = надувной ящик
+    .desc = { ent-NFInflatableCrate.desc }
     .suffix = 1
 
 ent-BorgChassisSelectable = Киборг
@@ -2235,6 +2249,10 @@ tiles-plasma-marble = плазменно-мраморная плитка
 tiles-uranium-marble = ураново-мраморная плитка
 tiles-techmaint-floor-dark = темный технический пол
 
+dh-research-technology-hyper-powercells = Батареи гипер ёмкости
+dh-research-technology-Armor-basic = Базовая броня
+dh-research-technology-Armor = Улучшенные бронепластины
+dh-research-technology-Armor-adw = Комплесные бронекостюмы
 dh-research-technology-Armor-salvage = Костюмы исследования
 dh-research-technology-hardsuits-luxury = Элитные утилизаторские экзокостюмы
 dh-research-technology-hardsuits-salvage = Утилизаторские экзокостюмы
@@ -2261,10 +2279,10 @@ nf-research-technology-portable-smes = Портативный крупный н�
 reagent-name-antiseptic = антисептическая жидкость
 reagent-desc-antiseptic = Мягкое антибактериальное мыло, используемое для очистки сточных вод, непригодное для употребления в пищу в качестве органических продуктов.
 
-ent-NFBaseWeaponFramePka = протокинетический ускоритель
-    .desc = Стреляет кинетическими снарядами с низким уроном на короткой дистанции.
 ent-NFWeaponPkaSawn = укороченный протокинетический ускоритель
     .desc = Границы и правила созданы для того, чтобы их нарушать; иначе не будет прогресса, но этот случай — веский аргумент против этого утверждения.
+ent-NFWeaponPka = протокинетический ускоритель
+   .desc = Стреляет кинетическими снарядами с низким уроном на короткой дистанции.
 
 ent-MaterialAnomalite = аномалит
     .desc = Слегка переливающийся розово-фиолетовый кристалл. Он тихонько гудит.
@@ -2306,8 +2324,6 @@ ent-WeaponGunLaserCarbineSemi = лазерный карабин ИК-30
     .desc = Лазерный полуавтоматический карабин используемый батарейки как источник питания.
 ent-CrateArmoryIK30 = ящик ИК-30
     .desc = Содержит три батарейных лазера ИК-30. Чтобы открыть необходим доступ уровня Оружейной.
-ent-WeaponEnergyGunTactical = тактическая энергетическая пушка
-    .desc = Тактическая версия базовой гибридной энергетической пушки с двумя режимами работы: обезоруживание и летал. Имеет встроенный малый аккумулятор.
 
 ent-ADTClothingOuterArmorMiner = костюм исследователя
     .desc = Не спасёт от давления, но хорошо защищает от фауны.
@@ -2528,3 +2544,256 @@ ent-NFPoweredSmallLightShieldedEmpty = экранированный малень
     .desc = Осветительный прибор. Потребляет энергию и излучает свет, если оснащён лампой-трубкой. Усилен пластиковой сталью для защиты от солнечных вспышек.
 ent-NFClothingOuterArmorReflective = базовый отражающий жилет
     .desc = Жилет, обеспечивающий умеренную защиту от энергетического оружия.
+
+flash-protection = Оно обеспечивает защиту от [color=lightblue]ярких вспышек[/color].
+
+ent-PoweredStrobeLightEpsilonFull = { ent-PoweredStrobeLightEmpty }
+    .suffix = Эпсилон
+    .desc = { ent-PoweredStrobeLightEmpty.desc }
+ent-PoweredStrobeLightEpsilonFullSound = { ent-PoweredStrobeLightEmpty }
+    .suffix = Эпсилон, Звук
+    .desc = { ent-PoweredStrobeLightEmpty.desc }
+ent-PoweredStrobeSodiumSiren = { ent-PoweredStrobeLightEmpty }
+    .suffix = Натриевый
+    .desc = { ent-PoweredStrobeLightEmpty.desc }
+ent-ClothingOuterEVASuitStc = скафандр EVA диспетчера
+    .desc = { ent-ClothingOuterEVASuitContractor.desc }
+ent-ClothingOuterEVASuitValet = скафандр EVA камердинера
+    .desc = { ent-ClothingOuterEVASuitContractor.desc }
+
+ent-ClothingHandsKnuckleDusters = кастеты
+    .desc = Холодные пластиковые кастеты делают ваши удары намного сильнее.
+ent-ClothingHandsKnuckleDustersBrass = латунные кастеты
+    .desc = Кастеты, точно такие же, как делали раньше, и по-прежнему бьют так же сильно.
+ent-ClothingHandsKnuckleDustersSyndicate = кастеты синдиката
+    .desc = Кастеты из пластитана с кроваво-красной буквой S. Настоящий мужчина забивает ими кого-нибудь до смерти.
+ent-ClothingHandsKnuckleDustersQM = Золотые кастеты
+    .desc = 24-каратное золото, внедренное в пласталь, с логотипом НаноТрайзен. Истинный символ могущества интенданта.
+ent-ClothingHandsKnuckleDustersStun = электрошоковые кастеты
+    .desc = Сочетание кастетов и шоковой дубинки значительно упрощает борьбу с оппозиционными движениями.
+
+ent-SyndicateFlippo = Кроваво-красная { ent-FlippoLighterSunriseBase }
+    .desc = «Достойный» выбор среди зажигалок. Не содержит меди.
+ent-CentCommFlippo = позолоченная { ent-FlippoLighterSunriseBase } ЦентКома
+    .desc = Изящная, украшенная нефритом и позолотой рамка для флиппо, внутри которой находится реактивный самолет, работающий на энергии космического пространства. Защелка закрывается миниатюрным считывателем доступа, который реагирует только на запросы сотрудников CentComm. Самая красивая зажигалка, известная человечеству.
+ent-DonkcoLighter = { ent-FlippoLighterSunriseBase } Donk Co.
+    .desc = Флиппо — излюбленный выбор опытного предателя. Панированная зажигалка от Donk Co. Каким-то образом съедобна в горящем состоянии.
+ent-CybersunFlippo = { ent-FlippoLighterSunriseBase } CyberSun
+    .desc = Стильная зажигалка флиппо черного и пурпурного цвета с логотипом и символикой компании CyberSun Industries.
+ent-InterdyneFlippo = { ent-FlippoLighterSunriseBase } Interdyne
+    .desc = Темно-синяя зажигалка флиппо, украшенная логотипом клиник «Gene Clean» фармацевтической компании Interdyne Pharmaceuticals. Станьте хозяином своей сигареты.
+ent-SpiderclanFlippo = { ent-FlippoLighterSunriseBase } Клана Паука
+    .desc = Высокотехнологичная реактивная зажигалка, разработанная для работы даже в открытом космосе. Работает на крошечном микротермоядерном элементе.
+ent-FlippoSyndicateLighter = гравированная { ent-FlippoLighterSunriseBase }
+    .desc = Прочная золотистая зажигалка, прослужит довольно долго. Гравировка не дает никаких тактических преимуществ.
+ent-WaffleCoFlippo = { ent-FlippoLighterSunriseBase } Waffle Co.
+    .desc = Прочная зажигалка, изготовленная из массивной массы. Логотип Waffle Co. вращает искровое колесо при нажатии, сводя к минимуму риск ожога даже для самого неумелого пользователя.
+ent-NanotrasenFlippo = { ent-FlippoLighterSunriseBase } НаноТрайзен
+    .desc = Роскошная темно-синяя флиппо, которую обычно вручают лояльным руководителям вместо повышения зарплаты. Работает на жидкой плазме.
+ent-HonkCoFlippo = { ent-FlippoLighterSunriseBase } Honk Co.
+    .desc = Скользкая шуточная зажигалка производства компании Honk Co., спрятанная внутри настоящей банановой кожуры.
+
+ent-FoodBoxDonkpocketMoth = коробка моль-покетов
+    .desc = Инструкция: Разогрейте в микроволновой печи. Продукт остынет, если не будет съеден в течение семи минут.
+ent-FoodDonkpocketMoth = моль-покет
+    .desc = Шумная версия «донк-покета», созданная во время массовых протестов против… Да кому это вообще интересно? Просто донк-покет для мотыльков.
+ent-FoodDonkpocketMothWarm = тёплый моль-покет
+    .desc = { ent-FoodDonkpocketMoth.desc }
+ent-FoodBakedWaffleCone = вафельный рожок
+    .desc = Вафельный рожок с сахаром. Сверху — мороженое!
+ent-FoodBoxWaffleCone = коробка вафельных рожков
+    .desc = Коробка вафельных рожков марки Waffle Co. На коробке изображено несколько отталкивающее фото улыбающегося ребенка.
+
+ent-McServiceTechFab = сервисный ТехФаб МакКарго
+    .desc = Печатает оборудование для персонала компании МакКарго.
+ent-McServiceTechFabCircuitboard = сервисный ТехФаб МакКарго (машинная плата)
+    .desc = Плата для создания сервисного техфаба МакКарго.
+
+ent-N14PoliceBaton = полицейская дубинка
+
+ent-FoodEveryspice = стручки душистого перца
+    .desc = Длинные, светлые стручки растения душистого перца. В молотом виде придают блюдам насыщенный вкус.
+ent-FoodEveryspiceRoasted = жареные стручки душистого перца
+    .desc = Ароматные, обугленные стручки душистого перца. В измельченном виде — пикантная добавка к блюдам.
+ent-FoodPizzaWorldpeas = мировая пицца
+    .desc = Современная дипломатия в форме диска.
+ent-FoodPizzaWorldpeasSlice = кусочек мировой пиццы
+    .desc = Разделение мира — это небольшая цена за гармонию.
+ent-FoodMeatWholePenguinCooked = целиком приготовленный пингвин
+    .desc = Целый приготовленный пингвин. Нет никакого морального оправдания тому, что вы здесь сделали.
+ent-FoodMeatWholeDuckCooked = целиком приготовленная утка
+    .desc = Целая приготовленная утка. Можете представить, как она печально смотрит на вас.
+ent-FoodMeatWholeChickenCooked = целиком приготовленная курица
+    .desc = Целая вареная курица. Вероятно, она полностью прожарена.
+ent-FoodSausageCasing = колбасная оболочка
+    .desc = Кишечник или что-то подобное у какого-то несчастного существа...
+ent-FoodRiceDough = рисовое тесто
+    .desc = Вы почти уверены, что это просто рис и вода. Вы понятия не имеете, как это всё держится вместе.
+ent-FoodRiceDoughSlice = кусочек рисового теста
+    .desc = Кусочек рисового теста.
+ent-FoodRiceNoodles = рисовая лапша
+    .desc = Гнездо из нежной рисовой лапши. Вероятно, лучше приготовить заранее.
+ent-FoodRiceNoodlesSheet = лист рисовой лапши
+    .desc = Лист риса, готовый к нарезке на лапшу. Вероятно, лучше его приготовить.
+ent-FoodPiePumpkin = тыквенный пирог
+    .desc = Кто-нибудь должен превратить это в латте!
+ent-FoodMeatSausage = приготовленная колбаска
+    .desc = Обычная сосиска. Кто знает, что в ней внутри?
+ent-FoodSausageRaw = сырая колбаска
+    .desc = Обычная сосиска. Кто знает, что в ней внутри?
+ent-FoodPelmeniBowl = пельмени
+    .desc = Много мяса, мало теста.
+ent-FoodMealHotdog = хот-дог
+    .desc = Вот это да!
+ent-FoodBakedGrilledCheeseSandwich = сэндвич с сыром на гриле
+    .desc = Поджаренный с маслом хлеб с сыром — идеальное лакомство для прохладного дня в космосе.
+ent-FoodBreadTexasToast = техасский тост
+    .desc = Толстый кусок тоста, покрытый чесноком и маслом. А если это не сработает — добавьте больше чеснока.
+ent-FoodBreadGarlicBaguetteSlice = ломтик французского чесночного хлеба
+    .desc = Кусок французского чесночного хлеба, щедро посыпанный поджаренным сыром и с недостаточным количеством чеснока.
+ent-FoodBreadGarlicBaguette = французский чесночный хлеб
+    .desc = Чеснок? Расплавленный сыр на багете?! Не хватает только более равномерного количества чеснока.
+ent-FoodTartPearCheeseSlice = ломтик грушево-сырного пирога
+    .desc = Сладкий и пикантный кусочек грушево-сырного пирога.
+ent-FoodCakeCottonSlice = кусок хлопкового пирога
+    .desc = Кусочек бисквитного торта. Можно просто облизать глазурь, это нормально.
+ent-FoodCakeCotton = хлопковый пирог
+    .desc = Торт с глазурью из волокна и комочком ваты сверху.
+ent-FoodMealTonkotsuNoodles = лапша тонкацу
+    .desc = Бульон из свиных костей с чесноком и свининой. Насыщенный!
+ent-FoodDoughFlatPastry = тесто для печенья
+    .desc = Раскатанное маслянистое тесто для выпечки.
+ent-FoodSnackSwirlLollipop = леденец с закрученным узором
+    .desc = Закрученный круг из чистого концентрированного сахара. Кто теперь самый большой ребенок на детской площадке?
+ent-FoodFrozenPopsicleLicorice = лакричный кремовый леденец
+    .desc = Ванильное мороженое на палочке, покрытое тягучей лакричной оболочкой.
+ent-FoodFrozenMochiBungo = бунго моти
+    .desc = Вкусная тягучая масса из клейкого риса, внутри которой находится мороженое. Со вкусом бунго!
+ent-FoodFrozenMochiUbe = убе моти
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. Вы не уверены, действительно ли это убэ (фиолетовый батат).
+ent-FoodFrozenMochiTea = чай моти
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. С добавлением чая!
+ent-FoodFrozenMochiSpice = моти с корицей
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. Острое! Это корица?
+ent-FoodFrozenMochiChocolate = шоколадный моти
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. С шоколадным вкусом!
+ent-FoodFrozenMochiCherry = вишневый моти
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. Вишневый вкус!
+ent-FoodFrozenMochiMoth = мотыльковый моти
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится мороженое. Почти слишком мило, чтобы это есть! Почти.
+ent-FoodBakedCinnamonRoll = булочка с корицей
+    .desc = Интересно, сколько еще глазури можно было бы добавить к этому?
+ent-FoodMeatPatty = мясная котлета
+    .desc = Плоский кусок фарша. Готов к жарке на гриле.
+ent-FoodMeatPattyCooked = приготовленная мясная котлета
+    .desc = Приготовленная мясная котлета.
+ent-FoodPieAppleHoney = медовый яблочный штрейзельный пирог
+    .desc = Пирог с яблоками, пропитанными медом, запеченный под рассыпчатой ​​овсяной посыпкой.
+ent-FoodTofuSliceBattered = ломтик тофу в кляре
+    .desc = Ломтик тофу, обваленный в липкой смеси муки и яиц. В таком виде, пожалуй, даже вкуснее.
+ent-FoodSlicedTofuFried = жареный тофу
+    .desc = Этот некогда полезный ломтик тофу был обжарен до хрустящей корочки.
+ent-FoodEggLaid = яйцо
+    .desc = Свежие фермерские продукты, еще теплые!
+ent-FoodMeatDragonCooked = драконий стейк
+    .desc = На большинстве станций поливать это кетчупом считается преступлением, караемым смертной казнью.
+ent-FoodMeatDragonCutletCooked = дракония котлета
+    .desc = Это королевский обед!
+ent-FoodOnionRingsBattered = луковые кольца в кляре
+    .desc = Луковые кольца, обваленные в густой смеси муки и яиц.
+ent-FoodMonkanana = монканана
+    .desc = Выглядит как банан, превращенный в обезьяну.
+ent-FoodFrozenMochiFiber = моти из волокна
+    .desc = Вкусная комочка тягучего клейкого риса, внутри которой находится начинка из мороженого. Она сплетена из волокон!
+ent-FoodMealPearsBelleHelene = груши красавица Хелен
+    .desc = Нежный вкус безупречной груши, пропитанной шоколадом.
+ent-FoodSaladGreek = греческий салат
+    .desc = Это тот самый салат, который все едят в тех рекламных роликах.
+ent-FoodMealMisoNoodles = лапша мисо
+    .desc = Мисо, или бульон из ферментированной бобовой пасты с зеленым луком и яйцом. Насыщенный!
+ent-FoodBreakfastEnglish = полный английский завтрак
+    .desc = Огромная тарелка белка и углеводов, которая, скорее всего, вернет вас в постель, чем вытащит из нее. И про войну и говорить не нужно!
+ent-FoodBreakfastAmerican = полный американский завтрак
+    .desc = Огромная тарелка белка и углеводов, которая, скорее всего, вернет вас в постель, чем вытащит из нее. О, что это за новый ад?
+ent-FoodMealChickenParmesan = курица с пармезаном
+    .desc = Самый эффективный способ приручить австралийца. Только не забудьте назвать это "курицей пармезан"...
+
+ent-ClothingBeltSheathFilledNavyOfficer = { ent-ClothingBeltSheathFilled }
+    .desc = { ent-ClothingBeltSheathFilled.desc }
+    .suffix = Заполненный, Морской офицер
+ent-ClothingBeltSheathFilledOrd = ножны Красного Ордена
+    .desc = Специальные ножны, созданные исключительно для сабель Красного Ордена.
+    .suffix = Заполненный
+
+health-examinable-carbon-Slash-8 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } поверхностный порез.[/color]
+health-examinable-carbon-Slash-15 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько небольших порезов.[/color]
+health-examinable-carbon-Slash-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько довольно крупных ран.[/color]
+health-examinable-carbon-Slash-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело выглядит окровавленным и изувеченным.[/color]
+health-examinable-carbon-Slash-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью разорвано на куски![/color]
+
+health-examinable-carbon-Blunt-8 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } легкий синяк.[/color]
+health-examinable-carbon-Blunt-15 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } немного синяков.[/color]
+health-examinable-carbon-Blunt-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-BE($target) } избитый.[/color]
+health-examinable-carbon-Blunt-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело изуродовано и сильно избито.[/color]
+health-examinable-carbon-Blunt-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью раздавлено в кашу![/color]
+
+health-examinable-carbon-Piercing-8 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } небольшая колотая рана.[/color]
+health-examinable-carbon-Piercing-15 = [color=yellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько колотых ран.[/color]
+health-examinable-carbon-Piercing-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } множественные глубокие колотые раны.[/color]
+health-examinable-carbon-Piercing-75 = [color=red]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } обширные, глубокие, рваные разрывы по всей поверхности { POSS-ADJ($target) } тела.[/color]
+health-examinable-carbon-Piercing-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью покрыто огромными зияющими дырами.[/color]
+health-examinable-carbon-Piercing-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } тело выглядит так, будто его разорвало на части![/color]
+
+health-examinable-carbon-Asphyxiation-30 = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } губы синеют.[/color]
+health-examinable-carbon-Asphyxiation-75 = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } лицо синеет.[/color]
+
+health-examinable-carbon-Heat-8 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } поверхностный ожог.[/color]
+health-examinable-carbon-Heat-15 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько ожогов первой степени.[/color]
+health-examinable-carbon-Heat-30 = [color=orange]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } несколько ожогов второй степени.[/color]
+health-examinable-carbon-Heat-100 = [color=red]{ CAPITALIZE(POSS-ADJ($target)) } Тело обширно покрыто ожогами четвертой степени.[/color]
+health-examinable-carbon-Heat-200 = [color=crimson]{ CAPITALIZE(POSS-ADJ($target)) } Тело полностью сгорело дотла![/color]
+
+health-examinable-carbon-Shock-15 = [color=lightgoldenrodyellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } легкое обугливание на { POSS-ADJ($target) } коже.[/color]
+health-examinable-carbon-Shock-30 = [color=lightgoldenrodyellow]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } обугливание по всему { POSS-ADJ($target) } тела.[/color]
+health-examinable-carbon-Shock-100 = [color=lightgoldenrodyellow]{ CAPITALIZE(POSS-ADJ($target)) } на теле обнаружены сильные электрические ожоги![/color]
+health-examinable-carbon-Shock-200 = [color=lightgoldenrodyellow]{ CAPITALIZE(POSS-ADJ($target)) } тело полностью обгорело![/color]
+
+health-examinable-carbon-Cold-8 = [color=lightblue]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } легкое обморожение кончиков { POSS-ADJ($target) } пальцев.[/color]
+health-examinable-carbon-Cold-15 = [color=lightblue]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } обморожение первой степени на концах { POSS-ADJ($target) } конечностей.[/color]
+health-examinable-carbon-Cold-30 = [color=lightblue]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } обморожение второй степени на { POSS-ADJ($target) } конечностей.[/color]
+health-examinable-carbon-Cold-100 = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } Тело покрыто обширным обморожением четвертой степени.[/color]
+health-examinable-carbon-Cold-200 = [color=lightblue]{ CAPITALIZE(POSS-ADJ($target)) } Тело замерзло намертво![/color]
+
+health-examinable-carbon-Caustic-8 = [color=yellowgreen]{ CAPITALIZE(POSS-ADJ($target)) } Кожа выглядит слегка обесцвеченной.[/color]
+health-examinable-carbon-Caustic-15 = [color=yellowgreen]{ CAPITALIZE(POSS-ADJ($target)) } Кожа выглядит раздраженной и обесцвеченной..[/color]
+health-examinable-carbon-Caustic-30 = [color=yellowgreen]{ CAPITALIZE(POSS-ADJ($target)) } Кожа воспалена и начинает отслаиваться.[/color]
+health-examinable-carbon-Caustic-100 = [color=yellowgreen]{ CAPITALIZE(SUBJECT($target)) } { CONJUGATE-HAVE($target) } сильные химические ожоги по всей территории { POSS-ADJ($target) } тела.[/color]
+health-examinable-carbon-Caustic-200 = [color=yellowgreen]Большая часть { POSS-ADJ($target) } тела полностью расплавлена.![/color]
+
+health-examinable-carbon-Radiation-50 = [color=orange]{ CAPITALIZE(POSS-ADJ($target)) } на коже образовались большие волдыри.[/color]
+health-examinable-carbon-Radiation-100 = [color=orange]{ CAPITALIZE(POSS-ADJ($target)) } кожа покрыта язвами и отслаивается кусками.[/color]
+
+bloodstream-component-slight-bleeding = [color=#ffa8a8]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} капающая кровь.[/color]
+bloodstream-component-massive-bleeding = [color=#d4003c]Кровь хлещет из { POSS-ADJ($target) } тела![/color]
+bloodstream-component-strong-bleeding = [color=#d10a0a]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} обильное кровотечение.[/color]
+
+nf-salvage-faction-xenos = Ксеносы
+nf-salvage-faction-carps = Карпы
+nf-salvage-faction-syndicate = Синдикат
+nf-salvage-faction-cultists = Культисты
+nf-salvage-faction-flesh = Flesh
+nf-salvage-faction-argocytes = Argocytes
+nf-salvage-faction-dinosaurs = Динозавры
+nf-salvage-faction-mercenaries = Наёмники
+nf-salvage-faction-explorers = Исследователи
+nf-salvage-faction-silicons = Rogue Silicon
+nf-salvage-faction-punks = Панки
+
+shipyard-console-menu-sorting-label = Cортировка:
+shipyard-console-sorting-all-label = Название
+shipyard-console-sorting-price-label = Цена
+
+ent-WallWoodTight = плотная деревянная стена
+    .desc = { ent-BaseWall.desc }
+ent-WoodGirder = деревянный каркас
+    .desc = { ent-WoodGirder.desc }

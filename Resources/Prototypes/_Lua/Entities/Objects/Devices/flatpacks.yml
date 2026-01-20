@@ -24,7 +24,7 @@
 #   - type: StorageFill
 #     contents:
 #       - id: ADTSMESIndustrialEmptyFlatpack
-  
+
 # #Из ящика в карго консоль
 # - type: cargoProduct
 #   id: ADTSMESIndustrialEmpty
@@ -39,7 +39,7 @@
 - type: entity
   parent: BaseNFFlatpack
   id: MedipenTechfabFlatpack
-  name: упакованный техфаб медипенов
+  name: упакованный ТехФаб медипенов
   description: Упакованный ТехФаб для проихводства медипенов.
   components:
   - type: Flatpack

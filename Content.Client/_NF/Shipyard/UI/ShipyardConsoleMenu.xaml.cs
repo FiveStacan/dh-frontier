@@ -12,6 +12,12 @@ using static Robust.Client.UserInterface.Controls.BaseButton;
 
 namespace Content.Client._NF.Shipyard.UI;
 
+public enum VesselSortType //DH
+{
+    Name,
+    Price,
+}
+
 [GenerateTypedNameReferences]
 public sealed partial class ShipyardConsoleMenu : FancyWindow
 {
@@ -24,9 +30,11 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
     private readonly List<VesselSize> _categoryStrings = new();
     private readonly List<VesselClass> _classStrings = new();
     private readonly List<VesselEngine> _engineStrings = new();
+    private readonly List<VesselSortType> _sortTypes = new(); //DH
     private VesselSize? _category;
     private VesselClass? _class;
     private VesselEngine? _engine;
+    private VesselSortType? _sortBy = VesselSortType.Name; //DH
 
     private List<string> _lastAvailableProtos = new();
     private List<string> _lastUnavailableProtos = new();
@@ -39,9 +47,13 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         RobustXamlLoader.Load(this);
         IoCManager.InjectDependencies(this);
         Title = Loc.GetString("shipyard-console-menu-title");
+
+        PopulateSortings(); //DH
+
         SearchBar.OnTextChanged += OnSearchBarTextChanged;
         Categories.OnItemSelected += OnCategoryItemSelected;
         Classes.OnItemSelected += OnClassItemSelected;
+        Sorting.OnItemSelected += OnSortingItemSelected; //DH
         Engines.OnItemSelected += OnEngineItemSelected;
         SellShipButton.OnPressed += (args) => { OnSellShip?.Invoke(args); };
         UnassignDeedButton.OnPressed += (args) => { OnUnassignDeed?.Invoke(args); };
@@ -60,6 +72,13 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         SetClassText(args.Id);
         PopulateProducts(_lastAvailableProtos, _lastUnavailableProtos, _freeListings, _validId);
     }
+    //DH
+    private void OnSortingItemSelected(OptionButton.ItemSelectedEventArgs args)
+    {
+        SetSortingText(args.Id);
+        PopulateProducts(_lastAvailableProtos, _lastUnavailableProtos, _freeListings, _validId);
+    }
+    //DH -
 
     private void OnEngineItemSelected(OptionButton.ItemSelectedEventArgs args)
     {
@@ -98,6 +117,24 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         _class = id == 0 ? null : _classStrings[id];
         Classes.SelectId(id);
     }
+    //DH
+    private void SetSortingText(int id)
+    {
+        if (id == 0)
+        {
+            _sortBy = VesselSortType.Name;
+        }
+        else if (id == 1 && _sortTypes.Count > 0)
+        {
+            _sortBy = _sortTypes[0];
+        }
+        else
+        {
+            _sortBy = VesselSortType.Name;
+        }
+        Sorting.SelectId(id);
+    }
+
     private void SetEngineText(int id)
     {
         _engine = id == 0 ? null : _engineStrings[id];
@@ -123,7 +160,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
     }
 
     /// <summary>
-    /// Given a set of prototype IDs, returns a corresponding set of prototypes, ordered by name.
+    /// Given a set of prototype IDs, returns a corresponding set of prototypes, sorted based on _sortBy.
     /// </summary>
     private List<VesselPrototype?> GetVesselPrototypesFromIds(IEnumerable<string> protoIds)
     {
@@ -131,8 +168,19 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
             .Where(it => it != null)
             .ToList();
 
-        vesselList.Sort((x, y) =>
-            string.Compare(x!.Name, y!.Name, StringComparison.CurrentCultureIgnoreCase));
+        //DH
+        switch (_sortBy)
+        {
+            case VesselSortType.Price:
+                vesselList.Sort((x, y) => x!.Price.CompareTo(y!.Price));
+                break;
+            case VesselSortType.Name:
+            default:
+                vesselList.Sort((x, y) =>
+                    string.Compare(x!.Name, y!.Name, StringComparison.CurrentCultureIgnoreCase));
+                break;
+        }
+
         return vesselList;
     }
 
@@ -308,6 +356,20 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
             }
         }
     }
+    /// <summary>
+    ///     Populates the list of sorting options that will be shown.
+    ///     Uses localization keys like shipyard-console-sorting-all-label and shipyard-console-sorting-price-label.
+    /// </summary>
+    public void PopulateSortings()
+    {
+        _sortTypes.Clear();
+        Sorting.Clear();
+
+        Sorting.AddItem(Loc.GetString("shipyard-console-sorting-all-label"));
+        Sorting.AddItem(Loc.GetString("shipyard-console-sorting-price-label"));
+
+        _sortTypes.Add(VesselSortType.Price);
+    }
 
     public void UpdateState(ShipyardConsoleInterfaceState state)
     {
@@ -316,7 +378,7 @@ public sealed partial class ShipyardConsoleMenu : FancyWindow
         if (!state.FreeListings)
         //DH
         {
-            // множитель для шата
+
             float shuttlePriceMultiplier = 1.2f;
 
             shipPrice = (int)(state.ShipSellValue * shuttlePriceMultiplier);

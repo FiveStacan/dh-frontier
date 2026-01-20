@@ -489,6 +489,25 @@
 
 - type: entity
   parent: [WeaponCaseLong, RareWeaponCase]
+  id: WeaponCaseLongAK514
+  suffix: Dungeon, AK514
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: StorageFill
+    contents:
+    - id: WeaponRifleAK514
+      amount: 1
+      prob: 0.08
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: WeaponRifleAK514Worn
+      amount: 1
+      prob: 0.92
+      orGroup: WeaponExpeditionOrWeaponExpeditionWorn
+    - id: LuaMagazineCaselessRifle
+      amount: 2
+
+- type: entity
+  parent: [WeaponCaseLong, RareWeaponCase]
   id: WeaponCaseLongSm
   suffix: Dungeon, Soland-Moss AR
   categories: [ HideSpawnMenu ]
@@ -499,7 +518,7 @@
       amount: 1
       prob: 0.10
       orGroup: WeaponExpeditionOrWeaponExpeditionWorn
-    - id: NFWeaponRifleAssaultSmWorn
+    - id: NFWeaponRifleAssaultSmExpeditionWorn
       amount: 1
       prob: 0.90
       orGroup: WeaponExpeditionOrWeaponExpeditionWorn

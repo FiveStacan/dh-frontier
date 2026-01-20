@@ -13,6 +13,8 @@
     layers:
       HeadTop : HEAD
       HeadSide : HEAD
+  - type: StaticPrice
+    price: 30 #DH
 
 - type: entity
   parent: ClothingHeadHelmetBase
@@ -45,6 +47,8 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: StaticPrice
+    price: 40 #DH
 
 #Mercenary Helmet
 - type: entity
@@ -86,6 +90,8 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: StaticPrice
+    price: 145 #DH
 
 #Syndicate SWAT Helmet
 - type: entity
@@ -124,6 +130,8 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: StaticPrice
+    price: 34 #DH
 
 #Bombsuit Helmet
 - type: entity
@@ -543,6 +551,8 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  - type: StaticPrice
+    price: 44 #DH
 
 - type: entity
   parent: ClothingHeadHelmetJustice

@@ -62,6 +62,132 @@
   - AdvancedPainting
   position: 4, 20
 
+- type: technology
+  id: DHOuterClothingBasic
+  name: dh-research-technology-outercloth-basic
+  entityIcon: ClothingOuterSuitFire
+  discipline: NFScience
+  secondaryDiscipline: NFEngineering
+  tier: 1
+  cost: 3200
+  recipeUnlocks:
+  - ClothingOuterSuitRad
+  - ClothingOuterSuitFire
+  - ClothingHeadHelmetFire
+  - ClothingOuterSuitAtmosFire
+  - ClothingHeadHelmetAtmosFire
+  - ClothingOuterSuitBomb
+  - ClothingHeadHelmetBombSuit
+  - ClothingOuterSuitCargo
+  - ClothingOuterBioScientist
+  - ClothingHeadHatHoodBioScientist
+  - ClothingHeadHatHardhatArmored
+  position: 0, 8
+
+- type: technology
+  id: DHArmorBasic
+  name: dh-research-technology-Armor-basic
+  entityIcon: ClothingOuterArmorBasicSlim
+  discipline: NFScience
+  tier: 1
+  cost: 3000
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterArmorBasicSlim
+  - ClothingHeadHelmetRiot
+  technologyPrerequisites:
+  - DHOuterClothingBasic
+  position: 1, 9
+
+- type: technology
+  id: DHArmor
+  name: dh-research-technology-Armor
+  entityIcon: ClothingOuterArmorRiot
+  discipline: NFScience
+  tier: 1
+  cost: 5500
+  recipeUnlocks:
+  - ClothingOuterArmorRiot
+  - ClothingOuterArmorBasic
+  - ClothingHeadHelmetBasic
+  - ClothingHeadHelmetJustice
+  technologyPrerequisites:
+  - DHArmorBasic
+  position: 2, 9
+
+- type: technology
+  id: DHArmorSalvage
+  name: dh-research-technology-Armor-salvage
+  entityIcon: ADTClothingOuterArmorMiner
+  discipline: NFSalvage
+  tier: 1
+  cost: 17500
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ADTClothingOuterArmorMinerLight
+  - ADTClothingOuterArmorMiner
+  - ADTClothingOuterArmorMinerHeavy
+  technologyPrerequisites:
+  - DHArmor
+  - NFHardsuitsField
+  position: 3, 10
+
+- type: technology
+  id: DHArmorAdw
+  name: dh-research-technology-Armor-adw
+  entityIcon: ClothingOuterArmorSWAT
+  discipline: NFScience
+  tier: 1
+  cost: 16500
+  prerequisiteLineType: Diagonal
+  recipeUnlocks:
+  - ClothingOuterArmorUSSPjuggernaut
+  - ClothingOuterArmorSWAT
+  - ClothingHeadHelmetSwat
+  - ClothingOuterArmorHeavy
+  - ClothingOuterArmorHeavyGreen
+  - ClothingOuterArmorHeavyRed
+  - ADTClothingOuterArmorCrusader
+  technologyPrerequisites:
+  - DHArmor
+  position: 3, 11
+
+- type: technology
+  id: DHEVAHardsuitsBasic
+  name: dh-research-technology-evahardsuits-basic
+  entityIcon: ClothingOuterHardsuitEVA
+  discipline: NFEngineering
+  tier: 1
+  cost: 6800
+  recipeUnlocks:
+  - ClothingOuterHardsuitEVA
+  - ClothingOuterSuitEmergency
+  - ClothingHeadHelmetEVALarge
+  - ClothingHeadHelmetEVA
+  - ClothingOuterHardsuitAncientEVA
+  - ClothingHeadHelmetAncient
+  - ClothingHeadHelmetCosmonaut
+  technologyPrerequisites:
+  - DHOuterClothingBasic
+  position: 1, 8
+
+- type: technology
+  id: DHHardsuitsBasic
+  name: dh-research-technology-evahardsuits
+  entityIcon: ClothingOuterHardsuitPilot
+  discipline: NFEngineering
+  tier: 1
+  cost: 9750
+  recipeUnlocks:
+  - ClothingOuterHardsuitPilot
+  - ClothingOuterEVASuitScientist
+  - ClothingOuterEVASuitMailman
+  - ClothingOuterEVASuitStc
+  - ClothingOuterEVASuitCaptain
+  technologyPrerequisites:
+  - DHEVAHardsuitsBasic
+  position: 2, 8
+
 #region Engineering
 - type: technology
   id: DHBaseAmeJarTechnology
@@ -90,14 +216,14 @@
   position: 5, 4
 
 - type: technology
-  id: DHExpandetAmeJarTechnology
-  name: dh-research-technology-expandetamejar
-  entityIcon: ExpandetAmeJar
+  id: DHExtendedAmeJarTechnology
+  name: dh-research-technology-extendedamejar
+  entityIcon: ExtendedAmeJar
   discipline: NFEngineering
   tier: 1
   cost: 31000
   recipeUnlocks:
-  - ExpandetAmeJar
+  - ExtendedAmeJar
   technologyPrerequisites:
   - DHAmeJarTechnology
   position: 6, 4
@@ -113,9 +239,22 @@
   recipeUnlocks:
   - BluespaceAmeJar
   technologyPrerequisites:
-  - DHExpandetAmeJarTechnology
+  - DHExtendedAmeJarTechnology
   - NFBluespaceStorage
   position: 6, 3
+
+- type: technology
+  id: DHPowerCellHyper
+  name: dh-research-technology-hyper-powercells
+  entityIcon: PowerCellMicroreactor
+  discipline: NFEngineering
+  tier: 1
+  cost: 15900
+  recipeUnlocks:
+  - PowerCellHyper
+  technologyPrerequisites:
+  - NFAdvancedSMES
+  position: 2, 26
 
 #region Science
 
@@ -143,7 +282,7 @@
   prerequisiteLineType: Diagonal
   recipeUnlocks:
   - BlueprintLithographMachineCircuitboard
-  - SheetBlueprintPaper
+  #- SheetBlueprintPaper
   technologyPrerequisites:
   - NFBasicAnomalousResearch
   - NFSuperParts
@@ -176,16 +315,17 @@
 #     .desc = Крайне плотная и прочная бумага, позволяющая печатать на ней считываемые машинами чертежы.
 # materials-blueprintPaper = чертёжная бумага
 
-- type: technology
-  id: DHResearchDisks
-  name: dh-research-technology-research-disks
-  entityIcon: ResearchDisk
-  discipline: NFScience
-  tier: 1
-  cost: 40000
-  recipeUnlocks:
-  - ResearchDisk10000
-  - ResearchDisk25000
-  technologyPrerequisites:
-  - NFSuperParts
-  position: 5, 7
+# - type: technology
+#   id: DHResearchDisks
+#   name: dh-research-technology-research-disks
+#   entityIcon: ResearchDisk
+#   discipline: NFScience
+#   tier: 1
+#   cost: 40000
+#   recipeUnlocks:
+#   - ResearchDisk10000
+#   - ResearchDisk25000
+#   technologyPrerequisites:
+#   - NFSuperParts
+#   position: 5, 7
+

@@ -257,6 +257,9 @@
 - type: Tag
   id: NFMagazineLowCapacityRifle30 # MagazineLightRifleLowCapacity
 
+- type: Tag
+  id: NFMagazineExtendedCapacityRifle30 #DH
+
 #region .60 rifle
 - type: Tag
   id: NFCartridgeRifle60 # OG WizDen: CartridgeAntiMateriel

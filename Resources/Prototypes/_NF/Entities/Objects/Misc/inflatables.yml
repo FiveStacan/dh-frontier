@@ -33,7 +33,7 @@
         - WallLayer
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFInflatableWallStack1
-    disassembleTime: 3
+    disassembleTime: 5
 
 #region window
 - type: entity
@@ -73,7 +73,7 @@
         - WallLayer # Blocks lasers, but not LoS
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFInflatableWindowStack1
-    disassembleTime: 3
+    disassembleTime: 5
 
 #region doors
 - type: entity
@@ -98,13 +98,13 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20
+        damage: 60
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFInflatableDoorStack1
-    disassembleTime: 3
+    disassembleTime: 5
 
 - type: entity
   parent: NFInflatableDoor
@@ -127,7 +127,7 @@
     enabled: false
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFInflatableDoorWindowStack1
-    disassembleTime: 3
+    disassembleTime: 5
 
 - type: entity
   parent: NFInflatableDoor
@@ -178,7 +178,7 @@
       - ForceNoFixRotations
   - type: DisassembleOnAltVerb
     prototypeToSpawn: NFInflatableDockStack1
-    disassembleTime: 3
+    disassembleTime: 5
 
 #region floor
 - type: tile
@@ -245,7 +245,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 20
+        damage: 30
       behaviors:
       - !type:DoActsBehavior
         acts: [ "Destruction" ]

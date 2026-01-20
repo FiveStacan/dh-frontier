@@ -146,7 +146,7 @@
   - type: Appearance
 
 - type: entity
-  parent: ClothingBeltStorageBase
+  parent: ClothingBeltSheath
   id: ClothingBeltMythistophelRapier
   name: Ножны рапиры Мифистофеля
   description: Ножны для рапиры Мифистофеля
@@ -157,8 +157,6 @@
     - type: Clothing
       sprite: _DH/Clothing/Belt/rapier.rsi
     - type: Storage
-      grid:
-      - 0,0,2,2
       whitelist:
         tags:
           - Rapier
@@ -177,7 +175,7 @@
   components:
     - type: StorageFill
       contents:
-        - id: Rapier
+        - id: MythistophelRapier
 
 - type: entity
   parent: ClothingBeltStorageBase

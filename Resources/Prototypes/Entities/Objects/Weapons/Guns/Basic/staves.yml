@@ -16,10 +16,10 @@
       path: /Audio/Weapons/Guns/Gunshots/Magic/staff_healing.ogg
   - type: BasicEntityAmmoProvider
     proto: ProjectileHealingBolt
-    capacity: 6
-    count: 6
+    capacity: 2
+    count: 2
   - type: RechargeBasicEntityAmmo
-    rechargeCooldown: 180
+    rechargeCooldown: 220
   - type: PacifismAllowedGun
 
 - type: entity

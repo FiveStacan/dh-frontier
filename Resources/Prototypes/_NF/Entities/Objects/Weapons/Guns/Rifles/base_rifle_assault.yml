@@ -70,7 +70,7 @@
   - type: NFWeaponDetails
     class: weapon-details-manufacturer-frontier-gunsmith-consortium
   - type: StaticPrice
-    price: 2590
+    price: 7850
 
 #region chamber
 - type: entity

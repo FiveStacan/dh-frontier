@@ -1,5 +1,5 @@
 store-preset-name-vip-uplink = Аплинк Випа
-stealTargetGroup-medipen-techfab-circuitboard = медипен техфаб (машинная плата)
+stealTargetGroup-medipen-techfab-circuitboard = медипен Техфаб (машинная плата)
 store-preset-name-mercenary-uplink = Аплинк Наёмника
 uplink-convert-telecrystal-name = Телекристаллы
 uplink-convert-telecrystal-desc = Обменяйте свои кредиты на более полезные вещи

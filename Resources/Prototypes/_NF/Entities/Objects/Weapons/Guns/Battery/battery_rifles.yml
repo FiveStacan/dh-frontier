@@ -149,3 +149,5 @@
     zeroVisible: false
   - type: NFWeaponDetails
     manufacturer: weapon-details-manufacturer-custom-made
+  - type: StaticPrice
+    price: 14500

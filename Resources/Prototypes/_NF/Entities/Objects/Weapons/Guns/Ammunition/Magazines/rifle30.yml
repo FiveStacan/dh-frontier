@@ -73,7 +73,7 @@
   components:
   - type: Tag
     tags:
-      - NFMagazineLowCapacityRifle30
+      - NFMagazineExtendedCapacityRifle30
   - type: Item
     size: Tiny
     sprite: _NF/Objects/Weapons/Guns/Ammunition/Magazine/Rifle/rifle30_extended_mag.rsi

@@ -5,7 +5,7 @@
 - type: entity
   id: MedipenTechFabCircuitboard
   parent: BaseMachineCircuitboard
-  name: медипен техфаб (машинная плата)
+  name: медипен ТехФаб (машинная плата)
   description: Машинная плата техфаба медипенов
   components:
     - type: Sprite

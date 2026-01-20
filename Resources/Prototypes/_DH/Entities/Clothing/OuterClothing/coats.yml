@@ -139,6 +139,8 @@
     maxItemSize: Small
     grid:
     - 0,0,3,1
+  - type: StaticPrice
+    price: 375
 
 - type: entity #backmen
   parent: ClothingOuterStorageBase

@@ -1745,8 +1745,8 @@
 
 - type: listing
   id: UplinkStationMercenaryAmmoAmmoTechFabFlatpack
-  name: упакованный техфаб патронов
-  description: Упаковка, при помощи которой можно создать техфаб патронов.
+  name: упакованный ТехФаб патронов
+  description: Упаковка, при помощи которой можно создать ТехФаб патронов.
   productEntity: AmmoTechFabFlatpack
   cost:
     Speso: 4500

@@ -47,8 +47,8 @@ zzzz-reflexive-pronoun =
 # Used internally by the CONJUGATE-BE() function.
 zzzz-conjugate-be =
     { GENDER($ent) ->
-        [epicene] are
-       *[other] is
+        [epicene] ㅤ
+       *[other] ㅤ
     }
 # Used internally by the CONJUGATE-HAVE() function.
 zzzz-conjugate-have =

@@ -58,7 +58,7 @@
                   min: 2
                   max: 2
     - type: StaticPrice
-      price: 50 # Frontier: 100<50 - TODO: material value rework
+      price: 120 #DH 50<120 # Frontier: 100<50 - TODO: material value rework
 
 #Security Shields
 
@@ -69,7 +69,7 @@
   description: A large tower shield. Good for controlling crowds.
   components:
     - type: StaticPrice
-      price: 90
+      price: 130
     - type: Blocking
       passiveBlockModifier:
         coefficients:
@@ -102,6 +102,8 @@
           Heat: 0.5
         flatReductions:
           Heat: 1
+    - type: StaticPrice
+      price: 155
 
 - type: entity
   name: ballistic shield
@@ -646,4 +648,4 @@
                   min: 2
                   max: 2
     - type: StaticPrice
-      price: 150
+      price: 240

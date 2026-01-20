@@ -8,7 +8,7 @@
   abstract: true
   components:
   - type: StaticPrice
-    price: 1000
+    price: 1400
 
 - type: entity
   parent: BaseC2ExpeditionContraband
@@ -16,7 +16,7 @@
   abstract: true
   components:
   - type: StaticPrice
-    price: 2000
+    price: 2500
 
 - type: entity
   parent: BaseC2ExpeditionContraband
@@ -24,7 +24,7 @@
   abstract: true
   components:
   - type: StaticPrice
-    price: 3000
+    price: 3600
 
 - type: entity
   parent: BaseC2ExpeditionContraband
@@ -32,7 +32,7 @@
   abstract: true
   components:
   - type: StaticPrice
-    price: 5000
+    price: 5700
 
 - type: entity
   parent: BaseC3ExpeditionContraband
@@ -40,7 +40,7 @@
   abstract: true
   components:
   - type: StaticPrice
-    price: 10000
+    price: 11000
 
 # For syndicate/pirate labeled guns
 - type: entity

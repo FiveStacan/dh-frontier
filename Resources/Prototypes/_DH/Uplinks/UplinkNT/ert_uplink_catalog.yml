@@ -201,17 +201,17 @@
 #   - !type:ListingLimitedStockCondition
 #     stock: 6
 
-- type: listing
-  id: NTUplinkSunriseWeaponEnergyGunTactical
-  productEntity: WeaponEnergyGunTactical
-  icon: { sprite: _Sunrise/Interface/Misc/nt_icons.rsi, state: energygun_tac }
-  cost:
-    Bluecrystal: 12
-  categories:
-  - NTLasers
-  conditions:
-  - !type:ListingLimitedStockCondition
-    stock: 6
+# - type: listing
+#   id: NTUplinkSunriseWeaponEnergyGunTactical
+#   productEntity: WeaponEnergyGunTactical
+#   icon: { sprite: _Sunrise/Interface/Misc/nt_icons.rsi, state: energygun_tac }
+#   cost:
+#     Bluecrystal: 12
+#   categories:
+#   - NTLasers
+#   conditions:
+#   - !type:ListingLimitedStockCondition
+#     stock: 6
 
 # - type: listing
 #   id: NTUplinkSunriseWeaponWeaponEnergyGun

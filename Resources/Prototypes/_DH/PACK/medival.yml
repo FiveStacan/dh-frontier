@@ -5,9 +5,9 @@
   description: Магическая шляпа из лунного шёлка с вкраплениями ярких металлов на полях.
   components:
   - type: Sprite
-    sprite: _DH/Medieval/Clothing/Head/Hats/bib_hat.rsi
+    sprite: _DH/Clothing/Head/Hats/bib_hat.rsi
   - type: Clothing
-    sprite: _DH/Medieval/Clothing/Head/Hats/bib_hat.rsi
+    sprite: _DH/Clothing/Head/Hats/bib_hat.rsi
 
 - type: entity
   parent: ClothingHandsButcherable
@@ -600,7 +600,7 @@
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:PlaySoundBehavior
-            sound: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
+            sound: /Audio/_DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
   - type: ExplosionResistance
     damageCoefficient: 3
   - type: Appearance
@@ -690,7 +690,7 @@
           - !type:DoActsBehavior
             acts: [ "Destruction" ]
           - !type:PlaySoundBehavior
-            sound: _DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
+            sound: /Audio/_DH/Medieval/ES_Wood_Break_8_-_SFX_Producer.ogg
           - !type:SpawnEntitiesBehavior
             offset: 0.3
             spawn:
@@ -923,7 +923,7 @@
     mode: SnapgridCenter
   components:
   - type: Sprite
-    sprite: _DH/Structures/Walls/Medieval/Walls/gates.rsi
+    sprite: _DH/Structures/Walls/Medieval/gates.rsi
     drawdepth: BlastDoors
     layers:
     - state: closed
@@ -1111,9 +1111,9 @@
   - type: DoorBolt
     #boltsDown: True
     boltUpSound:
-      path: /Audio_DH/Medieval/door_lock1.ogg
+      path: /Audio/_DH/Medieval/door_lock1.ogg
     boltDownSound:
-      path: /Audio_DH/Medieval/door_lock2.ogg
+      path: /Audio/_DH/Medieval/door_lock2.ogg
   - type: InteractionOutline
   - type: Sprite
     netsync: false
@@ -1149,11 +1149,11 @@
     openingAnimationTime: 1.2
     closingAnimationTime: 1.2
     openSound:
-      path: _DH/Medieval/derevyannuyu-dver-zakryili.ogg
+      path: /Audio/_DH/Medieval/derevyannuyu-dver-zakryili.ogg
     closeSound:
-      path: _DH/Medieval/otkryili-steklyannuyu-dver.ogg
+      path: /Audio/_DH/Medieval/otkryili-steklyannuyu-dver.ogg
     denySound:
-      path: _DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
+      path: /Audio/_DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
   - type: Appearance
   - type: Airtight
     fixVacuum: true
@@ -1169,7 +1169,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
-        sound: _DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
+        sound: /Audio/_DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
   - type: IconSmooth
     key: walls
     mode: NoSprite
@@ -1231,9 +1231,9 @@
   - type: DoorBolt
     #boltsDown: True
     boltUpSound:
-      path: _DH/Medieval/metal_door_lock2.ogg
+      path: /Audio/_DH/Medieval/metal_door_lock2.ogg
     boltDownSound:
-      path: _DH/Medieval/metal_door_lock1.ogg
+      path: /Audio/_DH/Medieval/metal_door_lock1.ogg
   - type: InteractionOutline
   - type: Sprite
     netsync: false
@@ -1272,7 +1272,7 @@
     closeSound:
       path: /Audio/Effects/stonedoor_openclose.ogg
     denySound:
-      path: _DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
+      path: /Audio/_DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
   - type: Appearance
   - type: Airtight
     fixVacuum: true
@@ -1288,7 +1288,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
-        sound: _DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
+        sound: /Audio/_DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
   - type: IconSmooth
     key: walls
     mode: NoSprite
@@ -1305,9 +1305,9 @@
   - type: DoorBolt
     #boltsDown: True
     boltUpSound:
-      path: _DH/Medieval/door_lock1.ogg
+      path: /Audio/_DH/Medieval/door_lock1.ogg
     boltDownSound:
-      path: _DH/Medieval/door_lock2.ogg
+      path: /Audio/_DH/Medieval/door_lock2.ogg
   - type: InteractionOutline
   - type: Sprite
     netsync: false
@@ -1342,11 +1342,11 @@
     openingAnimationTime: 1.2
     closingAnimationTime: 1.2
     openSound:
-      path: _DH/Medieval/derevyannuyu-dver-zakryili.ogg
+      path: /Audio/_DH/Medieval/derevyannuyu-dver-zakryili.ogg
     closeSound:
-      path: _DH/Medieval/otkryili-steklyannuyu-dver.ogg
+      path: /Audio/_DH/Medieval/otkryili-steklyannuyu-dver.ogg
     denySound:
-      path: _DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
+      path: /Audio/_DH/Medieval/lyazg-visyaschego-zamka-na-zakryitoy-dveri.ogg
   - type: Appearance
   - type: Airtight
     fixVacuum: true
@@ -1362,7 +1362,7 @@
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:PlaySoundBehavior
-        sound: _DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
+        sound: /Audio/_DH/Medieval/zvuk-vyibivaniya-dveri-24274.ogg
   - type: IconSmooth
     key: walls
     mode: NoSprite
@@ -1935,7 +1935,7 @@
     volume: -13
     range: 2
     sound:
-      path: _DH/Medieval/water.ogg
+      path: /Audio/_DH/Medieval/water.ogg
 
 - type: entity
   id: MedievalWaterDeepDarkEntity

@@ -33,6 +33,8 @@
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
+  - type: StaticPrice
+    price: 890
 
 - type: entity
   parent: [ClothingOuterBaseLarge, AllowSuitStorageClothing]

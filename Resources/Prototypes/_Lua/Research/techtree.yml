@@ -1533,19 +1533,6 @@
   position: 1, 30
 
 - type: technology
-  id: DHPowerCellHyper
-  name: Hyper power cells
-  entityIcon: PowerCellMicroreactor
-  discipline: NFEngineering
-  tier: 1
-  cost: 15900
-  recipeUnlocks:
-  - PowerCellHyper
-  technologyPrerequisites:
-  - NFAdvancedSMES
-  position: 2, 26
-
-- type: technology
   id: NFFission
   name: nf-research-technology-fission-powercells
   entityIcon: PowerCellMicroreactor

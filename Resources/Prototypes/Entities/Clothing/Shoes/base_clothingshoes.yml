@@ -44,6 +44,8 @@
     - Recyclable
     - WhitelistChameleon
   - type: ProtectedFromStepTriggers
+  - type: StaticPrice
+    price: 68 #DH
 
 - type: entity
   abstract: true
@@ -86,6 +88,8 @@
       coefficients:
         Blunt: 0.98
         Slash: 0.98
+  - type: StaticPrice
+    price: 60 #DH
 
 - type: entity
   abstract: true

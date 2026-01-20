@@ -48,6 +48,8 @@
     reflects:
       - Energy
     # reflectingInHands: true
+  - type: StaticPrice
+    price: 150
 
 - type: entity
   id: NFShieldBallistic

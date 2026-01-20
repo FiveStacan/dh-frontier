@@ -22,6 +22,8 @@
   - type: ExplosionResistance
     damageCoefficient: 0.70
   - type: GroupExamine
+  - type: StaticPrice
+    price: 78 #DH
 
 # Armored juggernaut
 - type: entity
@@ -50,3 +52,5 @@
     walkModifier: 0.75
     sprintModifier: 0.75
   - type: GroupExamine
+  - type: StaticPrice
+    price: 780

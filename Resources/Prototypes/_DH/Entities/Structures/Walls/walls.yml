@@ -1,4 +1,44 @@
 - type: entity
+  id: WoodGirder
+  parent: Girder
+  name: wood girder
+  components:
+  - type: Construction
+    graph: Dhwalls
+    node: woodgirder
+  - type: Sprite
+    sprite: Structures/Walls/solid.rsi
+    state: wall_girder
+    color: "#c97e41"
+  - type: Damageable
+    damageContainer: StructuralInorganic
+    damageModifierSet: StructuralMetallic
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 180
+      behaviors: #excess damage, don't spawn entities.
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy
+  - type: StaticPrice
+    price: 13
+
+- type: entity
   parent: BaseWall
   id: WallDrywall
   name: drywall
@@ -73,3 +113,87 @@
   - type: IconSmooth
     key: walls
     base: paperwall
+
+- type: entity
+  parent: BaseWall
+  id: WallWoodTight
+  name: tight wood wall
+  description: The traditional greytide defense.
+  components:
+  - type: Tag
+    tags:
+    - Wall
+  - type: Sprite
+    sprite: _DH/Structures/Walls/wood.rsi
+  - type: Icon
+    sprite: _DH/Structures/Walls/wood.rsi
+  - type: Construction
+    graph: DHWalls
+    node: tightwoodWall
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 500
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy
+    - trigger:
+        !type:DamageTrigger
+        damage: 250
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WoodDestroyHeavy
+      - !type:ChangeConstructionNodeBehavior
+        node: WoodGirder
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    base: wood
+  - type: RCDDeconstructable
+    cost: 6
+    delay: 8
+    fx: EffectRCDDeconstruct8
+  - type: StaticPrice
+    price: 31
+
+- type: entity
+  parent: [ WallWood, BaseWallDiagonal ]
+  id: WallWoodTightDiagonal
+  name: wood wall
+  placement:
+    mode: SnapgridCenter
+    snap:
+    - Wall
+  components:
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _DH/Structures/Walls/wood_diagonal.rsi
+    state: state0
+  - type: IconSmooth
+    mode: Diagonal
+    key: walls
+    base: state
+  - type: Icon
+    sprite: _DH/Structures/Walls/wood_diagonal.rsi
+    state: state0
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PolygonShape
+            vertices:
+            - "-0.5,-0.5"
+            - "0.5,0.5"
+            - "0.5,-0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+  - type: Occluder
+    enabled: false

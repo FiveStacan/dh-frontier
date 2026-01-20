@@ -197,6 +197,7 @@
       tags:
         - CigPack
         - Taser
+        - AppraisalTool #DH
       components:
         - Stunbaton
         - FlashOnTrigger
@@ -237,6 +238,8 @@
         Blunt: 0.99
         Slash: 0.99
         Piercing: 0.99
+  - type: StaticPrice
+    price: 50
 
 - type: entity
   parent: ClothingBeltAssault
@@ -326,6 +329,7 @@
          - DiscreteHealthAnalyzer
          - SurgeryTool
          - Dropper
+         - AppraisalTool #DH
       components:
          - Hypospray
          - Injector
@@ -376,6 +380,30 @@
     sprite: Clothing/Belt/emt.rsi
   - type: Clothing
     sprite: Clothing/Belt/emt.rsi
+  - type: Storage #DH
+    whitelist:
+      tags:
+         - Wrench
+         - Bottle
+         - Spray
+         - Brutepack
+         - Bloodpack
+         - Gauze
+         - Ointment
+         - CigPack
+         - PillCanister
+         - Radio
+         - DiscreteHealthAnalyzer
+         - SurgeryTool
+         - Dropper
+         - AppraisalTool
+      components:
+         - Hypospray
+         - Injector
+         - Pill
+         - HandLabeler
+         - Defibrillator
+         - Implanter
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase
@@ -537,6 +565,7 @@
          - CombatKnife
          - Truncheon
          - HandGrenade
+         - Vial
       components:
          - Stunbaton
          - FlashOnTrigger
@@ -708,6 +737,8 @@
         Blunt: 0.98
         Slash: 0.99
         Piercing: 0.99
+  - type: StaticPrice
+    price: 250
 
 - type: entity
   parent: NFClothingBeltStorageBase # Frontier: ClothingBeltStorageBase<NFClothingBeltStorageBase, remove BaseSecurityCargoContraband

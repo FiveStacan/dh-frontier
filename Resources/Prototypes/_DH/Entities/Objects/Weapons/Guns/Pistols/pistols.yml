@@ -246,8 +246,8 @@
     selectedMode: SemiAuto
     availableModes:
       - SemiAuto
+      - Burst
       - FullAuto
-      - Brust
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/revolver.ogg
   - type: AmmoCounter
